@@ -39,10 +39,10 @@
 
 /* STABDARD MARGINS */
 .ml{
-	margin-left: 35px;
+	margin-left: 30px;
 }
 .mr{
-	margin-right: 35px;
+	margin-right: 30px;
 }
 
 @media ( min-width : 768px ) {
@@ -71,4 +71,23 @@
 	.span_10 { width: 83.0%; }
 	.span_11 { width: 91.5%; }
 	.span_12 { width: 100%; }
+}
+@media ( max-width : 1000px ) {
+	header .container .span_7{float:left;width:auto;  margin-left: 35px;}
+	header .container .full_right_header{float:right;}
+	.inner_block .search_buttons span.reset{float:left;clear:none;margin-top:40px;}
+	.content_block .span_5{width:70.5%;}
+	.content_block .span_7{width:23.5%;}
+	.content_block .search_results .section_left, .content_block .search_results .section_right{width:100%;}
+    .content_block .search_results .section_left{margin-bottom:20px;}
+    footer .span_5{width:70.5%;}
+    footer .span_7{width:23.5%;}
+    .serach_main_lists{border-right:0px;}
+}
+@media ( max-width : 585px ) {
+	.serach_main_lists .search_list div{width:100%;}
+}
+@media ( max-width : 475px ) {
+	.content_block .view_faq, .content_block .view_jobs{width:100%;}
+	.content_block .view_faq h3{margin:20px 0px 0px 30px;width:auto;float:left;}
 }

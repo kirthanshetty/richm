@@ -96,6 +96,8 @@ background: linear-gradient(to bottom, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ed
 .inner_block div label{color:#5e5e5e;font-size:1.3em;padding-bottom:6px;float:left;}
 .inner_block div select{font-size:1.2em;color:#5E5E5E;clear:both;width:193px;padding:8px 10px;border:0px none;height:33px;float:left;}
 .inner_block div select option{border:1px solid #d2d2d2;border-top:0px;background:#e7e7e7;color:#4e4e4e;font-size:1.1em;padding:8px 10px;}
+.header_right .customSelectInner{font-size:1em;}
+.header_right select option{border:1px solid #d2d2d2;border-top:0px;background:#e7e7e7;color:#4e4e4e;font-size:1em;padding:2px 2px;}
 .inner_block div select option:hover, .inner_block div select option:focus{background:#a3a3a3;color:#fff; float: left;}
 .inner_block input[type='button']{float:left;margin-right:20px;margin-top:24px;}
 .inner_block input[type='button'], .section_right input[type='button']{color:#fff;font-size:1.2em;font-weight:bold;padding:8px 10px;border:1px solid #4c4b4b;
@@ -163,6 +165,7 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .footer_right ul li a.linkedin{background:url("../img/sprite.png") no-repeat left -47px;}
 
 .serach_main_lists .col{margin-left:0px;}
+.header_right .customSelect{background:url("../img/lang_select.png") no-repeat scroll 85% 30% transparent;}
 
 /* CSS for IE to Fallback */
 .no-cssgradients .inner_block input[type='submit']{background: url("../img/blue_bg.jpg") repeat-x scroll left top;}

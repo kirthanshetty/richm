@@ -45,14 +45,14 @@ $(document).ready(function(){
         $page.css('top',curTop + addTop)
       }
     })
-    var $page_content = $(".page .inner_content");
+    //var $page_content = $(".page .inner_content");
     // $page = pageHCompensation + $page_content;
-    if($page_content > 0)
-      {
-        $page_content.css({
-        'padding-top': pageHCompensation
-        })
-      }
+    //if($page_content > 0)
+     // {
+     //   $page_content.css({
+      //  'padding-top': pageHCompensation
+      //  })
+     // }
   })
 
   $window = $(window);

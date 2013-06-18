@@ -45,6 +45,14 @@ $(document).ready(function(){
         $page.css('top',curTop + addTop)
       }
     })
+    var $page_content = $(".page .inner_content");
+    // $page = pageHCompensation + $page_content;
+    if($page_content > 0)
+      {
+        $page_content.css({
+        'padding-top': pageHCompensation
+        })
+      }
   })
 
   $window = $(window);
@@ -63,6 +71,14 @@ $(document).ready(function(){
       $bgobj.css({ backgroundPosition: coords });
       
     }); // window scroll Ends
+  });
+
+
+  $(".search").mouseover(function(){
+    $(".search_block").show();
+  });
+  $(".search").mouseout(function(){
+    $(".search_block").hide();
   });
 }); 
 

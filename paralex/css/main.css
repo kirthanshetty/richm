@@ -108,7 +108,7 @@ background: -webkit-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #
 background: -o-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* IE10+ */
 background: linear-gradient(to bottom, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* W3C */}
-.inner_block input[type='submit'], .search_block .submit{float:left;margin-right:15px;color:#fff;font-size:1.2em;font-weight:bold;padding:8px 10px;border:1px solid #054670;margin-top:24px;
+.inner_block input[type='submit'], .search_block .submit, .maisons_lists ul li input{float:left;margin-right:15px;color:#fff;font-size:1.2em;font-weight:bold;padding:8px 10px;border:1px solid #054670;margin-top:24px;
 background: -moz-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#255e83), color-stop(20%,#245d82), color-stop(40%,#215a7f), color-stop(50%,#1d577b), color-stop(60%,#195377), color-stop(80%,#124b70), color-stop(100%,#10496d)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* Chrome10+,Safari5.1+ */
@@ -218,13 +218,13 @@ footer{margin-top:50px;}
 #wrapper .maisons_head h1{font-size:4.8em;font-weight:normal;margin-bottom:0px;color:#fff;font-family:'SabonLT-Roman';text-align: center;}
 .maisons_head p{margin:0px;color:#4d4d4d;font-size:1.7em;line-height:28px;text-align: center;}
 .container.main{position: relative; top:102px;overflow: hidden;max-width:100%;margin:0px;}
-#page1 {
+#page1, #page4 {
   background: url("../img/background.png") center top repeat-x #fff;
   width: 100%;
   position: absolute;
 }
  
-#page1 .inner_content {
+#page1 .inner_content, #page4 .inner_content {
   /*width: 100%;*/
   background: #fff;
 }
@@ -242,6 +242,15 @@ footer{margin-top:50px;}
 }
 #page3{position: absolute;width:100%;}
 #page3 .inner_content{padding:35px;}
+.maisons_lists{float:left;width:100%;margin-top:35px;margin-bottom:58px;}
+.maisons_lists ul li{float:left;border-right:1px solid #b8b8b8;border-bottom:1px solid #b8b8b8;}
+.maisons_lists ul li a{width:189px;height:114px;background:#00436e;display: block;}
+.maisons_lists ul li:last-child{border:0px;}
+.maisons_lists ul li a img{left: 20%;position: relative;top: 25%;}
+.maisons_lists ul li.join-us{background:#303030;width:759px;padding:30px;}
+.maisons_lists ul li.join-us div{float:right;}
+.maisons_lists ul li.join-us h3{font-size:2em;color:#fff;float:left;margin:15px 0 0;}
+.maisons_lists ul li.join-us input{float:right;margin:15px 0px 0px 20px;}
 
 button.collapsed{display:none;}
 .container.main .page .inner_content{margin:0 auto;width:1024px;float:none;}

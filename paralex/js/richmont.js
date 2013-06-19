@@ -16,12 +16,12 @@ $(document).ready(function(){
       top = 0,
       contTop = cont.position().top;
 
+
   $('.page').each(function(i,page){
     var $page = $(page),
         curPageH = $page.height(),
         pageHCompensation = pageH - curPageH,
         curTop = top;
-
     if(pageHCompensation > 0)
     $page.css({
       'padding-top': pageHCompensation / 2,
@@ -36,7 +36,7 @@ $(document).ready(function(){
     if(pageHCompensation < 0) top -= pageHCompensation;
 
     cont.height(top);
-    var myPosBottom = top + contTop - pageH - 102;
+    var myPosBottom = top + contTop - pageH - 12;
 
     $(window).scroll(function(){
       var st = $(window).scrollTop();
@@ -45,14 +45,7 @@ $(document).ready(function(){
         $page.css('top',curTop + addTop)
       }
     })
-    //var $page_content = $(".page .inner_content");
-    // $page = pageHCompensation + $page_content;
-    //if($page_content > 0)
-     // {
-     //   $page_content.css({
-      //  'padding-top': pageHCompensation
-      //  })
-     // }
+    
   })
 
   $window = $(window);
@@ -72,6 +65,16 @@ $(document).ready(function(){
       
     }); // window scroll Ends
   });
+   var $page_content = $(".page .inner_content");
+    // $page = pageHCompensation + $page_content;
+
+    if($page_content > 0)
+      {
+        $page_content.css({
+        'padding-top': curPageH
+        })
+      }
+      alert(curPageH);
 
 
   $(".search").mouseover(function(){

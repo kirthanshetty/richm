@@ -32,11 +32,16 @@ $(document).ready(function(){
       top: top
     });
 
+    var myPosTop = top + headerH;
+
     top += pageH;
     if(pageHCompensation < 0) top -= pageHCompensation;
 
     cont.height(top);
-    var myPosBottom = top + contTop - pageH - 12;
+    var myPosBottom = top + contTop - pageH - 102;
+
+    var foregroundEls = $page.find('[data-type="foreground"]');
+    foregroundEls.css('position','relative');
 
     $(window).scroll(function(){
       var st = $(window).scrollTop();
@@ -44,6 +49,17 @@ $(document).ready(function(){
         var addTop = (st - myPosBottom) / $page.data('speed');
         $page.css('top',curTop + addTop)
       }
+
+      var posDelta = myPosTop - st;
+
+
+      foregroundEls.each(function(i,fel){
+        var ftop = posDelta / $(fel).data('speed');
+
+        $(fel).css('top',ftop);
+
+      })
+
     })
     
   })
@@ -65,18 +81,7 @@ $(document).ready(function(){
       
     }); // window scroll Ends
   });
-   var $page_content = $(".page .inner_content");
-    // $page = pageHCompensation + $page_content;
-
-    if($page_content > 0)
-      {
-        $page_content.css({
-        'padding-top': curPageH
-        })
-      }
-      alert(curPageH);
-
-
+   
   $(".search").mouseover(function(){
     $(".search_block").show();
   });

@@ -54,7 +54,7 @@ $(document).ready(function(){
 
 
       foregroundEls.each(function(i,fel){
-        var ftop = posDelta / $(fel).data('speed');
+        var ftop = posDelta / $(fel).data('bgspeed');
 
         $(fel).css('top',ftop);
 
@@ -81,12 +81,36 @@ $(document).ready(function(){
       
     }); // window scroll Ends
   });
-   
+
+  /* Script of Search block Pop-Up */
   $(".search").mouseover(function(){
     $(".search_block").show();
   });
   $(".search").mouseout(function(){
     $(".search_block").hide();
   });
-}); 
 
+  $(".maisons_lists ul li a").mouseover(function(){
+    $(this).css('background','url("../img/overlay.jpg") no-repeat scroll left top transparent');
+  });
+  $(".maisons_lists ul li a").mouseout(function(){
+    $(this).css('background','#00436E');
+  });
+  
+  /* Script of Click scroll to Top */
+  $(function(){
+    $("..scroll_top img").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+    });
+  });
+
+
+  $(".maisons_lists ul li").click(function(){
+    $(this).after("<div><span>img</span></div>");
+    $(".maisons_lists ul div").addClass('popup_overlay')
+});
+
+
+
+});

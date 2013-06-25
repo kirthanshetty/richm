@@ -256,18 +256,33 @@ footer{margin-top:150px;}
 .align-center{text-align: center;}
 h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: normal;margin-bottom: 0;}
 .creativity_head, .tab_content{float:left;width:100%;}
+.creativity_head{position: relative;}
 .tab_content{margin-top: 18px;}
-.creativity_head .bg_img{background: url("../img/join.jpg") no-repeat scroll left top transparent;height: 245px;text-align: center;width:auto;}
+.creativity_head .bg_img{background: url("../img/img21.jpg") no-repeat scroll left top transparent;height: 288px;text-align: center;width:auto;}
 .creativity_head h2{color:#00436e;font-size:5em;font-family: 'SabonLT-Roman';}
 .creativity_head p{font-size: 1.4em;color: #fff;margin:0px;}
-.creativity_head ul{background: #9b9b9b;padding:10px 40px;float: left;}
+.creativity_head ul{background: #9b9b9b;padding:10px 40px;float: left;position: absolute;bottom: 0px;opacity:0.8;filter:alpha(opacity=80);}
 .creativity_head ul li{float:left;font-family: 'SabonLT-Roman';margin:0px 17px;font-size:1.8em;}
 .creativity_head ul li a{color:#054c70;}
 .creativity_head ul li.active a{color:#fff;}
+.creativity_head .maison_prev{background: url("../img/sprite.png") no-repeat scroll 0 -486px transparent;
+    float: left;
+    height: 60px;
+    position: absolute;
+    left: 15px;
+    width: 50px;
+    z-index: 999;margin-top:10%;}
+.creativity_head .maison_next{background: url("../img/sprite.png") no-repeat scroll 0 -552px transparent;
+    float: left;
+    height: 60px;
+    position: absolute;
+    right: 5px;
+    width: 50px;
+    z-index: 999;margin-top:10%;}
 .tab_content h2{color: #4E4E4E;font-size: 2.1em;margin:15px 0px 6px;text-align: center;text-transform: uppercase;font-weight:normal;}
 .tab_content p{color: #4E4E4E;margin:0px;}
 .creativity_head ul li.active{position: relative;}
-.creativity_head ul li.active .chat-bubble-arrow{text-align: center;}
+.creativity_head ul li.active .chat-bubble-arrow{text-align: center; border-color: #888888 transparent transparent;}
 .chat-bubble-arrow {border-color: #9b9b9b transparent transparent;border-style: solid;border-width: 10px 19px 8px;bottom: -28px;height: 0;position: absolute;right: 40%;width: 0;}
 .videos{margin: 30px 0px 0px;float:left;width: auto;}
 .videos .section_one{margin-right:30px;width:298px;}

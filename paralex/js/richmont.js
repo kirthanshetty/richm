@@ -89,27 +89,57 @@ $(document).ready(function(){
   $(".search").mouseout(function(){
     $(".search_block").hide();
   });
-  $(".maisons_lists ul li a").mouseover(function(){
+  $(".maisons_lists >ul li a").hover(function(){
     $(this).css('background','url("../img/overlay.jpg") no-repeat scroll left top transparent');
-  });
-  $(".maisons_lists ul li a").mouseout(function(){
+  },function(){
     $(this).css('background','#00436E');
   });
   
   /* Script of Click scroll to Top */
-  $(function(){
-    $("..scroll_top img").click(function() {
+  $(".scroll_top img").click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");
     return false;
-    });
   });
 
 
-  $(".maisons_lists ul li").click(function(){
-    $(this).after("<div><span>img</span></div>");
-    $(".maisons_lists ul div").addClass('popup_overlay')
+  $(".maisons_lists ul li a").click(function(){
+    var anchor = $(this),
+        listItem = $(this).parent(),
+        myDetail = listItem.parent().parent().find('.our_maison_gallery');
+    
+    function loadDetails(){
+      var url = anchor.attr('href');
+      $.get(url,function(data,status,xhr){
+        var $data = $(xhr.responseText).hide();
+        listItem.parent().after($data);
+        MaisonSildeshow($data);
+      })
+    }
+
+    if(myDetail.length > 0)
+      myDetail.slideUp(function(){
+        $(this).remove();
+        loadDetails()
+      });
+    else
+      loadDetails();
+    return false;
+  });
+
+MaisonSildeshow($('.our_maison_gallery'))
+
 });
 
 
-
-});
+function MaisonSildeshow(gallery){
+  gallery.hide().slideDown();
+  gallery.find('.maison_close').click(function(){
+    $(this).parent().slideUp(function(){
+      $(this).remove();
+    })
+    return false;
+  });
+  var w = gallery.find('.maison_main_content:eq(0)').width()
+  gallery.find('.slides-container').width(w);
+  gallery.find('.slides').width(w*3);
+}

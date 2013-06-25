@@ -325,9 +325,10 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .gallery_join .our_world a.prev{float:left;color:#00436e;font-family: georgia;font-size: 1.5em;font-style: italic;font-weight: bold;}
 .gallery_join .our_world a.next{ float: right;color:#00436e;font-family: georgia;font-size: 1.5em;font-style: italic;font-weight: bold;}
 .gallery_join .our_world a.inactive{opacity:0.6;}
-.gallery_join .our_world ul, .maison_image ul{float: right;right: 15px;position: absolute;top: 5px;}
-.gallery_join .our_world ul li, .maison_image ul li{ background: url("../img/sprite.png") no-repeat scroll left -269px transparent;float:left;width:14px;height: 20px; margin-left: 10px;}
-.gallery_join .our_world ul li.active, .maison_image ul li.active{ background: url("../img/sprite.png") no-repeat scroll left -292px transparent;}
+ul.buttons{float: right;left: 375px;position: absolute;top: 320px;z-index: 999;}
+ul.buttons li{float:left;width:14px;height: 20px; margin-left: 10px;}
+ul.buttons li a{ background: url("../img/sprite.png") left -269px;width:14px;height: 20px;display: block;border:none;}
+ul.buttons li.active a{ background: url("../img/sprite.png") left -292px;}
 .gallery_container{float:left;width:100%;}
 .gallery_container .content{float:left;}
 .container.main #page4.page .gallery_join .two_sections{position:absolute; bottom: 78px;}
@@ -336,16 +337,17 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 
 .page_1 .row .col{margin:0px;}
 .page_1 .row .col a{}
-.page_1 .row .col.span_4{width:33.33%;height: 189px;}
+.page_1 .row .col.span_4{width:33.33%;}
 .page_1 .row .col.span_8{width:66.66%;}
-.our_maison_gallery{background:#fff;float: left;}
-.our_maison_gallery a.close, .our_maison_gallery a.maison_prev, .our_maison_gallery a.maison_close{ background: url("../img/sprite.png") no-repeat scroll 0 -310px transparent;float: left;height: 46px;right:25px;position: absolute;width: 50px;z-index: 999;}
+.our_maison_gallery{background:#fff;position: relative;}
+.our_maison_gallery a.close, .our_maison_gallery a.maison_prev, .our_maison_gallery a.maison_close{ background: url("../img/sprite.png") no-repeat scroll 0 -310px transparent;float: left;height: 44px;right:10px;position: absolute;width: 32px;z-index: 999;}
 .our_maison_gallery a.maison_next{     background: url("../img/sprite.png") no-repeat scroll 8px -356px transparent;float: right;height: 60px;margin-top: -24%;width: 50px;}
-.our_maison_gallery a.maison_prev{   background: url("../img/sprite.png") no-repeat scroll 0 -420px transparent;height: 60px;margin-top: 17%;left: 50px;}
+.our_maison_gallery a.maison_prev{   background: url("../img/sprite.png") no-repeat scroll 0 -420px transparent;height: 60px;margin-top: 17%;left: 15px;}
 .our_maison_gallery .maison_main_content{ padding: 45px 60px;float:left;}
 .our_maison_gallery .maison_main_content .maison_image{float:left;position: relative;padding-right:25px;}
 .our_maison_gallery .maison_main_content .maison_image.span_6{width:52%;}
 .our_maison_gallery .maison_main_content .maison_desc{color:#787878;}
+.our_maison_gallery .slides-container{overflow: auto;}
 .maison_main_content .maison_image ul{bottom: 15px;right: 37px;top: auto;}
 .maison_main_content .maison_image ul li a{height:auto; border: 0 none;}
 .maison_main_content .maison_desc a.maison_info{bottom: -60px;color: #00436E;float: right;padding: 0;position: relative;right: -40px;}

@@ -89,6 +89,34 @@ $(document).ready(function(){
   $(".search").mouseout(function(){
     $(".search_block").hide();
   });
+<<<<<<< HEAD
+=======
+
+  $(".maisons_lists ul li a").mouseover(function(){
+    $(this).css('background','url("../img/overlay.jpg") no-repeat scroll left top transparent');
+  });
+  $(".maisons_lists ul li a").mouseout(function(){
+    $(this).css('background','#00436E');
+  });
+  
+  /* Script of Click scroll to Top */
+  $(function(){
+    $("..scroll_top img").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+    });
+  });
+
+
+  $(".maisons_lists ul li").click(function(){
+    $(this).after("<div><span>img</span></div>");
+    $(".maisons_lists ul div").addClass('popup_overlay')
+});
+
+
+
+}); 
+>>>>>>> f73d69e73db17683a5d88993c01105b86a77a221
 
   $(".maisons_lists ul li a").mouseover(function(){
     $(this).css('background','url("../img/overlay.jpg") no-repeat scroll left top transparent');

@@ -110,7 +110,7 @@ $(document).ready(function(){
     function loadDetails(){
       var url = anchor.attr('href');
       $.get(url,function(data,status,xhr){
-        var $data = $(xhr.responseText).hide();
+        var $data = $(xhr.responseText);
         listItem.parent().after($data);
         MaisonSildeshow($data);
       })
@@ -132,14 +132,33 @@ MaisonSildeshow($('.our_maison_gallery'))
 
 
 function MaisonSildeshow(gallery){
-  gallery.hide().slideDown();
   gallery.find('.maison_close').click(function(){
     $(this).parent().slideUp(function(){
       $(this).remove();
     })
     return false;
   });
-  var w = gallery.find('.maison_main_content:eq(0)').width()
-  gallery.find('.slides-container').width(w);
-  gallery.find('.slides').width(w*3);
+  var w = gallery.find('.maison_main_content:eq(0)').outerWidth()
+  gallery.find('.slides-container').width(w).css('overflow','hidden');
+  gallery.find('.maison_main_content').width(w - 120);
+  var slides = gallery.find('.slides').width(w*3);
+  var buttons = gallery.find('.buttons');
+  
+  var noSlides = 3,
+      curSlide = 0;
+
+  gallery.hide().slideDown();
+  function nextSlide(){
+    curSlide ++;
+    if(curSlide >= noSlides) curSlide = 0;
+    slides.animate({'margin-left': -1 * w * curSlide });
+  }
+
+  function prevSlide(){
+    curSlide --;
+    if(curSlide < 0) curSlide = noSlides - 1;
+    slides.animate({'margin-left': -1 * w * curSlide });
+  }
+
+
 }

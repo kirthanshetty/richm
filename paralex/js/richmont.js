@@ -110,14 +110,14 @@ $(document).ready(function(){
     function loadDetails(){
       var url = anchor.attr('href');
       $.get(url,function(data,status,xhr){
-        var $data = $(xhr.responseText);
-        listItem.parent().after($data);
-        MaisonSildeshow($data);
+        listItem.parent().after(xhr.responseText);
+        $data = listItem.parent().next().find('.our_maison_gallery');
+        MaisonSildeshow($data,anchor);
       })
     }
 
     if(myDetail.length > 0)
-      myDetail.slideUp(function(){
+      myDetail.parent().slideUp(function(){
         $(this).remove();
         loadDetails()
       });
@@ -125,15 +125,12 @@ $(document).ready(function(){
       loadDetails();
     return false;
   });
-
-MaisonSildeshow($('.our_maison_gallery'))
-
 });
 
 
-function MaisonSildeshow(gallery){
+function MaisonSildeshow(gallery,anchorel){
   gallery.find('.maison_close').click(function(){
-    $(this).parent().slideUp(function(){
+    $(this).parent().parent().slideUp(function(){
       $(this).remove();
     })
     return false;
@@ -148,17 +145,24 @@ function MaisonSildeshow(gallery){
       curSlide = 0;
 
   gallery.hide().slideDown();
-  function nextSlide(){
-    curSlide ++;
-    if(curSlide >= noSlides) curSlide = 0;
-    slides.animate({'margin-left': -1 * w * curSlide });
-  }
+  
+  gallery.find('.maison_next').click(function(){
+    var nextEl = anchorel.parent().next().find('a');
+    if(nextEl.length < 1){
+      nextEl = anchorel.parent().parent().next().next().find('li:first a');
+    }
+    console.log(anchorel,nextEl);
+    nextEl.click();
+    return false;
+  })  
 
-  function prevSlide(){
-    curSlide --;
-    if(curSlide < 0) curSlide = noSlides - 1;
-    slides.animate({'margin-left': -1 * w * curSlide });
-  }
-
-
+  gallery.find('.maison_prev').click(function(){
+    var nextEl = anchorel.parent().prev().find('a');
+    if(nextEl.length < 1){
+      nextEl = anchorel.parent().parent().prev().find('li:first a');
+    }
+    console.log(anchorel,nextEl);
+    nextEl.click();
+    return false;
+  }) 
 }

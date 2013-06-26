@@ -165,4 +165,23 @@ function MaisonSildeshow(gallery,anchorel){
     nextEl.click();
     return false;
   }) 
+
 }
+
+var wd = $(".gallery_container").find('.content:eq(0)').outerWidth()
+$(".gallery_container").width(wd).css('overflow','hidden');
+$(".gallery_container .content").width(wd);
+var slides = $(".gallery_container").find('.slides').width(wd*3);
+var noSlides = 3,
+      curSlide = 0;
+
+$('.gallery_join .our_world a.next').click(function(){
+    curSlide ++;
+    if(curSlide >= noSlides) curSlide = 0;
+    slides.animate({'margin-left': -1 * wd * curSlide });
+  });
+$('.gallery_join .our_world a.prev').click(function(){
+    curSlide --;
+    if(curSlide < 0) curSlide = noSlides - 1;
+    slides.animate({'margin-left': -1 * wd * curSlide });
+  });

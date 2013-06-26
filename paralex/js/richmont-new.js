@@ -84,7 +84,64 @@ function MaisonBox(container,callback){
 	})
 }
 
+
+
 $(function(){
 	var parallex = new Parallex($('.page'));
 	var maisons = MaisonBox($('.maisons_lists'),parallex.updatePositions)
 })
+
+$(function(){
+	var wd = $(".gallery_container").find('.content:eq(0)').outerWidth()
+	$(".gallery_container").width(wd).css('overflow','hidden');
+	$(".gallery_container .content").width(wd);
+	var slides = $(".gallery_container").find('.slides').width(wd*3);
+	$('.our_world h1').css('padding-left','3px');
+	var noSlides = 3,
+	      curSlide = 0;
+
+	$('.gallery_join .our_world a.next').click(function(){
+	    curSlide ++;
+	    if(curSlide >= noSlides) curSlide = 0;
+	    slides.animate({'margin-left': -1 * wd * curSlide });
+	 });
+	$('.gallery_join .our_world a.prev').click(function(){
+	    curSlide --;
+	    if(curSlide < 0) curSlide = noSlides - 1;
+	    slides.animate({'margin-left': -1 * wd * curSlide });
+	 });
+});
+
+$(function(){
+	var wdt = $('.career_gallery ul li').width()
+	var cnt = $('.career_gallery_container ul li').length
+	$('.career_gallery_container').width(wdt*5).css('overflow','hidden');
+	var slides = $('.career_gallery_container .slides').width(wdt*cnt);
+	var noSlides = cnt - 4,
+	      curSlide = 0;
+
+	$('.career_gallery a.next').click(function(){
+	  curSlide ++;
+	  if(curSlide >= noSlides) curSlide = 0;
+	  slides.animate({'margin-left': -1 * wdt * curSlide });
+	});
+	$('.career_gallery a.prev').click(function(){
+	  curSlide --;
+	  if(curSlide < 0) curSlide = noSlides - 1;
+	  slides.animate({'margin-left': -1 * wdt * curSlide });
+	});
+});
+
+/* Script of Search block Pop-Up */
+  $(".search").mouseover(function(){
+    $(".search_block").show();
+  });
+  $(".search").mouseout(function(){
+    $(".search_block").hide();
+  });
+
+  /* Script of Click scroll to Top */
+  $(".scroll_top img").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });

@@ -170,6 +170,7 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .header_right .customSelect{background:url("../img/lang_select.png") no-repeat scroll 85% 30% transparent;}
 
 /* Style for Parllax single page */
+.page{padding-bottom: 200px }
 #page1, #page2, #page3, #page4 #page5{position: relative;margin-bottom: 0px;}
 .search_block{display:none;float:right;width:222px;}
 .search_block .textbox{padding:4px 8px;}
@@ -222,7 +223,6 @@ footer{margin-top:150px;}
 #page1, #page4, #page5 {
   background:url("../img/body_bg.jpg") repeat center top #fff;
   width: 100%;
-  position: absolute;
 }
 #page4{z-index: 9;}
 #page5{z-index: 10;}
@@ -235,14 +235,13 @@ footer{margin-top:150px;}
   background:url("../img/section_bg.jpg") no-repeat center top / cover transparent;
   min-height: 685px; 
   width: 100%;
-  position: absolute;
 }
  
 #page2 .inner_content {
  /* height: 689px;
   width: 100%;*/
 }
-#page3{position: absolute;width:100%;}
+#page3{width:100%;}
 #page3 .inner_content{padding:35px;}
 .maisons_lists{float:left;width:100%;margin-top:35px;margin-bottom:58px;}
 .maisons_lists ul li{float:left;width:20%;}

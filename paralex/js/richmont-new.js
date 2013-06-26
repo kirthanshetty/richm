@@ -10,7 +10,7 @@ function Parallex(els){
 
 
 	this.updatePositions = function(){
-		els.css('position','relative');
+		els.css({'position':'relative','top':0});
 
 		
 		// compute the offsets
@@ -66,7 +66,7 @@ function Parallex(els){
 	})
 }
 
-function MaisonBox(container){
+function MaisonBox(container,callback){
 	container.find('>ul li a').click(function(){
 		var link = this.href,
 			anchor = $(this),
@@ -78,12 +78,13 @@ function MaisonBox(container){
 			}else{
 				listCont.append($responseEl)
 			}
+			callback();
 		});
 		return false;
 	})
 }
 
 $(function(){
-	var parallex = Parallex($('.page'))
-	var maisons = MaisonBox($('.maisons_lists'))
+	var parallex = new Parallex($('.page'));
+	var maisons = MaisonBox($('.maisons_lists'),parallex.updatePositions)
 })

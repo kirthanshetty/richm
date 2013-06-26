@@ -84,12 +84,61 @@ function MaisonBox(container,callback){
 	})
 }
 
+function MaisonBox(container,callback){
+	container.find('.creativity_head ul li a').click(function(){
+		var link = this.href,
+			anchor = $(this),
+			listCont = $(this).parent().parent().parent();
+		$.get(link,function(doc,status,xhr){
+			var $responseEl = $(xhr.responseText);
+			if(listCont.next().length < 1){
+				listCont.prepend($responseEl)
+			}else{
+				listCont.append($responseEl)
+			}
+			callback();
+		});
+		return false;
+	})
+}
+
+function WhyworkUs(container){
+
+	container.find('.creativity_head ul li a').click(function(){
+
+		var link = this.href,
+			anchor = $(this),
+			listCont = $(this).parent().parent().parent();
+			console.log(link);
+			$.get(link,function(data,status){
+				alert("hi");
+			});
+		/*$.get(link,function(doc,status,xhr){
+			var $responseEl = $(xhr.responseText);
+
+			if(listCont.next().length < 1){
+				listCont.prepend($responseEl)
+			}else{
+				listCont.append($responseEl)
+
+			}
+			console.log($responseEl);
+			callback();
+
+		}); */
+		
+		return false;
+	})
+}
+
 
 
 $(function(){
 	var parallex = new Parallex($('.page'));
 	var maisons = MaisonBox($('.maisons_lists'),parallex.updatePositions)
+	var WorkUs = WhyworkUs($('.page_4 .section_main'))
 })
+
 
 $(function(){
 	var wd = $(".gallery_container").find('.content:eq(0)').outerWidth()

@@ -71,26 +71,8 @@ function MaisonBox(container,callback){
 		var link = this.href,
 			anchor = $(this),
 			listCont = $(this).parent().parent();
-		$.get(link,function(doc,status,xhr){
-			var $responseEl = $(xhr.responseText);
-			if(listCont.next().length < 1){
-				listCont.prepend($responseEl)
-			}else{
-				listCont.append($responseEl)
-			}
-			callback();
-		});
-		return false;
-	})
-}
-
-function MaisonBox(container,callback){
-	container.find('.creativity_head ul li a').click(function(){
-		var link = this.href,
-			anchor = $(this),
-			listCont = $(this).parent().parent().parent();
-		$.get(link,function(doc,status,xhr){
-			var $responseEl = $(xhr.responseText);
+		$.get(link,function(data){
+			var $responseEl = $(data);
 			if(listCont.next().length < 1){
 				listCont.prepend($responseEl)
 			}else{
@@ -103,31 +85,18 @@ function MaisonBox(container,callback){
 }
 
 function WhyworkUs(container){
-
-	container.find('.creativity_head ul li a').click(function(){
-
+	console.log(container.find('.creativity_head ul li a'));
+	container.find('.creativity_head ul li a').click(function(e){
+		e.preventDefault();
 		var link = this.href,
 			anchor = $(this),
-			listCont = $(this).parent().parent().parent();
-			console.log(link);
-			$.get(link,function(data,status){
-				alert("hi");
-			});
-		/*$.get(link,function(doc,status,xhr){
-			var $responseEl = $(xhr.responseText);
+			container = $(this).parent().parent().parent().next();
 
-			if(listCont.next().length < 1){
-				listCont.prepend($responseEl)
-			}else{
-				listCont.append($responseEl)
-
-			}
-			console.log($responseEl);
-			callback();
-
-		}); */
-		
-		return false;
+		$.get(link,function(data){
+			container.html(data);
+			anchor.parent().parent().find('li.active').removeClass('active');
+			anchor.parent().addClass('active');
+		});
 	})
 }
 

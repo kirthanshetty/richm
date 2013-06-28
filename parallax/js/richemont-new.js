@@ -85,13 +85,24 @@ function MaisonBox(container,callback){
 }
 
 function WhyworkUs(container){
-	console.log(container.find('.creativity_head ul li a'));
-	container.find('.creativity_head ul li a').click(function(e){
+	container.find('.join_us_gallery ul li a').click(function(e){
 		e.preventDefault();
 		var link = this.href,
 			anchor = $(this),
 			container = $(this).parent().parent().parent().next();
-
+		$.get(link,function(data){
+			container.html(data);
+			anchor.parent().parent().find('li.active').removeClass('active');
+			anchor.parent().addClass('active');
+		});
+	})
+}
+function CareerPath(container){
+	container.find('.career_gallery ul li a').click(function(e){
+		e.preventDefault();
+		var link = this.href,				
+			anchor = $(this),
+			container = $(this).parent().parent().parent().parent().parent().next();
 		$.get(link,function(data){
 			container.html(data);
 			anchor.parent().parent().find('li.active').removeClass('active');
@@ -106,6 +117,7 @@ $(function(){
 	var parallex = new Parallex($('.page'));
 	var maisons = MaisonBox($('.maisons_lists'),parallex.updatePositions)
 	var WorkUs = WhyworkUs($('.page_4 .section_main'))
+	var Career = CareerPath($('.page_5 .inner_content'))
 })
 
 
@@ -116,17 +128,44 @@ $(function(){
 	$(".gallery_container .content").width(wd);
 	var slides = $(".gallery_container").find('.slides').width(wd*3);
 	$('.our_world h1').css('padding-left','3px');
+	var list = $('.gallery_join .our_world ul.buttons li');
+	var ulList = $('.gallery_join .our_world ul.buttons');
 	var noSlides = 3,
 	      curSlide = 0;
-	var first = $('.gallery_container .content:eq(0)');
-	var last = $('.gallery_container .content:eq(2)');
 
 	$('.gallery_join .our_world a.next').click(function(){
+		if(curSlide >= noSlides-1){ return false;}
+	    if(curSlide >= noSlides-2){
+	    	$(this).addClass('inactive');
+	    	$('.gallery_join .our_world a.next').css('opacity','0.6');
+	    	ulList.find('li.active').removeClass('active');
+	    	list.next().removeClass('active');
+	    	list.next().next().addClass('active');
+	    } else {
+	    	$(this).removeClass('inactive');
+	    	$('.gallery_join .our_world a.prev').css('opacity','1');
+	    	ulList.find('li.active').removeClass('active');
+	    	list.next().addClass('active');
+	    	list.next().next().removeClass('active');
+	    }
 	    curSlide ++;
-	    if(curSlide >= noSlides) curSlide = 0;
 	    slides.animate({'margin-left': -1 * wd * curSlide });
 	 });
 	$('.gallery_join .our_world a.prev').click(function(){
+		if(curSlide <= 0){ return false;}
+		if(curSlide <= 1){
+	    	$(this).addClass('inactive');
+	    	$('.gallery_join .our_world a.prev').css('opacity','0.6');
+	    	ulList.find('li.active').removeClass('active');
+	    	list.prev().removeClass('active');
+	    	list.prev().prev().addClass('active');
+	    } else {
+	    	$(this).removeClass('inactive');
+	    	$('.gallery_join .our_world a.next').css('opacity','1');
+	    	ulList.find('li.active').removeClass('active');
+	    	list.prev().addClass('active');
+	    	list.prev().prev().removeClass('active');
+	    }
 	    curSlide --;
 	    if(curSlide < 0) curSlide = noSlides - 1;
 	    slides.animate({'margin-left': -1 * wd * curSlide });

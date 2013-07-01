@@ -44,6 +44,18 @@
 .mr{
 	margin-right: 30px;
 }
+/* ie.css */
+
+/* CLEARFIX HACK */
+.row,
+.clr,
+.group							{ zoom: 1; } /* IE6 */
+
+*:first-child+html .row,
+*:first-child+html .clr,
+*:first-child+html .group		{ zoom: 1; } /* IE7 */
+
+/* End of ie.css */
 
 @media ( min-width : 768px ) {
 	.col {

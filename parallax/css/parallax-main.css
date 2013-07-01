@@ -53,6 +53,57 @@ body {
     padding: 0.2em 0;
 }
 
+/* css of 12-col.css */
+
+/* 
+  12 COLUMN - RESPONSIVE GRID SYSTEM
+  DEVELOPED BY DENIS LEBLANC
+  URL - http://responsive.gs
+  VERSION - 2.0
+  LICENSED UNDER GPL & MIT
+*/
+
+
+/*  SET ALL ELEMENTS BOX-SIZING TO BORDER-BOX
+  If you need support for IE7 and lower use polyfill: https://github.com/Schepp/box-sizing-polyfill */
+* { -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* MAIN CONTAINER */
+.container            {max-width: 1024px; margin: 0 auto; }
+
+
+/* SELF CLEARING FLOATS - CLEARFIX METHOD */
+.row:after, .col:after, .clr:after, .group:after { 
+  content: ""; 
+  display: block; 
+  height: 0; 
+  clear: both; 
+  visibility: hidden; }
+
+
+/* DEFAULT ROW STYLES */
+.row { margin-bottom: 1.5em; } /* set according to preference*/
+      
+                  
+/* DEFAULT COLUMN STYLES */
+.col { 
+  display: block;
+  float:left;
+  width: 100%;
+}
+
+/* STABDARD MARGINS */
+.ml{
+  margin-left: 30px;
+}
+.mr{
+  margin-right: 30px;
+}
+
+/* Ends here */
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
@@ -379,6 +430,83 @@ button.collapsed{display:none;}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;  }
 }
+
+/* ie.css */
+
+/* CLEARFIX HACK */
+.row,
+.clr,
+.group              { zoom: 1; } /* IE6 */
+
+*:first-child+html .row,
+*:first-child+html .clr,
+*:first-child+html .group   { zoom: 1; } /* IE7 */
+
+/* End of ie.css */
+
+/* css of 12-col continues */
+
+@media ( min-width : 768px ) {
+  .col {
+    margin-left: 2%;
+  }
+}
+
+
+/* RESET MARGINS */
+.col:first-child,.col.span_12 { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+
+/* COLUMN WIDTH ON DISPLAYS +768px */
+@media ( min-width : 768px ) {
+  .span_1 { width: 6.5%; }
+  .span_2 { width: 15.0%; }
+  .span_3 { width: 23.5%; }
+  .span_4 { width: 32.0%; }
+  .span_5 { width: 40.5%; }
+  .span_6 { width: 49.0%; }
+  .span_7 { width: 57.5%; }
+  .span_8 { width: 66.0%; }
+  .span_9 { width: 74.5%; }
+  .span_10 { width: 83.0%; }
+  .span_11 { width: 91.5%; }
+  .span_12 { width: 100%; }
+}
+@media ( max-width : 1000px ) {
+  header .container .span_7{float:left;width:auto;  margin-left: 35px;}
+  header .container .full_right_header{float:right;}
+  .inner_block .search_buttons span.reset{float:left;clear:none;margin-top:40px;}
+  .content_block .span_5{width:70.5%;}
+  .content_block .span_7{width:23.5%;}
+  .content_block .search_results .section_left, .content_block .search_results .section_right{width:100%;}
+    .content_block .search_results .section_left{margin-bottom:20px;}
+    footer .span_5{width:70.5%;}
+    footer .span_7{width:23.5%;}
+    .serach_main_lists{border-right:0px;}
+    button.collapsed{display:block;}
+    .header_right ul.second_row{display:none;}
+    .btn-navbar {background: none;border:0px;color: #FFFFFF;}
+  .btn-navbar .icon-bar {background-color: #F5F5F5;border-radius: 1px 1px 1px 1px;box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);display: block;height: 3px;width: 25px;margin-bottom: 4px;}
+  .search{float:left;top:-20px;left:25px;}
+  button.collapsed{ left: 60px;position: relative;top: 4px;}
+
+
+}
+@media ( max-width : 765px ) {
+  .logo_blk{width:auto;}
+}
+@media ( max-width : 585px ) {
+  .serach_main_lists .search_list div{width:100%;}
+  body{background:#f00;}
+}
+@media ( max-width : 475px ) {
+  .content_block .view_faq, .content_block .view_jobs{width:100%;}
+  .content_block .view_faq h3{margin:20px 0px 0px 30px;width:auto;float:left;}
+}
+
+/* End of 12-col.css */
+
 
 .clearfix:before,
 .clearfix:after {

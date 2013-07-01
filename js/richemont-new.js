@@ -94,6 +94,8 @@ function MaisonSildeshow(gallery,anchorel){
   gallery.find('.maison_close').click(function(){
     $(this).parent().parent().slideUp(function(){
       $(this).remove();
+      $('.maisons_lists ul li a').css({'background':'#00436E','border-color':'#B8B8B8'})
+	  $('.maisons_lists ul li a img').css({'opacity':'1'})
     })
     return false;
   });

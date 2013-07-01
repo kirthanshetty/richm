@@ -1,4 +1,4 @@
-// Parallex effect
+// Parallax effect
 function Parallex(els){
 	var winh;
 
@@ -71,17 +71,63 @@ function MaisonBox(container,callback){
 		var link = this.href,
 			anchor = $(this),
 			listCont = $(this).parent().parent();
+			$('.maisons_lists ul li a').css({'background':'#1f1f1f','border-color':'#414141'})
+			$('.maisons_lists ul li a img').css({'opacity':'0.2'})
+
 		$.get(link,function(data){
+			listCont.parent().find('.our_maison_gallery').parent().remove();
 			var $responseEl = $(data);
 			if(listCont.next().length < 1){
 				listCont.prepend($responseEl)
 			}else{
 				listCont.append($responseEl)
 			}
+			MaisonSildeshow($responseEl,anchor)
 			callback();
 		});
 		return false;
 	})
+	
+}
+
+function MaisonSildeshow(gallery,anchorel){
+  gallery.find('.maison_close').click(function(){
+    $(this).parent().parent().slideUp(function(){
+      $(this).remove();
+    })
+    return false;
+  });
+  var w = gallery.find('.maison_main_content:eq(0)').outerWidth()
+  gallery.find('.slides-container').width(w).css('overflow','hidden');
+  gallery.find('.maison_main_content').width(w - 120);
+  var slides = gallery.find('.slides').width(w*3);
+  var buttons = gallery.find('.buttons');
+  
+  var noSlides = 3,
+      curSlide = 0;
+
+  gallery.hide().slideDown();
+  
+  gallery.find('.maison_next').click(function(){
+    var nextEl = anchorel.parent().next().find('a');
+    if(nextEl.length < 1){
+      nextEl = anchorel.parent().parent().next().next().find('li:first a');
+    }
+    console.log(anchorel,nextEl);
+    nextEl.click();
+    return false;
+  })  
+
+  gallery.find('.maison_prev').click(function(){
+    var nextEl = anchorel.parent().prev().find('a');
+    if(nextEl.length < 1){
+      nextEl = anchorel.parent().parent().prev().find('li:first a');
+    }
+    console.log(anchorel,nextEl);
+    nextEl.click();
+    return false;
+  }) 
+
 }
 
 function WhyworkUs(container){
@@ -191,6 +237,18 @@ $(function(){
 	  slides.animate({'margin-left': -1 * wdt * curSlide });
 	});
 });
+
+$(function(){
+	$(".maison_next").click(function(){
+		$(".join_us_gallery ul").find('li.active').removeClass('active').next().addClass('active').find('a').click();
+		$(".join_us_gallery ul li:eq(4)").attr('disabled', true).addClass('active');
+	});
+	$(".maison_prev").click(function(){
+    	$(".join_us_gallery ul").find('li.active').removeClass('active').prev().addClass('active').find('a').click();
+    	$(".join_us_gallery ul li:eq(0)").attr('disabled', true).addClass('active');
+	});
+});
+
 
 /* Script of Search block Pop-Up */
   $(".search").mouseover(function(){

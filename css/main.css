@@ -323,7 +323,7 @@ footer .container{position:relative;}
 .page_1 .row span{float:left;color:#5e5e5e;font-size:1.4em;margin:3px 8px;}
 .page_1 .row .inner_block{padding:0px;border:0px;float:left;}
 .page_1 .row .inner_block input{margin:0px;padding:5px 10px;}
-footer{margin-top:150px;}
+footer{margin-top:50px;}
 .page_2{/*background:url("../img/parallax/section_bg.jpg") no-repeat left top;*/}
 .col.span_5 .our_world{background:#c5c5c5;padding:30px;font-family:lato;color:#00436e;margin:5px 0px 0px 35px;opacity:0.9;filter:alpha(opacity=90);}
 #wrapper .our_world h1{color:#00436e;font-size:4.8em;font-family:'SabonLT-Roman';padding-bottom:8px;margin:0px;}

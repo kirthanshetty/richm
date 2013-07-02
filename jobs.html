@@ -10,8 +10,6 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/12-col.css">
-    <link rel="stylesheet" href="css/ie.css">
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
@@ -41,7 +39,13 @@
                                 <li><a href="#">Career paths</a></li>
                                 <li><a href="#">Jobs</a></li>
                             </ul>
-                            <a class="search" href="#"></a>
+                            <div class="search">
+                                <a class="search_icon" href="#"></a>
+                                <div class="search_block">
+                                    <input class="textbox" type="text" name="" value="" />
+                                    <input class="submit" type="submit" value="Search" />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -314,8 +318,7 @@
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
     <script src="js/vendor/jquery-1.9.1.min.js"></script>
     <script src="js/customselect.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/richemont-v1.js"></script>
     <script>
     $(document).ready(function(){
         $('.inner_block select.styled, .header_right .first_row select').customSelect();

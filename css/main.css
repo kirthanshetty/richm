@@ -302,7 +302,7 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .header_right .customSelect{background:url("../img/parallax/lang_select.png") no-repeat scroll 85% 30% transparent;}
 
 /* Style for Parllax single page */
-.page{padding-bottom: 200px }
+/*.page{padding-bottom: 200px }*/
 #page1, #page2, #page3, #page4 #page5{position: relative;margin-bottom: 0px;}
 .search_block{display:none;float:right;width:222px;}
 .search_block .textbox{padding:4px 8px;}

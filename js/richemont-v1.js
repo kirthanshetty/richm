@@ -45,8 +45,8 @@ function Parallex(els){
 
 			if(winBottom > myBottom){
 				var delta = winBottom - myBottom;
-				// if(relSpeed)
-				// 	delta /= relSpeed;
+				if(relSpeed)
+					delta /= relSpeed;
 				$el.css('top',myTop + delta)
 			}else{
 				$el.css('top',myTop)

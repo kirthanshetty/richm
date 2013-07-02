@@ -96,18 +96,18 @@ header img.logo{float:left;margin:30px 0px 23px 30px;}
 #container{float:left;width:100%;}
 .inner_container{margin:34px;float:left;width:956px;}
 #wrapper h1{font-family: SabonLT-Roman;font-size:4.8em;color:#a3a3a3;font-weight:normal;}
-.quick_search{float:left;margin-top:18px;}
+.quick_search{float:left;margin-top:0px;}
 .quick_search input[type='text']{font-size:1.2em;font-style:italic;color:#747476;font-family:georgia;border:1px solid #a8a8a8;width:250px;height:35px;padding:0px 10px;}
 .quick_search input[type='submit']{color:#00436e;font-size:1.2em;border:1px solid #a8a8a8;border-left:0px;padding:9px;position: relative;left:-1px;}
-.quick_search input[type='submit'], .search_block h2{background: -moz-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* FF3.6+ */
+.quick_search input[type='submit'], .search_main_block h2{background: -moz-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dcdcdc), color-stop(20%,#e0e0e0), color-stop(40%,#e8e8e8), color-stop(60%,#ededee), color-stop(80%,#f2f2f2), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* Chrome10+,Safari5.1+ */
 background: -o-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* IE10+ */
 background: linear-gradient(to bottom, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* W3C */}
 .view_faq h3{color:#00436e;margin-top:121px;margin-bottom: 0;font-size:1.4em;font-weight:normal;float:right;}
-.search_block{float:left;margin-top:18px;}
-.search_block h2{font-size:1.5em;color:#4e4e4e;margin:0px;font-weight:bold;padding:7px 5px 7px 14px;}
+.search_main_block{float:left;margin-top:18px;}
+.search_main_block h2{font-size:1.5em;color:#4e4e4e;margin:0px;font-weight:bold;padding:7px 5px 7px 14px;}
 .inner_block{border:1px solid #d2d2d2;float:left;padding:14px 22px 20px ;}
 .inner_block div{float:left;margin-right:20px;}
 .inner_block div label{color:#5e5e5e;font-size:1.3em;padding-bottom:6px;float:left;}
@@ -162,6 +162,11 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .pagination ul li.active a{color:#00436e;}
 .pagination ul li a:hover{color:#00436e;}
 .pagination ul li.previous a, .pagination ul li.next a{margin:0px 10px;}
+
+.result_list h3{font-size: 1.7em;color:#4d4d4d; margin: 10px 30px 0}
+.result_list h3 span{font-weight: normal;}
+#wrapper .view_jobs h1{font-size: 3.8em;margin: 30px 0 20px 30px;}
+.jobs_main_content{margin-top:102px;}
 /* Section Right */
 .section_right{float:left;padding-left:30px;width:320px;}
 .section_right h4{font-size:1.6em;color:#5e5e5e;margin:0px 0px 4px 0px;}
@@ -211,7 +216,6 @@ header img.logo{float:left;margin:30px 0px 23px 30px;}
 #container{float:left;width:100%;}
 .inner_container{margin:34px;float:left;width:956px;}
 #wrapper h1{font-family: SabonLT-Roman;color:#a3a3a3;font-weight:normal;}
-.quick_search{float:left;margin-top:18px;}
 .quick_search input[type='text']{font-size:1.2em;font-style:italic;color:#747476;font-family:georgia;border:1px solid #a8a8a8;width:250px;height:35px;padding:0px 10px;}
 .quick_search input[type='submit']{color:#00436e;font-size:1.2em;border:1px solid #a8a8a8;border-left:0px;padding:9px;position: relative;left:-2px;}
 .quick_search input[type='submit'], .search_block h2{background: -moz-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* FF3.6+ */

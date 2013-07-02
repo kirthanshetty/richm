@@ -176,49 +176,56 @@ $(function(){
 	$(".gallery_container .content").width(wd);
 	var slides = $(".gallery_container").find('.slides').width(wd*3);
 	$('.our_world h1').css('padding-left','3px');
-	var list = $('.gallery_join .our_world ul.buttons li');
 	var ulList = $('.gallery_join .our_world ul.buttons');
-	var noSlides = 3,
+	var nextEl = $('.gallery_join .our_world a.next');
+	var prevEl = $('.gallery_join .our_world a.prev');
+	var noSlides = $('.gallery_join .our_world ul.buttons li a').length,
 	      curSlide = 0;
 
+	var changeSlide = function(direction){
+		activeDot = ulList.find('li.active');
+		if(direction == "next"){
+			if(curSlide >= noSlides-1){ return false;}
+			curSlide ++;
+			activeDot.removeClass('active');
+			activeDot.next().addClass('active');
+		}else if(direction == "prev"){
+			if(curSlide <= 0){ return false;}
+			curSlide --;
+			activeDot.removeClass('active');
+			activeDot.prev().addClass('active');
+		}else{
+			curSlide = direction;
+			activeDot.removeClass('active');
+			ulList.find('li').eq(direction).addClass('active');
+		}
+				
+		if(curSlide >= noSlides-1){
+			nextEl.addClass('inactive');
+			prevEl.removeClass('inactive');
+		}else if(curSlide <= 0){
+			prevEl.addClass('inactive');
+			nextEl.removeClass('inactive');
+		}else{
+			nextEl.removeClass('inactive');
+			prevEl.removeClass('inactive');
+		}
+
+		slides.animate({'margin-left': -1 * wd * curSlide });
+	}
+
 	$('.gallery_join .our_world a.next').click(function(){
-		if(curSlide >= noSlides-1){ return false;}
-	    if(curSlide >= noSlides-2){
-	    	$(this).addClass('inactive');
-	    	$('.gallery_join .our_world a.next').css('opacity','0.6');
-	    	ulList.find('li.active').removeClass('active');
-	    	list.next().removeClass('active');
-	    	list.next().next().addClass('active');
-	    } else {
-	    	$(this).removeClass('inactive');
-	    	$('.gallery_join .our_world a.prev').css('opacity','1');
-	    	ulList.find('li.active').removeClass('active');
-	    	list.next().addClass('active');
-	    	list.next().next().removeClass('active');
-	    }
-	    curSlide ++;
-	    slides.animate({'margin-left': -1 * wd * curSlide });
+		changeSlide('next');
 	 });
 	$('.gallery_join .our_world a.prev').click(function(){
-		if(curSlide <= 0){ return false;}
-		if(curSlide <= 1){
-	    	$(this).addClass('inactive');
-	    	$('.gallery_join .our_world a.prev').css('opacity','0.6');
-	    	ulList.find('li.active').removeClass('active');
-	    	list.prev().removeClass('active');
-	    	list.prev().prev().addClass('active');
-	    } else {
-	    	$(this).removeClass('inactive');
-	    	$('.gallery_join .our_world a.next').css('opacity','1');
-	    	ulList.find('li.active').removeClass('active');
-	    	list.prev().addClass('active');
-	    	list.prev().prev().removeClass('active');
-	    }
-	    curSlide --;
-	    if(curSlide < 0) curSlide = noSlides - 1;
-	    slides.animate({'margin-left': -1 * wd * curSlide });
+		changeSlide('prev');
 	 });
+	$('.gallery_join .our_world ul.buttons li a').click(function(e){
+		e.preventDefault();
+		changeSlide($(this).parent().index());
+	});
 });
+
 
 $(function(){
 	var wdt = $('.career_gallery ul li').width()

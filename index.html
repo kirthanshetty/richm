@@ -11,7 +11,6 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="stylesheet" href="css/main.css">
 	<link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
 	<div id="wrapper">
@@ -32,11 +31,11 @@
 								</li>
 							</ul>
 							<ul class="second_row">
-								<li><a href="page1">Our world</a></li>
-								<li><a href="page2">Our Maisons</a></li>
-								<li><a href="page3">Why join us?</a></li>
-								<li><a href="page4">What to expect</a></li>
-								<li><a href="page5">Career paths</a></li>
+								<li><a href="#page1">Our world</a></li>
+								<li><a href="#page2">Our Maisons</a></li>
+								<li><a href="#page3">Why join us?</a></li>
+								<li><a href="#page4">What to expect</a></li>
+								<li><a href="#page5">Career paths</a></li>
 								<li><a href="#">Jobs</a></li>
 							</ul>
 							<button class="btn btn-navbar collapsed" type="button">
@@ -56,9 +55,8 @@
 				</div>
 			</div>
 		</header>
-		<div style="clear:both;"></div>
 		<div class="container main">
-			<section id="page1" class="page page_1 row" data-type="background" data-speed="1.5">
+			<section id="page1" class="page page_1 row" data-type="background" data-speed="0.5">
 				<div class="row">
 					<div class="col span_4">
 						<img src="img/parallax/img9.jpg" alt="Maisons image" />
@@ -99,8 +97,8 @@
 					</div>
 				</div>
 			</section>
-			<section id="page2" class="page page_2 row" data-type="background" data-speed="1.8">
-				<div class="inner_content"  data-type="foreground" data-speed="1">
+			<section id="page2" class="page page_2 row" data-type="background" data-speed="0.2">
+				<div class="inner_content rel_position" data-speed="0.5">
 					<div class="span_5 col">
 						<div class="our_world">
 							<h1>Our world</h1>
@@ -134,7 +132,7 @@
 					</div>
 				</div> <!-- inner_content -->
 			</section>
-			<section id="page3" class="page page_3 row" data-type="background" data-speed="1.5" data-bgspeed="5">
+			<section id="page3" class="page page_3 row" data-type="background" data-speed="0" data-bgspeed="5">
 				<div class="inner_content">
 					<div class="maisons_head">
 						<h1>Our Maisons</h1>
@@ -178,8 +176,7 @@
 					</div>
 				</div> <!-- inner_content -->
 			</section>
-			<div class="clearfix"></div>
-			<section id="page4" class="page page_4 row" data-type="background" data-speed="1.2">
+			<section id="page4" class="page page_4 row" data-type="background" data-speed="0">
 				<div class="inner_content" data-type="foreground" data-bgspeed="3.5">
 					<h1 class="align-center">Why join us?</h1>
 					<div class="section_main ml mr">
@@ -220,7 +217,7 @@
 					</div> <!-- inner_content -->
 				</section>
 
-				<section id="page6" class="page page_6 row" data-type="background" data-speed="1.8">
+				<section id="page6" class="page page_6 row" data-type="background" data-speed="0">
 					<div class="inner_content" data-type="foreground" data-bgspeed="1">
 								<div class="gallery_join">
 								<div class="span_5 col">
@@ -270,7 +267,7 @@
 					</div>
 				</section>
 
-				<section id="page5" class="page page_5 row" data-type="background" data-speed="1">
+				<section id="page5" class="page page_5 row" data-type="background" data-speed="0">
 					<div class="inner_content" data-type="foreground" data-bgspeed="1">
 						<div class="maisons_head">
 							<h1>Career paths</h1>
@@ -450,7 +447,8 @@
 				</div>
 			</footer>
 		</div> <!-- wrapper -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" data-main="js/main" src="js/vendor/require.js"></script>
+		<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
 		<script src="js/vendor/jquery-1.9.1.min.js"></script>
 		<script src="js/customselect.js"></script>
@@ -461,7 +459,7 @@
 			$('.header_right .first_row select, .tab_content_left select').customSelect();
 		});
 		</script>
-
+		-->
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 		<script>
 		var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

@@ -1,4 +1,3 @@
-
 html,
 button,
 input,
@@ -399,7 +398,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .videos .section_one{margin-right:30px;width:298px;}
 .videos .section_one:last-child{margin:0px;}
 .section_one a h3{position:absolute;font-family: 'SabonLT-Roman';font-size: 2em;font-weight:normal;margin: 0;font-style: italic;left:28%;top:40%;color: #fff;}
-.container.main #page6.page .gallery_join{position: relative;margin-top: 75px;height:690px;float:left;width: 100%;}
+.container.main #page6.page .gallery_join{position: relative;height:690px;float:left;width: 100%;}
 .section_main{float:left;}
 .page_5 .maisons_head h1{text-align :center;margin-bottom:0px;}
 #wrapper .page_5 .maisons_head h1{font-size:4.8em;}

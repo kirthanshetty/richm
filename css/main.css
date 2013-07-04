@@ -381,7 +381,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .creativity_head .bg_img.craft{background: url("../img/parallax/join2.jpg") no-repeat scroll left top transparent;}
 .creativity_head h2{color:#00436e;font-size:5em;font-family: 'SabonLT-Roman';}
 .creativity_head p{font-size: 1.4em;color: #fff;margin:0px;}
-.join_us_gallery ul{background: #9b9b9b;padding:10px 40px;float: left;position: absolute;bottom:-321px;z-index:2;opacity:0.8;filter:alpha(opacity=80);}
+.join_us_gallery ul{background: #9b9b9b;padding:10px 40px;float: left;position: absolute;top:375px;z-index:2;opacity:0.8;filter:alpha(opacity=80);}
 .join_us_gallery ul li{float:left;font-family: 'SabonLT-Roman';margin:0px 17px;font-size:1.8em;position: relative;}
 .join_us_gallery ul li.active{margin:0px 17px;}
 .join_us_gallery ul li .chat-bubble-arrow{border: none;}
@@ -396,7 +396,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .creativity_head ul li.active .chat-bubble-arrow, .career_gallery ul li.active .chat-bubble-arrow{text-align: center; border-color: #888888 transparent transparent;border-style: solid;border-width: 10px 19px 8px;bottom: -28px;height: 0;position: absolute;right: 40%;width: 0;}
 .creativity_head ul li .chat-bubble-arrow, .career_gallery ul li .chat-bubble-arrow{border:0px;}
 .chat-bubble-arrow {border-color: #9b9b9b transparent transparent;border-style: solid;border-width: 10px 19px 8px;bottom: -28px;height: 0;position: absolute;right: 40%;width: 0;}
-.videos{margin: 30px 0px 0px;float:left;width: auto;}
+.videos{margin: 30px 0px;float:left;width: auto;}
 .videos .section_one{margin-right:30px;width:298px;}
 .videos .section_one:last-child{margin:0px;}
 .section_one a h3{position:absolute;font-family: 'SabonLT-Roman';font-size: 2em;font-weight:normal;margin: 0;font-style: italic;left:28%;top:40%;color: #fff;}

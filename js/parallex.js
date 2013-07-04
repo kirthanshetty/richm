@@ -103,27 +103,26 @@ function Parallex(els,topDelta){
 
 	var $window = $(window);
 
-	this.parallexEls = [];
 	
-	var top = 0;
+	this.init = function(){
+		this.parallexEls = [];
+		var top = 0;
+		$els.each(function(){
+			var parallexEl = new ParallexEl($(this),top,screen.height-topDelta);
+			parallex.parallexEls.push(parallexEl);
+			parallexEl.init();
+			$(this).data('parallexel',parallexEl);
+			top += $(this).outerHeight();
+		});
+		this.totalHeight = top;
+	}
 
-	$els.each(function(){
-		var parallexEl = new ParallexEl($(this),top,screen.height-topDelta);
-		parallex.parallexEls.push(parallexEl);
-		parallexEl.init();
-		$(this).data('parallexel',parallexEl);
-		top += $(this).outerHeight();
-	});
-
-	this.totalHeight = top;
-
-	for (var i = 0; i < this.parallexEls.length; i++) {
-		this.parallexEls[i].init();
-	};
+	this.init();
 
 	$window.on('scroll',function(){
 		var scrollTop = $window.scrollTop()-topDelta,
 			scrollBottom = scrollTop + screen.height - topDelta;
+
 		for (var i = 0; i < parallex.parallexEls.length; i++) {
 			parallex.parallexEls[i].updatePos(scrollTop,scrollBottom,topDelta);
 		};

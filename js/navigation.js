@@ -1,18 +1,22 @@
 function Navigation(){
-
-	$('a[href|=\#]').click(function(e){
+	$('header ul li a').click(function(e){
 		e.preventDefault();
-		window.location.hash = this.href;
+		var hash = $(this).attr('href');
+		var node = $(hash);
+		node.attr('id','');
+		window.location.hash = hash;
+		node.attr('id',hash.replace(/^#/,''));
 	})
 
-	var id = window.location.hash;
-	console.log(id)
-	var parallex = $(id).data('parallexel');
-	parallex.scrollToMe();
+	window.onhashchange = navigate;
+	setTimeout(function(){
+		navigate();
+	},250);
 
-	window.onhashchange = function(){
+	function navigate(){
 		var id = window.location.hash;
 		var parallex = $(id).data('parallexel');
-		parallex.scrollToMe();
+		if(parallex)
+			parallex.scrollToMe();
 	}
 }

@@ -305,7 +305,7 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 
 /* Style for Parllax single page */
 /*.page{padding-bottom: 200px }*/
-#page1, #page2, #page3, #page4 #page5{position: relative;margin-bottom: 0px;}
+.page{position: relative;margin-bottom: 0px;}
 .search_block{display:none;float:right;width:222px;}
 .search_block .textbox{padding:4px 8px;}
 .search_block .submit{padding:5px 8px;margin:0px 0px 0px 5px;float:right;}
@@ -349,21 +349,21 @@ footer{margin-top:50px;}
 .section_text p{color:#5e5e5e;font-size:1.5em;line-height:24px;float:left;margin:0px;}
 .page_2 .span_7.col{float:left;}
 .section_text{float:left;width:88%;}
-#page3{background:url("../img/parallax/maisons_bg.png") no-repeat left top / cover #afb0ae;}
+#our-maisons{background:url("../img/parallax/maisons_bg.png") no-repeat left top / cover #afb0ae;}
 .maisons_head{width:65%;margin:0 auto;}
 .page_5 .maisons_head{width:59%;}
 #wrapper .page_3 .maisons_head h1{font-size:4.8em;font-weight:normal;margin-bottom:0px;color:#fff;font-family:'SabonLT-Roman';text-align: center;}
 .maisons_head p{margin:0px;color:#4d4d4d;font-size:1.7em;line-height:28px;text-align: center;}
 .container.main{position: relative; top:102px;overflow: hidden;max-width:100%;margin:0px;}
-#page1, #page4, #page5 {background:url("../img/parallax/body_bg.jpg") repeat center top #fff;width: 100%;}
-#page4{z-index: 9;}
-#page5{z-index: 10;}
-#page1 .inner_content, #page4 .inner_content, #page5 .inner_content {/*width: 100%;*/background: #fff;}
-#page2 {background:url("../img/parallax/section_bg.jpg") no-repeat center top / cover transparent;min-height: 685px; width: 100%;}
-#page6{background:url("../img/parallax/img14.jpg") no-repeat center top / cover transparent;min-height: 685px; width: 100%;z-index: 10;}
+#hoem, #why-join-us, #career-paths {background:url("../img/parallax/body_bg.jpg") repeat center top #fff;width: 100%;}
+#why-join-us {z-index: 9;}
+#career-paths {z-index: 10;}
+#home .inner_content, #why-join-us .inner_content, #career-paths .inner_content {/*width: 100%;*/background: #fff;}
+#our-world {background:url("../img/parallax/section_bg.jpg") no-repeat center top / cover transparent;min-height: 685px; width: 100%;}
+#work-with-us{background:url("../img/parallax/img14.jpg") no-repeat center top / cover transparent;min-height: 685px; width: 100%;z-index: 10;}
 
-#page3{width:100%;}
-#page3 .inner_content{padding:35px;}
+#our-maisons {width:100%;}
+#our-maisons .inner_content{padding:35px;}
 .maisons_lists{float:left;width:100%;margin-top:35px;margin-bottom:58px;}
 .maisons_lists ul li{float:left;width:20%;}
 .maisons_lists ul li a{height:114px;background:#00436e;display: block;border-right:1px solid #b8b8b8;border-bottom:1px solid #b8b8b8;}
@@ -400,7 +400,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .videos .section_one{margin-right:30px;width:298px;}
 .videos .section_one:last-child{margin:0px;}
 .section_one a h3{position:absolute;font-family: 'SabonLT-Roman';font-size: 2em;font-weight:normal;margin: 0;font-style: italic;left:28%;top:40%;color: #fff;}
-.container.main #page6.page .gallery_join{position: relative;height:690px;float:left;width: 100%;}
+.container.main #work-with-us.page .gallery_join{position: relative;height:690px;float:left;width: 100%;}
 .section_main{float:left;}
 .page_5 .maisons_head h1{text-align :center;margin-bottom:0px;}
 #wrapper .page_5 .maisons_head h1{font-size:4.8em;}
@@ -447,7 +447,7 @@ ul.buttons li a{ background: url("../img/parallax/sprite.png") left -269px;width
 ul.buttons li.active a{ background: url("../img/parallax/sprite.png") left -292px;}
 .gallery_container{float:left;width:100%;}
 .gallery_container .content{float:left;}
-.container.main #page6.page .gallery_join .two_sections{position:absolute; bottom: 78px;}
+.container.main #work-with-us.page .gallery_join .two_sections{position:absolute; bottom: 78px;}
 .popup_overlay{background: none repeat scroll 0 0 #DDDDDD;height: 350px;left: 0;position: relative;width: 100%;float:left;}
 .popup_overlay span{margin:auto;display: block;}
 

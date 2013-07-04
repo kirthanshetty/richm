@@ -72,7 +72,7 @@ function ParallexEl(el,top,screenH){
 	}
 
 	this.scrollToMe = function(){
-		$('html').animate({scrollTop:this.top},500)
+		$('html,body').animate({scrollTop:this.top},500)
 	}
 
 	this.updatePos = function(scrollTop,scrollBottom,topDelta){

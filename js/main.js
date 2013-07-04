@@ -7,5 +7,5 @@ require.config({
 });
 
 require([
-    'jquery', 'modernizr', 'parallex', 'richmont-main', 'navigation', 'our-maisons'
+    'jquery', 'modernizr', 'parallex', 'navigation', 'our-maisons', 'why-work-us', 'richmont-main'
 ]);

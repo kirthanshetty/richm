@@ -6,5 +6,6 @@ $(function(){
 	var maisons = MaisonBox($('.maisons_lists'),function(){
 		parallex.init();
 		$('.container.main').height(parallex.totalHeight);
-	})
+	});
+	var WorkUs = WhyworkUs($('.page_4 .section_main'))
 })

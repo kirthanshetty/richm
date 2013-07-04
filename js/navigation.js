@@ -20,3 +20,18 @@ function Navigation(){
 			parallex.scrollToMe();
 	}
 }
+
+
+/* Script of Search block Pop-Up */
+  $(".search").mouseover(function(){
+    $(".search_block").show();
+  });
+  $(".search").mouseout(function(){
+    $(".search_block").hide();
+  });
+
+  /* Script of Click scroll to Top */
+  $(".scroll_top img").click(function() {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });

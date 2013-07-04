@@ -8,4 +8,5 @@ $(function(){
 		$('.container.main').height(parallex.totalHeight);
 	});
 	var WorkUs = WhyworkUs($('.page_4 .section_main'))
+	var Career = CareerPath($('.page_5 .inner_content'))
 })

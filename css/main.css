@@ -204,11 +204,11 @@ header{position: fixed;z-index: 1000;}
 header img.logo{float:left;margin:30px 0px 23px 30px;}
 .header_right{float:right;margin-right:30px;}
 .header_right a.search_icon{background:url("../img/parallax/sprite.png") no-repeat left -68px;width:20px;height:25px;float:left;}
-.header_right ul.first_row{font-family: myriad pro;float:right;margin-bottom:5px;color:#fff;margin-top: 6px;}
+.header_right ul.first_row{font-family: myriad pro;float:right;margin-bottom:5px;color:#fff;margin-top: 6px;position: relative;}
 .header_right ul.first_row li{display:inline;margin:0px 3px;padding: 0 9px 0 0;border-right: 1px solid #FFFFFF;font-size:1.1em;color:#fff;}
 .header_right ul.first_row li:last-child{border:0px;padding:0px;}
 .header_right ul li a, .header_right ul li select{color:#fff;}
-.header_right ul.first_row li select{border:0px;background: none;}
+.header_right ul.first_row li select{border:0px;background: none;  left: 46px !important;top: 0 !important;}
 .header_right ul.second_row{float:left;clear:both;margin-top:5px;margin-right: 20px;}
 .header_right ul.second_row li{font-family: georgia;font-style:italic;float:left;margin-right:17px;font-size:1.3em;}
 .header_right ul.second_row li:last-child, .footer_right ul li:last-child{margin:0px;}
@@ -357,7 +357,7 @@ footer{margin-top:50px;}
 .container.main{position: relative; top:102px;overflow: hidden;max-width:100%;margin:0px;}
 #page1, #page4, #page5 {background:url("../img/parallax/body_bg.jpg") repeat center top #fff;width: 100%;}
 #page4{z-index: 9;}
-#page5{z-index: 10;}
+#page5{z-index: 10;padding-bottom: 150px;}
 #page1 .inner_content, #page4 .inner_content, #page5 .inner_content {/*width: 100%;*/background: #fff;}
 #page2 {background:url("../img/parallax/section_bg.jpg") no-repeat center top / cover transparent;min-height: 685px; width: 100%;}
 #page6{background:url("../img/parallax/img14.jpg") no-repeat center top / cover transparent;min-height: 685px; width: 100%;z-index: 10;}
@@ -368,7 +368,9 @@ footer{margin-top:50px;}
 .maisons_lists ul li{float:left;width:20%;}
 .maisons_lists ul li a{height:114px;background:#00436e;display: block;border-right:1px solid #b8b8b8;border-bottom:1px solid #b8b8b8;}
 .maisons_lists ul li:last-child{border:0px;}
-.maisons_lists ul li a img{/*left: 20%;position: relative;top: 25%;*/}
+.maisons_lists ul li a.two{background:url("../img/parallax/watch2.jpg") no-repeat left top;}
+.maisons_lists ul li a.two:hover img{background: transparent;}
+.maisons_lists ul li a img{/*left: 20%;position: relative;top: 25%;*/ background: none repeat scroll 0 0 #00436E;height: 113px;width: 100%;}
 .maisons_lists ul li.join-us{background:#dadada;width:80%;height: 113px;opacity:0.7;filter:alpha(opacity=90);}
 .maisons_lists ul li.join-us section{float:right;padding:30px 40px;}
 .maisons_lists ul li.join-us h3{font-size:2.5em;font-weight: normal;color:#4e4e4e;float:left;margin:7px 0 0;}
@@ -381,15 +383,16 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .creativity_head .bg_img.craft{background: url("../img/parallax/join2.jpg") no-repeat scroll left top transparent;}
 .creativity_head h2{color:#00436e;font-size:5em;font-family: 'SabonLT-Roman';}
 .creativity_head p{font-size: 1.4em;color: #fff;margin:0px;}
-.join_us_gallery ul{background: #9b9b9b;padding:10px 40px;float: left;position: absolute;top:375px;z-index:2;opacity:0.8;filter:alpha(opacity=80);}
+.join_us_gallery{position: relative;}
+.join_us_gallery ul{background: #9b9b9b;padding:10px 40px;float: left;position: absolute;top:243px;z-index:2;opacity:0.8;filter:alpha(opacity=80);}
 .join_us_gallery ul li{float:left;font-family: 'SabonLT-Roman';margin:0px 17px;font-size:1.8em;position: relative;}
 .join_us_gallery ul li.active{margin:0px 17px;}
 .join_us_gallery ul li .chat-bubble-arrow{border: none;}
 .join_us_gallery ul li.active .chat-bubble-arrow{border-color: #9b9b9b transparent transparent;border-style: solid;border-width: 10px 19px 8px;}
 .join_us_gallery ul li a{color:#054c70;}
 .join_us_gallery ul li.active a{color:#fff;}
-.join_us_gallery .maison_prev{background: url("../img/parallax/sprite.png") no-repeat scroll 0 -486px transparent;float: left;height: 60px;position: absolute;left: 50px;width: 50px;z-index: 999;margin-top:10%;}
-.join_us_gallery .maison_next{background: url("../img/parallax/sprite.png") no-repeat scroll 0 -552px transparent;float: left;height: 60px;position: absolute;right: 40px;width: 50px;z-index: 999;margin-top:10%;}
+.join_us_gallery .maison_prev{background: url("../img/parallax/sprite.png") no-repeat scroll 0 -486px transparent;float: left;height: 60px;position: absolute;left: 20px;width: 50px;z-index: 999;margin-top:10%;}
+.join_us_gallery .maison_next{background: url("../img/parallax/sprite.png") no-repeat scroll 0 -552px transparent;float: left;height: 60px;position: absolute;right: 10px;width: 50px;z-index: 999;margin-top:10%;}
 .tab_content h2{color: #4E4E4E;font-size: 2.1em;margin:15px 0px 6px;text-align: center;text-transform: uppercase;font-weight:normal;}
 .tab_content p{color: #4E4E4E;margin:0px;}
 .creativity_head ul li.active{position: relative;}
@@ -409,11 +412,12 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .tab_content_left h2, .tab_content_left h3, .tab_content_right h3{color:#4e4e4e;font-size: 2.1em;margin:0 0 12px;font-weight:normal;}
 .tab_content_left p{ font-size: 1.5em;line-height: 24px;margin-top: 0;color:#5e5e5e;margin-bottom: 25px;}
 .tab_content_left h3, .tab_content_right h3{font-size:1.45em;}
+.tab_content_left select.hasCustomSelect option {float:left;height:30px;padding-top:10px;font-size: 13px;}
 .tab_content_left label{font-size: 1.5em;color:#5e5e5e;float:left;padding-top: 5px;width:145px;padding-right: 10px;}
-.tab_content_left select, .tab_content_left span.customSelect{float: left;clear: none;}
+.tab_content_left select, .tab_content_left span.customSelect{float: left;clear: none;right:144px !important;top:auto !important;}
 .tab_content_left label span{color:#da3939;}
 .tab_content_left form{width:61%;}
-.tab_content_left form div{float:left;width:100%;margin-bottom: 7px;}
+.tab_content_left form div{float:left;width:100%;margin-bottom: 7px;position: relative;}
 .tab_content_left form input[type='button']{float:left;padding: 3px 8px;margin-top: 15px;}
 .tab_content_left form p{color:#afafaf;font-size:1.1em;float:right;margin: 15px 0 0;}
 .tab_content_right{float:left;margin-right: 35px;}
@@ -481,16 +485,41 @@ button.collapsed{display:none;}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;  }
 }
+.maisons_lists ul li a.listA{background: #1f1f1f;border-color: #414141;}
+.maisons_lists ul li a.listAA{background: #00436e;border-color: #b8b8b8;}
+.maisons_lists ul li a img.listI{background: transparent;opacity:0.2;}
+.maisons_lists ul li a img.listII{opacity:1;}
+.maisons_lists ul li:hover .fadeIn {
+  opacity:0;
+  filter: alpha(opacity=0);
+  -webkit-animation:fadeIn ease 1;
+  -moz-animation:fadeIn ease 1;
+  -o-animation:fadeIn ease 1;
+  animation:fadeIn ease 1;
+  -webkit-animation-fill-mode:forwards;
+  -moz-animation-fill-mode:forwards;
+  -o-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  -o-animation-duration:1s;
+  animation-duration:1s;
+  -webkit-animation-delay:0s;
+  -moz-animation-delay:0s;
+  -o-animation-delay:0s;
+  animation-delay:0s;
 
-/*
-Placeholder Enhanced CSS
-you may change the name of the class
-(remember changing it in the js file too)
-*/
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+}
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 
-.placeholder { color: #747476; } /* All browsers */
-::-webkit-input-placeholder { color: #747476; } /* WebKit */
-:-moz-placeholder { color: #747476; } /* Firefox 4+ */
 
 
 /* ie.css */

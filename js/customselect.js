@@ -153,3 +153,5 @@
         }
     });
 })(jQuery);
+
+$('.header_right .first_row select, .tab_content_left select').customSelect();

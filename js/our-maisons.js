@@ -3,13 +3,16 @@ function MaisonBox(container, callback) {
         var link = this.href,
             anchor = $(this),
             listCont = $(this).parent().parent();
-        $('.maisons_lists ul li a').css({
+        $('.maisons_lists ul li a').addClass('listA');
+        /*css({
             'background': '#1f1f1f',
             'border-color': '#414141'
-        })
-        $('.maisons_lists ul li a img').css({
-            'opacity': '0.2'
-        })
+        }) */
+        $('.maisons_lists ul li a img').addClass('listI');
+        /*css({
+            'opacity': '0.2',
+            'background': 'transparent'
+        }) */
 
         $.get(link, function (data) {
             var oldMaison = listCont.parent().find('.our_maison_gallery').parent();
@@ -32,13 +35,15 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
         $(this).parent().parent().slideUp(function () {
             $(this).remove();
             callback();
-            $('.maisons_lists ul li a').css({
+            $('.maisons_lists ul li a').removeClass('listA');
+            /*css({
                 'background': '#00436E',
                 'border-color': '#B8B8B8'
-            })
-            $('.maisons_lists ul li a img').css({
+            }) */
+            $('.maisons_lists ul li a img').removeClass('listI');
+            /*css({
                 'opacity': '1'
-            })
+            }) */
         })
         return false;
     });

@@ -14,5 +14,5 @@ js/our-maisons.js
 js/joining-us.js
 js/career-path.js
 js/why-work-us.js
-js/richmont-main.js
+js/richemont-main.js
 js/main.js

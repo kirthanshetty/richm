@@ -42,7 +42,7 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
                 'background': '#00436E',
                 'border-color': '#B8B8B8'
             }) */
-            $('.maisons_lists ul li a img').removeClass('listI');
+            $('.maisons_lists ul li a img').removeClass('listI').addClass('blur-img');
             /*css({
                 'opacity': '1'
             }) */

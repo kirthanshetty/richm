@@ -154,4 +154,4 @@
     });
 })(jQuery);
 
-$('.header_right .first_row select, .tab_content_left select').customSelect();
+$('.header_right .first_row select, .tab_content_left select, .inner_block div select.styled').customSelect();

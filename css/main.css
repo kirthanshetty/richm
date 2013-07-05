@@ -195,7 +195,7 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button']{background: url("../img/grey_bg.jpg") repeat-x scroll left top;}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
- .quick_search input[type="submit"]  {left:-2px;  }
+ .quick_search input[type="submit"]  {left:-2px; top:1px;}
 }
 
 
@@ -270,7 +270,7 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .search_list div.img_block{width:24%;}
 .search_list div.img_desc{width:45%;}
 .search_list div.img_date{width:15%;}
-.search_list div.img_details{width:15%;padding-right:0px;}
+.search_list div.img_details{width:16%;padding-right:0px;}
 .search_list div h4{font-size:1em;margin:0px 0px 3px 0px;font-weight: bold;}
 .search_list div span{font-weight:normal;float:left;clear:both;}
 .search_list div h5{font-weight:normal;margin:0px;font-size:1em;}
@@ -356,7 +356,7 @@ footer{margin-top:50px;}
 .page_5 .maisons_head{width:59%;}
 #wrapper .page_3 .maisons_head h1{font-size:4.8em;font-weight:normal;margin-bottom:0px;color:#fff;font-family:'SabonLT-Roman';text-align: center;}
 .maisons_head p{margin:0px;color:#4d4d4d;font-size:1.7em;line-height:28px;text-align: center;}
-.container.main{position: relative; top:102px;overflow: hidden;max-width:100%;margin:0px;}
+.container.main{position: relative; top:78px;overflow: hidden;max-width:100%;margin:0px;}
 #home, #why-join-us, #career-paths {background:url("../img/parallax/body_bg.jpg") repeat center top #fff;width: 100%;}
 #why-join-us {z-index: 9;}
 #career-paths {z-index: 10;padding-bottom: 150px;}
@@ -464,7 +464,7 @@ ul.buttons li.active a{ background: url("../img/parallax/sprite.png") left -292p
 .our_maison_gallery{background:#fff;position: relative;float: left;}
 .our_maison_gallery a.close, .our_maison_gallery a.maison_prev, .our_maison_gallery a.maison_close{ background: url("../img/parallax/sprite.png") no-repeat scroll 0 -310px transparent;float: left;height: 44px;right:10px;position: absolute;width: 32px;z-index: 9;}
 .our_maison_gallery a.maison_next{     background: url("../img/parallax/sprite.png") no-repeat scroll 8px -356px transparent;float: right;height: 60px;margin-top: -24%;width: 50px;}
-.our_maison_gallery a.maison_prev{  z-index: 0; background: url("../img/parallax/sprite.png") no-repeat scroll 0 -420px transparent;height: 60px;margin-top: 17%;left: 15px;}
+.our_maison_gallery a.maison_prev{  z-index: 0; background: url("../img/parallax/sprite.png") no-repeat scroll 0 -420px transparent;height: 60px;top: 42%;left: 15px;}
 .our_maison_gallery .maison_main_content{ padding: 45px 60px;float:left; background: none repeat scroll 0 0 #FFFFFF;}
 .our_maison_gallery .maison_main_content .maison_image{float:left;position: relative;padding-right:25px;}
 .our_maison_gallery .maison_main_content .maison_image.span_6{width:52%;}
@@ -524,7 +524,7 @@ button.collapsed{display:none;}
 @-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 */
-
+.full_right_header.header_nav{margin-left:0px;}
 .search_block .chat-bubble-arrow{ border-color: transparent transparent #E7E7E7;border-style: solid;border-width: 5px 8px 7px;bottom: 41px;right:0px;}
 .footer_main{margin-bottom: 0;padding: 13px 0;}
 .maison_image img{width:404px;height:304px;}
@@ -557,11 +557,11 @@ button.collapsed{display:none;}
     -o-filter: blur(0px);
     -ms-filter: blur(0px);}
 .maisons_lists ul li a:hover img.add_blur{
-      transition: all 0.3s ease-in-out 1s;
-      -webkit-transition: all 0.3s ease-in-out 1s;
-      -moz-transition: all 0.3s ease-in-out 1s;
-      -o-transition: all 0.3s ease-in-out 1s;
-      -ms-transition: all 0.3s ease-in-out 1s;
+      transition: all 0.3s ease-in-out 0.5s;
+      -webkit-transition: all 0.3s ease-in-out 0.5s;
+      -moz-transition: all 0.3s ease-in-out 0.5s;
+      -o-transition: all 0.3s ease-in-out 0.5s;
+      -ms-transition: all 0.3s ease-in-out 0.5s;
       transform:scale(1.03);
       -webkit-transform:scale(1.03);
       -moz-transform:scale(1.03);
@@ -569,6 +569,7 @@ button.collapsed{display:none;}
       -ms-transform:scale(1.03);
     }
 .full_right_header{float:right;}
+
 /* ie.css */
 
 /* CLEARFIX HACK */

@@ -200,7 +200,7 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 
 /* style for Header */
 header, footer{background:#00436e;float:left;width:100%;position:relative;z-index: 99;}
-header{position: fixed;z-index: 1000;height:102px;}
+header{position: fixed;z-index: 1000;min-height:102px;}
 header img.logo{float:left;margin:30px 0px 23px 30px;}
 .header_right{float:right;margin-right:30px;}
 .header_right a.search_icon{background:url("../img/parallax/sprite.png") no-repeat left -68px;width:20px;height:25px;float:left;}

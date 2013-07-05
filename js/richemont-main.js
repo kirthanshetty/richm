@@ -7,6 +7,10 @@ $(function(){
 		parallex.init();
 		$('.container.main').height(parallex.totalHeight);
 	});
+	$(window).resize(function(){
+		parallex.init();
+		$('.container.main').height(parallex.totalHeight);
+	})
 	var WorkUs = WhyworkUs($('.page_4 .section_main'))
 	var Career = CareerPath($('.page_5 .inner_content'))
 })

@@ -362,15 +362,15 @@ footer{margin-top:50px;}
 #our-world {background:url("../img/parallax/section_bg.jpg") no-repeat center top / cover transparent;min-height: 685px; width: 100%;}
 #work-with-us{background:url("../img/parallax/img14.jpg") no-repeat center top / cover transparent;min-height: 685px; width: 100%;z-index: 10;}
 
-#our-maisons {width:100%;}
+#our-maisons {width:100%;z-index: 8;}
 #our-maisons .inner_content{padding:35px;}
 .maisons_lists{float:left;width:100%;margin-top:35px;margin-bottom:58px;}
 .maisons_lists ul li{float:left;width:20%;}
 .maisons_lists ul li a{height:114px;background:#00436e;display: block;border-right:1px solid #b8b8b8;border-bottom:1px solid #b8b8b8;}
 .maisons_lists ul li:last-child{border:0px;}
-.maisons_lists ul li a.two{background:url("../img/parallax/watch2.jpg") no-repeat left top;}
-.maisons_lists ul li a.two:hover img{background: transparent;}
-.maisons_lists ul li a img{/*left: 20%;position: relative;top: 25%;*/ background: none repeat scroll 0 0 #00436E;height: 113px;width: 100%;}
+/*.maisons_lists ul li a.two{background:url("../img/parallax/watch2.jpg") no-repeat left top;}
+.maisons_lists ul li a.two:hover img{background: transparent;}*/
+.maisons_lists ul li a img{/*left: 20%;position: relative;top: 25%;*/ background: none repeat scroll 0 0 #00436E;height: 113px;width:auto;}
 .maisons_lists ul li.join-us{background:#dadada;width:80%;height: 113px;opacity:0.7;filter:alpha(opacity=90);}
 .maisons_lists ul li.join-us section{float:right;padding:30px 40px;}
 .maisons_lists ul li.join-us h3{font-size:2.5em;font-weight: normal;color:#4e4e4e;float:left;margin:7px 0 0;}
@@ -446,7 +446,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .gallery_join .our_world a.inactive{opacity:0.6;}
 .gallery_join .our_world ul.buttons {left: 297px;top: 5px;}
 ul.buttons{float: right;left: 375px;position: absolute;top: 320px;z-index: 9;}
-ul.buttons li{float:left;width:14px;height: 20px; margin-left: 10px;}
+ul.buttons li{float:left;width:14px;height: 20px; margin-left: 9px;}
 ul.buttons li a{ background: url("../img/parallax/sprite.png") left -269px;width:14px;height: 20px;display: block;border:none;}
 ul.buttons li.active a{ background: url("../img/parallax/sprite.png") left -292px;}
 .gallery_container{float:left;width:100%;}
@@ -485,6 +485,7 @@ button.collapsed{display:none;}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;  }
 }
+/*
 .maisons_lists ul li a.listA{background: #1f1f1f;border-color: #414141;}
 .maisons_lists ul li a.listAA{background: #00436e;border-color: #b8b8b8;}
 .maisons_lists ul li a img.listI{background: transparent;opacity:0.2;}
@@ -519,11 +520,35 @@ button.collapsed{display:none;}
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+*/
 
-.placeholder { color: #747476; } /* All browsers */
-::-webkit-input-placeholder { color: #747476; } /* WebKit */
-:-moz-placeholder { color: #747476; } /* Firefox 4+ */
+.maisons_lists ul li a.listA{background: #1f1f1f;border-color: #414141;}
+.maisons_lists ul li a img.listI{background: transparent;opacity:0.2;}
+.maisons_lists ul li.listL img.overlay{opacity:0.2;}
+.maisons_lists ul li.listL a img.listI {opacity: 0;
+  transition: opacity 0s ease-in-out 0s;
+-webkit-transition: opacity 0s ease-in-out 0s;
+-moz-transition: opacity 0s ease-in-out 0s;
+-o-transition: opacity 0s ease-in-out 0s;}
+.maisons_lists ul li a.two{/*background:url('img/parallax/maison11.png') no-repeat left top;*/}
+.maisons_lists ul li a.two:hover img.overlay{}
+.maisons_lists ul li {
+  position:relative;
+  height:114px;
+  width:20%;
+}
 
+.maisons_lists ul li img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+.maisons_lists ul li img.top{width:99%;  z-index: 9999;}
+.maisons_lists ul li a img.top:hover {opacity:0;}
+.maisons_lists ul li img.overlay{top: 0px; z-index: 999;width:99%;height:100%;}
 
 /* ie.css */
 

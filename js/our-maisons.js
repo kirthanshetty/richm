@@ -4,6 +4,7 @@ function MaisonBox(container, callback) {
             anchor = $(this),
             listCont = $(this).parent().parent();
         $('.maisons_lists ul li a').addClass('listA');
+        $('.maisons_lists ul li').addClass('listL');
         /*css({
             'background': '#1f1f1f',
             'border-color': '#414141'
@@ -36,6 +37,7 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
             $(this).remove();
             callback();
             $('.maisons_lists ul li a').removeClass('listA');
+            $('.maisons_lists ul li').removeClass('listL');
             /*css({
                 'background': '#00436E',
                 'border-color': '#B8B8B8'

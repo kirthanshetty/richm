@@ -157,9 +157,7 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .search_list div a{color:#00436e;font-weight:bold;}
 .pagination{margin-top:10px;}
 .pagination ul li{float:left;margin-right:6px;font-size:1.3em;color:#454545;}
-.pagination ul li a{color:#454545;}
 .pagination ul li.first-page a, .pagination ul li.last-page a{color:#808080;}
-.pagination ul li.active a{color:#00436e;}
 .pagination ul li a:hover{color:#00436e;}
 .pagination ul li.previous a, .pagination ul li.next a{margin:0px 10px;}
 
@@ -187,7 +185,6 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .footer_right ul li a.linkedin{background:url("../img/sprite.png") no-repeat left -47px;}
 
 .serach_main_lists .col{margin-left:0px;}
-.header_right .customSelect{background:url("../img/lang_select.png") no-repeat scroll 85% 30% transparent;}
 
 /* CSS for IE to Fallback */
 .no-cssgradients .inner_block input[type='submit']{background: url("../img/blue_bg.jpg") repeat-x scroll left top;}
@@ -279,12 +276,12 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .pagination ul li{float:left;margin-right:6px;font-size:1.3em;color:#454545;}
 .pagination ul li a{color:#454545;}
 .pagination ul li.first-page a, .pagination ul li.last-page a{color:#808080;}
-.pagination ul li.active a{color:#00436e;}
+.pagination ul li.active a{color:#00436e;border-bottom:1px solid #00436e;}
 .pagination ul li a:hover{color:#00436e;}
-.pagination ul li.previous a, .pagination ul li.next a{margin:0px 10px;}
+.pagination ul li.previous a, .pagination ul li.next a{margin:0px 10px;border:0px;}
 /* Section Right */
 .section_right{float:left;padding-left:30px;width:320px;}
-.section_right h4{font-size:1.6em;color:#5e5e5e;margin:0px 0px 4px 0px;}
+.section_right h5{font-size:1.6em;color:#5e5e5e;margin:0px 0px 4px 0px;}
 .section_right p{font-size:1.3em;color:#5e5e5e;margin:0px 0px 8px 0px;line-height:18px;}
 
 /* style for Footer */
@@ -303,7 +300,7 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .footer_right ul li a.linkedin{background:url("../img/parallax/sprite.png") no-repeat left -47px;}
 
 .serach_main_lists .col{margin-left:0px;}
-.header_right .customSelect{background:url("../img/parallax/lang_select.png") no-repeat scroll 85% 30% transparent;}
+.header_right .customSelect{background:url("../img/parallax/lang_select.png") no-repeat scroll 100% 30% transparent;}
 
 /* Style for Parllax single page */
 /*.page{padding-bottom: 200px }*/
@@ -329,7 +326,7 @@ footer .container{position:relative;}
 .page_1 .row .inner_block input{margin:0px;padding:5px 10px;}
 footer{margin-top:50px;}
 .page_2{/*background:url("../img/parallax/section_bg.jpg") no-repeat left top;*/}
-.col.span_5 .our_world{background:#c5c5c5;padding:30px;font-family:lato;color:#00436e;margin:5px 0px 0px 35px;opacity:0.9;filter:alpha(opacity=90);}
+.col.span_5 .our_world{background:#c2c2c2;padding:30px;font-family:lato;color:#00436e;margin:5px 0px 0px 35px;opacity:0.95;filter:alpha(opacity=95);height: 680px;}
 #wrapper .our_world h1{color:#00436e;font-size:4.8em;font-family:'SabonLT-Roman';padding-bottom:8px;margin:0px;}
 .our_world p.highlight, .maison_main_content .maison_desc p.highlight{font-size:1.7em;padding-bottom:18px;}
 .our_world p, .maison_main_content .maison_desc p, .maison_main_content .maison_desc a{padding-bottom:25px;font-size:1.3em;margin:0px;line-height: 23px;}
@@ -346,7 +343,8 @@ footer{margin-top:50px;}
 .two_sections{float:left;width:100%;margin-top:160px;}
 .section_one{float:left;position:relative;margin-right:20px;}
 .section_two{margin:0px;}
-.section_one a span{padding:3px 5px;opacity:0.8;filter:alpha(opacity=80); margin: 0 2px 5px;background:#474a4a;color:#fff;font-size:1.25em;float:left;width:99%;position:absolute;bottom:0px;left :0px;}
+.section_one a h4{padding:3px 8px 5px;opacity:0.8;filter:alpha(opacity=80); margin: 0 2px 5px;background:#747474;color:#fff;font-size:1.25em;font-weight:normal;float:left;width:99%;position:absolute;bottom:0px;left :0px;}
+.videos .section_one a h4{margin:0px 0px 3px;}
 .section_text h2{font-size:2.2em;color:#4e4e4e;float:left;margin:35px 0px 12px;font-weight: normal;}
 .section_text p{color:#5e5e5e;font-size:1.5em;line-height:24px;float:left;margin:0px;}
 .page_2 .span_7.col{float:left;}
@@ -390,7 +388,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .join_us_gallery ul li{float:left;font-family: 'SabonLT-Roman';margin:0px 17px;font-size:1.8em;position: relative;}
 .join_us_gallery ul li.active{margin:0px 17px;}
 .join_us_gallery ul li .chat-bubble-arrow{border: none;}
-.join_us_gallery ul li.active .chat-bubble-arrow{border-color: #9b9b9b transparent transparent;border-style: solid;border-width: 10px 19px 8px;}
+.join_us_gallery ul li.active .chat-bubble-arrow{border-color: #515151 transparent transparent;border-style: solid;border-width: 10px 19px 8px;opacity:0.8;filter:alpha(opacity=80);}
 .join_us_gallery ul li a{color:#054c70;}
 .join_us_gallery ul li.active a{color:#fff;}
 .join_us_gallery .maison_prev{background: url("../img/parallax/sprite.png") no-repeat scroll 0 -486px transparent;float: left;height: 60px;position: absolute;left: 20px;width: 50px;z-index: 999;margin-top:10%;}
@@ -398,9 +396,9 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .tab_content h2{color: #4E4E4E;font-size: 2.1em;margin:15px 0px 6px;text-align: center;text-transform: uppercase;font-weight:normal;}
 .tab_content p{color: #4E4E4E;margin:0px;}
 .creativity_head ul li.active{position: relative;}
-.creativity_head ul li.active .chat-bubble-arrow, .career_gallery ul li.active .chat-bubble-arrow{text-align: center; border-color: #888888 transparent transparent;border-style: solid;border-width: 10px 19px 8px;bottom: -28px;height: 0;position: absolute;right: 40%;width: 0;}
+.creativity_head ul li.active .chat-bubble-arrow, .career_gallery ul li.active .chat-bubble-arrow{text-align: center; border-color: #515151 transparent transparent;border-style: solid;border-width: 10px 19px 8px;bottom: -28px;height: 0;position: absolute;right: 40%;width: 0;opacity:0.8;filter:alpha(opacity=80);}
 .creativity_head ul li .chat-bubble-arrow, .career_gallery ul li .chat-bubble-arrow{border:0px;}
-.chat-bubble-arrow {border-color: #9b9b9b transparent transparent;border-style: solid;border-width: 10px 19px 8px;bottom: -28px;height: 0;position: absolute;right: 40%;width: 0;}
+.chat-bubble-arrow {border-color: #515151 transparent transparent;border-style: solid;border-width: 10px 19px 8px;bottom: -28px;height: 0;position: absolute;right: 40%;width: 0;opacity:0.8;filter:alpha(opacity=80);}
 .videos{margin: 30px 0px;float:left;width: auto;}
 .videos .section_one{margin-right:30px;width:298px;}
 .videos .section_one:last-child{margin:0px;}
@@ -414,7 +412,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .tab_content_left h2, .tab_content_left h3, .tab_content_right h3{color:#4e4e4e;font-size: 2.1em;margin:0 0 12px;font-weight:normal;}
 .tab_content_left p{ font-size: 1.5em;line-height: 24px;margin-top: 0;color:#5e5e5e;margin-bottom: 25px;}
 .tab_content_left h3, .tab_content_right h3{font-size:1.45em;}
-.tab_content_left select.hasCustomSelect option {float:left;height:30px;padding-top:10px;font-size: 13px;}
+.tab_content_left select.hasCustomSelect option {background: none repeat scroll 0 0 #F8F8F8;font-size:1.25em;float:left;height:30px;padding-top:7px;font-size: 13px;}
 .tab_content_left label{font-size: 1.5em;color:#5e5e5e;float:left;padding-top: 5px;width:145px;padding-right: 10px;}
 .tab_content_left select, .tab_content_left span.customSelect{float: left;clear: none;right:144px !important;top:auto !important;}
 .tab_content_left label span{color:#da3939;}
@@ -477,7 +475,7 @@ ul.buttons li.active a{ background: url("../img/parallax/sprite.png") left -292p
 .our_maison_gallery .maison_main_content .maison_desc input{margin-top:12px;}
 
 button.collapsed{display:none;}
-.container.main .page .inner_content{margin:0 auto;max-width:1024px;float:none;}
+.container.main .page .inner_content{margin:0 auto;max-width:1025px;float:none;}
 
 /* CSS for IE to Fallback */
 .no-cssgradients .inner_block input[type='submit']{background: url("../img/parallax/blue_bg.jpg") repeat-x scroll left top;}
@@ -524,6 +522,13 @@ button.collapsed{display:none;}
 @-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 */
+.mobile_search, .menu_list{display: none;}
+.menu_list{float: left;width: 100%;}
+.menu_list ul{padding:0px;margin: 0px;list-style-type: none;}
+.menu_list ul li{padding:5px 10px;text-align: right;font-size:1.4em;font-family:georgia;font-style:italic;border-bottom: 1px solid #fff;background: #e7e7e7;}
+.menu_list ul li.active, .menu_list ul li:hover{background: #a3a3a3;}
+.menu_list ul li.active a, .menu_list ul li:hover a{color:#fff;}
+.menu_list ul li a{color:#00436E;text-align: right;}
 .full_right_header.header_nav{margin-left:0px;}
 .search_block .chat-bubble-arrow{ border-color: transparent transparent #E7E7E7;border-style: solid;border-width: 5px 8px 7px;bottom: 41px;right:0px;}
 .footer_main{margin-bottom: 0;padding: 13px 0;}
@@ -558,10 +563,10 @@ button.collapsed{display:none;}
     -ms-filter: blur(0px);}
 .maisons_lists ul li a:hover img.add_blur{
       transition: all 0.3s ease-in-out 0.5s;
-      -webkit-transition: all 0.3s ease-in-out 0.5s;
-      -moz-transition: all 0.3s ease-in-out 0.5s;
-      -o-transition: all 0.3s ease-in-out 0.5s;
-      -ms-transition: all 0.3s ease-in-out 0.5s;
+      -webkit-transition: all 0.3s ease-in-out 0.2s;
+      -moz-transition: all 0.3s ease-in-out 0.2s;
+      -o-transition: all 0.3s ease-in-out 0.2s;
+      -ms-transition: all 0.3s ease-in-out 0.2s;
       transform:scale(1.03);
       -webkit-transform:scale(1.03);
       -moz-transform:scale(1.03);
@@ -897,10 +902,31 @@ textarea {
 
 @media only screen and (max-width:783px) {
     header .logo_blk{width:100%;text-align: center;float:none;margin:0px;}
-    header .logo_blk img{float:none;margin-left:0px;}
+    header .logo_blk img{float:none;margin-left:0px; margin-bottom: 10px; margin-top: 12px;}
+    .search{height:30px;}
+    .search_block{margin-top: 37px;}
+    .full_right_header.header_nav{padding-bottom: 3px;}
     header .header_nav{width:100%;text-align: center;}
     header .header_main{width:100%;text-align: center;}
     .header_right ul.second_row, .header_right ul.second_row li, .header_right{float:none;}
     .header_right ul.second_row, .header_right{margin:0px;}
     .header_right ul.second_row li.search-view{float: right;position: relative;right: 12%;}
 }
+
+@media only screen and (max-width:495px) {
+    .header_right ul.second_row, .header_right ul.first_row, header .header_nav{display: none;}
+    .mobile_search, div.collapsed{display:block;}
+    header .header_main{float:left;width: 100%;}
+    header .logo_blk{text-align: left;width:76%;float:left;height:47px;}
+    header .logo_blk img{width:185px;margin:16px 0px 16px 12px; }
+    .mobile_search{background:url("../img/parallax/sprite.png") no-repeat 10px -723px;float:left;padding: 0px;}
+    .mobile_search:hover{background:url("../img/parallax/sprite.png") no-repeat 10px -766px;background-color: #e7e7e7;}
+    .collapsed a.mobile_menu{height: 48px;padding: 15px 12px;}
+    .menu_list{display: none;}
+    div.collapsed{height: 47px;float: left;width:13%;}
+    div.collapsed{background:url("../img/parallax/sprite.png") no-repeat 7px -688px;}
+    div.collapsed:hover{background:url("../img/parallax/sprite.png") no-repeat 7px -650px;background-color: #e7e7e7;}
+    .search {height: 47px;width:11%;}
+    .search_block{margin-top:47px;right:-55px;}
+    .search_block .chat-bubble-arrow{display: none;}
+  }

@@ -32,7 +32,17 @@ function MaisonBox(container, callback) {
 }
 
 function MaisonSildeshow(gallery, anchorel,animate,callback) {
+    var escHandler = function(e){
+        if(e.keyCode == 27 || e.which == 27){
+            gallery.find('.maison_close').click();
+        }
+    }
+
+    $('body').on('keypress',escHandler);
+
     gallery.find('.maison_close').click(function () {
+        $('body').off('keypress',escHandler);
+        
         $(this).parent().parent().slideUp(function () {
             $(this).remove();
             callback();

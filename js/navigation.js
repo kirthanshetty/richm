@@ -30,6 +30,12 @@ function Navigation(){
     $(".search_block").hide();
   });
 
+ $(".collapsed").mouseover(function(){
+    $(".menu_list").show();
+  });
+  $(".collapsed").mouseout(function(){
+    $(".menu_list").hide();
+  });
   /* Script of Click scroll to Top */
   $(".scroll_top img").click(function() {
     $("html, body").animate({ scrollTop: 0 }, "slow");

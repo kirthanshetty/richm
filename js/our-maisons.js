@@ -3,17 +3,7 @@ function MaisonBox(container, callback) {
         var link = this.href,
             anchor = $(this),
             listCont = $(this).parent().parent();
-        $('.maisons_lists ul li a').addClass('listA');
-        $('.maisons_lists ul li').addClass('listL');
-        /*css({
-            'background': '#1f1f1f',
-            'border-color': '#414141'
-        }) */
-        $('.maisons_lists ul li a img').addClass('listI');
-        /*css({
-            'opacity': '0.2',
-            'background': 'transparent'
-        }) */
+
 
         $.get(link, function (data) {
             var oldMaison = listCont.parent().find('.our_maison_gallery').parent();
@@ -46,16 +36,8 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
         $(this).parent().parent().slideUp(function () {
             $(this).remove();
             callback();
-            $('.maisons_lists ul li a').removeClass('listA');
-            $('.maisons_lists ul li').removeClass('listL');
-            /*css({
-                'background': '#00436E',
-                'border-color': '#B8B8B8'
-            }) */
+            $('.maisons_lists ul li').removeClass('lightbox-open');
             $('.maisons_lists ul li a img').removeClass('listI').addClass('blur-img');
-            /*css({
-                'opacity': '1'
-            }) */
         })
         return false;
     });
@@ -71,9 +53,11 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
     
     if (animate) {
         gallery.hide().slideDown(function(){
-            callback();            
+            callback();   
+            $('.maisons_lists ul li').addClass('lightbox-open');         
         });
     }else{
+        $('.maisons_lists ul li a img').addClass('listI');
         callback();
     }
 

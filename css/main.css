@@ -368,8 +368,8 @@ footer{margin-top:50px;}
 #our-maisons .inner_content{padding:35px;overflow: hidden;}
 .maisons_lists{float:left;width:100%;margin-top:35px;margin-bottom:58px;}
 .maisons_lists ul li{float:left;width:20%;}
-.maisons_lists ul li a{height:114px;background:#00436e;display: block;border-right:1px solid #b8b8b8;border-bottom:1px solid #b8b8b8;}
-.maisons_lists ul li:last-child{border:0px;}
+.maisons_lists ul li a{height:114px;background:#00436e;display: block;}
+.maisons_lists ul li:last-child{border:0px;border-bottom:1px solid #b8b8b8;}
 /*.maisons_lists ul li a.two{background:url("../img/parallax/watch2.jpg") no-repeat left top;}
 .maisons_lists ul li a.two:hover img{background: transparent;}*/
 .maisons_lists ul li a img{/*left: 20%;position: relative;top: 25%;*/ background: none repeat scroll 0 0 #00436E;height: 113px;width:99%;}
@@ -555,7 +555,7 @@ button.collapsed{display:none;}
 .maisons_lists ul li a img.blur-img{}
 .maisons_lists ul li a.two{/*background:url('img/parallax/maison11.png') no-repeat left top;*/}
 .maisons_lists ul li a.two:hover img.overlay{}
-.maisons_lists ul li {position:relative;height:114px;width:20%;}
+.maisons_lists ul li {position:relative;height:114px;width:20%;overflow: hidden;border-right: 1px solid #B8B8B8;border-bottom:1px solid #b8b8b8;}
 .maisons_lists ul li img {position:absolute;left:0;-webkit-transition: opacity 1s ease-in-out;-moz-transition: opacity 1s ease-in-out;-o-transition: opacity 1s ease-in-out;transition: opacity 1s ease-in-out;}
 .maisons_lists ul li img.top{width:99%;  z-index: 9999;}
 .maisons_lists ul li a:hover img.top {opacity:0;}
@@ -572,6 +572,7 @@ button.collapsed{display:none;}
     -o-filter: blur(0px);
     -ms-filter: blur(0px);}
 .maisons_lists ul li a:hover img.add_blur{
+  /*
       transition: all 0.3s ease-in-out 0.5s;
       -webkit-transition: all 0.3s ease-in-out 0.2s;
       -moz-transition: all 0.3s ease-in-out 0.2s;
@@ -582,6 +583,17 @@ button.collapsed{display:none;}
       -moz-transform:scale(1.025);
       -o-transform:scale(1.025);
       -ms-transform:scale(1.025);
+        height: 96%;
+    margin-left: 3px;
+    margin-top: 1px;
+    width: 96%;
+    */
+    transition:all 1s ease 0s;
+    -webkit-transition: all 1s ease 0.2s;
+      -moz-transition: all 1s ease 0.2s;
+      -o-transition: all 1s ease 0.2s;
+      -ms-transition: all 1s ease 0.2s;
+      width:200px;height:120px;
     }
 .full_right_header{float:right;}
 

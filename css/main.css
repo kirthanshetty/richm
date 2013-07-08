@@ -342,7 +342,7 @@ footer{margin-top:50px;}
 .social_links ul li a.fb{background:url("../img/parallax/sprite.png") no-repeat 8px -179px #00436e;}
 .social_links ul li a.tweet{background:url("../img/parallax/sprite.png") no-repeat 8px -113px #00436e;}
 .social_links ul li a.share{background:url("../img/parallax/sprite.png") no-repeat 8px -157px #00436e;}
-.two_sections{float:left;width:100%;margin-top:160px;}
+.two_sections{float:left;margin-top:160px;}
 .section_one{float:left;position:relative;margin-right:20px;}
 .section_two{margin:0px;}
 .section_one a h4{padding:3px 8px 5px;opacity:0.8;filter:alpha(opacity=80); margin: 0 2px 5px;background:#747474;color:#fff;font-size:1.25em;font-weight:normal;float:left;width:99%;position:absolute;bottom:0px;left :0px;}
@@ -482,6 +482,8 @@ button.collapsed{display:none;}
 .creativity_head .bg_img{float:left;width:100%;text-align: center;}
 .creativity_head .bg_img h2{margin:0px;color: #00436E;font-size:4.8em;  margin: 55px 0 10px;text-transform: none;font-family:'SabonLT-Roman';}
 .creativity_head .bg_img h5{color:#fff;font-size: 1.6em;;font-weight: normal; margin: 0 auto;width: 45%;}
+.mobile_maison_lists{display: none;}
+
 /* CSS for IE to Fallback */
 .no-cssgradients .inner_block input[type='submit']{background: url("../img/parallax/blue_bg.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type='submit']{background: url("../img/parallax/shade_bg.jpg") repeat-x scroll left top;}
@@ -780,6 +782,7 @@ html {
 body {
     margin: 0;
     font-size:62.5%;
+    overflow-x:hidden; 
 }
 
 a:focus {
@@ -943,9 +946,18 @@ textarea {
     .search_block .submit{margin:0px;width:17%; margin: 2% 2% 2% 0;}
     .footer_right{float:left;margin-left:30px;}
     .scroll_top img{bottom:58px;}
+    .maisons_lists ul li{width:33.33%;}
   }
 @media only screen and (max-width:335px) {
   header .logo_blk{width:69%;}
   .search{width:13%;}
   div.collapsed{width:18%;}
+  .maisons_lists ul li{width:50%;}
+  #our-maisons .inner_content{padding:20px;}
+  #wrapper .page_3 .maisons_head h1{font-size: 2.8em;text-align: left;margin-top:0px;}
+  .maisons_head p{font-size:1.5em;line-height: 25px;text-align: left;}
+  .maisons_lists{margin-top: 25px;display:none;}
+  .mobile_maison_lists{display:block;padding: 0px;}
+  .maisons_head{width:100%;}
+
 }

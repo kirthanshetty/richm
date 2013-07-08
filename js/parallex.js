@@ -49,7 +49,7 @@ function ParallexRelEl(el,parentTop){
 	}
 }
 
-function ParallexEl(el,top,screenH){
+function ParallexEl(el,top,screenH,topDelta){
 
 	var parallexEl = this;
 
@@ -78,7 +78,7 @@ function ParallexEl(el,top,screenH){
 	}
 
 	this.scrollToMe = function(){
-		$('html,body').animate({scrollTop:this.top},500)
+		$('html,body').animate({scrollTop:this.top - topDelta},500)
 	}
 
 	this.updatePos = function(scrollTop,scrollBottom,topDelta){
@@ -121,7 +121,7 @@ function Parallex(els,topDelta){
 		this.parallexEls = [];
 		var top = topDelta;
 		$els.each(function(){
-			var parallexEl = new ParallexEl($(this),top,getWindowSize().height-topDelta);
+			var parallexEl = new ParallexEl($(this),top,getWindowSize().height-topDelta,topDelta);
 			parallex.parallexEls.push(parallexEl);
 			$(this).data('parallexel',parallexEl);
 			top += $(this).outerHeight();

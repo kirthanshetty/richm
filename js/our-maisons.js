@@ -71,11 +71,14 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
     })
 
     gallery.find('.maison_prev').click(function () {
-        var nextEl = anchorel.parent().prev().find('a');
-        if (nextEl.length < 1) {
-            nextEl = anchorel.parent().parent().prev().find('li:first a');
+        var prevEl = anchorel.parent().prev().find('a');
+        if (prevEl.length < 1) {
+            var prevParent = anchorel.parent().parent().prev();
+            if(/div/i.test(prevParent[0].tagName))
+                prevParent = prevParent.prev();
+            prevEl = prevParent.find('li:last a');
         }
-        nextEl.click();
+        prevEl.click();
         return false;
     })
 }

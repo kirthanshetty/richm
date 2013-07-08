@@ -19,25 +19,33 @@ function Navigation(){
 		if(parallex)
 			parallex.scrollToMe();
 	}
+
+	/* Script of Search block Pop-Up */
+	$(".search").mouseover(function(){
+		$(".search_block").show();
+		$(".search_block").find('input:text').focus();
+	});
+
+	var hideTimer;
+	$(".search_block").find('input:text').blur(function(){
+		hideTimer = setTimeout(function(){
+			$(".search_block").hide();
+		},2000)
+	}).focus(function(){
+		clearTimeout(hideTimer);
+	})
+
+
+
+	$(".collapsed").mouseover(function(){
+		$(".menu_list").show();
+	});
+	$(".collapsed").mouseout(function(){
+		$(".menu_list").hide();
+	});
+	/* Script of Click scroll to Top */
+	$(".scroll_top img").click(function() {
+		$("html, body").animate({ scrollTop: 0 }, "slow");
+		return false;
+	});
 }
-
-
-/* Script of Search block Pop-Up */
-  $(".search").mouseover(function(){
-    $(".search_block").show();
-  });
-  $(".search").mouseout(function(){
-    $(".search_block").hide();
-  });
-
- $(".collapsed").mouseover(function(){
-    $(".menu_list").show();
-  });
-  $(".collapsed").mouseout(function(){
-    $(".menu_list").hide();
-  });
-  /* Script of Click scroll to Top */
-  $(".scroll_top img").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-    return false;
-  });

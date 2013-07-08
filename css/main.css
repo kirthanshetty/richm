@@ -306,7 +306,7 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 /*.page{padding-bottom: 200px }*/
 .page{position: relative;margin-bottom: 0px;}
 .search_block{display:none;float:right;margin-top: 49px;padding: 0px;width: 444px;background: none repeat scroll 0 0 #E7E7E7;}
-.search_block .textbox{padding:2px 8px;width: 332px;margin: 8px 0px 8px 8px;}
+.search_block .textbox{padding:2px 8px;width: 332px;margin: 8px 0px 8px 8px;font-size: 0.95em;font-family: georgia;font-style: italic;}
 .search_block .submit{padding:5px 10px;margin: 8px 8px 8px 0;float:right;font-size: 0.85em}
 .search{float:left;position:relative;padding-left: 8px;height:46px; bottom: 3px;}
 .inner_content{float:left;width:100%;}

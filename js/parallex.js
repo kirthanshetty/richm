@@ -24,12 +24,18 @@ function ParallexPosition(top,bottom,speed,screenH){
 					!this.bottomAboveView(scrollTop)
 	}
 
+	this.getDelta = function(scrollTop,scrollBottom){
+		return this.pageHeightLower ? (scrollTop - this.top):(scrollBottom - this.bottom);
+	}
+
 	this.getTop = function(scrollTop,scrollBottom,topDelta){
 		var staticTop = this.pageHeightLower?0:(screenH + this.top - this.bottom);
+		staticTop += topDelta;
+
 		if(!this.speed)
 			return staticTop;
-		else
-			return staticTop - ((scrollTop - this.top) * this.speed);
+
+		return staticTop - (this.getDelta(scrollTop,scrollBottom) * this.speed);
 	}
 }
 
@@ -82,11 +88,18 @@ function ParallexEl(el,top,screenH){
 				'position': 'fixed'
 			});
 			this.posChanged = true;
+			if(this.el.data('type') == 'background'){
+				this.el.css('background-position','50% ' + this.position.getDelta(scrollTop,scrollBottom) + 'px')
+			}
 		}else if(this.posChanged){
 			this.el.css({
 				'top':this.top,
 				'position':'absolute'
 			});
+			if(this.el.data('type') == 'background'){
+				this.el.css('background-position','0px')
+			}
+
 			this.posChanged = false;
 		}
 
@@ -108,11 +121,11 @@ function Parallex(els,topDelta){
 		this.parallexEls = [];
 		var top = topDelta;
 		$els.each(function(){
-			var parallexEl = new ParallexEl($(this),top,screen.height-topDelta);
+			var parallexEl = new ParallexEl($(this),top,getWindowSize().height-topDelta);
 			parallex.parallexEls.push(parallexEl);
-			parallexEl.init();
 			$(this).data('parallexel',parallexEl);
 			top += $(this).outerHeight();
+			parallexEl.init();
 		});
 		this.totalHeight = top;
 	}
@@ -120,11 +133,29 @@ function Parallex(els,topDelta){
 	this.init();
 
 	$window.on('scroll',function(){
-		var scrollTop = $window.scrollTop()-topDelta,
-			scrollBottom = scrollTop + screen.height - topDelta;
+		var scrollTop = $window.scrollTop() + topDelta,
+			scrollBottom = $window.scrollTop() + getWindowSize().height;
 
 		for (var i = 0; i < parallex.parallexEls.length; i++) {
 			parallex.parallexEls[i].updatePos(scrollTop,scrollBottom,topDelta);
 		};
 	})
+}
+
+function getWindowSize() {
+  var myWidth = 0, myHeight = 0;
+  if( typeof( window.innerWidth ) == 'number' ) {
+    //Non-IE
+    myWidth = window.innerWidth;
+    myHeight = window.innerHeight;
+  } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+    //IE 6+ in 'standards compliant mode'
+    myWidth = document.documentElement.clientWidth;
+    myHeight = document.documentElement.clientHeight;
+  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+    //IE 4 compatible
+    myWidth = document.body.clientWidth;
+    myHeight = document.body.clientHeight;
+  }
+  return {height:myHeight,width:myWidth};
 }

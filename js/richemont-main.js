@@ -1,6 +1,7 @@
 document.body.scrollTop = document.documentElement.scrollTop = 0;
 $(function(){
-	parallex = new Parallex('.page',$('header').outerHeight());
+	var topDelta = $('header').outerHeight();
+	parallex = new Parallex('.page',topDelta);
 	$('.container.main').height(parallex.totalHeight);
 	Navigation();
 	var maisons = MaisonBox($('.maisons_lists'),function(){

@@ -1,7 +1,6 @@
 function WhyworkUs(container){
 	container.find('.join_us_gallery ul li a').click(function(e){
 		e.preventDefault();
-		var a = 'b';
 		var link = this.href,
 			anchor = $(this),
 			container = $(this).parent().parent().parent().next();

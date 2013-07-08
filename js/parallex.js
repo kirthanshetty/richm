@@ -106,7 +106,7 @@ function Parallex(els,topDelta){
 	
 	this.init = function(){
 		this.parallexEls = [];
-		var top = 0;
+		var top = topDelta;
 		$els.each(function(){
 			var parallexEl = new ParallexEl($(this),top,screen.height-topDelta);
 			parallex.parallexEls.push(parallexEl);

@@ -383,8 +383,9 @@ footer{margin-top:50px;}
 .page_3 .maisons_lists ul.buttons li{border:0px;}
 .align-center{text-align: center;}
 h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: normal;margin-bottom: 0;}
-.creativity_head, .tab_content{float:left;width:100%;}
-.creativity_head{position: relative;margin-bottom: 18px;}
+.creativity_head, .tab_content{float:left;width:100%;position: relative;}
+.tab_content .main_cont{position: absolute;top:286px;}
+.creativity_head{position: relative;margin-bottom: 18px;overflow: hidden;}
 .creativity_head .bg_img{background: url("../img/parallax/img21.jpg") no-repeat scroll left top transparent;height: 288px;text-align: center;width:auto;}
 .creativity_head .bg_img.craft{background: url("../img/parallax/join2.jpg") no-repeat scroll left top transparent;}
 .creativity_head h2{color:#00436e;font-size:5em;font-family: 'SabonLT-Roman';}
@@ -484,9 +485,10 @@ ul.buttons li.active a{ background: url("../img/parallax/sprite.png") left -292p
 button.collapsed{display:none;}
 .container.main .page .inner_content{margin:0 auto;max-width:1025px;float:none;}
 
-.creativity_head .bg_img{float:left;width:100%;text-align: center;}
- #wrapper .creativity_head .bg_img h2{margin:0px;color: #00436E;font-size:4.8em;  margin: 55px 0 0px;text-transform: none;font-family:'SabonLT-Roman';}
-.creativity_head .bg_img h5{color:#fff;font-size: 1.6em;;font-weight: normal; margin: 0 auto;width: 45%;}
+.creativity_head .head_cont{width:200%;}
+.creativity_head .bg_img{float:left;width:50%;text-align: center;}
+ #wrapper .creativity_head .bg_img h2{margin:0px;color: #00436E;font-size:4.8em;  margin: 55px 0 0px;text-transform: none;font-family:'SabonLT-Roman';position: relative;}
+.creativity_head .bg_img h5{color:#fff;font-size: 1.6em;;font-weight: normal; margin: 0 auto;width: 45%;position: relative;}
 .mobile_maison_lists{display: none;}
 .tab_content_left form div label{display: block;}
 .header_main h1{margin:0px;}

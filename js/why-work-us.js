@@ -1,22 +1,31 @@
 function WhyworkUs(container){
-	container.find('.join_us_gallery ul li a').click(function(e){
-		e.preventDefault();
-		var link = this.href,
-			anchor = $(this),
-			container = $(this).parent().parent().parent().next();
-		$.get(link,function(data){
-			container.html(data);
-			anchor.parent().parent().find('li.active').removeClass('active');
-			anchor.parent().addClass('active');
-		});
-	})
+	var tabAnchors = container.find('.join_us_gallery ul li a'),
+		headerCont = container.find('.head_cont'),
+		mainCont = container.find('.main_cont');
 
-	$(".maison_next",container).click(function(){
-		$(".join_us_gallery ul").find('li.active').removeClass('active').next().addClass('active').find('a').click();
-		$(".join_us_gallery ul li:eq(4)").attr('disabled', true).addClass('active');
-	});
-	$(".maison_prev",container).click(function(){
-    	$(".join_us_gallery ul").find('li.active').removeClass('active').prev().addClass('active').find('a').click();
-    	$(".join_us_gallery ul li:eq(0)").attr('disabled', true).addClass('active');
-	});
+	tabAnchors.click(function(e){
+		e.preventDefault();
+		var anchor = $(this)
+		$.get($(this).attr('href'),function(data){
+			anchor.parent().parent().find('li').removeClass('active');
+			anchor.parent().addClass('active');
+			
+			var ajaxCont = $(data),
+				bgImage = ajaxCont.find('.bg_img'),
+				maisonCont = ajaxCont.find('.main_cont');
+
+			headerCont.append(bgImage);
+			
+			bgImage.find('*').css('left','50%')
+			bgImage.find('*').animate({'left':'0%'});
+
+			headerCont.animate({'margin-left':'-100%'},function(){
+				$(this).find('.bg_img:first').remove();
+				$(this).css('margin-left',0)
+			})
+
+			mainCont.after(maisonCont);
+			
+		})
+	})
 }

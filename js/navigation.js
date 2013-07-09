@@ -28,14 +28,8 @@ function Navigation(){
 
 	var hideTimer;
 	$(".search_block").find('input:text').blur(function(){
-		hideTimer = setTimeout(function(){
-			$(".search_block").hide();
-		},2000)
-	}).focus(function(){
-		clearTimeout(hideTimer);
+		$(".search_block").hide();
 	})
-
-
 
 	$(".collapsed").mouseover(function(){
 		$(".menu_list").show();

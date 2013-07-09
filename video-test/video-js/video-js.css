@@ -192,24 +192,22 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
           box-shadow: 0 0 2em rgba(255, 255, 255, 1);
 }
 
-.vjs-default-skin .vjs-slider-handle {
+.vjs-default-skin .vjs-progress-control .vjs-slider-handle {
   position: absolute;
   /* Needed for IE6 */
   left: 0;
-  top: 0;
+  top: -6px;
+  background: none;
+  width:16px !important;height:16px !important;z-index: 99;
 }
-
+.vjs-default-skin:hover .vjs-progress-control .vjs-slider-handle {background: url("seek-handler.png") no-repeat left top;}
+.vjs-lock-showing.vjs-fade-out:hover .vjs-seek-handle.vjs-slider-handle{background: url("seek-handler.png") no-repeat left -7px;}
 .vjs-default-skin .vjs-slider-handle:before {
-  /*content: "\f111";*/ /* Circle icon = f111 */
+  /*content: "\f111";*/ /* Circle icon = f111 
   content: "\e009"; /* Square icon */
-  font-family: VideoJS;
-  font-size: 1em;
-  line-height: 1;
   text-align: center;
-  text-shadow: 0em 0em 1em #fff;
-
   position: absolute;
-  top: 0;
+  top: -14px;
   left: 0;
 
   /* Rotate the square icon to make a diamond */
@@ -315,15 +313,15 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 }
 .vjs-default-skin .vjs-mute-control.vjs-vol-0:before,
 .vjs-default-skin .vjs-volume-menu-button.vjs-vol-0:before {
-  content: "\e003"; /* No volume */
+ /* content: "\e003"; /* No volume */
 }
 .vjs-default-skin .vjs-mute-control.vjs-vol-1:before,
 .vjs-default-skin .vjs-volume-menu-button.vjs-vol-1:before {
-  content: "\e004"; /* Half volume */
+ /* content: "\e004";  Half volume */
 }
 .vjs-default-skin .vjs-mute-control.vjs-vol-2:before,
 .vjs-default-skin .vjs-volume-menu-button.vjs-vol-2:before {
-  content: "\e005"; /* Full volume */
+/*  content: "\e005"; /* Full volume */
 }
 
 .vjs-default-skin .vjs-volume-control {
@@ -354,7 +352,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
   width: 0.5em;
   height: 0.5em;
 }
-
+.vjs-default-skin .vjs-volume-bar .vjs-slider-handle{background: none;}
 .vjs-default-skin .vjs-volume-handle:before {
   font-size: 0.9em;
   top: -0.2em;
@@ -371,7 +369,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 .vjs-captions-button, .vjs-fullscreen-control{display: none;}
 .vjs-default-skin .vjs-mute-control{background: url("speaker.png") no-repeat left 9px;width:0.8em; }
 .vjs-default-skin .vjs-volume-control{padding-right: 20px;}
-.video_close{background: url("video-close.png") no-repeat left top;width:28px;height:28px;position: absolute;top:20px;left:32%;}
+a.video_close{display:block;background: url("video-close.png") no-repeat left top;width:28px;height:28px;position: absolute;top:20px;left:40%;}
 .vjs-playing{background: url("pause.png") no-repeat 15px 8px;width:13px;height:15px;}
 
 
@@ -416,7 +414,8 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 /* Box containing play and load progresses. Also acts as seek scrubber. */
 .vjs-default-skin .vjs-progress-holder {
   /* Placement within the progress control item */
-  height: 100%;
+  height: 0.7em;
+    margin: 0.45em 0;
 }
 
 /* Progress Bars */
@@ -441,13 +440,11 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
     Also using a paralax effect to make the lines move backwards.
       The -50% left position makes that happen.
   */
-  background: #66A8CC
-    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC)
-    -50% 0 repeat;
+  background: #00436e;
 }
 .vjs-default-skin .vjs-load-progress {
   background: rgb(100, 100, 100); /* IE8- Fallback */
-  background: rgba(255, 255, 255, 0.4);
+  background: #808080;
 }
 
 .vjs-default-skin .vjs-seek-handle {
@@ -456,7 +453,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 }
 
 .vjs-default-skin .vjs-seek-handle:before {
-  padding-top: 0.1em; /* Minor adjustment */
+  /* padding-top: 0.1em; Minor adjustment */
 }
 
 /* Time Display

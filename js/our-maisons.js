@@ -32,7 +32,6 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
 
     gallery.find('.maison_close').click(function () {
         $('body').off('keypress',escHandler);
-        
         $(this).parent().parent().slideUp(function () {
             $(this).remove();
             callback();

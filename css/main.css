@@ -78,6 +78,7 @@ src: url("data:font/opentype;base64,AAEAAAAMAIAAAwBAT1MvMl2l8sYAAAEkAAAAVmNtYXAH
 }
 a{text-decoration:none;}
 ul, ol{padding:0px;margin:0px;}
+label{display:none;}
 #wrapper{font-family: 'Lato', sans-serif;display:block;margin:0 auto;background:url("../img/body_bg.jpg") no-repeat right top;overflow: auto;}
 /* style for Header */
 header, footer{background:#00436e;float:left;width:100%;}
@@ -95,7 +96,7 @@ header .full_right_header{width:auto;float:right;}
 /* style for Container */
 #container{float:left;width:100%;}
 .inner_container{margin:34px;float:left;width:956px;}
-#wrapper h1{font-family: SabonLT-Roman;font-size:4.8em;color:#a3a3a3;font-weight:normal;}
+#wrapper h2{font-family: SabonLT-Roman;font-size:4.8em;color:#a3a3a3;font-weight:normal;}
 .quick_search{float:left;margin-top:0px;}
 .quick_search input[type='text']{font-size:1.2em;font-style:italic;color:#747476;font-family:georgia;border:1px solid #a8a8a8;width:250px;height:35px;padding:0px 10px;}
 .quick_search input[type='submit']{color:#00436e;font-size:1.2em;border:1px solid #a8a8a8;border-left:0px;padding:9px;position: relative;left:-1px;}
@@ -105,6 +106,7 @@ background: -webkit-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #
 background: -o-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* IE10+ */
 background: linear-gradient(to bottom, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* W3C */}
+#wrapper .search_main_block h2{color:#4e4e4e;font-size:1.4em;font-family: lato;font-weight: bold;}
 .view_faq h3{color:#00436e;margin-top:121px;margin-bottom: 0;font-size:1.4em;font-weight:normal;float:right;}
 .search_main_block{float:left;margin-top:18px;}
 .search_main_block h2{font-size:1.5em;color:#4e4e4e;margin:0px;font-weight:bold;padding:7px 5px 7px 14px;}
@@ -117,6 +119,7 @@ background: linear-gradient(to bottom, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ed
 .header_right select option{border:1px solid #d2d2d2;border-top:0px;background:#e7e7e7;color:#4e4e4e;font-size:1em;padding:2px 2px;}
 .inner_block div select option:hover, .inner_block div select option:focus{background:#a3a3a3;color:#fff; float: left;}
 .inner_block input[type='button']{float:left;margin-right:20px;margin-top:24px;}
+.jobs_main_content .inner_block input[type='button'], .jobs_main_content .inner_block input[type="submit"]{margin-top:0px;}
 .inner_block input[type='button'], .section_right input[type='button']{color:#fff;font-size:1.2em;font-weight:bold;padding:8px 10px;border:1px solid #4c4b4b;
 background: -moz-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8b8b8b), color-stop(20%,#848484), color-stop(40%,#787878), color-stop(50%,#737373), color-stop(60%,#6a6a6a), color-stop(80%,#585858), color-stop(100%,#4e4e4e)); /* Chrome,Safari4+ */
@@ -214,7 +217,7 @@ header img.logo{float:left;margin:29px 0px 30px 30px;}
 /* style for Container */
 #container{float:left;width:100%;}
 .inner_container{margin:34px;float:left;width:956px;}
-#wrapper h1{font-family: SabonLT-Roman;color:#a3a3a3;font-weight:normal;}
+#wrapper h2{font-family: SabonLT-Roman;color:#a3a3a3;font-weight:normal;}
 .quick_search input[type='text']{font-size:1.2em;font-style:italic;color:#747476;font-family:georgia;border:1px solid #a8a8a8;width:250px;height:35px;padding:0px 10px;}
 .quick_search input[type='submit']{color:#00436e;font-size:1.2em;border:1px solid #a8a8a8;border-left:0px;padding:9px;position: relative;left:-2px;}
 .quick_search input[type='submit'], .search_block h2{background: -moz-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* FF3.6+ */
@@ -317,7 +320,7 @@ footer .container{position:relative;}
 .page_1 img.scroll_down{width:30px;height:65px;float:right;margin-right:10px;}
 .page_1 .span8.col{float:left;margin-left:0px;}
 .page_1 .row{margin:0px;}
-#wrapper .page_1 h1{color:#00436e;font-size:3em;}
+#wrapper .page_1 h2{color:#00436e;font-size:3em;}
 .page_1 .row .quick_search{float:left;margin:0px 0px 0px 30px;}
 .page_1 .row .quick_search input[type="text"]{border:1px solid #d1ac46;height:27px;}
 .page_1 .row .quick_search input[type="submit"]{border:1px solid #d1ac46;border-left:0px;padding:5px;}
@@ -329,7 +332,7 @@ footer .container{position:relative;}
 footer{margin-top:50px;}
 .page_2{/*background:url("../img/parallax/section_bg.jpg") no-repeat left top;*/}
 .col.span_5 .our_world{background:#c2c2c2;padding:30px;font-family:lato;color:#00436e;margin:45px 0px 0px 35px;opacity:0.95;filter:alpha(opacity=95);/*height: 680px;*/}
-#wrapper .our_world h1{color:#00436e;font-size:4.8em;font-family:'SabonLT-Roman';padding-bottom:8px;margin:0px;}
+#wrapper .our_world h2{color:#00436e;font-size:4.8em;font-family:'SabonLT-Roman';padding-bottom:8px;margin:0px;}
 .our_world p.highlight, .maison_main_content .maison_desc p.highlight{font-size:1.7em;padding-bottom:18px;}
 .our_world p, .maison_main_content .maison_desc p, .maison_main_content .maison_desc a{padding-bottom:25px;font-size:1.3em;margin:0px;line-height: 23px;}
 .icon-pinterest{color:#00436e;font-size:1.4em;}
@@ -354,7 +357,7 @@ footer{margin-top:50px;}
 #our-maisons{background:url("../img/parallax/maisons_bg.png") no-repeat left top #afb0ae;background-size:cover;}
 .maisons_head{width:65%;margin:0 auto;}
 .page_5 .maisons_head{width:59%;}
-#wrapper .page_3 .maisons_head h1{font-size:4.8em;font-weight:normal;margin-bottom:0px;color:#fff;font-family:'SabonLT-Roman';text-align: center;}
+#wrapper .page_3 .maisons_head h2{font-size:4.8em;font-weight:normal;margin-bottom:0px;color:#fff;font-family:'SabonLT-Roman';text-align: center;}
 .maisons_head p{margin:0px;color:#4d4d4d;font-size:1.7em;line-height:28px;text-align: center;}
 .container.main{overflow: hidden;max-width:100%;margin:0px;}
 #home, #why-join-us, #career-paths {background:url("../img/parallax/body_bg.jpg") repeat center top #fff;width: 100%;}
@@ -373,7 +376,7 @@ footer{margin-top:50px;}
 /*.maisons_lists ul li a.two{background:url("../img/parallax/watch2.jpg") no-repeat left top;}
 .maisons_lists ul li a.two:hover img{background: transparent;}*/
 .maisons_lists ul li a img{/*left: 20%;position: relative;top: 25%;*/ background: none repeat scroll 0 0 #00436E;height: 113px;width:99%;}
-.maisons_lists ul li.join-us{background:#dadada;width:80%;height: 113px;opacity:0.7;filter:alpha(opacity=90);}
+.maisons_lists ul li.join-us{background:#dadada;width:80%;height: 113px;opacity:0.7;filter:alpha(opacity=90);border:0px !important;}
 .maisons_lists ul li.join-us section{float:right;padding:30px 40px;}
 .maisons_lists ul li.join-us h3{font-size:2.5em;font-weight: normal;color:#4e4e4e;float:left;margin:7px 0 0;}
 .maisons_lists ul li.join-us input{float:right;margin:10px 0px 0px 28px;font-size:1.3em;font-weight: normal;}
@@ -408,8 +411,8 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .section_one a h3{position:absolute;font-family: 'SabonLT-Roman';font-size: 2em;font-weight:normal;margin: 0;font-style: italic;left:28%;top:40%;color: #fff;}
 .container.main #work-with-us.page .gallery_join{position: relative;height:690px;float:left;width: 100%;}
 .section_main{float:left;}
-.page_5 .maisons_head h1{text-align :center;margin-bottom:0px;}
-#wrapper .page_5 .maisons_head h1{font-size:4.8em;}
+.page_5 .maisons_head h2{text-align :center;margin-bottom:0px;}
+#wrapper .page_5 .maisons_head h2{font-size:4.8em;}
 .tab_content_full, .tab_content_right div{float:left;width:100%;}
 .tab_content_left{float:left;}
 .tab_content_left h2, .tab_content_left h3, .tab_content_right h3{color:#4e4e4e;font-size: 2.1em;margin:0 0 12px;font-weight:normal;}
@@ -482,10 +485,14 @@ button.collapsed{display:none;}
 .container.main .page .inner_content{margin:0 auto;max-width:1025px;float:none;}
 
 .creativity_head .bg_img{float:left;width:100%;text-align: center;}
-.creativity_head .bg_img h2{margin:0px;color: #00436E;font-size:4.8em;  margin: 55px 0 10px;text-transform: none;font-family:'SabonLT-Roman';}
+ #wrapper .creativity_head .bg_img h2{margin:0px;color: #00436E;font-size:4.8em;  margin: 55px 0 0px;text-transform: none;font-family:'SabonLT-Roman';}
 .creativity_head .bg_img h5{color:#fff;font-size: 1.6em;;font-weight: normal; margin: 0 auto;width: 45%;}
 .mobile_maison_lists{display: none;}
-
+.tab_content_left form div label{display: block;}
+.header_main h1{margin:0px;}
+.section_text h3{ color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;}
+.maisons_head h3{color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;text-align: center;}
+#wrapper .tab_content_full .tab_content_left h2{ color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;font-family: lato;}
 /* CSS for IE to Fallback */
 .no-cssgradients .inner_block input[type='submit']{background: url("../img/parallax/blue_bg.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type='submit']{background: url("../img/parallax/shade_bg.jpg") repeat-x scroll left top;}

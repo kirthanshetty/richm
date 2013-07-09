@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,12 +17,14 @@
 		<header>
 			<div class="container">
 				<div class="row header_main">
+					<h1><a href="#home" class="col span_5 logo_blk"><img class="logo" src="img/parallax/logo.png" alt="Richemont Logo" /></a></h1>
 					<div class="col span_7 full_right_header">
 						<div class="header_right">
 							<ul class="first_row">
 								<li><a href="#">Login</a></li> 
 								<li>
-									<select>
+									<label for="language">language</label>
+									<select id="language">
 										<option>English</option>
 										<option>English</option>
 										<option>English</option>
@@ -31,7 +33,6 @@
 							</ul>
 						</div>
 					</div>
-					<a href="#home" class="col span_5 logo_blk"><img class="logo" src="img/parallax/logo.png" alt="Richemont Logo" /></a>
 					<div class="col span_7 full_right_header header_nav">
 						<div class="header_right">
 							<ul class="second_row">
@@ -43,11 +44,12 @@
 								<li><a href="#">Jobs</a></li>
 								<li class="search-view">
 									<div class="search">
-										<a class="search_icon" href="#"></a>
+										<a class="search_icon" href="#" title="Search"></a>
 										<div class="search_block">
 											<div class="chat-bubble-arrow"></div>
 											<form>
-												<input class="textbox" type="text" placeholder="Quick search for a job or enter job code" name="q" />
+												<label for="q">Search</label> 
+												<input class="textbox" type="text" placeholder="Quick search for a job or enter job code" name="q" id="q" />
 												<input class="submit" type="submit" value="Search jobs" />
 											</form>
 										</div>
@@ -57,7 +59,7 @@
 						</div>
 					</div>
 					<div class="btn btn-navbar collapsed">
-							<a class="mobile_menu" href="#"></a>
+							<a class="mobile_menu" href="#" title="Navigation"></a>
 							<div class="menu_list">
 							<ul>
 								<li><a href="#">About us</a></li>
@@ -70,11 +72,12 @@
 						</div>
 					</div>
 					<div class="search mobile_search">
-						<a class="search_icon" href="#"></a>
+						<a class="search_icon" href="#" title="Search"></a>
 						<div class="search_block">
 							<div class="chat-bubble-arrow"></div>
 							<form>
-							<input class="textbox" type="text" name="" placeholder="Quick search for a job or enter job code" />
+							<label for="q">Search</label> 
+							<input class="textbox" type="text" name="q" id="q" placeholder="Quick search for a job or enter job code" />
 							<input class="submit" type="submit" value="Search jobs" />
 						</form>
 						</div>
@@ -97,9 +100,10 @@
 				</div>
 				<div class="row">
 					<div class="col span_8">
-						<h1 class="ml mr">We invite you to join us and write the next successful chapter in the history of our Maisons</h1>
+						<h2 class="ml mr">We invite you to join us and write the next successful chapter in the history of our Maisons</h2>
 						<div class="quick_search">
-							<input type="text" placeholder="Quick search for a job or enter job code">
+							<label for="q">Search</label> 
+							<input type="text" name="q" id="q" placeholder="Quick search for a job or enter job code">
 							<input type="submit" value="GO">
 						</div>
 						<span>Or </span>
@@ -128,7 +132,7 @@
 				<div class="inner_content">
 					<div class="span_5 col">
 						<div class="our_world">
-							<h1>Our world</h1>
+							<h2>Our world</h2>
 							<p class="highlight">Integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum dolor sit congue quis.</p>
 							<p>At Richemont integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum convallis tellus ac ligula ullamcorper elementum non ac purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis </p>
 							<p>ligula ullamcorper elementum non ac purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In congue, lorem non tellus ac ligula.Sed quis ligula sit amet velit scelerisque gravida a a ipsum morbi tristique senectus et pellentesque. </p>
@@ -137,22 +141,22 @@
 					<div class="span_7 col">
 						<div class="social_links">
 							<ul>
-								<li><a class="share" href="#"></a></li>
-								<li><a class="tweet" href="#"></a></li>
-								<li><a class="fb" href="#"></a></li>
-								<li><a class="gplus" href="#"></a></li>
-								<li><a class="pin" href="#"></a></li>
+								<li><a class="share" href="#" title="Share"></a></li>
+								<li><a class="tweet" href="#" title="Twitter"></a></li>
+								<li><a class="fb" href="#" title="Facebook"></a></li>
+								<li><a class="gplus" href="#" title="gPlus"></a></li>
+								<li><a class="pin" href="#" title="Pin"></a></li>
 							</ul>
 						</div>
 						<div class="two_sections">
 							<div class="section_one">
-								<a href="#"><img src="img/parallax/world1.png" alt="" /><h4>Lorem ipsum dolor lange Sohne</h4></a>
+								<a href="#"><img src="img/parallax/world1.png" alt="Lange Sohne" /><h4>Lorem ipsum dolor lange Sohne</h4></a>
 							</div>
 							<div class="section_one section_two">
-								<a href="#"><img src="img/parallax/world2.png" alt="" /><h4>Ipsum dolor acqeus</h4></a>
+								<a href="#"><img src="img/parallax/world2.png" alt="Ipsum dolor acqeus" /><h4>Ipsum dolor acqeus</h4></a>
 							</div>
 							<div class="section_text">
-								<h2>OUR MAISONS' HERITAGE</h2>
+								<h3>OUR MAISONS' HERITAGE</h3>
 								<p>Mauris auctor erat massa. Suspendisse porta, sapien interdum sollicitudin aliquam, est dui vehicula nulla, sed posuere mi ipsum at lacus. Donec venenatis, orci vel aliquet sodales, neque  Auris auctor erat massa. Suspendisse porta, sapien interdum sollicitudin aliquam, est dui vehicula nulla, sed posuere mi ipsum at lacus. Donec venenatis, orci.</p>
 							</div>
 						</div> <!-- two_sections -->
@@ -162,7 +166,7 @@
 			<section id="our-maisons" class="page page_3 row" data-speed="0">
 				<div class="inner_content">
 					<div class="maisons_head">
-						<h1>Our Maisons</h1>
+						<h2>Our Maisons</h2>
 						<p>Compagnie Financière Richemont SA owns some of the world's most prestigious luxury goods Maisons, each of which has a proud history and heritage of craftsmanship and design.</p>
 					</div>
 					<div class="maisons_lists">
@@ -311,7 +315,7 @@
 			</section>
 			<section id="why-join-us" class="page page_4 row" data-speed="0">
 				<div class="inner_content" data-type="foreground" data-bgspeed="3.5">
-					<h1 class="align-center">Why join us?</h1>
+					<h2 class="align-center">Why join us?</h2>
 					<div class="section_main ml mr">
 						<div class="join_us_gallery">
 							<ul>
@@ -322,8 +326,8 @@
 								<li><a href="ajax/culture.html">Learning Culture<div class="chat-bubble-arrow"></div></a></li>
 								<li><a href="ajax/service.html">Customer Service<div class="chat-bubble-arrow"></div></a></li>
 							</ul>
-							<a href="javascript:void(0)" class="maison_prev"></a>
-							<a href="javascript:void(0)" class="maison_next"></a>
+							<a href="javascript:void(0)" class="maison_prev" title="Previous"></a>
+							<a href="javascript:void(0)" class="maison_next" title="Next"></a>
 						</div>
 					
 						<div class="tab_content">
@@ -334,7 +338,7 @@
 								</div>
 							</div> <!-- creativity_head -->
 							<div class="maisons_head">
-								<h2>SUPPORTING THE TALENT OF THE FUTURE</h2>
+								<h3>SUPPORTING THE TALENT OF THE FUTURE</h3>
 								<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisil elit consequat ipsum, nec sagittis sem nibh id elit. Duis </p>
 							</div>
 							<div class="videos">
@@ -359,26 +363,26 @@
 								<div class="span_5 col">
 									<div class="our_world">
 										<ul class="buttons">
-											<li class="active"><a href="#"></a></li>
-											<li><a href="#"></a></li>
-											<li><a href="#"></a></li>
+											<li class="active"><a href="#" title="Button"></a></li>
+											<li><a href="#" title="Button"></a></li>
+											<li><a href="#" title="Button"></a></li>
 										</ul>
 										<div class="gallery_container">
 											<div class="slides">
 											<div class="content">
-												<h1>Joining us</h1>
+												<h2>Joining us</h2>
 												<p class="highlight">Integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum dolor sit congue quis.</p>
 												<p>At Richemont integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum convallis tellus ac ligula ullamcorper elementum non ac purus.  </p>
 												<p>At Richemont integer congue justo et mi rutrum nec iaculis purus consectetur. Sed qui justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ips </p>
 											</div>
 											<div class="content">
-												<h1>Joining us</h1>
+												<h2>Joining us</h2>
 												<p class="highlight">Integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum dolor sit congue quis.</p>
 												<p>At Richemont integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum convallis tellus ac ligula ullamcorper elementum non ac purus.  </p>
 												<p>At Richemont integer congue justo et mi rutrum nec iaculis purus consectetur. Sed qui justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ips </p>
 											</div>
 											<div class="content">
-												<h1>Joining us</h1>
+												<h2>Joining us</h2>
 												<p class="highlight">Integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum dolor sit congue quis.</p>
 												<p>At Richemont integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum convallis tellus ac ligula ullamcorper elementum non ac purus.  </p>
 												<p>At Richemont integer congue justo et mi rutrum nec iaculis purus consectetur. Sed qui justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ips </p>
@@ -392,10 +396,10 @@
 								<div class="span_7 col">
 									<div class="two_sections">
 										<div class="section_one">
-											<a href="#"><img src="img/parallax/img15.jpg" alt="" /><h4>Lorem ipsum dolor</h4></a>
+											<a href="#"><img src="img/parallax/img15.jpg" alt="Lorem ipsum" /><h4>Lorem ipsum dolor</h4></a>
 										</div>
 										<div class="section_one section_two">
-											<a href="#"><img src="img/parallax/img16.jpg" alt="" /><h4>Lorem ipsum dolor</h4></a>
+											<a href="#"><img src="img/parallax/img16.jpg" alt="Lorem ipsum" /><h4>Lorem ipsum dolor</h4></a>
 										</div>
 									</div> <!-- two_sections -->
 								</div>
@@ -406,7 +410,7 @@
 				<section id="career-paths" class="page page_5 row" data-speed="0">
 					<div class="inner_content" data-type="foreground" data-bgspeed="1">
 						<div class="maisons_head">
-							<h1>Career paths</h1>
+							<h2>Career paths</h2>
 							<p> Morbi vehicula porta nibh non aliquet. Aenean vestibulum facilisis sapien et aliquet. Quisque porttitor orci in neque sagittis laoreet eu ac nisl. Maecenas quis velit quis massa venenatis dapibus.</p>
 						</div>
 						<div class="career_gallery">
@@ -480,8 +484,8 @@
 							</ul>
 							</div>
 							</div>
-							<a class="prev" href="javascript:void(0)"></a>
-							<a class="next" href="javascript:void(0)"></a>
+							<a class="prev" href="javascript:void(0)" title="Previous"></a>
+							<a class="next" href="javascript:void(0)" title="Next"></a>
 						</div> <!-- career_gallery -->
 						<div class="tab_content_full">
 							<div class="span_7 col">
@@ -492,29 +496,29 @@
 									<h3>SUBMIT YOUR PROFILE: DESIGN &amp; CREATION POSITIONS</h3>
 									<form>
 										<div>
-											<label>Type of position: <span>*</span></label>
-											<select>
+											<label for="position">Type of position: <span>*</span></label>
+											<select id="position">
 												<option>11</option>
 												<option>22</option>
 											</select>
 										</div>
 										<div>
-											<label>Country: <span>*</span></label>
-											<select>
+											<label for="country">Country: <span>*</span></label>
+											<select id="country">
 												<option>11</option>
 												<option>22</option>
 											</select>
 										</div>
 										<div>
-											<label>Region: <span>*</span></label>
-											<select>
+											<label for="region">Region: <span>*</span></label>
+											<select id="region">
 												<option>11</option>
 												<option>22</option>
 											</select>
 										</div>
 										<div>
-											<label>Location: <span>*</span></label>
-											<select>
+											<label for="location">Location: <span>*</span></label>
+											<select id="location">
 												<option>11</option>
 												<option>22</option>
 											</select>
@@ -526,7 +530,7 @@
 							</div>
 							<div class="span_5 col">
 								<div class="tab_content_right">
-									<a href="#"><img src="img/parallax/design1.jpg" alt="" /></a> 
+									<a href="#"><img src="img/parallax/design1.jpg" alt="Creative" /></a> 
 									<h3>LATEST JOBS IN DESIGN &amp; CREATION</h3>
 									<div>
 										<p>Technicien Services Généraux H/F, <span>Switzerland</span></p>
@@ -570,9 +574,9 @@
 							</div>
 							<div class="footer_right mr">
 								<ul>
-									<li> <a class="twitter" href="#"></a></li>
-									<li> <a class="fb" href="#"></a></li>
-									<li> <a class="linkedin" href="#"></a></li>
+									<li> <a class="twitter" href="#" title="Twitter"></a></li>
+									<li> <a class="fb" href="#" title="Facebook"></a></li>
+									<li> <a class="linkedin" href="#" title="Linked-in"></a></li>
 								</ul>
 							</div> <!-- footer right -->
 						</div>

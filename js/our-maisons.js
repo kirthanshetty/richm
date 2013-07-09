@@ -46,7 +46,8 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
     gallery.find('.slides-container').width(w).css('overflow', 'hidden');
     gallery.find('.maison_main_content').width(w - 120);
     var slides = gallery.find('.slides').width(w * 3);
-    var buttons = gallery.find('.buttons');
+    var buttons = gallery.find('.buttons a'),
+        maisonImages = gallery.find('.maison_image a');
 
     var noSlides = 3,
         curSlide = 0;
@@ -81,4 +82,31 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
         prevEl.click();
         return false;
     })
+
+    var timer = setInterval(function(){
+        var nextBtn = buttons.parent().parent().find('li.active').next();
+        if(nextBtn.length < 1) nextBtn = buttons.parent().parent().find('li:first');
+        nextBtn.find('a').data('auto',true).click();
+    },2000)
+
+    buttons.click(function(e){
+        e.preventDefault();
+        if($(this).parent().hasClass('active')) return;
+
+        if(!$(this).data('auto')){
+            clearInterval(timer);
+        }
+        $(this).data('auto',false);
+
+
+        $(this).parent().parent().find('li').removeClass('active');
+        $(this).parent().addClass('active');
+
+        var prev = maisonImages.filter(':visible'),
+            cur = $($(this).attr('href'));
+
+        prev.fadeOut();
+        cur.fadeIn();
+    })
+
 }

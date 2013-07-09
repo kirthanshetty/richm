@@ -254,13 +254,14 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
   margin: 0;
   padding: 0;
   height: 3.0em;
-  width: 4em;
+  width: 2.5em;
 }
 
 /* FontAwsome button icons */
 .vjs-default-skin .vjs-control:before {
   font-family: VideoJS;
-  font-size: 1.5em;
+  font-size: 1.6em;
+  color:#fff;
   line-height: 2;
   position: absolute;
   top: 0;
@@ -268,13 +269,13 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
   width: 100%;
   height: 100%;
   text-align: center;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+ /* text-shadow: 1px 1px 1px rgba(0,0,0,0.5);*/
 }
 
 /* Replacement for focus outline */
 .vjs-default-skin .vjs-control:focus:before,
 .vjs-default-skin .vjs-control:hover:before {
-  text-shadow: 0em 0em 1em rgba(255, 255, 255, 1);
+ /* text-shadow: 0em 0em 1em rgba(255, 255, 255, 1); */
 }
 
 .vjs-default-skin .vjs-control:focus { /*  outline: 0; */ /* keyboard-only users cannot see the focus on several of the UI elements when this is set to 0 */ }
@@ -285,14 +286,14 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 /* Play/Pause
 -------------------------------------------------------------------------------- */
 .vjs-default-skin .vjs-play-control {
-  width: 5em;
+  width: 4em;
   cursor: pointer;
 }
 .vjs-default-skin .vjs-play-control:before {
-  content: "\e001"; /* Play Icon */
+ /* content: "\e001";  Play Icon */
 }
 .vjs-default-skin.vjs-playing .vjs-play-control:before {
-  content: "\e002"; /* Pause Icon */
+ /* content: "\e002"; /* Pause Icon */
 }
 
 /* Rewind
@@ -310,7 +311,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 }
 .vjs-default-skin .vjs-mute-control:before,
 .vjs-default-skin .vjs-volume-menu-button:before {
-  content: "\e006"; /* Full volume */
+ /* content: "\e006";  Full volume */
 }
 .vjs-default-skin .vjs-mute-control.vjs-vol-0:before,
 .vjs-default-skin .vjs-volume-menu-button.vjs-vol-0:before {
@@ -367,6 +368,12 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
   width: 6em;
   left: -4em;
 }
+.vjs-captions-button, .vjs-fullscreen-control{display: none;}
+.vjs-default-skin .vjs-mute-control{background: url("speaker.png") no-repeat left 9px;width:0.8em; }
+.vjs-default-skin .vjs-volume-control{padding-right: 20px;}
+.video_close{background: url("video-close.png") no-repeat left top;width:28px;height:28px;position: absolute;top:20px;left:32%;}
+.vjs-playing{background: url("pause.png") no-repeat 15px 8px;width:13px;height:15px;}
+
 
 /*.vjs-default-skin .vjs-menu-button .vjs-volume-control {
   height: 1.5em;
@@ -459,8 +466,8 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
   /* Align vertically by making the line height the same as the control bar */
   line-height: 3em;
 }
-.vjs-default-skin .vjs-current-time { float: left; }
-.vjs-default-skin .vjs-duration { float: left; }
+.vjs-default-skin .vjs-current-time { float: left; color:#fff;}
+.vjs-default-skin .vjs-duration { float: left;color:#808080; }
 /* Remaining time is in the HTML, but not included in default design */
 .vjs-default-skin .vjs-remaining-time { display: none; float: left; }
 .vjs-time-divider { float: left; line-height: 3em; }

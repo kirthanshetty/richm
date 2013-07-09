@@ -945,15 +945,15 @@ textarea {
     .header_right ul.second_row, .header_right ul.first_row, header .header_nav{display: none;}
     .mobile_search, div.collapsed{display:block;}
     header .header_main{float:left;width: 100%;}
-    header .logo_blk{text-align: left;width:81%;float:left;height:47px;}
+    header .logo_blk{text-align: left;width:auto;float:left;height:47px;}
     header .logo_blk img{width:185px;margin:16px 0px 16px 12px; }
-    .mobile_search{background:url("../img/parallax/inactive-search.jpg") no-repeat left top;float:left;padding: 0px;}
     .mobile_search:hover{background:url("../img/parallax/active-search.jpg") no-repeat left top;background-color: #e7e7e7;}
     .collapsed a.mobile_menu{height: 48px;padding: 15px 12px;}
-    div.collapsed{height: 47px;float: left;width:11%;}
+    div.collapsed{height: 47px;float: right;width:56px;}
     div.collapsed{background:url("../img/parallax/inactive-menu.jpg") no-repeat left top;}
     div.collapsed:hover{background:url("../img/parallax/active-menu.jpg") no-repeat left top;background-color: #e7e7e7;}
-    .search {height: 47px;width:8%;position: static;}
+    .mobile_search{background:url("../img/parallax/inactive-search.jpg") no-repeat left top;float:right;padding: 0px;}
+    .search {height: 47px;width:40px;position: static;}
     .search_block{margin-top:47px;right:0px;width:100%;}
     .search_block .chat-bubble-arrow{display: none;}
     .menu_list{position: absolute;right:0px;margin-top:32px;}

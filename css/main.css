@@ -320,7 +320,7 @@ footer .container{position:relative;}
 .page_1 img.scroll_down{width:30px;height:65px;float:right;margin-right:10px;}
 .page_1 .span8.col{float:left;margin-left:0px;}
 .page_1 .row{margin:0px;}
-#wrapper .page_1 h1{color:#00436e;font-size:3em;}
+#wrapper .page_1 h2{color:#00436e;font-size:3em;}
 .page_1 .row .quick_search{float:left;margin:0px 0px 0px 30px;}
 .page_1 .row .quick_search input[type="text"]{border:1px solid #d1ac46;height:27px;}
 .page_1 .row .quick_search input[type="submit"]{border:1px solid #d1ac46;border-left:0px;padding:5px;}

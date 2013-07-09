@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"  xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,13 +17,15 @@
     <div id="wrapper">
         <header>
             <div class="container">
-                <div class="row header_main">
-                    <div class="col span_7 full_right_header header_nav">
+            <div class="row header_main">
+                    <h1><a href="#home" class="col span_5 logo_blk"><img class="logo" src="img/parallax/logo.png" alt="Richemont Logo" /></a></h1>
+                    <div class="col span_7 full_right_header">
                         <div class="header_right">
                             <ul class="first_row">
                                 <li><a href="#">Login</a></li> 
                                 <li>
-                                    <select>
+                                    <label for="language">language</label>
+                                    <select id="language">
                                         <option>English</option>
                                         <option>English</option>
                                         <option>English</option>
@@ -32,34 +34,53 @@
                             </ul>
                         </div>
                     </div>
-                    <a href="#" class="col span_5 logo_blk"><img class="logo" src="img/logo.png" alt="Richemont Logo" /></a>
                     <div class="col span_7 full_right_header header_nav">
                         <div class="header_right">
                             <ul class="second_row">
-                                <li><a href="#">Our world</a></li>
-                                <li><a href="#">Our Maisons</a></li>
-                                <li><a href="#">Why join us?</a></li>
-                                <li><a href="#">Working with us</a></li>
-                                <li><a href="#">Career paths</a></li>
+                                <li><a href="#our-world">Our world</a></li>
+                                <li><a href="#our-maisons">Our Maisons</a></li>
+                                <li><a href="#why-join-us">Why join us?</a></li>
+                                <li><a href="#work-with-us">Working with us</a></li>
+                                <li><a href="#career-paths">Career paths</a></li>
                                 <li><a href="#">Jobs</a></li>
                                 <li class="search-view">
                                     <div class="search">
-                                        <a class="search_icon" href="#"></a>
+                                        <a class="search_icon" href="#" title="Search"></a>
                                         <div class="search_block">
                                             <div class="chat-bubble-arrow"></div>
-                                            <input class="textbox" type="text" name="" value="" />
-                                            <input class="submit" type="submit" value="Search jobs" />
+                                            <form>
+                                                <label for="q">Search</label> 
+                                                <input class="textbox" type="text" placeholder="Quick search for a job or enter job code" name="q" id="q" />
+                                                <input class="submit" type="submit" value="Search jobs" />
+                                            </form>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
-                            <!--div class="search">
-                                <a class="search_icon" href="#"></a>
-                                <div class="search_block">
-                                    <input class="textbox" type="text" name="" placeholder="" />
-                                    <input class="submit" type="submit" value="Search" />
-                                </div>
-                            </div-->
+                        </div>
+                    </div>
+                    <div class="btn btn-navbar collapsed">
+                            <a class="mobile_menu" href="#" title="Navigation"></a>
+                            <div class="menu_list">
+                            <ul>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#our-world">Our world</a></li>
+                                <li><a href="#why-join-us">Why join us</a></li>
+                                <li><a href="#work-with-us">What to expect</a></li>
+                                <li><a href="#career-paths">Carrer paths</a></li>
+                                <li><a href="#">Jobs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search mobile_search">
+                        <a class="search_icon" href="#" title="Search"></a>
+                        <div class="search_block">
+                            <div class="chat-bubble-arrow"></div>
+                            <form>
+                            <label for="q">Search</label> 
+                            <input class="textbox" type="text" name="q" id="q" placeholder="Quick search for a job or enter job code" />
+                            <input class="submit" type="submit" value="Search jobs" />
+                        </form>
                         </div>
                     </div>
                 </div>
@@ -70,7 +91,8 @@
                 <div class="col span_5 view_jobs">
                     <h1 class="ml">Jobs</h1>
                     <div class="quick_search ml">
-                        <input type="text" placeholder="Quick search for a job or enter job code" />
+                        <label for="q">Search</label> 
+                        <input type="text" placeholder="Quick search for a job or enter job code" name="q" id="q" />
                         <input type="submit" value="GO" />
                     </div>
                 </div>
@@ -81,8 +103,8 @@
                     <h2 class="col span_12">SEARCH JOBS</h2>
                     <div class="inner_block col span_12">
                         <div>
-                            <label>Functional Area:</label>
-                            <select class="styled">
+                            <label for="function">Functional Area:</label>
+                            <select class="styled" id="function">
                                 <option>Functional 1</option>
                                 <option>Functional 2</option>
                                 <option>Functional 3</option>
@@ -90,8 +112,8 @@
                             </select>
                         </div>
                         <div>
-                            <label>Company:</label>
-                            <select class="styled">
+                            <label for="company">Company:</label>
+                            <select class="styled" id="company">
                                 <option>Company 1</option>
                                 <option>Company 2</option>
                                 <option>Company 3</option>
@@ -99,8 +121,8 @@
                             </select>
                         </div>
                         <div>
-                            <label>Country:</label>
-                            <select class="styled">
+                            <label for="country">Country:</label>
+                            <select class="styled" id="country">
                                 <option>Country 1</option>
                                 <option>Country 2</option>
                                 <option>Country 3</option>
@@ -316,9 +338,9 @@
                     <div class="col span_7">
                         <div class="footer_right">
                             <ul>
-                                <li><a class="twitter" href="#"></a></li>
-                                <li><a class="fb" href="#"></a></li>
-                                <li><a class="linkedin" href="#"></a></li>
+                                <li><a class="twitter" href="#" title="Twitter"></a></li>
+                                <li><a class="fb" href="#" title="Facebook"></a></li>
+                                <li><a class="linkedin" href="#" title="Linked-in"></a></li>
                             </ul>
                         </div> <!-- footer right -->
                     </div>

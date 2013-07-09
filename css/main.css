@@ -361,7 +361,7 @@ footer{margin-top:50px;}
 .maisons_head p{margin:0px;color:#4d4d4d;font-size:1.7em;line-height:28px;text-align: center;}
 .container.main{overflow: hidden;max-width:100%;margin:0px;}
 #home, #why-join-us, #career-paths {background:url("../img/parallax/body_bg.jpg") repeat center top #fff;width: 100%;}
-#why-join-us {z-index: 9;padding-bottom: 50px;}
+#why-join-us {z-index: 9;padding-bottom: 50px;min-height: 820px;}
 #career-paths {z-index: 10;padding-bottom: 150px;}
 #home .inner_content, #why-join-us .inner_content, #career-paths .inner_content {/*width: 100%;*/background: #fff;}
 #our-world {background:url("../img/parallax/section_bg.jpg") no-repeat center top transparent;background-size:cover;min-height: 685px; width: 100%;}
@@ -383,7 +383,7 @@ footer{margin-top:50px;}
 .page_3 .maisons_lists ul.buttons li{border:0px;}
 .align-center{text-align: center;}
 h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: normal;margin-bottom: 0;}
-.creativity_head, .tab_content{float:left;width:100%;position: relative;}
+.creativity_head, .tab_content{width:100%;position: relative;}
 .tab_content .main_cont{position: absolute;top:286px;}
 .creativity_head{position: relative;margin-bottom: 18px;overflow: hidden;}
 .creativity_head .bg_img{background: url("../img/parallax/img21.jpg") no-repeat scroll left top transparent;height: 288px;text-align: center;width:auto;}
@@ -411,7 +411,6 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .videos .section_one:last-child{margin:0px;}
 .section_one a h3{position:absolute;font-family: 'SabonLT-Roman';font-size: 2em;font-weight:normal;margin: 0;font-style: italic;left:28%;top:40%;color: #fff;}
 .container.main #work-with-us.page .gallery_join{position: relative;height:690px;float:left;width: 100%;}
-.section_main{float:left;}
 .page_5 .maisons_head h2{text-align :center;margin-bottom:0px;}
 #wrapper .page_5 .maisons_head h2{font-size:4.8em;}
 .tab_content_full, .tab_content_right div{float:left;width:100%;}

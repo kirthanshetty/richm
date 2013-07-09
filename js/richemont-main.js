@@ -1,5 +1,8 @@
 document.body.scrollTop = document.documentElement.scrollTop = 0;
 $(function(){
+	// this must be at the top to make sure parallex is right
+	var WorkUs = WhyworkUs($('.page_4 .section_main'))
+	
 	var topDelta = $('header').outerHeight();
 	parallex = new Parallex('.page',topDelta);
 	$('.container.main').height(parallex.totalHeight);
@@ -12,6 +15,5 @@ $(function(){
 		parallex.init();
 		$('.container.main').height(parallex.totalHeight);
 	})
-	var WorkUs = WhyworkUs($('.page_4 .section_main'))
 	var Career = CareerPath($('.page_5 .inner_content'))
 })

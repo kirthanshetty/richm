@@ -361,7 +361,7 @@ footer{margin-top:50px;}
 .maisons_head p{margin:0px;color:#4d4d4d;font-size:1.7em;line-height:28px;text-align: center;}
 .container.main{overflow: hidden;max-width:100%;margin:0px;}
 #home, #why-join-us, #career-paths {background:url("../img/parallax/body_bg.jpg") repeat center top #fff;width: 100%;}
-#why-join-us {z-index: 9;}
+#why-join-us {z-index: 9;padding-bottom: 50px;}
 #career-paths {z-index: 10;padding-bottom: 150px;}
 #home .inner_content, #why-join-us .inner_content, #career-paths .inner_content {/*width: 100%;*/background: #fff;}
 #our-world {background:url("../img/parallax/section_bg.jpg") no-repeat center top transparent;background-size:cover;min-height: 685px; width: 100%;}
@@ -390,9 +390,9 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .creativity_head h2{color:#00436e;font-size:5em;font-family: 'SabonLT-Roman';}
 .creativity_head p{font-size: 1.4em;color: #fff;margin:0px;}
 .join_us_gallery{position: relative;}
-.join_us_gallery ul{background: #9b9b9b;padding:10px 40px;float: left;position: absolute;top:243px;z-index:2;opacity:0.8;filter:alpha(opacity=80);}
-.join_us_gallery ul li{float:left;font-family: 'SabonLT-Roman';margin:0px 17px;font-size:1.8em;position: relative;}
-.join_us_gallery ul li.active{margin:0px 17px;}
+.join_us_gallery ul{background: #9b9b9b;padding:0px 40px;float: left;position: absolute;top:243px;z-index:2;height: 45px;opacity:0.8;filter:alpha(opacity=80);}
+.join_us_gallery ul li{float:left;font-family: 'SabonLT-Roman';margin:0px 17px;font-size:1.8em;position: relative;padding:10px 0px;}
+.join_us_gallery ul li.active{background: url("../img/parallax/sprite.png") no-repeat scroll center -818px transparent;height: 60px;margin: 0 17px;padding: 10px 0px;}
 .join_us_gallery ul li .chat-bubble-arrow{border: none;}
 .join_us_gallery ul li.active .chat-bubble-arrow{border-color: #515151 transparent transparent;border-style: solid;border-width: 10px 19px 8px;opacity:0.8;filter:alpha(opacity=80);}
 .join_us_gallery ul li a{color:#054c70;}
@@ -948,6 +948,12 @@ textarea {
     .search_block .chat-bubble-arrow{right:19%;}
 }
 
+@media only screen and (max-width:915px){
+    header .logo_blk{width:100%;text-align: center;float:none;margin:0px; float: none;}
+    header .header_nav{width:100%;text-align: center; float: none;}
+    header .header_main{width:100%;text-align: center;}
+}
+
 @media only screen and (max-width:495px) {
     .header_right ul.second_row, .header_right ul.first_row, header .header_nav{display: none;}
     .mobile_search, div.collapsed{display:block;}
@@ -969,6 +975,7 @@ textarea {
     .footer_right{float:left;margin-left:30px;}
     .scroll_top img{bottom:58px;}
     .maisons_lists ul li{width:33.33%;}
+    .header_right ul.first_row{display:none;}
   }
 @media only screen and (max-width:335px) {
   header .logo_blk{width:69%;}

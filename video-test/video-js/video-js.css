@@ -329,7 +329,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 .vjs-default-skin .vjs-volume-bar {
   width: 5em;
   height: 1em;
-  margin: 0.8em auto 0;
+  margin: 1.1em auto 0;
 }
 
 .vjs-default-skin .vjs-volume-menu-button .vjs-menu-content {
@@ -362,8 +362,8 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
   left: -4em;
 }
 .vjs-captions-button, .vjs-fullscreen-control{display: none;}
-.vjs-default-skin .vjs-mute-control{background: url("speaker.png") no-repeat left 9px;width:0.8em; }
-.vjs-default-skin .vjs-volume-control{padding-right: 20px;}
+.vjs-default-skin .vjs-mute-control{background: url("speaker.png") no-repeat left 12px;width:0.8em; }
+.vjs-default-skin .vjs-volume-control{margin-right: 20px;}
 a.video_close{display:block;background: url("video-close.png") no-repeat left top;width:28px;height:28px;position: absolute;top:20px;left:40%;}
 .vjs-playing{background: url("pause.png") no-repeat 15px 8px;width:13px;height:15px;}
 
@@ -484,8 +484,8 @@ a.video_close{display:block;background: url("video-close.png") no-repeat left to
   display: block;
   z-index: 2;
   position: absolute;
-  top: 2em;
-  left: 2em;
+  top: 42%;
+  left: 50%;
   width: 12.0em;
   height: 8.0em;
   margin: 0;

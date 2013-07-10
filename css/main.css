@@ -567,7 +567,11 @@ button.collapsed{display:none;}
 .maisons_lists ul li a.two:hover img.overlay{}
 .maisons_lists ul li {position:relative;height:114px;width:20%;overflow: hidden;border-right: 1px solid #B8B8B8;border-bottom:1px solid #b8b8b8;}
 .maisons_lists ul li.lightbox-open{border-right: 1px solid #363636;border-bottom: 1px solid #363636;}
-.maisons_lists ul li img {position:absolute;left:0;-webkit-transition: opacity 1s ease-in-out;-moz-transition: opacity 1s ease-in-out;-o-transition: opacity 1s ease-in-out;transition: opacity 1s ease-in-out;}
+.maisons_lists ul li img {position:absolute;left:0px;top:0px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;}
 .maisons_lists ul li img.top{width:99%;  z-index: 9999;}
 .maisons_lists ul li a:hover img.top {opacity:0;}
 .maisons_lists ul li img.overlay{top: 0px; z-index: 999;width:99%;height:100%;}
@@ -599,14 +603,20 @@ button.collapsed{display:none;}
     margin-top: 1px;
     width: 96%;
     */
-    transition:all 1s ease 0s;
-    -webkit-transition: all 1s ease 0.2s;
-      -moz-transition: all 1s ease 0.2s;
-      -o-transition: all 1s ease 0.2s;
-      -ms-transition: all 1s ease 0.2s;
-      width:200px;height:120px;margin-left: -5px;margin-top: -3px;
+    height: 126px;
+    left: -8%;
+    position: absolute;
+    top: -8%;
+    width: 215px;
+    transition:all 0.4s ease 0.2s;
+    -webkit-transition: all 0.4s ease 0.2s;
+      -moz-transition: all 0.4s ease 0.2s;
+      -o-transition: all 0.4s ease 0.2s;
+      -ms-transition: all 0.4s ease 0.2s;
     }
 .full_right_header{float:right;}
+.maisons_lists .fading a img{background: #00436E;transition: opacity 1s ease-in-out 0s;-moz-transition: opacity 1s ease-in-out 0s;}
+.maisons_lists .fading a img.blur-img{visibility: hidden;}
 
 /* ie.css */
 
@@ -934,7 +944,7 @@ textarea {
 }
 
 
-@media only screen and (max-width:783px) {
+@media only screen and (max-width:920px) {
     header .logo_blk{width:100%;text-align: center;float:none;margin:0px;}
     header .logo_blk img{float:none;margin-left:0px; margin-bottom: 10px; margin-top: 12px;}
     .search{height:30px;float:none;}
@@ -947,15 +957,11 @@ textarea {
     .header_right ul.second_row li.search-view{ float: right;position: relative;right: 0;width: 15%;}
     .header_right .search{/*display:block;*/}
     .search_block .chat-bubble-arrow{right:19%;}
+    .select_language{position: absolute;right: 0;top: 0;}
+    header .header_main{text-align: left;}
 }
 
-@media only screen and (max-width:915px){
-    header .logo_blk{width:100%;text-align: center;float:none;margin:0px; float: none;}
-    header .header_nav{width:100%;text-align: center; float: none;}
-    header .header_main{width:100%;text-align: center;}
-}
-
-@media only screen and (max-width:495px) {
+@media only screen and (max-width:634px) {
     .header_right ul.second_row, .header_right ul.first_row, header .header_nav{display: none;}
     .mobile_search, div.collapsed{display:block;}
     header .header_main{float:left;width: 100%;}
@@ -976,7 +982,8 @@ textarea {
     .footer_right{float:left;margin-left:30px;}
     .scroll_top img{bottom:58px;}
     .maisons_lists ul li{width:33.33%;}
-    .header_right ul.first_row{display:none;}
+    .search_block .submit{font-size:1.1em;padding: 6px 10px;}
+    .search_block .textbox{padding: 4px 8px;font-size: 1.1em;}
   }
 @media only screen and (max-width:335px) {
   header .logo_blk{width:69%;}
@@ -989,5 +996,7 @@ textarea {
   .maisons_lists{margin-top: 25px;display:none;}
   .mobile_maison_lists{display:block;padding: 0px;}
   .maisons_head{width:100%;}
-
+  .search_block .textbox{width:69%;}
+  .search_block .submit{width:25%;}
+  .header_right ul.first_row{display:none;}
 }

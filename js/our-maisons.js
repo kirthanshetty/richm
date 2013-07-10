@@ -37,6 +37,9 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
             callback();
             $('.maisons_lists ul li').removeClass('lightbox-open');
             $('.maisons_lists ul li a img').removeClass('listI').addClass('blur-img');
+            setTimeout(function() {
+                $('.maisons_lists ul li').removeClass('fading');
+            }, 3000);
         })
         return false;
     });

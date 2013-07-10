@@ -323,13 +323,13 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 }
 
 .vjs-default-skin .vjs-volume-control {
-  width: 5em;
+  width: 30px;
   float: right;
 }
 .vjs-default-skin .vjs-volume-bar {
-  width: 5em;
+  width: 30px;
   height: 1em;
-  margin: 0.8em auto 0;
+  margin: 1em auto 0;
 }
 
 .vjs-default-skin .vjs-volume-menu-button .vjs-menu-content {
@@ -362,10 +362,10 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
   left: -4em;
 }
 .vjs-captions-button, .vjs-fullscreen-control{display: none;}
-.vjs-default-skin .vjs-mute-control{background: url("../img/speaker.png") no-repeat left 9px;width:0.8em; }
+.vjs-default-skin .vjs-mute-control{background: url("../img/speaker.png") no-repeat left 11px;width:0.8em; }
 .vjs-default-skin .vjs-volume-control{margin-right: 20px;}
 a.video_close{display:block;background: url("../img/video-close.png") no-repeat left top;width:28px;height:28px;position: absolute;top:20px;right:20px;}
-.vjs-playing{background: url("../img/pause.png") no-repeat 15px 8px;width:13px;height:15px;}
+.vjs-play-control.vjs-control.vjs-playing{background: url("../img/pause.png") no-repeat 15px 8px;width:50px;height:30px;}
 
 
 /*.vjs-default-skin .vjs-menu-button .vjs-volume-control {
@@ -484,11 +484,11 @@ a.video_close{display:block;background: url("../img/video-close.png") no-repeat 
   display: block;
   z-index: 2;
   position: absolute;
-  top: 45%;
-  left: 45%;
+  top: 50%;
+  left: 50%;
   width: 120px;
   height: 120px;
-  margin: 0;
+  margin: -60px 0 0 -60px;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;

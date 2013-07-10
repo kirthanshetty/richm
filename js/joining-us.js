@@ -4,7 +4,7 @@ $(function(){
 	$(".gallery_container").width(wd).css('overflow','hidden');
 	$(".gallery_container .content").width(wd);
 	var slides = $(".gallery_container").find('.slides').width(wd*3);
-	$('.our_world h1').css('padding-left','3px');
+	$('.our_world h2').css('padding-left','3px');
 	var ulList = $('.gallery_join .our_world ul.buttons');
 	var nextEl = $('.gallery_join .our_world a.next');
 	var prevEl = $('.gallery_join .our_world a.prev');

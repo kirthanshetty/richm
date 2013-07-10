@@ -1,7 +1,12 @@
 
 css/main.css
 ----------------
+css/video-js.css
 css/main.css
+
+css/video-js.css
+----------------
+css/video-js.css
 
 video-test/video-js/video-js.css
 ----------------
@@ -23,4 +28,5 @@ js/joining-us.js
 js/career-path.js
 js/why-work-us.js
 js/richemont-main.js
+js/video.js
 js/main.js

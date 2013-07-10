@@ -32,9 +32,10 @@ function WhyworkUs(container){
 				mainCont = maisonCont;
 			});
 			maisonCont.fadeIn();
-
+			videoHandler(maisonCont);
 		})
 	})
+	videoHandler(mainCont);
 
 	prevBtn.click(function(){
 		tabAnchors.parent().parent().find('li.active').prev().find('a').click();
@@ -43,4 +44,28 @@ function WhyworkUs(container){
 	nextBtn.click(function(){
 		tabAnchors.parent().parent().find('li.active').next().find('a').click();
 	})
+
+	function videoHandler(el){
+		el.find('a[rel="video"]').click(function(e){
+			e.preventDefault();
+			$.get($(this).attr('href'),function(data){
+				var cont = $(data);
+				cont.css({
+					'position':'fixed',
+					'top': 0,
+					'left': 0,
+					'height': '100%',
+					'width': '100%',
+					'background': '#000',
+					'z-index':'1000'
+				});
+				cont.appendTo(document.body);
+				videojs('video_content');
+				cont.find('a.video_close').click(function(e){
+					e.preventDefault();
+					cont.remove();
+				})
+			})
+		})
+	}
 }

@@ -393,7 +393,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .creativity_head h2{color:#00436e;font-size:5em;font-family: 'SabonLT-Roman';}
 .creativity_head p{font-size: 1.4em;color: #fff;margin:0px;}
 .join_us_gallery{position: relative;}
-.join_us_gallery ul{background: #9b9b9b;padding:0px 40px;float: left;position: absolute;top:243px;z-index:2;height: 45px;opacity:0.8;filter:alpha(opacity=80);}
+.join_us_gallery ul{background: #9b9b9b;padding:0px 45px;float: left;position: absolute;top:243px;z-index:2;height: 45px;opacity:0.8;filter:alpha(opacity=80);}
 .join_us_gallery ul li{float:left;font-family: 'SabonLT-Roman';margin:0px 17px;font-size:1.8em;position: relative;padding:10px 0px;}
 .join_us_gallery ul li.active{background: url("../img/parallax/sprite.png") no-repeat scroll center -818px transparent;height: 60px;margin: 0 17px;padding: 10px 0px;}
 .join_us_gallery ul li .chat-bubble-arrow{border: none;}

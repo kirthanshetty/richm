@@ -989,7 +989,7 @@ textarea {
     .search_block .textbox{padding: 4px 8px;font-size: 1.1em;}
   }
 @media only screen and (max-width:335px) {
-  header .logo_blk{width:69%;}
+  header .logo_blk{width:69%;background: #ddd;}
   .search{width:13%;}
   div.collapsed{width:18%;}
   .maisons_lists ul li{width:50%;}

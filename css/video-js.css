@@ -366,7 +366,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
 .vjs-default-skin .vjs-volume-control{margin-right: 20px;}
 a.video_close{display:block;background: url("../img/video-close.png") no-repeat left top;width:28px;height:28px;position: absolute;top:20px;right:20px;}
 .vjs-play-control.vjs-control.vjs-playing{background: url("../img/pause.png") no-repeat 15px 8px;width:50px;height:30px;}
-
+.vjs-play-control.vjs-control.vjs-paused{background: url("../img/play.jpg") no-repeat 15px 8px;width:50px;height:30px;}
 
 /*.vjs-default-skin .vjs-menu-button .vjs-volume-control {
   height: 1.5em;

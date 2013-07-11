@@ -6,8 +6,8 @@ $(function(){
 	var slides = $(".gallery_container").find('.slides').width(wd*3);
 	$('.our_world h2').css('padding-left','3px');
 	var ulList = $('.gallery_join .our_world ul.buttons');
-	var nextEl = $('.gallery_join .our_world a.next');
-	var prevEl = $('.gallery_join .our_world a.prev');
+	var nextEl = $('.gallery_join .our_world a.next, #work-with-us a.next');
+	var prevEl = $('.gallery_join .our_world a.prev, #work-with-us a.prev');
 	var noSlides = $('.gallery_join .our_world ul.buttons li a').length,
 	      curSlide = 0;
 
@@ -43,10 +43,10 @@ $(function(){
 		slides.animate({'margin-left': -1 * wd * curSlide });
 	}
 
-	$('.gallery_join .our_world a.next').click(function(){
+	$('.gallery_join .our_world a.next, #work-with-us a.next').click(function(){
 		changeSlide('next');
 	 });
-	$('.gallery_join .our_world a.prev').click(function(){
+	$('.gallery_join .our_world a.prev, #work-with-us a.prev').click(function(){
 		changeSlide('prev');
 	 });
 	$('.gallery_join .our_world ul.buttons li a').click(function(e){

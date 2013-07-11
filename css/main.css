@@ -443,7 +443,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .career_gallery ul li.active{ background:url("../img/grey-arrow.png") no-repeat scroll center bottom transparent;height: 147px;}
 .career_gallery ul li.active .chat-bubble-arrow{bottom: -26px;}
 .career_gallery ul li span{   bottom: -2px;color: #FFFFFF;font-size: 1.6em;font-weight: normal;left: 0;position: absolute;text-align: center;width: 100%;}
-.career_gallery ul li.active span{font-weight:700;bottom:20px;}
+.career_gallery ul li.active span{font-weight:bold;bottom:20px;}
 .career_gallery ul li a span.overlay{background: url("../img/parallax/overlay.jpg") no-repeat scroll left top transparent;height: 87px;left: 20px;opacity: 0.4;position: absolute;top: 16px;width: 141px;}
 .career_gallery ul li.active a span.overlay{ background:none;}
 .career_gallery ul li img{position: absolute;left:20px;}
@@ -1020,7 +1020,7 @@ textarea {
   .section_two{margin: 0 auto 20px;}
   #our-maisons .inner_content, #why-join-us .inner_content, #work-with-us .inner_content, #our-world .inner_content {padding: 10px;}
   #wrapper .page_3 .maisons_head h2, #wrapper #why-join-us h2, #wrapper .page_5 .maisons_head h2{margin:0px;font-size: 3.4em;float:left;padding-bottom: 10px;padding-top: 10px;}
-  .maisons_head p{font-size: 1.7em;float: left;}
+  .maisons_head p{font-size: 1.5em;float: left;}
   #why-join-us .maisons_head p{font-size: 1.5em;}
   .maisons_lists ul li{height:88px;}
   .maisons_lists ul li a, .maisons_lists ul li a img{height: 100%;}

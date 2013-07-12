@@ -10,16 +10,15 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Lato:700,400' rel='stylesheet' type='text/css'>
 </head>
 <body>
     <div id="wrapper">
         <header>
             <div class="container">
-            <div class="row header_main">
+                <div class="row header_main">
                     <h1><a href="#home" class="col span_5 logo_blk"><img class="logo" src="img/parallax/logo.png" alt="Richemont Logo" /></a></h1>
-                    <div class="col span_7 full_right_header">
+                    <div class="col span_7 full_right_header select_language">
                         <div class="header_right">
                             <ul class="first_row">
                                 <li><a href="#">Login</a></li> 
@@ -37,11 +36,11 @@
                     <div class="col span_7 full_right_header header_nav">
                         <div class="header_right">
                             <ul class="second_row">
-                                <li><a href="#our-world">Our world</a></li>
-                                <li><a href="#our-maisons">Our Maisons</a></li>
-                                <li><a href="#why-join-us">Why join us?</a></li>
-                                <li><a href="#work-with-us">Working with us</a></li>
-                                <li><a href="#career-paths">Career paths</a></li>
+                                <li><a href="index.html#our-world">Our world</a></li>
+                                <li><a href="index.html#our-maisons">Our Maisons</a></li>
+                                <li><a href="index.html#why-join-us">Why join us?</a></li>
+                                <li><a href="index.html#work-with-us">Working with us</a></li>
+                                <li><a href="index.html#career-paths">Career paths</a></li>
                                 <li><a href="#">Jobs</a></li>
                                 <li class="search-view">
                                     <div class="search">
@@ -62,15 +61,15 @@
                     <div class="btn btn-navbar collapsed">
                             <a class="mobile_menu" href="#" title="Navigation"></a>
                             <div class="menu_list">
-                            <ul>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#our-world">Our world</a></li>
-                                <li><a href="#why-join-us">Why join us</a></li>
-                                <li><a href="#work-with-us">What to expect</a></li>
-                                <li><a href="#career-paths">Carrer paths</a></li>
-                                <li><a href="#">Jobs</a></li>
-                            </ul>
-                        </div>
+                                <ul>
+                                    <li><a href="index.html#home">About us</a></li>
+                                    <li><a href="index.html#our-world">Our world</a></li>
+                                    <li><a href="index.html#why-join-us">Why join us</a></li>
+                                    <li><a href="index.html#work-with-us">What to expect</a></li>
+                                    <li><a href="index.html#career-paths">Carrer paths</a></li>
+                                    <li><a href="#">Jobs</a></li>
+                                </ul>
+                            </div>
                     </div>
                     <div class="search mobile_search">
                         <a class="search_icon" href="#" title="Search"></a>
@@ -80,7 +79,7 @@
                             <label for="q">Search</label> 
                             <input class="textbox" type="text" name="q" id="q" placeholder="Quick search for a job or enter job code" />
                             <input class="submit" type="submit" value="Search jobs" />
-                        </form>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -90,6 +89,7 @@
             <div class="row content_block jobs_main_content">
                 <div class="col span_5 view_jobs">
                     <h1 class="ml">Jobs</h1>
+                    <h3 class="mr"><a href="#">View FAQs</a></h3>
                     <div class="quick_search ml">
                         <label for="q">Search</label> 
                         <input type="text" placeholder="Quick search for a job or enter job code" name="q" id="q" />
@@ -105,7 +105,7 @@
                         <div>
                             <label for="function">Functional Area:</label>
                             <select class="styled" id="function">
-                                <option>Functional 1</option>
+                                <option>Choice 1</option>
                                 <option>Functional 2</option>
                                 <option>Functional 3</option>
                                 <option>Functional 4</option>
@@ -114,7 +114,7 @@
                         <div>
                             <label for="company">Company:</label>
                             <select class="styled" id="company">
-                                <option>Company 1</option>
+                                <option>Choice 1</option>
                                 <option>Company 2</option>
                                 <option>Company 3</option>
                                 <option>Company 4</option>
@@ -123,7 +123,7 @@
                         <div>
                             <label for="country">Country:</label>
                             <select class="styled" id="country">
-                                <option>Country 1</option>
+                                <option>Choice 1</option>
                                 <option>Country 2</option>
                                 <option>Country 3</option>
                                 <option>Country 4</option>
@@ -132,7 +132,11 @@
                         <div class="search_buttons">
                             <input type="button" value="Save as job alert" />
                             <input type="submit" value="Search" />
-                            <span class="reset">Reset all </span>
+                            <a href="#" class="reset">Reset all </a>
+                            <div class="save_search">
+                                <input type="button" value="Save as job alert" />
+                                <input type="submit" value="Search" />
+                            </div>
                         </div>
                     </div> <!-- inner block -->
                 </section> <!-- search block -->
@@ -324,8 +328,8 @@
         </div>
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col span_5">
+                <div class="row footer_main">
+                    <div class="col span_6">
                         <div class="footer_left ml">
                             <h3>www.richemont.com</h3>
                             <ul class="second_row">
@@ -335,12 +339,15 @@
                             </ul>
                         </div> <!-- footer left -->
                     </div>
-                    <div class="col span_7">
-                        <div class="footer_right">
+                    <div class="col span_6">
+                        <div class="scroll_top mr">
+                            <a href="#"><img src="img/parallax/scroll_top.png" alt="Scroll Top" /></a>
+                        </div>
+                        <div class="footer_right mr">
                             <ul>
-                                <li><a class="twitter" href="#" title="Twitter"></a></li>
-                                <li><a class="fb" href="#" title="Facebook"></a></li>
-                                <li><a class="linkedin" href="#" title="Linked-in"></a></li>
+                                <li> <a class="twitter" href="#" title="Twitter"></a></li>
+                                <li> <a class="fb" href="#" title="Facebook"></a></li>
+                                <li> <a class="linkedin" href="#" title="Linked-in"></a></li>
                             </ul>
                         </div> <!-- footer right -->
                     </div>
@@ -349,7 +356,10 @@
         </footer>
     </div> <!-- wrapper -->
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" data-main="js/main-jobs" src="js/vendor/require.js">
+    </script> 
+
+    <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
     <script src="js/vendor/jquery-1.9.1.min.js"></script>
     <script src="js/customselect.js"></script>
@@ -358,7 +368,7 @@
     $(document).ready(function(){
         $('.inner_block select.styled, .header_right .first_row select').customSelect();
     });
-    </script>
+    </script-->
     <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

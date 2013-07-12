@@ -622,7 +622,7 @@ img.section_bg{left: 0;position: absolute;top: 0;width: 100%;}
 h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs h3{display: none;}
 
 /* ie.css */
-.eq-ie9 .quick_search input[type="submit"]{padding-top:10px;}
+.eq-ie9 .quick_search input[type="submit"], .lt-ie9 .quick_search input[type="submit"]{padding-top:10px;}
 /* CLEARFIX HACK */
 .row,
 .clr,

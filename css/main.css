@@ -494,10 +494,18 @@ button.collapsed{display:none;}
 .section_text h3{ color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;}
 .maisons_head h3{color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;text-align: center;}
 #wrapper .tab_content_full .tab_content_left h2{ color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;font-family: lato;}
+
 /* CSS for IE to Fallback */
-.no-cssgradients .inner_block input[type='submit']{background: url("../img/parallax/blue_bg.jpg") repeat-x scroll left top;}
+.no-cssgradients .inner_block input[type='submit'], .tab_content_full .view_jobs a, .maisons_lists ul li.join-us input{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type='submit']{background: url("../img/parallax/shade_bg.jpg") repeat-x scroll left top;}
-.no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button']{background: url("../img/parallax/grey_bg.jpg") repeat-x scroll left top;}
+.no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button']{background: url("../img/parallax/grey_bg2.jpg") repeat-x scroll left top;}
+.no-cssgradients .quick_search input[type="submit"]{background: url("../img/shade_button.jpg") repeat-x left top;}
+.eq-ie9 .quick_search input[type="submit"], .lt-ie9 .quick_search input[type="submit"]{padding-top:10px;}
+.lt-ie9 .tab_content_full .view_jobs a, .eq-ie9 .tab_content_full .view_jobs a{padding-top:6px;padding-bottom: 6px;}
+.lt-ie9 .tab_content_left form input[type="button"], .eq-ie9 .tab_content_left form input[type="button"]{background: url("../img/grey_bg.jpg") repeat-x scroll left top;}
+.lt-ie9 .search_block .submit, .eq-ie9 .search_block .submit{background: url("../img/blue_bg.jpg") repeat-x scroll left top;}
+.eq-ie9 .quick_search input[type="submit"]{top:-1px;}
+
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;  }
@@ -622,7 +630,7 @@ img.section_bg{left: 0;position: absolute;top: 0;width: 100%;}
 h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs h3{display: none;}
 
 /* ie.css */
-.eq-ie9 .quick_search input[type="submit"], .lt-ie9 .quick_search input[type="submit"]{padding-top:10px;}
+
 /* CLEARFIX HACK */
 .row,
 .clr,

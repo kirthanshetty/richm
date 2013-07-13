@@ -372,11 +372,11 @@ footer{margin-top:50px;}
 .maisons_lists{float:left;width:100%;margin-top:35px;margin-bottom:58px;}
 .maisons_lists ul li{float:left;width:20%;}
 .maisons_lists ul li a{height:114px;background:#00436e;display: block;}
-.maisons_lists ul li:last-child{border:0px;border-bottom:1px solid #b8b8b8;}
+/*.maisons_lists ul li:last-child{border:0px;border-bottom:1px solid #b8b8b8;}*/
 /*.maisons_lists ul li a.two{background:url("../img/parallax/watch2.jpg") no-repeat left top;}
 .maisons_lists ul li a.two:hover img{background: transparent;}*/
 .maisons_lists ul li a img{/*left: 20%;position: relative;top: 25%;*/ background: none repeat scroll 0 0 #00436E;height:100%;width:99%;}
-.maisons_lists ul li.join-us{background:#dadada;width:80%;height: 113px;opacity:0.7;filter:alpha(opacity=90);border:0px !important;}
+.maisons_lists ul li.join-us{background:#dadada;width:760px;height: 113px;opacity:0.7;filter:alpha(opacity=90);border:0px !important;}
 .maisons_lists ul li.join-us section{float:right;padding:30px 40px;}
 .maisons_lists ul li.join-us h3{font-size:2.5em;font-weight: normal;color:#4e4e4e;float:left;margin:7px 0 0;}
 .maisons_lists ul li.join-us input{float:right;margin:10px 0px 0px 28px;font-size:1.3em;font-weight: normal;}
@@ -557,7 +557,9 @@ button.collapsed{display:none;}
 .full_right_header.header_nav{margin-left:0px;}
 .search_block .chat-bubble-arrow{ border-color: transparent transparent #E7E7E7;border-style: solid;border-width: 5px 8px 7px;bottom: 41px;right:0px;}
 .footer_main{margin-bottom: 0;padding: 13px 0;}
-.maison_image img{width:404px;height:304px;}/*
+.maison_image img{width:404px;height:304px;}
+.maisons_lists ul{margin: 0 auto; width: 950px;}
+/*
 .maisons_lists ul li a.listA{background: #1f1f1f;border-color: #414141;}
 .maisons_lists ul li a img.listI{background: transparent;opacity:0.2;}*/
 .maisons_lists ul li.lightbox-open img.overlay{opacity:0.2;}
@@ -573,7 +575,7 @@ button.collapsed{display:none;}
 .maisons_lists ul li a img.blur-img{}
 .maisons_lists ul li a.two{/*background:url('img/parallax/maison11.png') no-repeat left top;*/}
 .maisons_lists ul li a.two:hover img.overlay{}
-.maisons_lists ul li {position:relative;height:114px;width:20%;overflow: hidden;border-right: 1px solid #B8B8B8;border-bottom:1px solid #b8b8b8;}
+.maisons_lists ul li {position:relative;height:114px;width:190px; float: left; overflow: hidden;border-right: 1px solid #B8B8B8;border-bottom:1px solid #b8b8b8;}
 .maisons_lists ul li.lightbox-open{border-right: 1px solid #363636;border-bottom: 1px solid #363636;}
 .maisons_lists ul li img {position:absolute;left:0px;top:0px;
   -webkit-transition: opacity 1s ease-in-out;
@@ -583,12 +585,6 @@ button.collapsed{display:none;}
 .maisons_lists ul li img.top{width:100%;  z-index: 9999;}
 .maisons_lists ul li a:hover img.top {opacity:0;}
 .maisons_lists ul li img.overlay{top: 0px; z-index: 999;width:100%;height:100%;}
-.maisons_lists ul li img.add_blur{ filter: blur(3px);
-    -webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-    -o-filter: blur(2px);
-    -ms-filter: blur(2px);
-}
 .maisons_lists ul li img.overlay:hover{ filter: blur(0px);
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
@@ -954,6 +950,27 @@ textarea {
     vertical-align: top; /* 2 */
 }
 
+/* Our Maisons Repsonsive */
+@media only screen and (max-width:1020px) {
+  .maisons_lists ul{width: 760px;}
+  .maisons_lists ul li.join-us{width: 570px}
+}
+
+@media only screen and (max-width:830px) {
+  .maisons_lists ul{width: 570px;}
+  .maisons_lists ul li.join-us{width: 570px }
+}
+
+@media only screen and (max-width:640px) {
+  .maisons_lists ul{width: 380px;}
+  .maisons_lists ul li.join-us{width: 190px }
+}
+
+@media only screen and (max-width:450px) {
+  .maisons_lists ul{width: 300px;}
+  .maisons_lists ul li{width: 150px; height: 90px; }
+  .maisons_lists ul li.join-us{width: 300px }
+}
 
 @media only screen and (max-width:920px) {
     header .logo_blk{width:100%;text-align: center;float:none;margin:0px;}
@@ -992,7 +1009,6 @@ textarea {
     .search_block .submit{margin:0px;width:17%; margin: 2% 2% 2% 0;}
     .footer_right{float:left;margin-left:30px;}
     .scroll_top img{bottom:58px;}
-    .maisons_lists ul li{width:33.33%;}
     .search_block .submit{font-size:1.1em;padding: 6px 10px;}
     .search_block .textbox{padding: 4px 8px;font-size: 1.1em;}
   }
@@ -1027,7 +1043,6 @@ textarea {
   #wrapper .page_3 .maisons_head h2, #wrapper #why-join-us h2, #wrapper .page_5 .maisons_head h2{margin:0px;font-size: 3.4em;float:left;padding-bottom: 10px;padding-top: 10px;}
   .maisons_head p{font-size: 1.5em;float: left;}
   #why-join-us .maisons_head p{font-size: 1.5em;}
-  .maisons_lists ul li{height:88px;}
   .maisons_lists ul li a, .maisons_lists ul li a img{height: 100%;}
   .maisons_lists ul li.lightbox-open a{background: none repeat scroll 0 0 #00436E;}
   .maisons_lists ul li.lightbox-open img.overlay{opacity: 1;}

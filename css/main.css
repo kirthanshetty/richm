@@ -366,9 +366,12 @@ footer{margin-top:50px;}
 #our-world {/*background:url("../img/parallax/section_bg.jpg") no-repeat center top transparent;background-size:cover;*/min-height: 685px; width: 100%;}
 #work-with-us{/*background:url("../img/parallax/img14.jpg") no-repeat center top transparent;background-size:cover;*/min-height: 685px; width: 100%;z-index: 10;}
 
+/*Our Maisons*/
 #our-maisons {width:100%;z-index: 8;}
+.maison_image img{width:404px;height:304px;}
 #our-maisons .inner_content{padding:35px;overflow: hidden;}
 .maisons_lists{float:left;width:100%;margin-top:35px;margin-bottom:58px;}
+.maisons_lists ul{margin: 0 auto; width: 950px;}
 .maisons_lists ul li{float:left;width:20%;}
 .maisons_lists ul li a{height:114px;background:#00436e;display: block;}
 /*.maisons_lists ul li:last-child{border:0px;border-bottom:1px solid #b8b8b8;}*/
@@ -379,6 +382,66 @@ footer{margin-top:50px;}
 .maisons_lists ul li.join-us section{float:right;padding:30px 40px;}
 .maisons_lists ul li.join-us h3{font-size:2.5em;font-weight: normal;color:#4e4e4e;float:left;margin:7px 0 0;}
 .maisons_lists ul li.join-us input{float:right;margin:10px 0px 0px 28px;font-size:1.3em;font-weight: normal;}
+.maisons_lists ul li.lightbox-open img.overlay{opacity:0.2;}
+.maisons_lists ul li.lightbox-open a{background: #1f1f1f;border-color: #414141;}
+.our_maison_gallery ul.buttons li.active.lightbox-open a{background:url("../img/parallax/sprite.png") repeat scroll left -292px transparent !important;}
+.our_maison_gallery ul.buttons li.lightbox-open a{background: url("../img/parallax/sprite.png") repeat scroll left -269px transparent !important;}
+.maisons_lists ul li.lightbox-open a img {opacity: 0;
+  transition: opacity 0s ease-in-out 0s;
+-webkit-transition: opacity 0s ease-in-out 0s;
+-moz-transition: opacity 0s ease-in-out 0s;
+-o-transition: opacity 0s ease-in-out 0s;
+-ms-transition: opacity 0s ease-in-out 0s;}
+.maisons_lists ul li a img.blur-img{}
+.maisons_lists ul li a.two{/*background:url('img/parallax/maison11.png') no-repeat left top;*/}
+.maisons_lists ul li a.two:hover img.overlay{}
+.maisons_lists ul li {position:relative;height:114px;width:190px; float: left; overflow: hidden;border-right: 1px solid #B8B8B8;border-bottom:1px solid #b8b8b8;}
+.maisons_lists ul li.lightbox-open{border-right: 1px solid #363636;border-bottom: 1px solid #363636;}
+.maisons_lists ul li img {position:absolute;left:0px;top:0px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;}
+.maisons_lists ul li img.top{width:100%;  z-index: 9999;}
+.maisons_lists ul li a:hover img.top {opacity:0;}
+.maisons_lists ul li img.overlay{top: 0px; z-index: 999;width:100%;height:100%;}
+.maisons_lists ul li img.overlay:hover{ filter: blur(0px);
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);}
+.maisons_lists ul li a:hover img.add_blur{
+  /*
+      transition: all 0.3s ease-in-out 0.5s;
+      -webkit-transition: all 0.3s ease-in-out 0.2s;
+      -moz-transition: all 0.3s ease-in-out 0.2s;
+      -o-transition: all 0.3s ease-in-out 0.2s;
+      -ms-transition: all 0.3s ease-in-out 0.2s;
+      transform:scale(1.025);
+      -webkit-transform:scale(1.025);
+      -moz-transform:scale(1.025);
+      -o-transform:scale(1.025);
+      -ms-transform:scale(1.025);
+        height: 96%;
+    margin-left: 3px;
+    margin-top: 1px;
+    width: 96%;
+    */
+    height: 126px;
+    left: -8%;
+    position: absolute;
+    top: -8%;
+    width: 215px;
+    transition:all 0.4s ease 0.2s;
+    -webkit-transition: all 0.4s ease 0.2s;
+      -moz-transition: all 0.4s ease 0.2s;
+      -o-transition: all 0.4s ease 0.2s;
+      -ms-transition: all 0.4s ease 0.2s;
+    }
+.maisons_lists .fading a img{background: #00436E;transition: opacity 1s ease-in-out 0s;-moz-transition: opacity 1s ease-in-out 0s;}
+.maisons_lists .fading a img.blur-img{visibility: hidden;}
+
+
 .page_3 .maisons_lists ul.buttons li{border:0px;}
 .align-center{text-align: center;}
 h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: normal;margin-bottom: 0;}
@@ -555,71 +618,9 @@ button.collapsed{display:none;}
 .menu_list ul li a{color:#00436E;text-align: right;}
 .search_block .chat-bubble-arrow{ border-color: transparent transparent #E7E7E7;border-style: solid;border-width: 5px 8px 7px;bottom: 41px;right:0px;}
 .footer_main{margin-bottom: 0;padding: 13px 0;}
-.maison_image img{width:404px;height:304px;}
-.maisons_lists ul{margin: 0 auto; width: 950px;}
-/*
-.maisons_lists ul li a.listA{background: #1f1f1f;border-color: #414141;}
-.maisons_lists ul li a img.listI{background: transparent;opacity:0.2;}*/
-.maisons_lists ul li.lightbox-open img.overlay{opacity:0.2;}
-.maisons_lists ul li.lightbox-open a{background: #1f1f1f;border-color: #414141;}
-.our_maison_gallery ul.buttons li.active.lightbox-open a{background:url("../img/parallax/sprite.png") repeat scroll left -292px transparent !important;}
-.our_maison_gallery ul.buttons li.lightbox-open a{background: url("../img/parallax/sprite.png") repeat scroll left -269px transparent !important;}
-.maisons_lists ul li.lightbox-open a img {opacity: 0;
-  transition: opacity 0s ease-in-out 0s;
--webkit-transition: opacity 0s ease-in-out 0s;
--moz-transition: opacity 0s ease-in-out 0s;
--o-transition: opacity 0s ease-in-out 0s;
--ms-transition: opacity 0s ease-in-out 0s;}
-.maisons_lists ul li a img.blur-img{}
-.maisons_lists ul li a.two{/*background:url('img/parallax/maison11.png') no-repeat left top;*/}
-.maisons_lists ul li a.two:hover img.overlay{}
-.maisons_lists ul li {position:relative;height:114px;width:190px; float: left; overflow: hidden;border-right: 1px solid #B8B8B8;border-bottom:1px solid #b8b8b8;}
-.maisons_lists ul li.lightbox-open{border-right: 1px solid #363636;border-bottom: 1px solid #363636;}
-.maisons_lists ul li img {position:absolute;left:0px;top:0px;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;}
-.maisons_lists ul li img.top{width:100%;  z-index: 9999;}
-.maisons_lists ul li a:hover img.top {opacity:0;}
-.maisons_lists ul li img.overlay{top: 0px; z-index: 999;width:100%;height:100%;}
-.maisons_lists ul li img.overlay:hover{ filter: blur(0px);
-    -webkit-filter: blur(0px);
-    -moz-filter: blur(0px);
-    -o-filter: blur(0px);
-    -ms-filter: blur(0px);}
-.maisons_lists ul li a:hover img.add_blur{
-  /*
-      transition: all 0.3s ease-in-out 0.5s;
-      -webkit-transition: all 0.3s ease-in-out 0.2s;
-      -moz-transition: all 0.3s ease-in-out 0.2s;
-      -o-transition: all 0.3s ease-in-out 0.2s;
-      -ms-transition: all 0.3s ease-in-out 0.2s;
-      transform:scale(1.025);
-      -webkit-transform:scale(1.025);
-      -moz-transform:scale(1.025);
-      -o-transform:scale(1.025);
-      -ms-transform:scale(1.025);
-        height: 96%;
-    margin-left: 3px;
-    margin-top: 1px;
-    width: 96%;
-    */
-    height: 126px;
-    left: -8%;
-    position: absolute;
-    top: -8%;
-    width: 215px;
-    transition:all 0.4s ease 0.2s;
-    -webkit-transition: all 0.4s ease 0.2s;
-      -moz-transition: all 0.4s ease 0.2s;
-      -o-transition: all 0.4s ease 0.2s;
-      -ms-transition: all 0.4s ease 0.2s;
-    }
-.maisons_lists .fading a img{background: #00436E;transition: opacity 1s ease-in-out 0s;-moz-transition: opacity 1s ease-in-out 0s;}
-.maisons_lists .fading a img.blur-img{visibility: hidden;}
 
-img.section_bg{left: 0;position: absolute;top: 0;width: 100%; z-index: -1;}
+img.section_bg{left: 0;position: absolute;top: 0;width: 100%;}
+.lt-ie7 img.section_bg{z-index: -1;}
 h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs h3{display: none;}
 
 /* ie.css */
@@ -1034,7 +1035,6 @@ textarea {
   header .logo_blk{width:69%;}
   .search{width:13%;}
   div.collapsed{width:18%;}
-  .maisons_lists ul li{width:50%;}
   #our-maisons .inner_content{padding:20px;}
   #wrapper .page_3 .maisons_head h1{font-size: 2.8em;text-align: left;margin-top:0px;}
   .maisons_head p{font-size:1.5em;line-height: 25px;text-align: left;}

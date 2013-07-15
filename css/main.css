@@ -382,7 +382,7 @@ footer{margin-top:50px;}
 .maisons_lists ul li.join-us section{float:right;padding:30px 40px;}
 .maisons_lists ul li.join-us h3{font-size:2.5em;font-weight: normal;color:#4e4e4e;float:left;margin:7px 0 0;}
 .maisons_lists ul li.join-us input{float:right;margin:10px 0px 0px 28px;font-size:1.3em;font-weight: normal;}
-.maisons_lists ul li.lightbox-open img.overlay{opacity:0.2;}
+.maisons_lists ul li.lightbox-open img.overlay{opacity:0.2;filter:alpha(opacity=20);}
 .maisons_lists ul li.lightbox-open a{background: #1f1f1f;border-color: #414141;}
 .our_maison_gallery ul.buttons li.active.lightbox-open a{background:url("../img/parallax/sprite.png") repeat scroll left -292px transparent !important;}
 .our_maison_gallery ul.buttons li.lightbox-open a{background: url("../img/parallax/sprite.png") repeat scroll left -269px transparent !important;}
@@ -405,11 +405,13 @@ footer{margin-top:50px;}
 .maisons_lists ul li img.top{width:100%;  z-index: 9999;}
 .maisons_lists ul li a:hover img.top {opacity:0;}
 .maisons_lists ul li img.overlay{top: 0px; z-index: 999;width:100%;height:100%;}
+/*
 .maisons_lists ul li img.overlay:hover{ filter: blur(0px);
     -webkit-filter: blur(0px);
     -moz-filter: blur(0px);
     -o-filter: blur(0px);
     -ms-filter: blur(0px);}
+ */   
 .maisons_lists ul li a:hover img.add_blur{
   /*
       transition: all 0.3s ease-in-out 0.5s;
@@ -503,7 +505,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .career_gallery ul li.active .chat-bubble-arrow{bottom: -26px;}
 .career_gallery ul li span{   bottom: -2px;color: #FFFFFF;font-size: 1.6em;font-weight: normal;left: 0;position: absolute;text-align: center;width: 100%;}
 .career_gallery ul li.active span{font-weight:bold;bottom:20px;}
-.career_gallery ul li a span.overlay{background: url("../img/parallax/overlay.jpg") no-repeat scroll left top transparent;height: 87px;left: 20px;opacity: 0.4;position: absolute;top: 16px;width: 141px;}
+.career_gallery ul li a span.overlay{background: url("../img/parallax/overlay.jpg") no-repeat scroll left top transparent;height: 87px;left: 20px;opacity: 0.4;filter:alpha(opacity=40);position: absolute;top: 16px;width: 141px;}
 .career_gallery ul li.active a span.overlay{ background:none;}
 .career_gallery ul li img{position: absolute;left:20px;}
 .career_gallery a.prev{background: url("../img/parallax/sprite.png") no-repeat scroll left -208px transparent;height: auto;padding: 8px 0 8px 4px;position: absolute;left: 48px;top: 50px; width: 12px;height:30px;}
@@ -568,6 +570,14 @@ button.collapsed{display:none;}
 .lt-ie9 .search_block .submit, .eq-ie9 .search_block .submit{background: url("../img/blue_bg.jpg") repeat-x scroll left top;}
 .eq-ie9 .quick_search input[type="submit"]{top:-1px;}
 
+.eq-ie9 .join_us_gallery ul li{margin:0px 22px 0px 23px;}
+.lt-ie9 .join_us_gallery ul li{margin:0px 16px 0px 17.5px;}
+.lt-ie9 .last-video{margin:0px;}
+.eq-ie9 .header_right ul.first_row{font-family: lato;}
+.eq-ie9 .quick_search input[type="submit"]{top:0px;}
+.eq-ie9 .second_row .quick_search input[type="submit"]{top:-1px;}
+.lt-ie9 .quick_search input[type="text"]{position: relative;top:-5px;}
+.lt-ie9 #our-maisons{background-position: center top;}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;  }
@@ -623,6 +633,73 @@ img.section_bg{left: 0;position: absolute;top: 0;width: 100%;}
 .lt-ie7 img.section_bg{z-index: -1;}
 h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs h3{display: none;}
 
+
+/* Style for Other pages */
+/* Style for Contact page */
+.full_section{float:left;width:100%;}
+.full_section .col.span_5{border-right:1px solid #d4d4d4;}
+.full_section .col.span_5:last-child{border:0px;}
+.left_section{float:left;width:292px;}
+.left_section label{display:block;font-size:1.5em;color:#5e5e5e;padding-bottom: 8px;}
+.left_section input{width:292px;border:1px solid #a8a8a8;height:33px;margin-bottom:20px;}
+.left_section textarea{width:292px;border:1px solid #a8a8a8;height:145px;margin-bottom:20px;}
+.left_section input[type="submit"] {background: linear-gradient(to bottom, #255E83 0%, #245D82 20%, #215A7F 40%, #1D577B 50%, #195377 60%, #124B70 80%, #10496D 100%) repeat scroll 0 0 transparent;border: 1px solid #054670;color: #FFFFFF;float: right;font-size: 1.3em;font-weight: bold;padding: 0px 5px;width:70px;}
+.right_section{float:left;padding-left: 12px;}
+.right_section h4{color:#4e4e4e;font-size:1.7em;font-weight:bold;margin:0px 0px 18px 0px;}
+.right_section ul{padding:0px;}
+.right_section ul li{padding-bottom: 5px;padding-left:30px;color:#4e4e4e;font-size:1.5em; margin-bottom: 5px;}
+.right_section ul li.twitter{background:url("../img/parallax/sprite.png") no-repeat left -1134px;}
+.right_section ul li.fb{background:url("../img/parallax/sprite.png") no-repeat left -1156px;}
+.right_section ul li.linked{background:url("../img/parallax/sprite.png") no-repeat left -1182px;}
+.right_section ul li a{color:#00436e;}
+.right_section h3{font-size:1.5em;margin:30px 0px 10px;color:#5e5e5e;}
+.right_section p a{color:#00436e;font-size: 1.5em;}
+/* Style for Terms and Condition page */
+#wrapper  .terms-condition h2{font-size:3.4em;margin-top:20px;margin-bottom:20px;float:left;clear:both;}
+#wrapper .terms-condition h3{display:block;margin:0px 10px 15px 30px;float:left;clear:both;font-size:1.4em;color:#00436e;}
+.terms-condition p{margin:0px 10px 0px 30px;line-height: 25px; color:#5e5e5e;font-size:1.4em;clear:both;padding-bottom:23px;float:left;}
+.terms-condition span{margin:0px 10px 0px 30px;font-size:1.4em;color:#5e5e5e;float:left;clear:both;}
+.terms-condition p.enquiry, .terms-condition p.mail, .terms-condition p.host{padding-top:23px;clear:both;}
+.terms-condition p.mail{padding-top:0px;}
+.terms-condition p.mail span{text-decoration:underline;}
+/* Style for Privacy page */
+#wrapper .terms-condition{margin-top: 25px;}
+#wrapper  .terms-condition a{background:none;border:0px;color:#00436e;text-decoration:underline;}
+.terms-condition h4{color:#E90000;font-size:1.3em;float:left;clear:both;margin:0px 10px 15px 30px;}
+.terms-condition div.available_content{float:right;margin:25px 0px 25px 0px;}
+.terms-condition div.available_content h4{font-size:1.4em;color:#00436e;margin:10px 10px 0px 0px;float:left;}
+.terms-condition div.available_content ul{padding:0px;list-style:none;float:left;}
+.terms-condition div.available_content ul li{display:inline;margin-right:8px;}
+#wrapper .terms-condition div.available_content ul li.lang1 a{background:url("../img/flag11.jpg") no-repeat left top; border: 0 none;width: 23px;margin-right: 8px;margin-top:12px;}
+#wrapper .terms-condition div.available_content ul li.lang2 a{background:url("../img/flag22.jpg") no-repeat left top; border: 0 none;width: 23px;margin-right: 8px;margin-top:12px;}
+#wrapper .terms-condition div.available_content ul li.lang3 a{background:url("../img/flag33.jpg") no-repeat left top; border: 0 none;width: 23px;margin-right: 8px;margin-top:12px;}
+.terms-condition h2.language1{background:url("../img/flag1.jpg") no-repeat left 8px;padding-left:60px;}
+.terms-condition h2.language2{background:url("../img/flag2.jpg") no-repeat left 8px;padding-left:60px;}
+.terms-condition h2.language3{background:url("../img/flag3.jpg") no-repeat left 8px;padding-left:60px;}
+#wrapper .privacy p a{font-size:1em;float:none;padding:0px;margin:0px;}
+#wrapper .privacy a.top{margin:0px 0px 30px 20px;font-size:1.4em;}
+/* Style for Credits page */
+.credit_section{ float: left;width: 40%;}
+.credit_section h5{font-size:1.5em;margin:10px 0px;width:255px;color:#00436e;float:left;padding-right:10px;}
+.credit_section p{margin:10px 0px;padding-left:15px;font-size:1.5em;line-height: 25px;color:#5e5e5e;float:left;}
+#wrapper .jobs_main_content .view_jobs h2{margin: 20px 0 15px 30px;}
+/* Style for FAQs page */
+#wrapper .faq  label {display:block;color: #5E5E5E;float: left;font-size: 1.5em;padding-bottom: 8px;}
+#wrapper .faq a.reset{float:none;clear:none;position:relative;top:6px;margin:0px;font-size: 1.4em;}
+#wrapper .faq  .inner_block{padding:14px 14px 25px;}
+#wrapper .faq.right_section{padding-left:0px;width: 32%;float:right;}
+.faq_section p{font-size:1.5em;color:#00436e;font-weight:bold; margin: 0;padding: 15px 0px 15px 12px;clear: both;background: url("../img/arrow-left.png") no-repeat scroll left center transparent;}
+.faq_section div.ans_section{float:left;width:100%;}
+.faq_section div.ans_section p{font-size:1.4em;line-height: 25px;color:#5e5e5e;padding-bottom:10px;padding-left:12px;background:none;margin:0px;font-weight:normal;}
+.faq_section div.ans_section ul{padding:0px 0px 0px 12px;}
+.faq_section div.ans_section ul li{list-style: disc inside none;padding-bottom:25px;color:#5e5e5e;font-size:1.4em;}
+.faq .inner_block div span.customSelect{background: url("../img/faq_select.png") no-repeat scroll left top transparent;padding:3px 5px;width:298px;}
+.faq .inner_block div select option{padding: 3px 5px;}
+.faq .inner_block div{margin-right:0px;margin-bottom: 15px;}
+.faq_section{  float: left;width: 59%;border-right:1px solid #d2d2d2;padding-right:30px;}
+.faq .search_main_block{margin-top:0px;}
+.faq_section div.ans_section .pb{padding-bottom:0px;}
+.faq_section div.ans_section .pt{padding-top:0px;}
 /* ie.css */
 
 /* CLEARFIX HACK */
@@ -992,7 +1069,7 @@ textarea {
   .maisons_lists ul li.join-us{width: 300px }
 }
 
-@media only screen and (max-width:920px) {
+@media only screen and (max-width:990px) {
     header .logo_blk{width:100%;text-align: center;float:none;margin:0px;}
     header .logo_blk img{float:none;margin-left:0px; margin-bottom: 10px; margin-top: 12px;}
     .search{height:30px;float:none;}
@@ -1006,9 +1083,25 @@ textarea {
     .search_block .chat-bubble-arrow{right:19%;}
     .select_language{position: absolute;right: 0;top: 0;}
     header .header_main{text-align: left;}
+    .search_main_block .inner_block div.search_buttons {margin-top: 20px;}
+    .inner_block a.reset{float:none;clear:both;position:relative;top:8px;}
+}
+
+@media only screen and (max-width:815px) {
+    header{background: #ddd;}
+    .col.span_5.view_jobs{width:auto;float:left;}
+    .col.span_7.view_faq {float: right;width: auto;}
+    .search_buttons{margin-top:0px;}
+    .search_buttons a.reset{clear:none;}
+    .col.span_7.section_left{width:auto;}
+    .serach_main_lists{border:0px;}
+    .span_5.section_right {margin-top: 30px;width: auto;}
+    div.collapsed:hover .menu_list{display:block;}
+    .search_main_block .inner_block div.search_buttons {margin-top: 20px;}
 }
 
 @media only screen and (max-width:634px) {
+     header{background: #00f;}
     .header_right ul.second_row, .header_right ul.first_row, header .header_nav{display: none;}
     .mobile_search, div.collapsed{display:block;}
     header .header_main{float:left;width: 100%;}
@@ -1030,8 +1123,32 @@ textarea {
     .scroll_top img{bottom:58px;}
     .search_block .submit{font-size:1.1em;padding: 6px 10px;}
     .search_block .textbox{padding: 4px 8px;font-size: 1.1em;}
+    .inner_block div.search_buttons{margin-right: 0px;}
+    .jobs_main_content {margin-top: 47px;}
+    .search_main_block .inner_block div.search_buttons {margin-top: 20px;}
+    .search_main_block a.reset{float: left;margin: 0px;cursor: pointer;}
+    .save_search input[type="button"], .save_search input[type="submit"], .section_right input[type="button"]{margin-bottom: 15px; font-size: 1.8em;font-weight: normal;padding: 4px 10px;margin-right:0px;}
+    .search_buttons a.reset{font-size: 1.3em; padding-top: 5px;}
+    .view_faq h3{margin-top:55px;}
+    .search_main_block .inner_block div{float:left;margin-right:20px;margin-bottom:20px;} 
+    .search_main_block .inner_block div.search_buttons{margin-bottom: 0px;margin-top:0px;}
+
   }
+
+@media only screen and (max-width:495px) {
+  header{background: #0f0}
+  .search_list div.img_details{text-align: right;}
+  .search_list div.img_desc {text-align: center;}
+  .search_list div span{float:none;}
+  .search_main_block .inner_block label {display: block;color: #5E5E5E;float: left;font-size: 1.4em;padding-right: 10px;padding-top: 5px;width: 145px;padding-bottom: 8px;}
+  .inner_block div span.customSelect, .tab_content_left span.customSelect {background: url("../img/mobile_select.jpg") no-repeat scroll left top transparent;width: 270px;}
+  .inner_block .tab_content_full div span.customSelect, .tab_content_full .tab_content_left span.customSelect{background: url("../img/single_mobile_select.jpg") no-repeat scroll left top transparent;width: 295px;}
+  
+
+}
+
 @media only screen and (max-width:335px) {
+  header{background: #f00}
   header .logo_blk{width:69%;}
   .search{width:13%;}
   div.collapsed{width:18%;}
@@ -1101,13 +1218,10 @@ textarea {
   .view_faq h3{margin:10px 0px 0px;}
   .search_main_block {margin: 18px 0 0;}
   #wrapper .search_main_block h2{font-size: 1.6em;}
-  .search_main_block .inner_block label {display: block;color: #5E5E5E;float: left;font-size: 1.4em;padding-right: 10px;padding-top: 5px;width: 145px;padding-bottom: 8px;}
   .search_main_block .inner_block {padding: 12px 10px 20px;}
   .search_main_block .inner_block div{margin:0px 0px 3px;position: relative;}
   .search_main_block .inner_block div select.hasCustomSelect{top:33px !important;left:0px !important;}
-  .search_main_block .inner_block div.search_buttons{margin-top:20px;}
-  .search_main_block a.reset{float: left;margin: 0px;cursor: pointer;}
-  .save_search input[type="button"], .save_search input[type="submit"], .section_right input[type="button"]{margin-bottom: 15px; font-size: 1.8em;font-weight: normal;padding: 4px 10px;margin-right:0px;}
+  .search_main_block .inner_block div.search_buttons{margin-top:20px;width:100%;}
   .serach_main_lists{margin-left: 0px;padding:0px;border:0px;}
   .result_list h3{margin:18px 0px 0px;}
   .search_list div h4{font-size:1.2em;}
@@ -1116,16 +1230,12 @@ textarea {
   .search_results .section_left, .search_list div.img_block{width:100%;}
   .search_list div.img_details {float: right;width: auto;}
   .section_right{padding:25px 0px 0px; width: 100%;}
-  .search_buttons .save_search input {display: block;float:right;}
-  .search_buttons .save_search{display: block;float: right;width: 217px;}
-  .search_buttons .save_search input[type="submit"]{margin:0px;}
-  .search_buttons a.reset{font-size: 1.3em; padding-top: 5px;}
-  .view_jobs h3 {display:block;float: right;font-size: 1.4em;margin: 0;font-weight: normal;}
-  .view_jobs h3 a{background: none repeat scroll 0 0 transparent;border: 0 none;color: #00436E;font-size: 1em;font-weight: normal;margin: 0;padding: 15px 0 0;}
-  .inner_block div span.customSelect, .tab_content_left span.customSelect {background: url("../img/mobile_select.jpg") no-repeat scroll left top transparent;width: 270px;}
-  .inner_block .tab_content_full div span.customSelect, .tab_content_full .tab_content_left span.customSelect{background: url("../img/single_mobile_select.jpg") no-repeat scroll left top transparent;width: 295px;}
   .section_right p{margin-bottom: 25px;}
   .section_right input[type="button"]{margin: 0px;}
   div.collapsed:hover .menu_list{display:block;}
   .search.mobile_search:hover .search_block, a.search_icon:hover  .search_block{display:block;}
+  .search_list div.img_desc {text-align: left;}
+  .view_faq {bottom: 85px;display: block;position: relative;}
+  .search_main_block .inner_block  .save_search{display:block; float: right;width: 170px;}
+  .search_main_block .save_search input{display:block; float: right;}
 }

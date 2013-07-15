@@ -2,7 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if IE 9]>         <html class="no-js eq-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -10,42 +11,77 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/main.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:700,400' rel='stylesheet' type='text/css'>
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
     <div id="wrapper">
         <header>
             <div class="container">
-                <div class="row">
-                    <a href="#" class="col span_5"><img class="logo" src="img/logo.png" alt="Richemont Logo" /></a>
-                    <div class="col span_7 full_right_header">
+                <div class="row header_main">
+                    <h1><a href="#home" class="col span_5 logo_blk"><img class="logo" src="img/parallax/logo.png" alt="Richemont Logo" /></a></h1>
+                    <div class="col span_7 full_right_header select_language">
                         <div class="header_right">
                             <ul class="first_row">
                                 <li><a href="#">Login</a></li> 
                                 <li>
-                                    <select>
+                                    <label for="language">language</label>
+                                    <select id="language">
                                         <option>English</option>
                                         <option>English</option>
                                         <option>English</option>
                                     </select>
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                    <div class="col span_7 full_right_header header_nav">
+                        <div class="header_right">
                             <ul class="second_row">
-                                <li><a href="#">Our world</a></li>
-                                <li><a href="#">Our Maisons</a></li>
-                                <li><a href="#">Why join us?</a></li>
-                                <li><a href="#">Working with us</a></li>
-                                <li><a href="#">Career paths</a></li>
+                                <li><a href="index.html#our-world">Our world</a></li>
+                                <li><a href="index.html#our-maisons">Our Maisons</a></li>
+                                <li><a href="index.html#why-join-us">Why join us?</a></li>
+                                <li><a href="index.html#work-with-us">Working with us</a></li>
+                                <li><a href="index.html#career-paths">Career paths</a></li>
                                 <li><a href="#">Jobs</a></li>
+                                <li class="search-view">
+                                    <div class="search">
+                                        <a class="search_icon" href="#" title="Search"></a>
+                                        <div class="search_block">
+                                            <div class="chat-bubble-arrow"></div>
+                                            <form>
+                                                <label for="q">Search</label> 
+                                                <input class="textbox" type="text" placeholder="Quick search for a job or enter job code" name="q" id="q" />
+                                                <input class="submit" type="submit" value="Search jobs" />
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
-                            <div class="search">
-                                <a class="search_icon" href="#"></a>
-                                <div class="search_block">
-                                    <input class="textbox" type="text" name="" placeholder="" />
-                                    <input class="submit" type="submit" value="Search" />
-                                </div>
+                        </div>
+                    </div>
+                    <div class="btn btn-navbar collapsed">
+                            <a class="mobile_menu" href="#" title="Navigation"></a>
+                            <div class="menu_list">
+                                <ul>
+                                    <li><a href="index.html#home">About us</a></li>
+                                    <li><a href="index.html#our-world">Our world</a></li>
+                                    <li><a href="index.html#why-join-us">Why join us</a></li>
+                                    <li><a href="index.html#work-with-us">What to expect</a></li>
+                                    <li><a href="index.html#career-paths">Carrer paths</a></li>
+                                    <li><a href="#">Jobs</a></li>
+                                </ul>
                             </div>
+                    </div>
+                    <div class="search mobile_search">
+                        <a class="search_icon" href="#" title="Search"></a>
+                        <div class="search_block">
+                            <div class="chat-bubble-arrow"></div>
+                            <form>
+                            <label for="q">Search</label> 
+                            <input class="textbox" type="text" name="q" id="q" placeholder="Quick search for a job or enter job code" />
+                            <input class="submit" type="submit" value="Search jobs" />
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -56,21 +92,40 @@
                 <div class="col span_5 view_jobs">
                     <h1 class="ml">Contact us</h1>
                 </div>
-                <section class="main_contact row">
-                    <div class="col span_5 section_left">
-                       <label>Lorem:</label>
-                       <input type="text" placeholder="" />
-                    </div> <!-- section left -->
-                    <div class="col span_7 section_right">
-
-                    </div>
-                </section> <!-- search results -->
+                <div class="full_section row">
+                    <div class="col span_5">
+                        <div class="left_section ml">
+                            <form>
+                                <label for="lorem">Lorem</label>
+                                <input type="text" name="lorem" id="lorem" />
+                                <label for="lorem2">Lorem ipsum</label>
+                                <input type="text" name="lorem2" id="lorem2" />
+                                <label for="lorem3">Ipsum dolor</label>
+                                <textarea id="lorem3">
+                                </textarea>
+                                <input type="submit" name="submit" id="submit" value="Submit" />
+                            </form>
+                        </div>
+                    </div> <!-- left section -->
+                    <div class="col span_5">
+                        <div class="right_section">
+                            <h4>We invite you to join our conversations on...</h4>
+                            <ul>
+                                <li class="twitter">Twitter:<a href="#">@richemont_SA</a></li>
+                                <li class="fb">Facebook:<a href="#">/pages/Richemont</a></li>
+                                <li class="linked">Linkedin:<a href="#">Richemont</a></li>
+                            </ul>
+                            <h3>The Luxury Society</h3>
+                            <p><a href="#">http://luxurysociety.com/</a></p>
+                        </div>
+                    </div> <!-- right section -->
+                </div> <!-- full section -->
             </div>
         </div>
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col span_5">
+                <div class="row footer_main">
+                    <div class="col span_6">
                         <div class="footer_left ml">
                             <h3>www.richemont.com</h3>
                             <ul class="second_row">
@@ -80,12 +135,15 @@
                             </ul>
                         </div> <!-- footer left -->
                     </div>
-                    <div class="col span_7">
-                        <div class="footer_right">
+                    <div class="col span_6">
+                        <div class="scroll_top mr">
+                            <a href="#"><img src="img/parallax/scroll_top.png" alt="Scroll Top" /></a>
+                        </div>
+                        <div class="footer_right mr">
                             <ul>
-                                <li><a class="twitter" href="#"></a></li>
-                                <li><a class="fb" href="#"></a></li>
-                                <li><a class="linkedin" href="#"></a></li>
+                                <li> <a class="twitter" href="#" title="Twitter"></a></li>
+                                <li> <a class="fb" href="#" title="Facebook"></a></li>
+                                <li> <a class="linkedin" href="#" title="Linked-in"></a></li>
                             </ul>
                         </div> <!-- footer right -->
                     </div>
@@ -94,16 +152,8 @@
         </footer>
     </div> <!-- wrapper -->
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="js/vendor/jquery-1.9.1.min.js"></script>
-    <script src="js/customselect.js"></script>
-    <script src="js/richemont-v1.js"></script>
-    <script>
-    $(document).ready(function(){
-        $('.inner_block select.styled, .header_right .first_row select').customSelect();
-    });
-    </script>
+    <script type="text/javascript" data-main="js/main-jobs" src="js/vendor/require.js">
+    </script> 
     <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
     (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

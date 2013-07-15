@@ -5,11 +5,11 @@ var widthElCnt  = [
     { width: 100, elCnt: 2 }
 ]
 
-var prevElsInRow;
+var prevElsInRow, ajaxData;
 
 function MaisonBox(container, callback) {
     repositionItems(container);
-    $(window).resize(function(){ repositionItems(container); });
+    $(window).resize(function(){ repositionItems(container,callback); });
 
     container.on('click', '>ul li a', function () {
         var link = this.href,
@@ -20,6 +20,7 @@ function MaisonBox(container, callback) {
         anchor.parent().addClass('active');
 
         $.get(link, function (data) {
+            ajaxData = data;
             var oldMaison = listCont.parent().find('.our_maison_gallery').parent();
             oldMaison.remove();
             var $responseEl = $(data);
@@ -128,7 +129,7 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
 
 }
 
-function repositionItems(container){
+function repositionItems(container,callback){
     var list = container.find('>ul'),
         listEls = list.find('>li'),
         noElsInRow = getNoElsInRow(),
@@ -146,11 +147,19 @@ function repositionItems(container){
         }
     });
     list.eq(0).before(curList)
-    
+
     list.remove();
     var lightbox = container.find('.our_maison_gallery').parent();
     if(lightbox.length > 0){
-        listEls.filter('.active').parent().after(lightbox)
+        lightbox.remove();
+        var listCont = listEls.filter('.active').parent(),
+            lightbox = $(ajaxData);
+        if(listCont.next().length > 0){
+            listCont.after(lightbox);
+        }else{
+            listCont.before(lightbox);
+        }
+        MaisonSildeshow(lightbox,listEls.filter('.active a'),false,callback)
     }
 }
 

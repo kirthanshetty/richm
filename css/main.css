@@ -1189,19 +1189,18 @@ textarea {
   }
 
 @media only screen and (max-width:495px) {
-  // header{background: #0f0}
+   header{background: #0f0}
   .search_list div.img_details{text-align: right;}
   .search_list div.img_desc {text-align: center;}
   .search_list div span{float:none;}
   .search_main_block .inner_block label {display: block;color: #5E5E5E;float: left;font-size: 1.4em;padding-right: 10px;padding-top: 5px;width: 145px;padding-bottom: 8px;}
   .inner_block div span.customSelect, .tab_content_left span.customSelect {background: url("../img/mobile_select.jpg") no-repeat scroll left top transparent;width: 270px;}
   .inner_block .tab_content_full div span.customSelect, .tab_content_full .tab_content_left span.customSelect{background: url("../img/single_mobile_select.jpg") no-repeat scroll left top transparent;width: 295px;}
-  
 
 }
 
 @media only screen and (max-width:335px) {
- // header{background: #f00}
+  header{background: #f00}
   header .logo_blk{width:69%;}
   .search{width:13%;}
   div.collapsed{width:18%;}
@@ -1300,3 +1299,6 @@ textarea {
   .tab_content_left select, .tab_content_left span.customSelect {clear: none;float: left;left: 0 !important;right: auto !important;top: 30px !important;}
 }
 
+@media only screen and (max-width:685px) {
+   .page_2 .two_sections .section_one, .page_4 .videos .section_one, .page_6 .two_sections .section_one{float: none;margin: 0 auto 30px;width: 260px;}
+}

@@ -1,3 +1,5 @@
+var videoNo = 1;
+
 function WhyworkUs(container){
 	var tabAnchors = container.find('.join_us_gallery ul li a'),
 		headerCont = container.find('.head_cont'),
@@ -60,7 +62,8 @@ function WhyworkUs(container){
 					'z-index':'1000'
 				});
 				cont.appendTo(document.body);
-				videojs('video_content');
+				$('#video_content').attr('id','video_content' + videoNo);
+				videojs('video_content' + videoNo++);
 				cont.find('a.video_close').click(function(e){
 					e.preventDefault();
 					cont.remove();

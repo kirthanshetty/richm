@@ -78,7 +78,7 @@ function ParallexEl(el,top,screenH,topDelta){
 	}
 
 	this.scrollToMe = function(){
-		$('html,body').animate({scrollTop:this.top - topDelta},500)
+		$('html,body').animate({scrollTop:this.top - topDelta},1000)
 	}
 
 	this.updatePos = function(scrollTop,scrollBottom,topDelta){
@@ -88,19 +88,17 @@ function ParallexEl(el,top,screenH,topDelta){
 				'position': 'fixed'
 			});
 			this.posChanged = true;
-			if(this.el.data('type') == 'background'){
-				this.el.css('background-position','50% ' + this.position.getDelta(scrollTop,scrollBottom) + 'px')
-			}
 		}else if(this.posChanged){
 			this.el.css({
 				'top':this.top,
 				'position':'absolute'
 			});
-			if(this.el.data('type') == 'background'){
-				this.el.css('background-position','0px')
-			}
-
+		
 			this.posChanged = false;
+		}
+
+		if(this.el.data('type') == 'background'){
+			this.el.css('background-position','50% ' + this.position.getDelta(scrollTop,scrollBottom) + 'px')
 		}
 
 		for (var i = 0; i < this.relParallex.length; i++) {
@@ -116,7 +114,12 @@ function Parallex(els,topDelta){
 
 	var $window = $(window);
 
-	
+	if($window.width() < 1024 || Modernizr.touch){
+		this.init = function(){}
+		this.totalHeight = 'auto';
+		return;
+	}
+
 	this.init = function(){
 		this.parallexEls = [];
 		var top = topDelta;
@@ -128,6 +131,7 @@ function Parallex(els,topDelta){
 			parallexEl.init();
 		});
 		this.totalHeight = top;
+		$window.trigger('scroll');
 	}
 
 	this.init();

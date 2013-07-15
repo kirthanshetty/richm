@@ -1,9 +1,23 @@
+var widthElCnt  = [
+    { width: 1007, elCnt: 5 },
+    { width: 817, elCnt: 4 },
+    { width: 627, elCnt: 3 },
+    { width: 100, elCnt: 2 }
+]
+
+var prevElsInRow;
+
 function MaisonBox(container, callback) {
-    container.find('>ul li a').click(function () {
+    repositionItems(container);
+    $(window).resize(function(){ repositionItems(container); });
+
+    container.on('click', '>ul li a', function () {
         var link = this.href,
             anchor = $(this),
             listCont = $(this).parent().parent();
 
+        container.find('>ul >li').removeClass('active');
+        anchor.parent().addClass('active');
 
         $.get(link, function (data) {
             var oldMaison = listCont.parent().find('.our_maison_gallery').parent();
@@ -112,4 +126,40 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
         cur.fadeIn();
     })
 
+}
+
+function repositionItems(container){
+    var list = container.find('>ul'),
+        listEls = list.find('>li'),
+        noElsInRow = getNoElsInRow(),
+        curList = $('<ul>');
+    
+    if(prevElsInRow == noElsInRow) return;
+    prevElsInRow = noElsInRow;
+
+    listEls.each(function(i){
+        var elNo = i + 1;
+        curList.append($(this));
+        if(elNo % noElsInRow == 0){
+            list.eq(0).before(curList)
+            curList = $('<ul>');
+        }
+    });
+    list.eq(0).before(curList)
+    
+    list.remove();
+    var lightbox = container.find('.our_maison_gallery').parent();
+    if(lightbox.length > 0){
+        listEls.filter('.active').parent().after(lightbox)
+    }
+}
+
+function getNoElsInRow(){
+    var w = $(window).width();
+    for (var i = 0; i < widthElCnt.length; i++) {
+        if(w > widthElCnt[i].width){
+            return widthElCnt[i].elCnt;
+        }
+    };
+    return 1;
 }

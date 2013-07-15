@@ -352,7 +352,7 @@ footer{margin-top:50px;}
 .section_text h2{font-size:2.2em;color:#4e4e4e;float:left;margin:35px 0px 12px;font-weight: normal;}
 .section_text p{color:#5e5e5e;font-size:1.5em;line-height:24px;float:left;margin:0px;}
 .page_2 .span_7.col{float:left;}
-.section_text{float:left;width:88%;}
+.section_text{float:left;width:88%; margin-left: 20px;}
 #our-maisons{background:url("../img/parallax/maisons_bg.png") no-repeat left top #afb0ae;background-size:cover;}
 .maisons_head{width:65%;margin:0 auto;}
 .page_5 .maisons_head{width:59%;}
@@ -404,7 +404,7 @@ footer{margin-top:50px;}
   transition: opacity 1s ease-in-out;}
 .maisons_lists ul li img.top{width:100%;  z-index: 9999;}
 .maisons_lists ul li a:hover img.top {opacity:0;}
-.maisons_lists ul li img.overlay{top: 0px; z-index: 999;width:100%;height:100%;}
+.maisons_lists ul li img.overlay{z-index: 999;width:100%;}
 /*
 .maisons_lists ul li img.overlay:hover{ filter: blur(0px);
     -webkit-filter: blur(0px);
@@ -558,9 +558,11 @@ button.collapsed{display:none;}
 .section_text h3{ color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;}
 .maisons_head h3{color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;text-align: center;}
 #wrapper .tab_content_full .tab_content_left h2{ color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;font-family: lato;}
+.social_links ul{margin-right:30px;}
+.page_2 .two_sections .section_one{margin-right:0px;margin-left:20px;}
 
 /* CSS for IE to Fallback */
-.no-cssgradients .inner_block input[type='submit'], .tab_content_full .view_jobs a, .maisons_lists ul li.join-us input{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
+.no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .maisons_lists ul li.join-us input{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type='submit']{background: url("../img/parallax/shade_bg.jpg") repeat-x scroll left top;}
 .no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button']{background: url("../img/parallax/grey_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type="submit"]{background: url("../img/shade_button.jpg") repeat-x left top;}
@@ -578,6 +580,9 @@ button.collapsed{display:none;}
 .eq-ie9 .second_row .quick_search input[type="submit"]{top:-1px;}
 .lt-ie9 .quick_search input[type="text"]{position: relative;top:-5px;}
 .lt-ie9 #our-maisons{background-position: center top;}
+.lt-ie8 .page_1 .row .inner_block input[type="submit"]{border:0px;}
+.lt-ie8 .page_1 .row .inner_block .quick_search input[type="text"]{top:0px;}
+.lt-ie8 .page_1 .row .inner_block .quick_search input[type="submit"]{height:30px;}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;  }
@@ -1088,7 +1093,7 @@ textarea {
 }
 
 @media only screen and (max-width:815px) {
-    header{background: #ddd;}
+   // header{background: #ddd;}
     .col.span_5.view_jobs{width:auto;float:left;}
     .col.span_7.view_faq {float: right;width: auto;}
     .search_buttons{margin-top:0px;}
@@ -1100,8 +1105,56 @@ textarea {
     .search_main_block .inner_block div.search_buttons {margin-top: 20px;}
 }
 
+@media only screen and (max-width:1160px) {
+  header{background:#f00;}
+  #wrapper .page_1 h2{font-size:1.8em;}
+  .page_1 .row span.scroll_down{height:52px;}
+  .page_2 .two_sections .section_one, .page_6 .two_sections .section_one{width:43%;}
+  .videos .section_one{width:31%;margin-right: 3%;}
+  .page_2 .two_sections .section_one img, .page_6 .two_sections .section_one img, .videos, .videos .section_one img, .tab_content_right img{width:100%;}
+  .tab_content_full .view_jobs{margin-right:30px;}
+  .tab_content_full .view_jobs{padding:10px 20px;}
+  .tab_content_full .view_jobs p{font-size:1.7em;width:100%;}
+  .tab_content_full .view_jobs a{padding:6px 12px;}
+  .maisons_lists ul li.join-us h3{font-size:2em;}
+
+  /*#wrapper .creativity_head .bg_img h2{font-size:4.4em;}
+  .join_us_gallery .maison_prev, .join_us_gallery .maison_next{margin-top:14%;}*/
+}
+
+@media only screen and (max-width:768px) {
+  header{background:#0f0;}
+  #wrapper .page_1 h2{font-size:1.4em;}
+  .page_1 .row span.scroll_down{height:52px;}
+  .page_1 .first_row, .page_1 .second_row .col.span_4, .page_1 .third_row, .page_1 .row .quick_search, .page_1 .row span{display:none;}
+  .page_1 .row span.scroll_down{display: block; margin: 40px auto 30px;float: none;}
+  .page_1 .second_row .col.span_8{text-align: center;width:100%;}
+  #wrapper .page_1 h2{font-size:2.2em; margin-top: 85px;}
+  .page_1 .row .inner_block {border: 0 none;float: none;margin: 0 auto;overflow: hidden;padding: 0;width: 110px;}
+  .page_1 .row .inner_block input[type="submit"]{font-size:1.2em;padding:7px 15px;}
+  .col.span_5 .our_world, .tab_content_left{margin-right:35px;}
+  .page_2 .two_sections, .page_6 .two_sections{margin-top:30px;}
+  .page_6 .two_sections{width:100%;}
+  .page_6 .two_sections .section_one, .page_2 .two_sections .section_one{margin-left:35px;}
+  .page_6 .two_sections .section_two, .page_2 .two_sections .section_two{margin-left:0px;}
+  .tab_content_right{margin-left:35px;margin-top:35px;}
+  .tab_content_right div a, .section_text{float:left;margin-left:30px;}
+  .tab_content_full .view_jobs {padding: 23px;margin-left:35px;}
+  .tab_content_left form div label{padding-bottom:5px;}
+  .creativity_head .bg_img h2, .creativity_head .bg_img h5{display:none;}
+  .page_5 .maisons_head h2{font-size: 2.8em;text-align: left;margin:0px 30px;}
+  .maisons_head h3{text-align:left;}
+  .page_5 .maisons_head p{margin:0px 30px;}
+  .maisons_head p{font-size:1.5em;line-height: 25px;text-align: left;margin:0px 0px;}
+  .maisons_head, .page_5 .maisons_head{width:100%;overflow: hidden;}
+  .join_us_gallery .maison_prev, .join_us_gallery .maison_next{margin-top:14%;}
+  .gallery_join .our_world ul.buttons {left: auto;right: 10px;top: 5px;}
+  .footer_main .col.span_6{width:50%;}
+}
+
+
 @media only screen and (max-width:634px) {
-     header{background: #00f;}
+    // header{background: #00f;}
     .header_right ul.second_row, .header_right ul.first_row, header .header_nav{display: none;}
     .mobile_search, div.collapsed{display:block;}
     header .header_main{float:left;width: 100%;}
@@ -1136,7 +1189,7 @@ textarea {
   }
 
 @media only screen and (max-width:495px) {
-  header{background: #0f0}
+  // header{background: #0f0}
   .search_list div.img_details{text-align: right;}
   .search_list div.img_desc {text-align: center;}
   .search_list div span{float:none;}
@@ -1148,14 +1201,16 @@ textarea {
 }
 
 @media only screen and (max-width:335px) {
-  header{background: #f00}
+ // header{background: #f00}
   header .logo_blk{width:69%;}
   .search{width:13%;}
   div.collapsed{width:18%;}
   #our-maisons .inner_content{padding:20px;}
-  #wrapper .page_3 .maisons_head h1{font-size: 2.8em;text-align: left;margin-top:0px;}
-  .maisons_head p{font-size:1.5em;line-height: 25px;text-align: left;}
+  #wrapper .page_3 .maisons_head h2{font-size: 2.8em;text-align: left;margin-top:0px;}
+  .page_5 .maisons_head p{font-size:1.5em;line-height: 25px;text-align: left;clear:both;margin:0px;}
   .maisons_lists{margin-top: 25px;display:none;}
+  .page_3 .maisons_head p{clear:both;}
+  .tab_content_full .tab_content_right{margin-left:0px;}
   .mobile_maison_lists{display:block;padding: 0px;}
   .maisons_head, .page_5 .maisons_head{width:100%;overflow: hidden;}
   .search_block .textbox{width:69%;}
@@ -1171,12 +1226,12 @@ textarea {
   #our-world img.section_bg{top:75px;}
   #our-world, #work-with-us{background-color: #FFFFFF;margin-bottom: 40px; padding-top: 25px;}
   .col.span_5 .our_world{padding: 135px 0px 0px;margin: 0px;background: none;height: auto;}
-  .page_2 .two_sections{margin:0px;}
-  .section_one {float: none;margin: 0 auto 15px;width: 260px;}
-  .section_two{margin: 0 auto 20px;}
+  .page_2 .two_sections, .tab_content_full .view_jobs{margin:0px;}
+  .page_2 .two_sections .section_one {float: none;margin: 0 auto 15px;width: 260px;}
+  .page_2 .two_sections .section_two{margin: 0 auto 20px;}
   #our-maisons .inner_content, #why-join-us .inner_content, #work-with-us .inner_content, #our-world .inner_content {padding: 10px;}
   #wrapper .page_3 .maisons_head h2, #wrapper #why-join-us h2, #wrapper .page_5 .maisons_head h2{margin:0px;font-size: 3.4em;float:left;padding-bottom: 10px;padding-top: 10px;}
-  .maisons_head p{font-size: 1.5em;float: left;}
+  .page_5 .maisons_head p{font-size: 1.5em;float: left;}
   #why-join-us .maisons_head p{font-size: 1.5em;}
   .maisons_lists ul li a, .maisons_lists ul li a img{height: 100%;}
   .maisons_lists ul li.lightbox-open a{background: none repeat scroll 0 0 #00436E;}
@@ -1200,7 +1255,7 @@ textarea {
   .tab_content_left form input[type="button"]{float: right;font-size: 1.7em;font-weight:normal;margin-top: 20px;padding: 3px 15px;}
   .tab_content_left form p{float: left;margin-top: 23px;}
   .tab_content_left p, .our_world p, .section_text p{font-size: 1.4em;}
-  .section_text{width: 100%;}
+  .two_sections .section_text{width: 100%;margin-left:0px;}
   h3.mobile_submission{display: block;color: #4E4E4E;font-size: 1.5em;font-weight: normal;margin: 0 0 12px;}
   .tab_content_full .tab_content_left{margin-bottom: 30px;}
   .tab_content_full .view_jobs a{font-size: 2.1em;padding: 8px 30px;margin-top:13px;}
@@ -1211,6 +1266,7 @@ textarea {
   .scroll_top img {bottom: 72px;}
   .footer_main .col.span_6{padding:5px 0px;}
   #career-paths .inner_content{padding:10px 0px;}
+  .page_6 .two_sections .section_one{margin:0px;width:100%;}
   /* jobs page */
   #wrapper .view_jobs h1 {font-size: 3.4em;margin: 0 0 12px; float: left;}
   .jobs_main_content .quick_search{margin:0px;}
@@ -1238,4 +1294,9 @@ textarea {
   .view_faq {bottom: 85px;display: block;position: relative;}
   .search_main_block .inner_block  .save_search{display:block; float: right;width: 170px;}
   .search_main_block .save_search input{display:block; float: right;}
+
+  .col.span_5 .our_world{margin-left:0px;}
+  .videos .section_one, .footer_main .col.span_6 {width:100%;}
+  .tab_content_left select, .tab_content_left span.customSelect {clear: none;float: left;left: 0 !important;right: auto !important;top: 30px !important;}
 }
+

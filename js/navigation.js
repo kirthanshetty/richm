@@ -1,6 +1,7 @@
 function Navigation(){
-	$('header ul li a').click(function(e){
-		e.preventDefault();
+	$('.header_main a').click(function(e){
+		if(this.href.match(/^#/))
+			e.preventDefault();
 		var hash = $(this).attr('href');
 		var node = $(hash);
 		node.attr('id','');

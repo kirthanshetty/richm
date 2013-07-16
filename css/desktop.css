@@ -337,7 +337,7 @@ footer{margin-top:50px;}
 .social_links{float:left;width:100%;margin-top:45px;}
 .page_1 .social_links, .page_2 .social_links, .page_3 .social_links, .page_4 .social_links, .page_5 .social_links, .page_6 .social_links {position: absolute;right: 0;top:30px;width: 100%;margin-top:0px;}
 .page_5 .inner_content, .page_2 .inner_content{position: relative;}
-.page_4 .tab_content .social_links{top:-370px;}
+.page_4 .tab_content .social_links{top:-370px; right: -29px;}
 .page_3 .social_links{top:50px;}
 .page_5 .social_links{top:17px;}
 .page_2 .span_3.col{float:right;}

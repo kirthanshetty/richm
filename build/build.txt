@@ -86,12 +86,12 @@ js/main.js
 js/vendor/jquery-1.9.1.min.js
 js/parallex.js
 js/navigation.js
-js/search.js
 js/customselect.js
 js/our-maisons.js
 js/joining-us.js
 js/career-path.js
 js/why-work-us.js
+js/share-icons.js
 js/richemont-main.js
 js/video.js
 js/main.js

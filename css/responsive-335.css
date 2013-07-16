@@ -29,6 +29,7 @@
   .page_2 .two_sections .section_two{margin: 0 auto 20px;}
   #our-maisons .inner_content, #why-join-us .inner_content, #work-with-us .inner_content, #our-world .inner_content {padding: 10px;}
   #wrapper .page_3 .maisons_head h2, #wrapper #why-join-us h2, #wrapper .page_5 .maisons_head h2{margin:0px;font-size: 3.4em;float:left;padding-bottom: 10px;padding-top: 10px;}
+  #why-join-us .inner_content{padding-top:0px;padding-bottom:0px;}
   .page_5 .maisons_head p{font-size: 1.5em;float: left;}
   #why-join-us .maisons_head p{font-size: 1.5em;}
   .maisons_lists ul li a, .maisons_lists ul li a img{height: 100%;}
@@ -96,4 +97,5 @@
   .col.span_5 .our_world{margin-left:0px;}
   .videos .section_one, .footer_main .col.span_6 {width:100%;}
   .tab_content_left select, .tab_content_left span.customSelect {clear: none;float: left;left: 0 !important;right: auto !important;top: 30px !important;}
+  #why-join-us{background: #f7f7f7;}
 }

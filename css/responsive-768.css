@@ -39,4 +39,22 @@
   .maisons_lists ul.buttons{display: none;}
   .maison_main_content .maison_desc a{margin-top: 10px;display: block;}
   .our_maison_gallery a.maison_close{bottom: 10px;text-indent: 0;font-size: 1.2em; color:#757575; position: static; margin: 10px 0;}
+  .maisons_lists ul li a:hover img.top{opacity:1;}
+
+  #why-join-us .inner_content{background: #f7f7f7;}
+  .creativity_head .bg_img{background: none;}
+  .creativity_head .bg_img img{float:left;width:100%;}
+  .join_us_gallery .maison_prev {background:none;text-indent:0px;float:left;color: #00436E;display: block;font-family: georgia;font-size: 1.4em;font-style: italic;font-weight: bold;padding: 12px 0;margin:0px;}
+  .join_us_gallery .maison_next{background:none;text-indent:0px;float:right;color: #00436E;display: block;font-family: georgia;font-size: 1.4em;font-style: italic;font-weight: bold;padding: 12px 0;margin:0px;}
+  .creativity_head .bg_img img, .creativity_head .bg_img h2, .creativity_head .bg_img h5 {display:block;}
+  .creativity_head{clear:both; background: none repeat scroll 0 0 #DADADA;}
+  .tab_content .main_cont{background: none repeat scroll 0 0 #DADADA;padding-bottom:18px;margin-bottom: 15px;}
+  .creativity_head .bg_img h5{width:100%;color:#787878;}
+  .tab_content .main_cont{position: static;}
+  .creativity_head{margin-bottom:0px;}
+  .maisons_head p{display:none;}
+  .videos, .page_4 .videos .section_one.last-video{margin-bottom: 0px;}
+  .page_4 .social_links{margin-top:35px;}
+  .creativity_head .bg_img{height:auto;}
+  .join_us_gallery ul{display: none;}
 }

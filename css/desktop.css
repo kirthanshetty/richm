@@ -710,6 +710,9 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .faq .search_main_block{margin-top:0px;}
 .faq_section div.ans_section .pb{padding-bottom:0px;}
 .faq_section div.ans_section .pt{padding-top:0px;}
+
+.join_us_gallery .maison_prev, .join_us_gallery .maison_next{text-indent: -9999px;}
+.creativity_head .bg_img img{display: none;}
 /* ie.css */
 
 /* CLEARFIX HACK */

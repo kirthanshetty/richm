@@ -30,4 +30,7 @@
     .view_faq h3{margin-top:55px;}
     .search_main_block .inner_block div{float:left;margin-right:20px;margin-bottom:20px;} 
     .search_main_block .inner_block div.search_buttons{margin-bottom: 0px;margin-top:0px;}
+    .header_main .col.span_4{width:auto;}
+    .footer_right{float:right;}
+    .scroll_top img {bottom: 12px;}
 }

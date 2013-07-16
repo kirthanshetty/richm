@@ -337,6 +337,9 @@ footer{margin-top:50px;}
 .social_links{float:left;width:100%;margin-top:45px;}
 .page_1 .social_links, .page_2 .social_links, .page_3 .social_links, .page_4 .social_links, .page_5 .social_links, .page_6 .social_links {position: absolute;right: 0;top:30px;width: 100%;margin-top:0px;}
 .page_5 .inner_content, .page_2 .inner_content{position: relative;}
+.page_4 .tab_content .social_links{top:-370px;}
+.page_3 .social_links{top:50px;}
+.page_5 .social_links{top:17px;}
 .page_2 .span_3.col{float:right;}
 .social_links ul li a{ float: right;height: 28px;padding: 5px;width: 30px;border-right:1px solid #4383b4;}
 .social_links ul li:first-child a{border:0px;}
@@ -357,7 +360,7 @@ footer{margin-top:50px;}
 #our-maisons{background:url("../img/parallax/maisons_bg.png") no-repeat left top #afb0ae;background-size:cover;}
 .maisons_head{width:65%;margin:0 auto;}
 .page_5 .maisons_head{width:59%;}
-#wrapper .page_3 .maisons_head h2{font-size:4.8em;font-weight:normal;margin-bottom:0px;color:#fff;font-family:'SabonLT-Roman';text-align: center;}
+#wrapper .page_3 .maisons_head h2{font-size:4.8em;font-weight:normal;margin-bottom:0px;margin-top:0px;color:#fff;font-family:'SabonLT-Roman';text-align: center;}
 .maisons_head p{margin:0px;color:#4d4d4d;font-size:1.7em;line-height:28px;text-align: center;}
 .container.main{overflow: hidden;max-width:100%;margin:0px;}
 #home, #why-join-us, #career-paths {background:url("../img/parallax/body_bg.jpg") repeat center top #fff;width: 100%;}

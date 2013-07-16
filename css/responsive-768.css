@@ -40,6 +40,10 @@
   .our_maison_gallery a.maison_close{bottom: 10px;text-indent: 0;font-size: 1.2em; color:#757575; position: static; margin: 10px 0;}
   .maisons_lists ul li a:hover img.top{opacity:1;}
 
+  .maisons_lists ul li.join-us h3 {
+    display: none;
+  }
+
   #why-join-us .inner_content{background: #f7f7f7;float:left;}
   .creativity_head .bg_img{background: none;}
   .creativity_head .bg_img img{float:left;width:100%;}

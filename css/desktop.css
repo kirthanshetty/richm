@@ -502,7 +502,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .tab_content_full .view_jobs{float:left;background: url("../img/parallax/job_bg.jpg") no-repeat scroll left top; padding: 30px;margin-top: 35px;}
 .tab_content_full .view_jobs p{ color: #5E5E5E;font-size: 2.1em;font-weight: normal;margin: 0;padding: 0;width: 62%;float:left;}
 .tab_content_full .view_jobs a{color:#fff;font-weight:normal;padding: 8px 23px;font-size: 1.5em;margin:0px;margin-top:8px;float:left;}
-.career_gallery{background: none repeat scroll 0 0 #9B9B9B;float: left;height: 138px;margin: 30px 0;padding: 0 58px;position: relative;}
+.career_gallery{background: none repeat scroll 0 0 #9B9B9B;float: left;height: 138px;margin: 30px 0;padding: 0 58px;position: relative;width:100%;}
 .career_gallery ul{overflow: hidden;}
 .career_gallery ul li{float: left;height: 125px;padding: 16px 0 30px;position: relative;text-align: center;width: 181px;}
 .career_gallery ul li.active{ background:url("../img/grey-arrow.png") no-repeat scroll center bottom transparent;height: 147px;}

@@ -13,19 +13,22 @@ function CareerPath(container){
 	
 	var wdt = $('.career_gallery ul li').width()
 	var cnt = $('.career_gallery_container ul li').length
-	$('.career_gallery_container').width(wdt*5).css('overflow','hidden');
-	var slides = $('.career_gallery_container .slides').width(wdt*cnt);
-	var noSlides = cnt - 4,
-	      curSlide = 0;
+	var totalW = wdt * cnt;
+	$('.career_gallery_container').width('100%').css('overflow','hidden');
+	var slides = $('.career_gallery_container .slides').width(totalW);
+
+	var marginLeft = 0;
 
 	$('.career_gallery a.next').click(function(){
-	  curSlide ++;
-	  if(curSlide >= noSlides) curSlide = 0;
-	  slides.animate({'margin-left': -1 * wdt * curSlide });
+		marginLeft += wdt;
+		if(marginLeft > totalW - $('.career_gallery_container').width())
+			marginLeft = totalW - $('.career_gallery_container').width()
+	  slides.animate({'margin-left': -1 * marginLeft });
 	});
 	$('.career_gallery a.prev').click(function(){
-	  curSlide --;
-	  if(curSlide < 0) curSlide = noSlides - 1;
-	  slides.animate({'margin-left': -1 * wdt * curSlide });
+		marginLeft -= wdt;
+		if(marginLeft < 0)
+			marginLeft = 0
+	  slides.animate({'margin-left': -1 * marginLeft });
 	});
 }

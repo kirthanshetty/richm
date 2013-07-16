@@ -1,5 +1,4 @@
 @media only screen and (max-width:495px) {
-   header{background: #0f0}
   .search_list div.img_details{text-align: right;}
   .search_list div.img_desc {text-align: center;}
   .search_list div span{float:none;}

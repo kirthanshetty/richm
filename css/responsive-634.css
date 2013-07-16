@@ -1,5 +1,4 @@
 @media only screen and (max-width:634px) {
-    header{background: #00f;}
     .header_right ul.second_row, .header_right ul.first_row, header .header_nav{display: none;}
     .mobile_search, div.collapsed{display:block;}
     header .header_main{float:left;width: 100%;}

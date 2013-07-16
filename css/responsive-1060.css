@@ -1,5 +1,4 @@
 @media only screen and (max-width:1160px) {
-  header{background:#f00;}
   #wrapper .page_1 h2{font-size:1.8em;}
   .page_1 .row span.scroll_down{height:52px;}
   .page_2 .two_sections .section_one, .page_6 .two_sections .section_one{width:43%;}

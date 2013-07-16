@@ -344,8 +344,8 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
   background: url("../img/volume-full.png") repeat scroll left top transparent;
 }
 .vjs-default-skin .vjs-volume-bar .vjs-volume-handle {
-  width: 0.5em;
-  height: 0.5em;
+  width: 0;
+  height: 0;
 }
 .vjs-default-skin .vjs-volume-bar .vjs-slider-handle{background: none;}
 .vjs-default-skin .vjs-volume-handle:before {

@@ -115,7 +115,7 @@
   .tab_content .main_cont{position: static;}
   .creativity_head{margin-bottom:0px;}
   .maisons_head p{display:none;}
-  .videos, .page_4 .videos .section_one.last-video{margin-bottom: 0px;}
+  .videos,.page_4 .videos .section_one{margin-bottom: 0px;width:100%;}
   .page_4 .social_links{margin-top:35px;}
   .creativity_head .bg_img{height:auto;}
   .join_us_gallery .maison_prev, .join_us_gallery .maison_next{top:60px;}

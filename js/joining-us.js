@@ -1,9 +1,9 @@
 $(function(){
-	var wd = $(".gallery_container").find('.content:eq(0)').outerWidth()
+	// var wd = $(".gallery_container").find('.content:eq(0)').outerWidth()
 
-	$(".gallery_container").width(wd).css('overflow','hidden');
-	$(".gallery_container .content").width(wd);
-	var slides = $(".gallery_container").find('.slides').width(wd*3);
+	$(".gallery_container").width('100%').css('overflow','hidden');
+	$(".gallery_container .content").width('33.33%');
+	var slides = $(".gallery_container").find('.slides').width('300%');
 	$('.our_world h2').css('padding-left','3px');
 	var ulList = $('.gallery_join .our_world ul.buttons');
 	var nextEl = $('.gallery_join .our_world a.next, #work-with-us a.next');
@@ -40,7 +40,7 @@ $(function(){
 			prevEl.removeClass('inactive');
 		}
 
-		slides.animate({'margin-left': -1 * wd * curSlide });
+		slides.animate({'margin-left': (-100 * curSlide) + '%' });
 	}
 
 	$('.gallery_join .our_world a.next, #work-with-us a.next').click(function(){

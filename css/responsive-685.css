@@ -1,3 +1,4 @@
 @media only screen and (max-width:685px) {
    .page_2 .two_sections .section_one, .page_4 .videos .section_one, .page_6 .two_sections .section_one{float: none;margin: 0 auto 30px;width: 260px;}
+   .container.main #work-with-us.page .gallery_join .two_sections{position: static;}
 }

@@ -57,6 +57,7 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
             }, 1000);
             $('.maisons_lists ul li').addClass('fading');
         })
+
         return false;
     });
 

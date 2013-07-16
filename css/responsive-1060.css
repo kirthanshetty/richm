@@ -1,0 +1,18 @@
+@media only screen and (max-width:1160px) {
+  header{background:#f00;}
+  #wrapper .page_1 h2{font-size:1.8em;}
+  .page_1 .row span.scroll_down{height:52px;}
+  .page_2 .two_sections .section_one, .page_6 .two_sections .section_one{width:43%;}
+  .videos .section_one{width:31%;margin-right: 3%;}
+  .page_2 .two_sections .section_one img, .page_6 .two_sections .section_one img, .videos, .videos .section_one img, .tab_content_right img{width:100%;}
+  .tab_content_full .view_jobs{margin-right:30px;}
+  .tab_content_full .view_jobs{padding:10px 20px;}
+  .tab_content_full .view_jobs p{font-size:1.7em;width:100%;}
+  .tab_content_full .view_jobs a{padding:6px 12px;}
+  .maisons_lists ul li.join-us h3{font-size:2em;}
+  .career_gallery{float:right;}
+  .page_1 .social_links{top:105px;}
+
+  /*#wrapper .creativity_head .bg_img h2{font-size:4.4em;}
+  .join_us_gallery .maison_prev, .join_us_gallery .maison_next{margin-top:14%;}*/
+}

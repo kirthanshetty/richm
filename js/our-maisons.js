@@ -60,10 +60,11 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
         return false;
     });
 
-    var w = gallery.find('.maison_main_content:eq(0)').outerWidth()
-    gallery.find('.slides-container').width(w).css('overflow', 'hidden');
-    gallery.find('.maison_main_content').width(w - 120);
-    var slides = gallery.find('.slides').width(w * 3);
+    // var w = gallery.find('.maison_main_content:eq(0)').outerWidth()
+    gallery.find('.slides-container').//width(w).
+        css('overflow', 'hidden');
+    // gallery.find('.maison_main_content').width(w - 120);
+    var slides = gallery.find('.slides') //.width(w * 3);
     var buttons = gallery.find('.buttons a'),
         maisonImages = gallery.find('.maison_image a');
 

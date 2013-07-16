@@ -1,6 +1,10 @@
 function Navigation(){
 	$('.header_main a').click(function(e){
-		if(this.href.match(/^#/))
+		var href = this.href;
+		var winhref = window.location.href.replace(/#.*$/,'');
+		href = href.replace(winhref,'');
+
+		if(href.match(/^#/))
 			e.preventDefault();
 		var hash = $(this).attr('href');
 		var node = $(hash);

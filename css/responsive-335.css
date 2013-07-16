@@ -6,7 +6,11 @@
   #our-maisons .inner_content{padding:20px;}
   #wrapper .page_3 .maisons_head h2{font-size: 2.8em;text-align: left;margin-top:0px;}
   .page_5 .maisons_head p{font-size:1.5em;line-height: 25px;text-align: left;clear:both;margin:0px;}
-  .maisons_lists{margin-top: 25px;display:none;}
+  .maisons_lists{margin-top: 25px;}
+  .maisons_lists ul{width: 100%;}
+  .maisons_lists ul li{width: 50%;}
+  .our_maison_gallery .maison_main_content{padding: 20px 30px;}
+  .our_maison_gallery a.maison_close{padding-right: 30px;}
   .page_3 .maisons_head p{clear:both;}
   .tab_content_full .tab_content_right{margin-left:0px;}
   .mobile_maison_lists{display:block;padding: 0px;}

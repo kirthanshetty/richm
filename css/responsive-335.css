@@ -33,7 +33,7 @@
   .page_2 .two_sections .section_two{margin: 0 auto 20px;}
   #our-maisons .inner_content, #why-join-us .inner_content, #work-with-us .inner_content, #our-world .inner_content {padding: 10px;}
   #wrapper .page_3 .maisons_head h2, #wrapper #why-join-us h2, #wrapper .page_5 .maisons_head h2{margin:0px;font-size: 3.4em;float:left;padding-bottom: 10px;padding-top: 10px;}
-  #wrapper #why-join-us h2{padding-bottom: 40px;font-size:4em;line-height: 40px;padding-top:20px;}
+  #wrapper #why-join-us h2{padding-bottom: 50px;font-size:4em;line-height: 40px;padding-top:40px;}
   #wrapper #why-join-us .bg_img h2{padding-bottom: 10px;}
   #why-join-us .inner_content{padding-top:0px;padding-bottom:0px;}
   .page_5 .maisons_head p{font-size: 1.5em;float: left;}
@@ -100,7 +100,7 @@
   .search_main_block .inner_block  .save_search{display:block; float: right;width: 170px;}
   .search_main_block .save_search input{display:block; float: right;}
 
-  .col.span_5 .our_world{margin-left:0px;}
+  #our-world .col.span_5 .our_world{margin-left:0px;padding:135px 0 0;}
   .videos .section_one, .footer_main .col.span_6 {width:100%;}
   .tab_content_left select, .tab_content_left span.customSelect {clear: none;float: left;left: 0 !important;right: auto !important;top: 30px !important;}
   #why-join-us .inner_content{background: #f7f7f7;}
@@ -118,7 +118,7 @@
   .videos,.page_4 .videos .section_one{margin-bottom: 0px;width:100%;}
   .page_4 .social_links{margin-top:35px;}
   .creativity_head .bg_img{height:auto;}
-  .join_us_gallery .maison_prev, .join_us_gallery .maison_next{top:60px;}
+  .join_us_gallery .maison_prev, .join_us_gallery .maison_next{top:86px;}
   .maisons_lists ul li.join-us{display:none;}
   #why-join-us{padding-bottom: 10px;}
   #work-with-us{margin-bottom: 0px;}

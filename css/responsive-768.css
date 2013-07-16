@@ -31,7 +31,7 @@
   .page_1 .social_links ul, .page_2 .social_links ul, .page_3 .social_links ul, .page_4 .social_links ul, .page_5 .social_links ul, .page_6 .social_links ul{ margin-left: 30px;width: 150px;}
   .page_4 .social_links ul{margin:0px;}
   .page_2 .social_links ul{margin-top:100px;}
-  .our_maison_gallery .maison_main_content .maison_image{float:none;margin:0 auto; padding: 0;height: auto;}
+  .our_maison_gallery .maison_main_content .maison_image{display:none;/*float:none;margin:0 auto; padding: 0;height: auto;*/}
   .our_maison_gallery a.maison_next{display: none;}
   .our_maison_gallery a.maison_prev{display: none;}
   .maisons_lists ul.buttons{display: none;}

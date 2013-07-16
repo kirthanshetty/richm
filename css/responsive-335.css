@@ -1,5 +1,4 @@
 @media only screen and (max-width:335px) {
-  header{background: #f00}
   header .logo_blk{width:69%;}
   .search{width:13%;}
   div.collapsed{width:18%;}

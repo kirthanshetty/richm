@@ -32,12 +32,11 @@
   .page_1 .social_links ul, .page_2 .social_links ul, .page_3 .social_links ul, .page_4 .social_links ul, .page_5 .social_links ul, .page_6 .social_links ul{ margin-left: 30px;width: 150px;}
   .page_4 .social_links ul{margin:0px;}
   .page_2 .social_links ul{margin-top:100px;}
-  .our_maison_gallery .maison_main_content .maison_image{float:none;margin:0 auto; padding: 0;}
+  .our_maison_gallery .maison_main_content .maison_image{float:none;margin:0 auto; padding: 0;height: auto;}
   .our_maison_gallery a.maison_next{display: none;}
   .our_maison_gallery a.maison_prev{display: none;}
-  .our_maison_gallery .maison_main_content .maison_image{width: 100%;}
-  .our_maison_gallery .maison_main_content .maison_image a,.maison_image img{width: 100%;}
   .maisons_lists ul.buttons{display: none;}
   .maison_main_content .maison_desc a{margin-top: 10px;display: block;}
-  .our_maison_gallery a.maison_close{bottom: 10px;text-indent: 0;font-size: 1.2em; color:#757575; position: static; margin: 10px 0;}
+  .our_maison_gallery a.maison_close{text-indent: 0;font-size: 1.2em; color:#757575; position: static; background: none; clear:both; float: none; text-align: right; width: auto;display: block;padding-right: 60px;}
+  .maison_image img{ width: 100%; height: auto; }
 }

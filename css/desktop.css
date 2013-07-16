@@ -1059,3 +1059,10 @@ textarea {
     overflow: auto; /* 1 */
     vertical-align: top; /* 2 */
 }
+.page:before {
+  display: block;
+  content: " ";
+  margin-top: -70px;
+  height: 70px;
+  visibility: hidden;
+}

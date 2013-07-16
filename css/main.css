@@ -336,6 +336,8 @@ footer{margin-top:50px;}
 .our_world .slides .content p{padding-bottom: 12px;}
 .icon-pinterest{color:#00436e;font-size:1.4em;}
 .social_links{float:left;width:100%;margin-top:45px;}
+.page_1 .social_links, .page_2 .social_links, .page_3 .social_links, .page_4 .social_links, .page_5 .social_links, .page_6 .social_links {position: absolute;right: 0;top:30px;width: 100%;margin-top:0px;}
+.page_5 .inner_content, .page_2 .inner_content{position: relative;}
 .page_2 .span_3.col{float:right;}
 .social_links ul li a{ float: right;height: 28px;padding: 5px;width: 30px;border-right:1px solid #4383b4;}
 .social_links ul li:first-child a{border:0px;}
@@ -462,8 +464,8 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .join_us_gallery ul li.active .chat-bubble-arrow{border-color: #515151 transparent transparent;border-style: solid;border-width: 10px 19px 8px;opacity:0.8;filter:alpha(opacity=80);}
 .join_us_gallery ul li a{color:#054c70;}
 .join_us_gallery ul li.active a{color:#fff;}
-.join_us_gallery .maison_prev{background: url("../img/parallax/sprite.png") no-repeat scroll 0 -486px transparent;float: left;height: 60px;position: absolute;left: 20px;width: 50px;z-index: 999;margin-top:10%;}
-.join_us_gallery .maison_next{background: url("../img/parallax/sprite.png") no-repeat scroll 0 -552px transparent;float: left;height: 60px;position: absolute;right: 10px;width: 50px;z-index: 999;margin-top:10%;}
+.join_us_gallery .maison_prev{background: url("../img/parallax/sprite.png") no-repeat scroll 0 -486px transparent;float: left;height: 60px;position: absolute;left: 20px;width: 50px;z-index: 999;top:90px;}
+.join_us_gallery .maison_next{background: url("../img/parallax/sprite.png") no-repeat scroll 0 -552px transparent;float: left;height: 60px;position: absolute;right: 10px;width: 50px;z-index: 999;top:90px;}
 .tab_content h2{color: #4E4E4E;font-size: 2.1em;margin:15px 0px 6px;text-align: center;text-transform: uppercase;font-weight:normal;}
 .tab_content p{color: #4E4E4E;margin:0px;}
 .creativity_head ul li.active{position: relative;}
@@ -1117,6 +1119,8 @@ textarea {
   .tab_content_full .view_jobs p{font-size:1.7em;width:100%;}
   .tab_content_full .view_jobs a{padding:6px 12px;}
   .maisons_lists ul li.join-us h3{font-size:2em;}
+  .career_gallery{float:right;}
+  .page_1 .social_links{top:105px;}
 
   /*#wrapper .creativity_head .bg_img h2{font-size:4.4em;}
   .join_us_gallery .maison_prev, .join_us_gallery .maison_next{margin-top:14%;}*/
@@ -1150,6 +1154,9 @@ textarea {
   .join_us_gallery .maison_prev, .join_us_gallery .maison_next{margin-top:14%;}
   .gallery_join .our_world ul.buttons {left: auto;right: 10px;top: 5px;}
   .footer_main .col.span_6{width:50%;}
+  .page_1 .social_links, .page_2 .social_links, .page_3 .social_links, .page_4 .social_links, .page_5 .social_links, .page_6 .social_links{ bottom: 0;left: 0;margin-bottom: 30px;top: auto;}
+  .page_1 .social_links ul, .page_2 .social_links ul, .page_3 .social_links ul, .page_4 .social_links ul, .page_5 .social_links ul, .page_6 .social_links ul{ margin-left: 30px;width: 150px;}
+  .page_2 .social_links ul{margin-top:100px;}
 }
 
 
@@ -1196,7 +1203,6 @@ textarea {
   .search_main_block .inner_block label {display: block;color: #5E5E5E;float: left;font-size: 1.4em;padding-right: 10px;padding-top: 5px;width: 145px;padding-bottom: 8px;}
   .inner_block div span.customSelect, .tab_content_left span.customSelect {background: url("../img/mobile_select.jpg") no-repeat scroll left top transparent;width: 270px;}
   .inner_block .tab_content_full div span.customSelect, .tab_content_full .tab_content_left span.customSelect{background: url("../img/single_mobile_select.jpg") no-repeat scroll left top transparent;width: 295px;}
-
 }
 
 @media only screen and (max-width:335px) {

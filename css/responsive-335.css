@@ -33,9 +33,10 @@
   .page_2 .two_sections .section_two{margin: 0 auto 20px;}
   #our-maisons .inner_content, #why-join-us .inner_content, #work-with-us .inner_content, #our-world .inner_content {padding: 10px;}
   #wrapper .page_3 .maisons_head h2, #wrapper #why-join-us h2, #wrapper .page_5 .maisons_head h2{margin:0px;font-size: 3.4em;float:left;padding-bottom: 10px;padding-top: 10px;}
+  #wrapper #why-join-us h2{padding-bottom: 40px;font-size:4em;line-height: 40px;padding-top:20px;}
+  #wrapper #why-join-us .bg_img h2{padding-bottom: 10px;}
   #why-join-us .inner_content{padding-top:0px;padding-bottom:0px;}
   .page_5 .maisons_head p{font-size: 1.5em;float: left;}
-  #wrapper #why-join-us h2{font-size:4em;line-height: 40px;}
   #why-join-us .maisons_head p{font-size: 1.5em;}
   .maisons_lists ul li a, .maisons_lists ul li a img{height: 100%;}
   .maisons_lists ul li.lightbox-open a{background: none repeat scroll 0 0 #00436E;}
@@ -66,7 +67,7 @@
   .tab_content_full .view_jobs {background: url("../img/view_jobs2.png") no-repeat scroll left top transparent;height: 169px;float: left;margin-top: 25px;padding: 12px;}
   .tab_content_full .view_jobs p{font-size: 2.7em;line-height: 35px;width:auto;}
   .tab_content_right, .tab_content_left, .page_5 .maisons_head h2, .page_5 .maisons_head p{padding-left:12px;padding-right: 12px;}
-  .footer_left, .footer_right{margin: 0px 10px;}
+  .footer_left, .footer_right{margin: 0px 10px;float:left;}
   .scroll_top img {bottom: 72px;}
   .footer_main .col.span_6{padding:5px 0px;}
   #career-paths .inner_content{padding:10px 0px;}
@@ -110,13 +111,17 @@
   .creativity_head .bg_img img, .creativity_head .bg_img h2, .creativity_head .bg_img h5 {display:block;}
   .creativity_head{clear:both; background: none repeat scroll 0 0 #DADADA;}
   .tab_content .main_cont{background: none repeat scroll 0 0 #DADADA;padding-bottom:18px;margin-bottom: 15px;}
-  .creativity_head .bg_img h5{width:100%;color:#787878;}
+  .creativity_head .bg_img h5{width:auto;color:#787878; overflow: hidden;}
   .tab_content .main_cont{position: static;}
   .creativity_head{margin-bottom:0px;}
   .maisons_head p{display:none;}
   .videos, .page_4 .videos .section_one.last-video{margin-bottom: 0px;}
   .page_4 .social_links{margin-top:35px;}
   .creativity_head .bg_img{height:auto;}
-  
-
+  .join_us_gallery .maison_prev, .join_us_gallery .maison_next{top:60px;}
+  .maisons_lists ul li.join-us{display:none;}
+  #why-join-us{padding-bottom: 10px;}
+  #work-with-us{margin-bottom: 0px;}
+  .career_gallery{margin-top:0px;}
+  .tab_content_right div a{margin-left: 20px;display: block;}
 }

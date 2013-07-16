@@ -1,5 +1,7 @@
 function Navigation(){
 	$('.header_main a').click(function(e){
+		if($(window).width() < 768)
+			return;
 		var href = this.href;
 		var winhref = window.location.href.replace(/#.*$/,'');
 		href = href.replace(winhref,'');

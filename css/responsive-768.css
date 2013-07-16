@@ -28,7 +28,7 @@
   .join_us_gallery .maison_prev, .join_us_gallery .maison_next{margin-top:14%;top:-40px;}
   .gallery_join .our_world ul.buttons {left: auto;right: 10px;top: 5px;}
   .footer_main .col.span_6{width:50%;margin:0px;}
-  .page_1 .social_links, .page_2 .social_links, .page_3 .social_links, .page_4 .social_links, .page_5 .social_links, .page_6 .social_links{ margin-left: 5px;margin-bottom: 20px;margin-top: 20px;position: static;}
+  .page_1 .social_links, .page_2 .social_links, .page_3 .social_links, .page_4 .social_links, .page_5 .social_links, .page_6 .social_links{ /*margin-left: 5px;margin-bottom: 20px;margin-top: 20px;position: static; */ display: none; }
   .page_1 .social_links ul, .page_2 .social_links ul, .page_3 .social_links ul, .page_4 .social_links ul, .page_5 .social_links ul, .page_6 .social_links ul{ margin-left: 30px;width: 150px;}
   .page_4 .social_links ul{margin:0px;}
   .page_2 .social_links ul{margin-top:100px;}

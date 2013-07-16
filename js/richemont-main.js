@@ -15,5 +15,7 @@ $(function(){
 		parallex.init();
 		$('.container.main').height(parallex.totalHeight);
 	})
-	var Career = CareerPath($('.page_5 .inner_content'))
+	var Career = CareerPath($('.page_5 .inner_content'));
+
+	var SocialShare = ShareIcons($, '.social_links');
 })

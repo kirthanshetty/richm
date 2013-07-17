@@ -39,4 +39,6 @@
     #why-join-us{padding-bottom:40px;}
     .page_5 .maisons_head p{text-align: left;}
     header{padding-bottom: 0px;}
+    .page_1 .social_links, .page_2 .social_links, .page_3 .social_links, .page_4 .social_links, .page_5 .social_links, .page_6 .social_links{display: block;position: static;margin-bottom: 30px;}
+    .page_5 .social_links{margin-top: 30px;}
 }

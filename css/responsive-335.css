@@ -1,4 +1,4 @@
-@media only screen and max-width335px {
+@media only screen and (max-width:335px) {
   header
   {
     background:red;

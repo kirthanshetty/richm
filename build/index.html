@@ -53,6 +53,17 @@
 		</header>
 		<div class="container main">
 			<section id="home" class="page page_1 row" data-speed="0.5">
+				<div class="social_link_container ">
+					<div class="social_links">
+						<ul>
+							<li><a class="share" href="#" title="Share"></a></li>
+							<li><a class="tweet" href="#home" title="Twitter"></a></li>
+							<li><a class="fb" href="#home" title="Facebook"></a></li>
+							<li><a class="gplus" href="#home" title="gPlus"></a></li>
+							<li><a class="pin" href="#home" title="Pin"></a></li>
+						</ul>
+					</div>
+				</div>
 				<div class="row first_row">
 					<div class="col span_4">
 						<img src="img/parallax/img9.jpg" alt="Maisons image" />
@@ -70,11 +81,13 @@
 						<div class="quick_search">
 							<label for="q">Search</label> 
 							<input type="text" name="q" id="q" placeholder="Quick search for a job or enter job code">
-							<input type="submit" value="GO">
+							   <input type="submit" value="GO">
 						</div>
 						<span>Or </span>
 						<div class="inner_block">
+							<form method="GET" action="#" name="search">
 							<input type="submit" value="View all jobs">
+						</form>
 						</div>
 						<span class="scroll_down"></span>
 					</div>
@@ -92,15 +105,6 @@
 					<div class="col span_4">
 						<img src="img/parallax/img12.jpg" alt="Maisons image" />
 					</div>
-				</div>
-				<div class="social_links">
-					<ul>
-						<li><a class="share" href="#" title="Share"></a></li>
-						<li><a class="tweet" href="#home" title="Twitter"></a></li>
-						<li><a class="fb" href="#home" title="Facebook"></a></li>
-						<li><a class="gplus" href="#home" title="gPlus"></a></li>
-						<li><a class="pin" href="#home" title="Pin"></a></li>
-					</ul>
 				</div>
 			</section>
 			<section id="our-world" class="page page_2 row" data-speed="1">
@@ -277,7 +281,9 @@
 							<li class="join-us">
 								<section>
 									<h3>Join us in writing our next chapter today...</h3>
+									<form method="GET" action="#" name="search">
 									<input type="submit" value="View all jobs">
+									</form>
 								</section>
 							</li>
 						</ul>
@@ -306,8 +312,8 @@
 								<li><a href="ajax/culture.html">Learning Culture</a></li>
 								<li><a href="ajax/service.html">Customer Service</a></li>
 							</ul>
-							<a href="javascript:void(0)" class="maison_prev" title="Previous">Previous</a>
-							<a href="javascript:void(0)" class="maison_next" title="Next">Next</a>
+							<a href="javascript:void(0)" class="maison_prev" title="Previous">Previous value</a>
+							<a href="javascript:void(0)" class="maison_next" title="Next">Next value</a>
 						</div>
 					
 						<div class="tab_content">
@@ -350,15 +356,16 @@
 										<a href="ajax/video.html" rel="video"><img alt="Video" src="img/parallax/video3.png"><h3>PLAY VIDEO</h3><h4>The making of luxury by Lorem ipsum </h4></a>
 									</div>
 								</div> <!-- videos -->
-								<div class="social_links">
-									<ul>
-										<li><a class="share" href="#" title="Share"></a></li>
-										<li><a class="tweet" href="#why-join-us" title="Twitter"></a></li>
-										<li><a class="fb" href="#why-join-us" title="Facebook"></a></li>
-										<li><a class="gplus" href="#why-join-us" title="gPlus"></a></li>
-										<li><a class="pin" href="#why-join-us" title="Pin"></a></li>
-									</ul>
-								</div>
+								<div class="clearfix"></div>
+							</div>
+							<div class="social_links">
+								<ul>
+									<li><a class="share" href="#" title="Share"></a></li>
+									<li><a class="tweet" href="#why-join-us" title="Twitter"></a></li>
+									<li><a class="fb" href="#why-join-us" title="Facebook"></a></li>
+									<li><a class="gplus" href="#why-join-us" title="gPlus"></a></li>
+									<li><a class="pin" href="#why-join-us" title="Pin"></a></li>
+								</ul>
 							</div>
 						</div>
 					</div> <!-- section_main -->
@@ -568,7 +575,9 @@
 							<div class="view_jobs">
 								<p>Join us in writing our
                                     next chapter today...</p>
+                                <form method="GET" action="#" name="search">
                                 <a href="#">View all jobs</a>
+                            	</form>
 							</div> <!-- view_jobs -->
 						</div>
 					</div> <!-- tab_content_full -->

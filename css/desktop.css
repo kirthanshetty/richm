@@ -600,6 +600,10 @@ button.collapsed{display:none;}
 .lt-ie8 .tab_content .main_cont{top:335px;}
 .lt-ie8 .career_gallery a.prev, .lt-ie8 .career_gallery a.next{height:16px;}
 .lt-ie8 .maisons_lists ul li.join-us input, .tab_content_left form input[type="button"]{border:0px;}
+.lt-ie8 .maisons_lists ul li{border-bottom:1px solid #b8b8b8;border-right:1px solid #b8b8b8;}
+.lt-ie9 .jobs_main_content .quick_search input[type="submit"]{top:5px;padding-bottom: 8px;}
+.lt-ie9 .maisons_lists .fading a:hover img{background: none;}
+
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;  }

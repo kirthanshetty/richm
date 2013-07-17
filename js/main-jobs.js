@@ -6,5 +6,5 @@ require.config({
 });
 
 require([
-    'jquery', 'navigation', 'search', 'customselect', 'richemont-main'
+    'jquery', 'navigation', 'search', 'customselect'
 ]);

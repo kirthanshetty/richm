@@ -13,7 +13,8 @@
     .search {height: 47px;width:40px;position: static;}
     .search_block{margin-top:47px;right:0px;width:100%;}
     .search_block .chat-bubble-arrow{display: none;}
-    .menu_list{position: absolute;right:0px;margin-top:32px;z-index: 9;}
+    .menu_list{position: absolute;right:0px;margin-top:47px;z-index: 9;}
+    .header_right.menu_list ul{width:100%;}
     .search_block .textbox{width:77%;margin:2%;float: left;}
     .search_block .submit{margin:0px;width:17%; margin: 2% 2% 2% 0;}
     .footer_right{float:left;margin-left:30px;}
@@ -33,4 +34,9 @@
     .footer_right{float:right;}
     .scroll_top img {bottom: 12px;}
     #our-world .col.span_5 .our_world{margin-right:35px;}
+    #our-world .two_sections{margin-top:0px;}
+    #our-world{margin-bottom: 40px;}
+    #why-join-us{padding-bottom:40px;}
+    .page_5 .maisons_head p{text-align: left;}
+    header{padding-bottom: 0px;}
 }

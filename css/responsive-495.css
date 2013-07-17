@@ -5,4 +5,8 @@
   .search_main_block .inner_block label {display: block;color: #5E5E5E;float: left;font-size: 1.4em;padding-right: 10px;padding-top: 5px;width: 145px;padding-bottom: 8px;}
   .inner_block div span.customSelect, .tab_content_left span.customSelect {background: url("../img/mobile_select.jpg") no-repeat scroll left top transparent;width: 270px;}
   .inner_block .tab_content_full div span.customSelect, .tab_content_full .tab_content_left span.customSelect{background: url("../img/single_mobile_select.jpg") no-repeat scroll left top transparent;width: 295px;}
+  #our-world .two_sections{margin-top:0px;}
+  .page_5 .maisons_head p{text-align: left;}
+  #our-world{margin-bottom: 40px;}
+  #why-join-us{padding-bottom:40px;}
 }

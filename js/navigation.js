@@ -26,13 +26,22 @@ function Navigation(){
 		if(parallex)
 			parallex.scrollToMe();
 	}
+	$(window).resize(fixnav)
+	fixnav();
 
-	$(".collapsed").mouseover(function(){
-		$(".menu_list").show();
-	});
-	$(".collapsed").mouseout(function(){
-		$(".menu_list").hide();
-	});
+	function fixnav(){
+		console.log("here");
+		if($(window).width() < 630) {
+			$(".collapsed").mouseover(function(){
+				$(".header_right").addClass('menu_list');
+				$(".header_right ul").removeClass('second_row');
+				$(".menu_list").show();
+			});
+			$(".collapsed").mouseout(function(){
+				$(".menu_list").hide();
+			});
+		}
+	}
 	/* Script of Click scroll to Top */
 	$(".scroll_top img").click(function() {
 		$("html, body").animate({ scrollTop: 0 }, "slow");

@@ -9,17 +9,17 @@
   .page_1 .row .inner_block input[type="submit"]{font-size:1.2em;padding:7px 15px;}
   .col.span_5 .our_world, .tab_content_left{margin-right:35px;margin-bottom: 30px;}
   .page_2 .two_sections, .page_6 .two_sections{margin-top:30px;}
-  .page_6 .two_sections{width:100%;}
+  .page_6 .two_sections{width:auto; float: none;}
   .page_6 .two_sections .section_one, .page_2 .two_sections .section_one{margin-left:20px;}
   .page_6 .two_sections .section_two, .page_2 .two_sections .section_two{margin-left:0px;}
   .tab_content_right{margin-left:30px;margin-top:35px;}
   .tab_content_right div a, .section_text{float:left;margin-left:30px;}
   .section_text{margin-left: 25px;}
   .tab_content_right div a{margin-left: 35px;}
-  .tab_content_full .view_jobs {padding: 22px;margin-left:30px;}
+  .tab_content_full .view_jobs {padding:10px 22px;margin-left:30px;}
   .tab_content_left form div label{padding-bottom:5px;}
   .creativity_head .bg_img h2, .creativity_head .bg_img h5{display:none;}
-  .page_5 .maisons_head h2{font-size: 2.8em;text-align: left;margin:0px 30px;}
+  .page_5 .maisons_head h2{font-size: 2.8em;margin:0px 30px;}
   .maisons_head h3{
     /*text-align:left;*/
   }
@@ -54,9 +54,7 @@
   .our_maison_gallery a.maison_close{bottom: 10px;text-indent: 0;font-size: 1.2em; color:#757575; position: static; margin: 10px 0;}
   .maisons_lists ul li a:hover img.top{opacity:1;}
 
-  .maisons_lists ul li.join-us h3 {
-    display: none;
-  }
+
 
   #why-join-us .inner_content{background: #f7f7f7;float:left;}
   .creativity_head .bg_img{background: none;}
@@ -93,4 +91,5 @@
   .header_main h1.col.span_4{text-align:center;}
   #our-world .col.span_5 .our_world{padding: 20px;margin-right:0px;}
   .page_2 .two_sections{margin-top:235px;}
+  header .logo_blk img{margin-left:20px;}
 }

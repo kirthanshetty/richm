@@ -477,6 +477,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .videos{margin: 30px 0px;float:left;width: auto;}
 .videos .section_one{margin-right:30px;width:298px;}
 .videos .section_one:last-child{margin:0px;}
+.videos .section_one.last-video{margin:0px;}
 .section_one a h3{position:absolute;font-family: 'SabonLT-Roman';font-size: 2em;font-weight:normal;margin: 0;font-style: italic;left:28%;top:40%;color: #fff;}
 .container.main #work-with-us.page .gallery_join{position: relative;height:auto;float:left;width: 100%;}
 .page_5 .maisons_head h2{text-align :center;margin-bottom:0px;}
@@ -567,7 +568,7 @@ button.collapsed{display:none;}
 .page_2 .two_sections .section_one{margin-right:0px;margin-left:20px;}
 
 /* CSS for IE to Fallback */
-.no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .maisons_lists ul li.join-us input{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
+.no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us input{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type='submit']{background: url("../img/parallax/shade_bg.jpg") repeat-x scroll left top;}
 .no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button']{background: url("../img/parallax/grey_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type="submit"]{background: url("../img/shade_button.jpg") repeat-x left top;}
@@ -579,15 +580,26 @@ button.collapsed{display:none;}
 
 .eq-ie9 .join_us_gallery ul li{margin:0px 22px 0px 23px;}
 .lt-ie9 .join_us_gallery ul li{margin:0px 16px 0px 17.5px;}
-.lt-ie9 .last-video{margin:0px;}
+.lt-ie9 .last-video, .lt-ie8 .last-video{margin:0px;}
 .eq-ie9 .header_right ul.first_row{font-family: lato;}
-.eq-ie9 .quick_search input[type="submit"]{top:0px;}
+.eq-ie9 .quick_search input[type="submit"]{top:0px !important;}
 .eq-ie9 .second_row .quick_search input[type="submit"]{top:-1px;}
 .lt-ie9 .quick_search input[type="text"]{position: relative;top:-5px;}
 .lt-ie9 #our-maisons{background-position: center top;}
 .lt-ie8 .page_1 .row .inner_block input[type="submit"]{border:0px;}
-.lt-ie8 .page_1 .row .inner_block .quick_search input[type="text"]{top:0px;}
-.lt-ie8 .page_1 .row .inner_block .quick_search input[type="submit"]{height:30px;}
+.lt-ie8 .quick_search input[type="text"]{height:26px !important;position:relative;top:0px !important;}
+.lt-ie8 .quick_search input[type="submit"]{left:-3px;}
+.lt-ie8 header{height:70px;}
+.lt-ie8 .social_links ul li{height:28px;display:inline;}
+.lt-ie8 .social_links ul li a{height:18px;}
+.lt-ie8 .section_one h4, .lt-ie8 .videos .section_one h4{width:93%;margin-bottom: 0px;}
+.lt-ie8 .videos .section_one h4{width:94.3%;}
+.lt-ie8 .maisons_lists ul li{width:19%;}
+.lt-ie8 .maisons_lists ul li.join-us{width:728px;}
+.lt-ie8 .join_us_gallery ul{top:288px;}
+.lt-ie8 .tab_content .main_cont{top:335px;}
+.lt-ie8 .career_gallery a.prev, .lt-ie8 .career_gallery a.next{height:16px;}
+.lt-ie8 .maisons_lists ul li.join-us input, .tab_content_left form input[type="button"]{border:0px;}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;  }

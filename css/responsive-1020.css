@@ -1,5 +1,5 @@
 @media only screen and (max-width:1020px) {
   .maisons_lists ul{width: 760px;}
   .maisons_lists ul li.join-us{width: 570px}
-  .gallery_join .our_world ul.buttons{display: none;}
+  .gallery_join .our_world ul.buttons{left: auto;position: absolute;right: 8px;width: 75px;}
 }

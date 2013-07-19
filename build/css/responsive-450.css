@@ -1,1 +1,1 @@
-@media only screen and (max-width:450px) {.maisons_lists ul{width: 300px;} .maisons_lists ul li{width: 150px; height: 90px;} .maisons_lists ul li.join-us{width: 149px;height:89px;} .maisons_lists ul li.join-us input{margin:0px;} .maisons_lists ul li.join-us section {padding: 27px 23px;}}
+@media only screen and (max-width:450px) {.maisons_lists {width: 300px;} .maisons_lists ul li{width: 150px; height: 90px;} .maisons_lists ul li.join-us{width: 149px;height:89px;} .maisons_lists ul li.join-us input{margin:0px;} .maisons_lists ul li.join-us section {padding: 27px 23px;}}

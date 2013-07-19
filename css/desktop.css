@@ -367,7 +367,7 @@ footer{margin-top:50px;}
 .container.main{overflow: hidden;max-width:100%;margin:0px;}
 #home, #why-join-us, #career-paths {background:url("../img/parallax/body_bg.jpg") repeat center top #fff;width: 100%;}
 #why-join-us {z-index: 9;padding-bottom: 100px;min-height: 855px;}
-#career-paths {z-index: 10;padding-bottom: 150px;}
+#career-paths {z-index: 10;padding-bottom:0px;}
 #home .inner_content, #why-join-us .inner_content, #career-paths .inner_content {/*width: 100%;*/background: #fff;}
 #our-world {/*background:url("../img/parallax/section_bg.jpg") no-repeat center top transparent;background-size:cover;*/min-height: 685px; width: 100%;}
 #work-with-us{/*background:url("../img/parallax/img14.jpg") no-repeat center top transparent;background-size:cover;*/min-height: 685px; width: 100%;z-index: 10;}

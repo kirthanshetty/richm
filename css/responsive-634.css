@@ -40,4 +40,6 @@
     .page_5 .maisons_head p{text-align: left;}
     header{padding-bottom: 0px;}
     .maisons_lists ul li.join-us h3{display: none;}
+    .maisons_lists ul li.join-us section{padding:30px 40px;}
+    .maisons_lists ul li a:hover img.top{opacity: 0;}
 }

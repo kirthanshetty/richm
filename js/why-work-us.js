@@ -28,12 +28,9 @@ function WhyworkUs(container){
 
 			headerCont.animate({'margin-left': leftMargin })
 
-			mainCont.after(maisonCont.hide());
-			mainCont.fadeOut(function(){
-				$(this).remove();
-				mainCont = maisonCont;
-			});
-			maisonCont.fadeIn();
+			mainCont.after(maisonCont);
+			mainCont.hide();
+			mainCont = maisonCont;
 			videoHandler(maisonCont);
 		})
 	})

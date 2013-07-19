@@ -1,7 +1,8 @@
 function Navigation(){
 	$('.header_main a').click(function(e){
-		if($(window).width() < 768)
+		if($(window).width() < 1024){
 			return;
+		}
 		var href = this.href;
 		var winhref = window.location.href.replace(/#.*$/,'');
 		href = href.replace(winhref,'');
@@ -26,12 +27,14 @@ function Navigation(){
 		if(parallex)
 			parallex.scrollToMe();
 	}
+
+
 	$(window).resize(fixnav)
 	fixnav();
 
+	var prevWidth = 0;
 	function fixnav(){
-		console.log("here");
-		if($(window).width() < 630) {
+		if($(window).width() < 630 && prevWidth >= 630) {
 			$(".collapsed").mouseover(function(){
 				$(".header_right").addClass('menu_list');
 				$(".header_right ul").removeClass('second_row');
@@ -41,6 +44,14 @@ function Navigation(){
 				$(".menu_list").hide();
 			});
 		}
+
+		if($(window).width() >= 630 && prevWidth < 630){
+			$(".header_right").removeClass('menu_list').show();
+			$(".header_right ul:eq(1)").addClass('second_row');
+			$(".collapsed").unbind('mouseover');
+			$(".collapsed").unbind('mouseout');
+		}
+		prevWidth = $(window).width();
 	}
 	/* Script of Click scroll to Top */
 	$(".scroll_top img").click(function() {

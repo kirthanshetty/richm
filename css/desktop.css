@@ -387,7 +387,7 @@ footer{margin-top:50px;}
 .maisons_lists ul li a.two:hover img{background: transparent;}*/
 .maisons_lists ul li a img{/*left: 20%;position: relative;top: 25%;*/ background: none repeat scroll 0 0 #00436E;height:100%;width:99%;}
 .maisons_lists ul li.join-us{background:#dadada;width:760px;height: 113px;opacity:0.7;filter:alpha(opacity=90);border:0px !important;}
-.maisons_lists ul li.join-us section{float:right;padding:30px 40px;width:660px;}
+.maisons_lists ul li.join-us section{float:right;padding:30px 40px;width:665px;}
 .maisons_lists ul li.join-us h3{font-size:2.5em;font-weight: normal;color:#4e4e4e;float:left;margin:7px 0 0;}
 .maisons_lists ul li.join-us input{float:right;margin:10px 0px 0px 28px;font-size:1.3em;font-weight: normal;}
 .maisons_lists ul li.lightbox-open img.overlay{opacity:0.2;filter:alpha(opacity=20);}
@@ -611,6 +611,7 @@ button.collapsed{display:none;}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;  }
+ .video-js{position: static;}
 }
 
 /*

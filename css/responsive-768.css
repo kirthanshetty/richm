@@ -83,10 +83,10 @@
   #wrapper .creativity_head .bg_img h2{margin:20px 10px 10px;line-height: 45px;float:left;width:100%;}
   #why-join-us .inner_content h2.align-center{margin-top:0px;padding-top:30px;}
 
-  .container.main #work-with-us.page .gallery_join .two_sections{bottom: 0px;margin-bottom: 30px;position: absolute;}
-  .container.main #work-with-us.page .gallery_join .two_sections .section_one{margin-left: 30px;}
+  .container.main #work-with-us.page .gallery_join .two_sections{bottom: 0px;margin-bottom: 30px;position: static;}
+  .container.main #work-with-us.page .gallery_join .two_sections .section_one{margin: 20px auto;}
   .container.main #work-with-us.page .gallery_join{position: static;}
-  .container.main #work-with-us.page .gallery_join .two_sections .section_two{margin-left:0px;}
+  .container.main #work-with-us.page .gallery_join .two_sections .section_two{margin: 20px auto;}
 
   .header_main h1.col.span_4{text-align:center;width:100%;}
   #our-world .col.span_5 .our_world{padding: 20px;}

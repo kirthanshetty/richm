@@ -45,6 +45,8 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
 
     $('body').on('keypress',escHandler);
 
+    videoHandler(gallery);
+
     gallery.find('.maison_close').click(function () {
         $('body').off('keypress',escHandler);
         $(this).parent().parent().slideUp(function () {
@@ -107,7 +109,7 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
         var nextBtn = buttons.parent().parent().find('li.active').next();
         if(nextBtn.length < 1) nextBtn = buttons.parent().parent().find('li:first');
         nextBtn.find('a').data('auto',true).click();
-    },2000)
+    },5000)
 
     buttons.click(function(e){
         e.preventDefault();
@@ -173,4 +175,29 @@ function getNoElsInRow(){
         }
     };
     return 1;
+}
+var videoNo = 0;
+function videoHandler(el){
+    el.find('a[rel="video"]').click(function(e){
+        e.preventDefault();
+        $.get($(this).attr('href'),function(data){
+            var cont = $(data);
+            cont.css({
+                'position':'fixed',
+                'top': 0,
+                'left': 0,
+                'height': '100%',
+                'width': '100%',
+                'background': '#000',
+                'z-index':'1000'
+            });
+            cont.appendTo(document.body);
+            $('#video_content').attr('id','maison_video_content' + videoNo);
+            videojs('maison_video_content' + videoNo++);
+            cont.find('a.video_close').click(function(e){
+                e.preventDefault();
+                cont.remove();
+            })
+        })
+    })
 }

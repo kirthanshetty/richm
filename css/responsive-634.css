@@ -42,4 +42,5 @@
     .maisons_lists ul li.join-us h3{display: none;}
     .maisons_lists ul li.join-us section{padding:30px 40px;}
     .maisons_lists ul li a:hover img.top{opacity: 0;}
+    .header_main h1.col.span_4{width:auto;}
 }

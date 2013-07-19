@@ -544,7 +544,7 @@ ul.buttons li.active a{ background: url("../img/parallax/sprite.png") left -292p
 .our_maison_gallery a.maison_next{     background: url("../img/parallax/sprite.png") no-repeat scroll 8px -356px transparent;right:0px;height: 60px;position:absolute;top: 42%;width: 50px;}
 .our_maison_gallery a.maison_prev{  z-index: 0; background: url("../img/parallax/sprite.png") no-repeat scroll 0 -420px transparent;height: 60px;top: 42%;left: 15px;}
 .our_maison_gallery .maison_main_content{ padding: 45px 60px;clear:both; background: none repeat scroll 0 0 #FFFFFF;}
-.maison_slide_container{width: 100%;}
+.maison_slide_container{width: 100%;clear::both;}
 .our_maison_gallery .maison_main_content .maison_image{float:left;position: relative;padding-right:25px;height: 304px;width:430px;}
 .our_maison_gallery .maison_main_content .maison_image a{display: block;float: left;position: absolute; top:0;left: 0;}
 .our_maison_gallery .maison_main_content .maison_image.span_6{width:52%;}

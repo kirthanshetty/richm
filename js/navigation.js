@@ -30,7 +30,7 @@ function Navigation(){
 
 
 	$(window).resize(fixnav)
-	fixnav();
+	$(window).load(fixnav)
 
 	var prevWidth = 0;
 	function fixnav(){

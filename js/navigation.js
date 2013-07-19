@@ -32,7 +32,7 @@ function Navigation(){
 	$(window).resize(fixnav)
 	$(window).load(fixnav)
 
-	var prevWidth = 0;
+	var prevWidth = $(window).width() >= 630 ? 100:631;
 	function fixnav(){
 		if($(window).width() < 630 && prevWidth >= 630) {
 			$(".collapsed").mouseover(function(){

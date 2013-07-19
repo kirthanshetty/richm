@@ -31,10 +31,10 @@ function Navigation(){
 
 	$(window).resize(fixnav)
 	$(window).load(fixnav)
-
-	var prevWidth = $(window).width() >= 630 ? 100:631;
+	fixnav();
+	var prevWidth;
 	function fixnav(){
-		if($(window).width() < 630 && prevWidth >= 630) {
+		if($(window).width() < 630 && (!prevWidth || prevWidth >= 630) ) {
 			$(".collapsed").mouseover(function(){
 				$(".header_right").addClass('menu_list');
 				$(".header_right ul").removeClass('second_row');
@@ -45,7 +45,7 @@ function Navigation(){
 			});
 		}
 
-		if($(window).width() >= 630 && prevWidth < 630){
+		if($(window).width() >= 630 && (!prevWidth || prevWidth < 630) ) {
 			$(".header_right").removeClass('menu_list').show();
 			$(".header_right ul:eq(1)").addClass('second_row');
 			$(".collapsed").unbind('mouseover');

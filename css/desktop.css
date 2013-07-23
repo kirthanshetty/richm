@@ -89,6 +89,7 @@ header .logo_blk{width:auto;}
 .header_right a.search{background:url("../img/sprite.png") no-repeat left -68px;width:20px;height:25px;float:left;}
 .header_right ul.first_row{font-family: myriad pro;float:right;margin-bottom:5px;color:#fff;margin-top: 6px;}
 .header_right ul.first_row li{display:inline;margin:0px 3px;font-size:1.1em;color:#fff;}
+.header_right ul.first_row li form{display: inline;}
 .header_right ul li a, .header_right ul li select{color:#fff;}
 .header_right ul.first_row li select{border:0px;background: none;}
 .header_right ul.second_row li{font-family: georgia;font-style:italic;float:left;margin-right:17px;font-size:1.3em;}
@@ -172,7 +173,7 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 
 /* style for Footer */
 .footer_left{float:left;width:auto;margin-left:34px;}
-.footer_left h3{color:#fff;font-size:1.3em;float:left;margin-bottom:3px;margin-top: 17px;}
+.footer_left p{color:#fff;font-size:1.3em;float:left;margin-bottom:3px;margin-top: 17px;}
 .footer_left ul{float:left;clear:both;margin-top:3px;color:#fff;}
 .footer_left ul li{display: inline;font-size:1.3em;margin:0px 3px;}
 .footer_left ul li:first-child{margin-left: 0px}
@@ -482,15 +483,15 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .videos .section_one{margin-right:30px;width:298px;}
 .videos .section_one:last-child{margin:0px;}
 .videos .section_one.last-video{margin:0px;}
-.section_one a h3{position:absolute;font-family: 'SabonLT-Roman';font-size: 2em;font-weight:normal;margin: 0;font-style: italic;left:28%;top:40%;color: #fff;}
+.section_one a span.play{position:absolute;font-family: 'SabonLT-Roman';font-size: 2em;font-weight:normal;margin: 0;font-style: italic;left:28%;top:40%;color: #fff;}
 .container.main #work-with-us.page .gallery_join{position: relative;height:auto;float:left;width: 100%;}
 .page_5 .maisons_head h2{text-align :center;margin-bottom:0px;}
 #wrapper .page_5 .maisons_head h2{font-size:4.8em;}
 .tab_content_full, .tab_content_right div{float:left;width:100%;}
 .tab_content_left{float:left;}
-.tab_content_left h2, .tab_content_left h3, .tab_content_right h3{color:#4e4e4e;font-size: 2.1em;margin:0 0 12px;font-weight:normal;}
+.tab_content_left h2, .tab_content_left h3, .tab_content_right h3, .tab_content_right h4 ,.tab_content_left h4 {color:#4e4e4e;font-size: 2.1em;margin:0 0 12px;font-weight:normal;}
 .tab_content_left p{ font-size: 1.5em;line-height: 24px;margin-top: 0;color:#5e5e5e;margin-bottom: 25px;}
-.tab_content_left h3, .tab_content_right h3{font-size:1.45em;}
+.tab_content_left h4, .tab_content_right h4{font-size:1.45em;}
 .tab_content_left select.hasCustomSelect option {background: none repeat scroll 0 0 #F8F8F8;font-size:1.25em;float:left;height:30px;padding-top:7px;font-size: 13px;}
 .tab_content_left label{font-size: 1.5em;color:#5e5e5e;float:left;padding-top: 5px;width:145px;padding-right: 10px;}
 .tab_content_left select, .tab_content_left span.customSelect{float: left;clear: none;right:144px !important;top:auto !important;}
@@ -568,7 +569,7 @@ button.collapsed{display:none;}
 .header_main h1{margin:0px;}
 .section_text h3{ color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;}
 .maisons_head h3{color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;text-align: center;}
-#wrapper .tab_content_full .tab_content_left h2{ color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;font-family: lato;}
+#wrapper .tab_content_full .tab_content_left h3{ color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;font-family: lato;}
 .social_links ul{margin-right:30px;}
 .page_2 .two_sections .section_one{margin: 0 0 0 20px;}
 

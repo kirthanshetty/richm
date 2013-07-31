@@ -13,7 +13,7 @@
   .page_1 .social_links{top:105px;}
   .join_us_gallery ul{padding-left: 0px;padding-right: 0px;width:100%;}
   .join_us_gallery ul li{font-size:1.6em;margin:0px 15px;}
-
+  .maisons_lists ul li.join-us section{width:77%;}
   /*#wrapper .creativity_head .bg_img h2{font-size:4.4em;}
   .join_us_gallery .maison_prev, .join_us_gallery .maison_next{margin-top:14%;}*/
 }

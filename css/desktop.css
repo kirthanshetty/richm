@@ -529,7 +529,7 @@ ul.buttons li{float:left;width:14px;height: 20px; margin-left: 9px;}
 ul.buttons li a{ background: url("../img/parallax/sprite.png") left -269px;width:14px;height: 20px;display: block;border:none;}
 ul.buttons li.active a{ background: url("../img/parallax/sprite.png") left -292px;}
 .gallery_container{float:left;width:100%;}
-.gallery_container .content{float:left;}
+#work-with-us .gallery_container .content{float:left;padding-bottom: 15px;}
 .container.main #work-with-us.page .gallery_join .two_sections{position:absolute; bottom: 78px;}
 .popup_overlay{background: none repeat scroll 0 0 #DDDDDD;height: 350px;left: 0;position: relative;width: 100%;float:left;}
 .popup_overlay span{margin:auto;display: block;}
@@ -662,6 +662,7 @@ button.collapsed{display:none;}
 .footer_main{margin-bottom: 0;padding: 13px 0;}
 
 img.section_bg{left: 0;position: absolute;top: 0;width: 100%;}
+/*img.section_bg.global { left: auto !important;right: 24%;width: auto !important;}*/
 .lt-ie7 img.section_bg{z-index: -1;}
 h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs h3{display: none;}
 
@@ -735,6 +736,8 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 
 .join_us_gallery .maison_prev, .join_us_gallery .maison_next{text-indent: -9999px;}
 .creativity_head .bg_img img{display: none;}
+.our_world .slides .content a{ color: #2B2B2B;font-size: 1.4em;margin-bottom: 10px;text-decoration: underline;}
+.career, .global, .career_two_sections, .global_two_sections { display:none;}
 /*.menu_list{display:block;}*/
 /* ie.css */
 

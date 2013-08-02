@@ -1,21 +1,27 @@
+if (typeof(_richemontCareers) != 'object') {
+    _richemontCareers = {};
+}
+
+_richemontCareers.objects = {};
+
 document.body.scrollTop = document.documentElement.scrollTop = 0;
 $(function(){
-	// this must be at the top to make sure parallex is right
-	var WorkUs = WhyworkUs($('.page_4 .section_main'))
+	// this must be at the top to make sure parallax is right
+	_richemontCareers.objects.WorkUs = _richemontCareers.WhyworkUs($('.page_4 .section_main'))
 	
 	var topDelta = $('header').outerHeight();
-	parallex = new Parallex('.page',topDelta);
-	$('.container.main').height(parallex.totalHeight);
-	Navigation();
-	var maisons = MaisonBox($('.maisons_lists'),function(){
-		parallex.init();
-		$('.container.main').height(parallex.totalHeight);
+	_richemontCareers.objects.parallax = new _richemontCareers.Parallax('.page',topDelta);
+	$('.container.main').height(_richemontCareers.objects.parallax.totalHeight);
+	_richemontCareers.Navigation();
+	_richemontCareers.objects.maisons = _richemontCareers.MaisonBox($('.maisons_lists'),function(){
+		_richemontCareers.objects.parallax.init();
+		$('.container.main').height(_richemontCareers.objects.parallax.totalHeight);
 	});
 	$(window).resize(function(){
-		parallex.init();
-		$('.container.main').height(parallex.totalHeight);
+		_richemontCareers.objects.parallax.init();
+		$('.container.main').height(_richemontCareers.objects.parallax.totalHeight);
 	})
-	var Career = CareerPath($('.page_5 .inner_content'));
+	_richemontCareers.objects.Career = _richemontCareers.CareerPath($('.page_5 .inner_content'));
 
-	var SocialShare = ShareIcons($, '.social_links');
+	_richemontCareers.objects.SocialShare = _richemontCareers.ShareIcons($, '.social_links');
 })

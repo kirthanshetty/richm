@@ -8,5 +8,5 @@ require.config({
 require([
     'jquery', 'navigation', 'search', 'customselect'
 ],function($){
-	Navigation();
+	_richemontCareers.Navigation();
 });

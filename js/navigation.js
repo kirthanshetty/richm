@@ -1,4 +1,8 @@
-function Navigation(){
+if (typeof(_richemontCareers) != 'object') {
+    _richemontCareers = {};
+}
+
+_richemontCareers.Navigation = function() {
 	$('.header_main a').click(function(e){
 		if($(window).width() < 1024){
 			return;

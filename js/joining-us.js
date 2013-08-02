@@ -71,19 +71,11 @@ $(function(){
 	$('.gallery_join .our_world a.prev, #work-with-us a.prev').click(function(){
 		changeSlide('prev');
 	 });
-/*
-	$('.gallery_join .our_world a.next.inactive').click(function(){
-				alert("hiiiiiii")
-			$('.section_images img.global, .gallery_join .global_two_sections').css('display','block');
-	});
 
-	$('.gallery_join .our_world a.prev.inactive').click(function(){
-				
-			$('.section_images img.joining, .gallery_join .joining_two_sections').css('display','block');
-		});
-*/
 	$('.gallery_join .our_world ul.buttons li a').click(function(e){
 		e.preventDefault();
 		changeSlide($(this).parent().index());
 	});
+
 });
+

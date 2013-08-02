@@ -1,4 +1,8 @@
-function CareerPath(container){
+if (typeof(_richemontCareers) != 'object') {
+	_richemontCareers = {};
+}
+
+_richemontCareers.CareerPath = function(container){
 	container.find('.career_gallery ul li a').click(function(e){
 		e.preventDefault();
 		var link = this.href,				

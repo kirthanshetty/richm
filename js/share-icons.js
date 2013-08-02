@@ -1,4 +1,8 @@
-var ShareIcons = function($, container){
+if (typeof(_richemontCareers) != 'object') {
+    _richemontCareers = {};
+}
+
+_richemontCareers.ShareIcons = function($, container){
 	
 	$(container).each(function(){
 
@@ -25,3 +29,4 @@ var ShareIcons = function($, container){
 		});
 	});
 }
+

@@ -1,11 +1,16 @@
-var videoNo = 1;
+if (typeof(_richemontCareers) != 'object') {
+    _richemontCareers = {};
+}
 
-function WhyworkUs(container){
+
+
+_richemontCareers.WhyworkUs = function(container){
 	var tabAnchors = container.find('.join_us_gallery ul li a'),
 		headerCont = container.find('.head_cont'),
 		mainCont = container.find('.main_cont'),
 		prevBtn = container.find('.maison_prev'),
-		nextBtn = container.find('.maison_next');
+		nextBtn = container.find('.maison_next'),
+		videoNo = 1;
 
 	tabAnchors.each(function(i,el){ 
 		$(el).data('idx', i); 

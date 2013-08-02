@@ -662,6 +662,7 @@ button.collapsed{display:none;}
 .footer_main{margin-bottom: 0;padding: 13px 0;}
 
 img.section_bg{left: 0;position: absolute;top: 0;width: 100%;}
+.section_right h5 {color: #5E5E5E;font-size: 1.6em;margin: 0 0 4px;}
 /*img.section_bg.global { left: auto !important;right: 24%;width: auto !important;}*/
 .lt-ie7 img.section_bg{z-index: -1;}
 h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs h3{display: none;}
@@ -733,6 +734,15 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .faq .search_main_block{margin-top:0px;}
 .faq_section div.ans_section .pb{padding-bottom:0px;}
 .faq_section div.ans_section .pt{padding-top:0px;}
+
+/* Style for Locations page */
+.locations {float:left;clear:both;width:65%;margin-left:15px;border-right: 1px solid #D2D2D2;}
+.locations .section_left {width:100%;}
+.locations .section_left img {width:70%;}
+.locations-list h5{font-size:1.4em;color:#00436e;padding-left:12px;background: url("../img/right-arrow.jpg") no-repeat left 4px;}
+.accord-content {display:none;}
+.accord-content p{color: #5e5e5e;font-size: 1.4em;}
+.accord-content p span{font-weight: bold;}
 
 .join_us_gallery .maison_prev, .join_us_gallery .maison_next{text-indent: -9999px;}
 .creativity_head .bg_img img{display: none;}

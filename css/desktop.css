@@ -332,7 +332,7 @@ footer{margin-top:50px;}
 #wrapper .our_world h2{color:#00436e;font-size:4.3em;line-height: 48px;font-family:'SabonLT-Roman';padding-bottom:20px;margin:0px;}
 .our_world p.highlight, .maison_main_content .maison_desc p.highlight{font-size:1.7em;padding-bottom:18px;}
 .our_world p, .maison_main_content .maison_desc p{padding-bottom:25px;font-size:1.3em;margin:0px;line-height: 23px;}
-.our_world .slides .content p{padding-bottom: 12px;}
+.our_world .slides .content p{padding-bottom: 12px; padding-left: 4px;}
 .icon-pinterest{color:#00436e;font-size:1.4em;}
 .social_links{float:left;width:100%;margin-top:45px;}
 .page_1 .social_links, .page_2 .social_links, .page_3 .social_links, .page_4 .social_links, .page_5 .social_links, .page_6 .social_links {position: absolute;right: 0;top:30px;width: 100%;margin-top:0px;max-width: 1024px;}
@@ -741,14 +741,14 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .locations .section_left img {width:70%;}
 .locations-list h5{font-size:1.4em;color:#00436e;padding-left:15px;cursor:pointer;background: url("../img/right-arrow.jpg") no-repeat left 4px;}
 .locations-list h5.right-arrow{background: url("../img/right-arrow.jpg") no-repeat left 4px;}
-.locations-list h5.down-arrow{background: url("../img/down-arrow.jpg") no-repeat left 8px;}
+.locations-list h5.down-arrow{background: url("../img/down-arrow.jpg") no-repeat left 6px;}
 .accord-content {display:none;}
 .accord-content p{color: #5e5e5e;font-size: 1.4em;}
 .accord-content p span{font-weight: bold;}
 
 .join_us_gallery .maison_prev, .join_us_gallery .maison_next{text-indent: -9999px;}
 .creativity_head .bg_img img{display: none;}
-.our_world .slides .content a{ color: #2B2B2B;font-size: 1.4em;margin-bottom: 10px;text-decoration: underline;}
+.our_world .slides .content a{ color: #2B2B2B;font-size: 1.4em;margin-bottom: 10px;text-decoration: underline;padding-left: 4px;}
 .career, .global, .career_two_sections, .global_two_sections { display:none;}
 /*.menu_list{display:block;}*/
 /* ie.css */

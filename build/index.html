@@ -19,24 +19,31 @@
 		<header>
 			<div class="container">
 				<div class="row header_main">
-					<h1 class="col span_4"><a href="#home" class="logo_blk"><img class="logo" src="img/parallax/logo.png" alt="Richemont Logo" /></a></h1>
+					<h1>
+                        <a href="#home" class="col span_4 logo_blk">
+                            <img class="logo" src="img/parallax/logo.png" alt="Richemont Logo" />
+                            <span class="hide">Richemont Careers</span>
+                        </a>
+                    </h1>
 					<div class="col span_8 select_language">
 						<div class="header_right">
 							<ul class="first_row">
 								<li><a href="#">Login</a></li> 
 								<li>
-									<label for="language">language</label>
-									<select id="language">
-										<option>English</option>
-										<option>English</option>
-										<option>English</option>
-									</select>
+									<form>
+										<label for="language">language</label>
+										<select id="language">
+											<option>English</option>
+											<option>English</option>
+											<option>English</option>
+										</select>
+									</form>
 								</li>
 							</ul>
 						</div>
 					</div>
 					<div class="col span_8 header_nav btn btn-navbar collapsed">
-						<div class="header_right">
+						<nav class="header_right">
 							<ul class="second_row">
 								<li><a href="#our-world">Our world</a></li>
 								<li><a href="#our-maisons">Our Maisons</a></li>
@@ -45,7 +52,7 @@
 								<li><a href="#career-paths">Career paths</a></li>
 								<li><a href="jobs.html">Jobs</a></li>
 							</ul>
-						</div>
+						</nav>
 					</div>
 					
 				</div>
@@ -80,14 +87,14 @@
 						<h2 class="ml mr">We invite you to join us and write the next successful chapter in the history of our Maisons</h2>
 						<div class="quick_search">
 							<label for="q">Search</label> 
-							<input type="text" name="q" id="q" placeholder="Quick search for a job or enter job code">
-							   <input type="submit" value="GO">
+							<input type="text" name="q" id="q" placeholder="Quick search for a job">
+							<input type="submit" value="GO">
 						</div>
 						<span>Or </span>
 						<div class="inner_block">
 							<form method="GET" action="#" name="search">
-							<input type="submit" value="View all jobs">
-						</form>
+								<input type="submit" value="View all jobs">
+							</form>
 						</div>
 						<span class="scroll_down"></span>
 					</div>
@@ -121,27 +128,27 @@
 					<div class="span_7 col">
 						
 						<div class="two_sections">
-							<div class="section_one">
-								<img src="img/parallax/world1.png" alt="Lange Sohne" /><h4>Lorem ipsum dolor lange Sohne</h4>
-							</div>
-							<div class="section_one section_two">
-								<img src="img/parallax/world2.png" alt="Ipsum dolor acqeus" /><h4>Ipsum dolor acqeus</h4>
-							</div>
-							<div class="section_text">
-								<h3>OUR MAISONS' HERITAGE</h3>
+							<figure class="section_one">
+								<img src="img/parallax/world1.png" alt="Lange Sohne" /><figcaption>Lorem ipsum dolor lange Sohne</figcaption>
+							</figure>
+							<figure class="section_one section_two">
+								<img src="img/parallax/world2.png" alt="Ipsum dolor acqeus" /><figcaption>Ipsum dolor acqeus</figcaption>
+							</figure>
+							<aside class="section_text">
+								<h3>Our Mainson's Heritage</h3>
 								<p>Mauris auctor erat massa. Suspendisse porta, sapien interdum sollicitudin aliquam, est dui vehicula nulla, sed posuere mi ipsum at lacus. Donec venenatis, orci vel aliquet sodales, neque  Auris auctor erat massa. Suspendisse porta, sapien interdum sollicitudin aliquam, est dui vehicula nulla, sed posuere mi ipsum at lacus. Donec venenatis, orci.</p>
-							</div>
+							</aside>
 						</div> <!-- two_sections -->
 					</div>
 					<div class="social_links">
-							<ul>
-								<li><a class="share" href="#" title="Share"></a></li>
-								<li><a class="tweet" href="#our-world" title="Twitter"></a></li>
-								<li><a class="fb" href="#our-world" title="Facebook"></a></li>
-								<li><a class="gplus" href="#our-world" title="gPlus"></a></li>
-								<li><a class="pin" href="#our-world" title="Pin"></a></li>
-							</ul>
-						</div>
+						<ul>
+							<li><a class="share" href="#" title="Share"></a></li>
+							<li><a class="tweet" href="#our-world" title="Twitter"></a></li>
+							<li><a class="fb" href="#our-world" title="Facebook"></a></li>
+							<li><a class="gplus" href="#our-world" title="gPlus"></a></li>
+							<li><a class="pin" href="#our-world" title="Pin"></a></li>
+						</ul>
+					</div>
 				</div> <!-- inner_content -->
 			</section>
 			<section id="our-maisons" class="page page_3 row" data-type="background" data-speed="1">
@@ -156,293 +163,315 @@
 								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
 								<img class="top" src="img/parallax/cartier.png" alt="Cartier" />
 							</a>
-								<img class="overlay" src="img/parallax/cartier.png" alt="Cartier" />	
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info1.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/van-cleef.png" alt="Van Cleef" />
-							</a>
-								<img class="overlay" src="img/parallax/van-cleef.png" alt="Van Cleef" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/alange.png" alt="Alange" />
-							</a>
-								<img class="overlay" src="img/parallax/alange.png" alt="Alange" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info1.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/baume.png" alt="Baume" />
-							</a>
-								<img class="overlay" src="img/parallax/baume.png" alt="Baume" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/IWC.png" alt="IWC" />
-							</a>
-								<img class="overlay" src="img/parallax/IWC.png" alt="IWC" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info1.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/jaeger.png" alt="Jaeger" />
-							</a>
-								<img class="overlay" src="img/parallax/jaeger.png" alt="Jaeger" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/officine.png" alt="Officine" />
-							</a>
-								<img class="overlay" src="img/parallax/officine.png" alt="Officine" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info1.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/piaget.png" alt="Piaget" />
-							</a>
-								<img class="overlay" src="img/parallax/piaget.png" alt="Piaget" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/ralphlauren.png" alt="Ralphlauren" />
-							</a>
-								<img class="overlay" src="img/parallax/ralphlauren.png" alt="Ralphlauren" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info1.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/rogerd.png" alt="Rogerd" />
-							</a>
-								<img class="overlay" src="img/parallax/rogerd.png" alt="Rogerd" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/vacheron.png" alt="Vacheron" />
-							</a>
-								<img class="overlay" src="img/parallax/vacheron.png" alt="Vacheron" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info1.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/montblanc.png" alt="Montblanc" />
-							</a>
-								<img class="overlay" src="img/parallax/montblanc.png" alt="Montblanc" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/dunhill.png" alt="Dunhill" />
-							</a>
-								<img class="overlay" src="img/parallax/dunhill.png" alt="Dunhill" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info1.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/alaia.png" alt="Alaia" />
-							</a>
-								<img class="overlay" src="img/parallax/alaia.png" alt="Alaia" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/chloe.png" alt="Chloe" />
-							</a>
-								<img class="overlay" src="img/parallax/chloe.png" alt="Chloe" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info1.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/lancel.png" alt="Lancel" />
-							</a>
-								<img class="overlay" src="img/parallax/lancel.png" alt="Lancel" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/porter.png" alt="Porter" />
-							</a>
-								<img class="overlay" src="img/parallax/porter.png" alt="Porter" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info1.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/Purdey.png" alt="Purdey" />
-							</a>
-								<img class="overlay" src="img/parallax/Purdey.png" alt="Purdey" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/shanghai.png" alt="Shanghai" />
-							</a>
-								<img class="overlay" src="img/parallax/shanghai.png" alt="Shanghai" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info1.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/peter-millar.png" alt="Peter Millar" />
-							</a>
-								<img class="overlay" src="img/parallax/peter-millar.png" alt="Peter Millar" />
-							</li>
-							<li class="fading"><a class="two" href="ajax/maison_info.html">
-								<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
-								<img class="top" src="img/parallax/bodino.png" alt="Bodino" />
-							</a>
-								<img class="overlay" src="img/parallax/bodino.png" alt="Bodino" />
-							</li>
-							<li class="join-us">
-								<section>
-									<h3>Join us in writing our next chapter today...</h3>
-									<form method="GET" action="#" name="search">
-									<input type="submit" value="View all jobs">
-									</form>
-								</section>
-							</li>
-						</ul>
+							<img class="overlay" src="img/parallax/cartier.png" alt="Cartier" />	
+						</li>
+						<li class="fading"><a class="two" href="ajax/maison_info1.html">
+							<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+							<img class="top" src="img/parallax/van-cleef.png" alt="Van Cleef" />
+						</a>
+						<img class="overlay" src="img/parallax/van-cleef.png" alt="Van Cleef" />
+					</li>
+					<li class="fading"><a class="two" href="ajax/maison_info.html">
+						<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+						<img class="top" src="img/parallax/alange.png" alt="Alange" />
+					</a>
+					<img class="overlay" src="img/parallax/alange.png" alt="Alange" />
+				</li>
+				<li class="fading"><a class="two" href="ajax/maison_info1.html">
+					<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+					<img class="top" src="img/parallax/baume.png" alt="Baume" />
+				</a>
+				<img class="overlay" src="img/parallax/baume.png" alt="Baume" />
+			</li>
+			<li class="fading"><a class="two" href="ajax/maison_info.html">
+				<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+				<img class="top" src="img/parallax/IWC.png" alt="IWC" />
+			</a>
+			<img class="overlay" src="img/parallax/IWC.png" alt="IWC" />
+		</li>
+		<li class="fading"><a class="two" href="ajax/maison_info1.html">
+			<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+			<img class="top" src="img/parallax/jaeger.png" alt="Jaeger" />
+		</a>
+		<img class="overlay" src="img/parallax/jaeger.png" alt="Jaeger" />
+	</li>
+	<li class="fading"><a class="two" href="ajax/maison_info.html">
+		<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+		<img class="top" src="img/parallax/officine.png" alt="Officine" />
+	</a>
+	<img class="overlay" src="img/parallax/officine.png" alt="Officine" />
+</li>
+<li class="fading"><a class="two" href="ajax/maison_info1.html">
+	<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+	<img class="top" src="img/parallax/piaget.png" alt="Piaget" />
+</a>
+<img class="overlay" src="img/parallax/piaget.png" alt="Piaget" />
+</li>
+<li class="fading"><a class="two" href="ajax/maison_info.html">
+	<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+	<img class="top" src="img/parallax/ralphlauren.png" alt="Ralphlauren" />
+</a>
+<img class="overlay" src="img/parallax/ralphlauren.png" alt="Ralphlauren" />
+</li>
+<li class="fading"><a class="two" href="ajax/maison_info1.html">
+	<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+	<img class="top" src="img/parallax/rogerd.png" alt="Rogerd" />
+</a>
+<img class="overlay" src="img/parallax/rogerd.png" alt="Rogerd" />
+</li>
+<li class="fading"><a class="two" href="ajax/maison_info.html">
+	<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+	<img class="top" src="img/parallax/vacheron.png" alt="Vacheron" />
+</a>
+<img class="overlay" src="img/parallax/vacheron.png" alt="Vacheron" />
+</li>
+<li class="fading"><a class="two" href="ajax/maison_info1.html">
+	<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+	<img class="top" src="img/parallax/montblanc.png" alt="Montblanc" />
+</a>
+<img class="overlay" src="img/parallax/montblanc.png" alt="Montblanc" />
+</li>
+<li class="fading"><a class="two" href="ajax/maison_info.html">
+	<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+	<img class="top" src="img/parallax/dunhill.png" alt="Dunhill" />
+</a>
+<img class="overlay" src="img/parallax/dunhill.png" alt="Dunhill" />
+</li>
+<li class="fading"><a class="two" href="ajax/maison_info1.html">
+	<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+	<img class="top" src="img/parallax/alaia.png" alt="Alaia" />
+</a>
+<img class="overlay" src="img/parallax/alaia.png" alt="Alaia" />
+</li>
+<li class="fading"><a class="two" href="ajax/maison_info.html">
+	<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+	<img class="top" src="img/parallax/chloe.png" alt="Chloe" />
+</a>
+<img class="overlay" src="img/parallax/chloe.png" alt="Chloe" />
+</li>
+<li class="fading"><a class="two" href="ajax/maison_info1.html">
+	<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+	<img class="top" src="img/parallax/lancel.png" alt="Lancel" />
+</a>
+<img class="overlay" src="img/parallax/lancel.png" alt="Lancel" />
+</li>
+<li class="fading"><a class="two" href="ajax/maison_info.html">
+	<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+	<img class="top" src="img/parallax/porter.png" alt="Porter" />
+</a>
+<img class="overlay" src="img/parallax/porter.png" alt="Porter" />
+</li>
+<li class="fading"><a class="two" href="ajax/maison_info1.html">
+	<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+	<img class="top" src="img/parallax/Purdey.png" alt="Purdey" />
+</a>
+<img class="overlay" src="img/parallax/Purdey.png" alt="Purdey" />
+</li>
+<li class="fading"><a class="two" href="ajax/maison_info.html">
+	<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+	<img class="top" src="img/parallax/shanghai.png" alt="Shanghai" />
+</a>
+<img class="overlay" src="img/parallax/shanghai.png" alt="Shanghai" />
+</li>
+<li class="fading"><a class="two" href="ajax/maison_info1.html">
+	<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+	<img class="top" src="img/parallax/peter-millar.png" alt="Peter Millar" />
+</a>
+<img class="overlay" src="img/parallax/peter-millar.png" alt="Peter Millar" />
+</li>
+<li class="fading"><a class="two" href="ajax/maison_info.html">
+	<img class="add_blur" src="img/parallax/watch2.jpg" alt="Maison" />
+	<img class="top" src="img/parallax/bodino.png" alt="Bodino" />
+</a>
+<img class="overlay" src="img/parallax/bodino.png" alt="Bodino" />
+</li>
+<li class="join-us">
+	<section>
+		<h3>Join us in writing our next chapter today...</h3>
+		<form method="GET" action="#" name="search">
+			<input type="submit" value="View all jobs">
+		</form>
+	</section>
+</li>
+</ul>
+</div>
+<div class="social_links">
+	<ul>
+		<li><a class="share" href="#" title="Share"></a></li>
+		<li><a class="tweet" href="#our-maisons" title="Twitter"></a></li>
+		<li><a class="fb" href="#our-maisons" title="Facebook"></a></li>
+		<li><a class="gplus" href="#our-maisons" title="gPlus"></a></li>
+		<li><a class="pin" href="#our-maisons" title="Pin"></a></li>
+	</ul>
+</div>
+<div class="clearfix"></div>
+</div> <!-- inner_content -->
+</section>
+<section id="why-join-us" class="page page_4 row" data-speed="0.2">
+	<div class="inner_content rel_position" data-type="foreground">
+		<h2 class="align-center">Why join us?</h2>
+		<div class="section_main ml mr">
+			<div class="join_us_gallery">
+				<ul>
+					<li class="active"><h3><a href="ajax/creative.html">Creativity &amp; Innovation</a></h3></li>
+					<li><h3><a href="ajax/craftsmanship.html">Craftsmanship</a></h3></li>
+					<li><h3><a href="ajax/entrepreneurship.html">Entrepreneurship</a></h3></li>
+					<li><h3><a href="ajax/culture.html">Learning Culture</a></h3></li>
+					<li><h3><a href="ajax/service.html">Customer Service</a></h3></li>
+				</ul>
+				<a href="javascript:void(0)" class="maison_prev" title="Previous">Previous</a>
+				<a href="javascript:void(0)" class="maison_next" title="Next">Next</a>
+			</div>
+
+			<div class="tab_content">
+				<div class="creativity_head">
+					<div class="head_cont">
+						<div class="bg_img">
+							<img src="img/parallax/img21.jpg" alt="Gallery image" />
+						</div>
+						<div class="bg_img">
+							<img src="img/parallax/img21.jpg" alt="Gallery image" />
+
+						</div>
+						<div class="bg_img">
+							<img src="img/parallax/img21.jpg" alt="Gallery image" />
+
+						</div>
+						<div class="bg_img">
+							<img src="img/parallax/img21.jpg" alt="Gallery image" />
+
+						</div>
+						<div class="bg_img">
+							<img src="img/parallax/img21.jpg" alt="Gallery image" />
+
+						</div>
+					</div>
+				</div> <!-- creativity_head -->
+				<div class="main_cont">
+					<div class="maisons_head">
+						<p><strong>SUPPORTING THE TALENT OF THE FUTURE</strong></h3>
+							<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisil elit consequat ipsum, nec sagittis sem nibh id elit. Duis </p>
+						</div>
+						<div class="videos">
+							<figure class="section_one">
+								<a href="ajax/video.html" rel="video"><img alt="Video" src="img/parallax/video1.png"><span class="play">PLAY VIDEO</span><figcaption>Line Of Beauty by Lorem ipsum</figcaption></a>
+							</figure>
+							<figure class="section_one">
+								<a href="ajax/video.html" rel="video"><img alt="Video" src="img/parallax/video2.png"><span class="play">PLAY VIDEO</span><figcaption>New identify for desire by Lorem ipsum</figcaption></a>
+							</figure>
+							<figure class="section_one last-video">
+								<a href="ajax/video.html" rel="video"><img alt="Video" src="img/parallax/video3.png"><span class="play">PLAY VIDEO</span><figcaption>The making of luxury by Lorem ipsum</figcaption></a>
+							</figure>
+						</div> <!-- videos -->
+						<div class="clearfix"></div>
 					</div>
 					<div class="social_links">
 						<ul>
 							<li><a class="share" href="#" title="Share"></a></li>
-							<li><a class="tweet" href="#our-maisons" title="Twitter"></a></li>
-							<li><a class="fb" href="#our-maisons" title="Facebook"></a></li>
-							<li><a class="gplus" href="#our-maisons" title="gPlus"></a></li>
-							<li><a class="pin" href="#our-maisons" title="Pin"></a></li>
+							<li><a class="tweet" href="#why-join-us" title="Twitter"></a></li>
+							<li><a class="fb" href="#why-join-us" title="Facebook"></a></li>
+							<li><a class="gplus" href="#why-join-us" title="gPlus"></a></li>
+							<li><a class="pin" href="#why-join-us" title="Pin"></a></li>
 						</ul>
 					</div>
-					<div class="clearfix"></div>
-				</div> <!-- inner_content -->
-			</section>
-			<section id="why-join-us" class="page page_4 row" data-speed="0.2">
-				<div class="inner_content rel_position" data-type="foreground">
-					<h2 class="align-center">Why join us?</h2>
-					<div class="section_main ml mr">
-						<div class="join_us_gallery">
-							<ul>
-								<li class="active"><a href="ajax/creative.html">Creativity &amp; Innovation</a></li>
-								<li><a href="ajax/craftsmanship.html">Craftsmanship</a></li>
-								<li><a href="ajax/entrepreneurship.html">Entrepreneurship</a></li>
-								<li><a href="ajax/culture.html">Learning Culture</a></li>
-								<li><a href="ajax/service.html">Customer Service</a></li>
-							</ul>
-							<a href="javascript:void(0)" class="maison_prev" title="Previous">Previous value</a>
-							<a href="javascript:void(0)" class="maison_next" title="Next">Next value</a>
-						</div>
-					
-						<div class="tab_content">
-							<div class="creativity_head">
-								<div class="head_cont">
-									<div class="bg_img">
-										<img src="img/parallax/img21.jpg" alt="Gallery image" />
-									</div>
-									<div class="bg_img">
-										<img src="img/parallax/img21.jpg" alt="Gallery image" />
-										
-									</div>
-									<div class="bg_img">
-										<img src="img/parallax/img21.jpg" alt="Gallery image" />
-										
-									</div>
-									<div class="bg_img">
-										<img src="img/parallax/img21.jpg" alt="Gallery image" />
-										
-									</div>
-									<div class="bg_img">
-										<img src="img/parallax/img21.jpg" alt="Gallery image" />
-										
-									</div>
-								</div>
-							</div> <!-- creativity_head -->
-							<div class="main_cont">
-								<div class="maisons_head">
-									<h3>SUPPORTING THE TALENT OF THE FUTURE</h3>
-									<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisil elit consequat ipsum, nec sagittis sem nibh id elit. Duis </p>
-								</div>
-								<div class="videos">
-									<div class="section_one">
-										<a href="ajax/video.html" rel="video"><img alt="Video" src="img/parallax/video1.png"><h3>PLAY VIDEO</h3><h4>Line Of Beauty by Lorem ipsum </h4></a>
-									</div>
-									<div class="section_one">
-										<a href="ajax/video.html" rel="video"><img alt="Video" src="img/parallax/video2.png"><h3>PLAY VIDEO</h3><h4>New identify for desire by Lorem ipsum </h4></a>
-									</div>
-									<div class="section_one last-video">
-										<a href="ajax/video.html" rel="video"><img alt="Video" src="img/parallax/video3.png"><h3>PLAY VIDEO</h3><h4>The making of luxury by Lorem ipsum </h4></a>
-									</div>
-								</div> <!-- videos -->
-								<div class="clearfix"></div>
-							</div>
-							<div class="social_links">
-								<ul>
-									<li><a class="share" href="#" title="Share"></a></li>
-									<li><a class="tweet" href="#why-join-us" title="Twitter"></a></li>
-									<li><a class="fb" href="#why-join-us" title="Facebook"></a></li>
-									<li><a class="gplus" href="#why-join-us" title="gPlus"></a></li>
-									<li><a class="pin" href="#why-join-us" title="Pin"></a></li>
-								</ul>
-							</div>
-						</div>
-					</div> <!-- section_main -->
-					
-				</div> <!-- inner_content -->
-			</section>
-
-			<section id="work-with-us" class="page page_6 row" data-type="background" data-speed="1">
-				<img class="section_bg" src="img/parallax/img14.jpg" alt="Section Background" />
-				<div class="inner_content rel_position" data-type="foreground" data-speed="0.2">
-							<div class="gallery_join">
-							<div class="span_5 col">
-								<div class="our_world">
-									<ul class="buttons">
-										<li class="active"><a href="#" title="Button"></a></li>
-										<li><a href="#" title="Button"></a></li>
-										<li><a href="#" title="Button"></a></li>
-									</ul>
-									<div class="gallery_container">
-										<div class="slides">
-										<div class="content">
-											<h2>Joining us</h2>
-											<p class="highlight">Integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum dolor sit congue quis.</p>
-											<p>At Richemont integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum convallis tellus ac ligula ullamcorper elementum non ac purus.  </p>
-											<p>At Richemont integer congue justo et mi rutrum nec iaculis purus consectetur. Sed qui justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ips </p>
-										</div>
-										<div class="content">
-											<h2>Career development</h2>
-											<p class="highlight">Integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum dolor sit congue quis.</p>
-											<p>At Richemont integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum convallis tellus ac ligula ullamcorper elementum non ac purus.  </p>
-											<p>ligula ullamcorper elementum non ac purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In congue, lorem non tellus ac ligula.Sed quis ligula sit </p>
-										</div>
-										<div class="content">
-											<h2>Global horizons</h2>
-											<p class="highlight">Our outlook is international, as are our clients. All around the world they have the same high expectations and standards by which they measure us – as you would expect in any luxury sector.</p>
-											<p>Career opportunities could take you to any one of 36 countries in which we operate.</p>
-											<p>We seek to develop our people by exposing them to various opportunities, sometimes moving between Maisons; across Regions;and within Corporate functions.</p>
-											<p>It does not matter if you are working  in a Region al role supporting the Maisons or in a Maison  Headquarter, we all have the same objective: we are committed to ensuring quality and excellence to our clients worldwide.</p>
-										</div>
-									</div>
-									</div>
-									<a class="prev inactive" href="javascript:void(0)">Previous</a>
-									<a class="next" href="javascript:void(0)">Next</a>
-								</div>
-							</div>
-							<div class="span_7 col">
-								<div class="two_sections">
-									<div class="section_one">
-										<img src="img/parallax/img15.jpg" alt="Lorem ipsum" /><h4>Lorem ipsum dolor</h4>
-									</div>
-									<div class="section_one section_two">
-										<img src="img/parallax/img16.jpg" alt="Lorem ipsum" /><h4>Lorem ipsum dolor</h4>
-									</div>
-								</div> <!-- two_sections -->
-							</div>
-						</div> 
-						<div class="social_links">
-							<ul>
-								<li><a class="share" href="#" title="Share"></a></li>
-								<li><a class="tweet" href="#work-with-us" title="Twitter"></a></li>
-								<li><a class="fb" href="#work-with-us" title="Facebook"></a></li>
-								<li><a class="gplus" href="#work-with-us" title="gPlus"></a></li>
-								<li><a class="pin" href="#work-with-us" title="Pin"></a></li>
-							</ul>
-						</div>
 				</div>
-			</section>
+			</div> <!-- section_main -->
 
-			<section id="career-paths" class="page page_5 row" data-speed="0">
-				<div class="inner_content" data-type="foreground" data-bgspeed="1">
-					<div class="maisons_head">
-						<h2>Career paths</h2>
-						<p> Morbi vehicula porta nibh non aliquet. Aenean vestibulum facilisis sapien et aliquet. Quisque porttitor orci in neque sagittis laoreet eu ac nisl. Maecenas quis velit quis massa venenatis dapibus.</p>
-					</div>
-					<div class="career_gallery">
-						<div class="career_gallery_container">
+		</div> <!-- inner_content -->
+	</section>
+
+	<section id="work-with-us" class="page page_6 row" data-type="background" data-speed="1">
+		<div class="section_images">
+			<img class="section_bg joining active" src="img/parallax/img14.jpg" alt="Section Background" />
+			<img class="section_bg career" src="img/career-bg.jpg" alt="Section Background" />
+			<img class="section_bg global" src="img/global-map.jpg" alt="Section Background" />
+		</div>
+		<div class="inner_content rel_position" data-type="foreground" data-speed="0.2">
+			<h2 class="hide">Working with us</h2>
+			<div class="gallery_join">
+				<div class="span_5 col">
+					<div class="our_world">
+						<ul class="buttons">
+							<li class="active"><a href="#" title="Button"></a></li>
+							<li><a href="#" title="Button"></a></li>
+							<li><a href="#" title="Button"></a></li>
+						</ul>
+						<div class="gallery_container">
 							<div class="slides">
+								<section class="content">
+									<h2>Joining us</h2>
+									<p class="highlight">Integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum dolor sit congue quis.</p>
+									<p>At Richemont integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum convallis tellus ac ligula ullamcorper elementum non ac purus.  </p>
+									<p>At Richemont integer congue justo et mi rutrum nec iaculis purus consectetur. Sed qui justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ips </p>
+								</section>
+								<section class="content">
+									<h2>Career development</h2>
+									<p class="highlight">Integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum dolor sit congue quis.</p>
+									<p>At Richemont integer congue justo et mi rutrum nec iaculis purus consectetur. Sed quis ligula sit amet velit scelerisque gravida a a ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum convallis tellus ac ligula ullamcorper elementum non ac purus.  </p>
+									<p>ligula ullamcorper elementum non ac purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In congue, lorem non tellus ac ligula.Sed quis ligula sit </p>
+								</section>
+								<section class="content">
+									<h2>Global horizons</h2>
+									<p class="highlight">Our outlook is international, as are our clients. All around the world they have the same high expectations and standards by which they measure us – as you would expect in any luxury sector.</p>
+									<p>Career opportunities could take you to any one of 36 countries in which we operate.</p>
+									<p>We seek to develop our people by exposing them to various opportunities, sometimes moving between Maisons; across Regions;and within Corporate functions.</p>
+									<p>It does not matter if you are working  in a Region al role supporting the Maisons or in a Maison  Headquarter, we all have the same objective: we are committed to ensuring quality and excellence to our clients worldwide.</p>
+									<a href="locations.html">View our full list of locations</a>
+								</section>
+							</div>
+						</div>
+						<a class="prev inactive" href="javascript:void(0)">Previous</a>
+						<a class="next" href="javascript:void(0)">Next</a>
+					</div>
+				</div>
+				<div class="span_7 col">
+					<div class="two_sections joining_two_sections active">
+						<figure class="section_one">
+							<img src="img/parallax/img15.jpg" alt="Lorem ipsum" /><figcaption>Lorem ipsum dolor</figcaption>
+						</figure>
+						<figure class="section_one section_two">
+							<img src="img/parallax/img16.jpg" alt="Lorem ipsum" /><figcaption>Lorem ipsum dolor</figcaption>
+						</figure>
+					</div> <!-- two_sections -->
+					<div class="two_sections career_two_sections">
+						<figure class="section_one">
+							<img src="img/career-img1.jpg" alt="Lorem ipsum" />
+						</figure>
+						<figure class="section_one section_two">
+							<img src="img/career-img2.jpg" alt="Lorem ipsum" />
+						</figure>
+					</div> <!-- two_sections -->
+					<div class="two_sections global_two_sections">
+						<figure class="section_one">
+							<img src="img/global-img1.jpg" alt="The Shanghai Tang" /><figcaption>The Shanghai Tang Mansion, Hong Kong</figcaption>
+						</figure>
+						<figure class="section_one section_two">
+							<img src="img/global-img2.jpg" alt="Van Cleef &amp; Arpels Boutique" /><figcaption>Van Cleef &amp; Arpels Boutique, New York</figcaption>
+						</figure>
+					</div> <!-- two_sections -->
+				</div>
+			</div> 
+			<div class="social_links">
+				<ul>
+					<li><a class="share" href="#" title="Share"></a></li>
+					<li><a class="tweet" href="#work-with-us" title="Twitter"></a></li>
+					<li><a class="fb" href="#work-with-us" title="Facebook"></a></li>
+					<li><a class="gplus" href="#work-with-us" title="gPlus"></a></li>
+					<li><a class="pin" href="#work-with-us" title="Pin"></a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="career-paths" class="page page_5 row" data-speed="0">
+		<div class="inner_content" data-type="foreground" data-bgspeed="1">
+			<div class="maisons_head">
+				<h2>Career paths</h2>
+				<p> Morbi vehicula porta nibh non aliquet. Aenean vestibulum facilisis sapien et aliquet. Quisque porttitor orci in neque sagittis laoreet eu ac nisl. Maecenas quis velit quis massa venenatis dapibus.</p>
+			</div>
+			<div class="career_gallery">
+				<div class="career_gallery_container">
+					<div class="slides">
 						<ul>
 							<li>
 								<a href="ajax/manufacturing.html">
@@ -509,129 +538,99 @@
 								<div class="chat-bubble-arrow"></div>
 							</li>
 						</ul>
-						</div>
-						</div>
-						<a class="prev" href="javascript:void(0)" title="Previous"></a>
-						<a class="next" href="javascript:void(0)" title="Next"></a>
-					</div> <!-- career_gallery -->
-					<div class="tab_content_full">
-						<div class="span_7 col">
-							<div class="tab_content_left ml">
-								<h2>DESIGN &amp; CREATION</h2>
-								<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-								<p>Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. Aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-								<h3>SUBMIT YOUR PROFILE: DESIGN &amp; CREATION POSITIONS</h3>
-								<iframe width="540" align="middle" height="550" frameborder="0" style="vertical-align: middle;" src="https://careers.richemont.com/sap/bc/webdynpro/sap/zghr_rc_questionnr?category=BRAND&amp;sap-language=EN&amp;sap-ep-themeroot=/SAP/PUBLIC/BC/UR/nw5/themes/ric2&amp;SAP-IE=Edge"></iframe>
-								<!--form>
-									<div>
-										<label for="position">Type of position: <span>*</span></label>
-										<select id="position">
-											<option>11</option>
-											<option>22</option>
-										</select>
-									</div>
-									<div>
-										<label for="country">Country: <span>*</span></label>
-										<select id="country">
-											<option>11</option>
-											<option>22</option>
-										</select>
-									</div>
-									<div>
-										<label for="region">Region: <span>*</span></label>
-										<select id="region">
-											<option>11</option>
-											<option>22</option>
-										</select>
-									</div>
-									<div>
-										<label for="location">Location: <span>*</span></label>
-										<select id="location">
-											<option>11</option>
-											<option>22</option>
-										</select>
-									</div>
-									<input type="button" value="Next" />
-									<p>Step 1 of 7</p>
-								</form-->
-							</div>
-						</div>
-						<div class="span_5 col">
-							<div class="tab_content_right">
-								<a href="#"><img src="img/parallax/design1.jpg" alt="Creative" /></a> 
-								<h3>LATEST JOBS IN DESIGN &amp; CREATION</h3>
-								<div>
-									<p>Technicien Services Généraux H/F, <span>Switzerland</span></p>
-									<a href="#">View</a>
-								</div>
-								<div>
-									<p>Technicien Services Généraux H/F, <span>Switzerland</span></p>
-									<a href="#">View</a>
-								</div>
-								<div>
-									<p>Technicien Services Généraux H/F, <span>Switzerland</span></p>
-									<a href="#">View</a>
-								</div>
-							</div> <!-- tab_content_right -->
-							<div class="view_jobs">
-								<p>Join us in writing our
-                                    next chapter today...</p>
-                                <form method="GET" action="#" name="search">
-                                <a href="#">View all jobs</a>
-                            	</form>
-							</div> <!-- view_jobs -->
-						</div>
-					</div> <!-- tab_content_full -->
-					<div class="social_links">
-						<ul>
-							<li><a class="share" href="#" title="Share"></a></li>
-							<li><a class="tweet" href="#career-paths" title="Twitter"></a></li>
-							<li><a class="fb" href="#career-paths" title="Facebook"></a></li>
-							<li><a class="gplus" href="#career-paths" title="gPlus"></a></li>
-							<li><a class="pin" href="#career-paths" title="Pin"></a></li>
-						</ul>
 					</div>
 				</div>
-				
-			</section>
-		</div>
-		<footer>
-			<div class="container">
-				<div class="row footer_main">
-					<div class="col span_6">
-						<div class="footer_left ml">
-							<h3>www.richemont.com</h3>
-							<ul class="second_row">
-								<li><a href="#">FAQs</a></li> 
-								<li><a href="#">Terms and conditions</a></li> 
-								<li><a href="#">Contact Us</a></li> 
-							</ul>
-						</div> <!-- footer left -->
+				<a class="prev" href="javascript:void(0)" title="Previous"></a>
+				<a class="next" href="javascript:void(0)" title="Next"></a>
+			</div> <!-- career_gallery -->
+			<div class="tab_content_full">
+				<div class="span_7 col">
+					<div class="tab_content_left ml">
+						<h3>DESIGN &amp; CREATION</h3>
+						<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+						<p>Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. Aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						<h4>SUBMIT YOUR PROFILE: DESIGN &amp; CREATION POSITIONS</h4>
+						<iframe width="540" align="middle" height="550" frameborder="0" style="vertical-align: middle;" src="https://careers.richemont.com/sap/bc/webdynpro/sap/zghr_rc_questionnr?category=BRAND&amp;sap-language=EN&amp;sap-ep-themeroot=/SAP/PUBLIC/BC/UR/nw5/themes/ric2&amp;SAP-IE=Edge"></iframe>
 					</div>
-					<div class="col span_6">
-						<div class="scroll_top mr">
-							<a href="#"><img src="img/parallax/scroll_top.png" alt="Scroll Top" /></a>
+				</div>
+				<div class="span_5 col">
+					<aside class="tab_content_right">
+						<a href="#"><img src="img/parallax/design1.jpg" alt="Creative" /></a> 
+						<h4>LATEST JOBS IN DESIGN &amp; CREATION</h4>
+						<div>
+							<p>Technicien Services Généraux H/F, <span>Switzerland</span></p>
+							<a href="#">View</a>
 						</div>
-						<div class="footer_right mr">
-							<ul>
-								<li> <a class="twitter" href="#" title="Twitter"></a></li>
-								<li> <a class="fb" href="#home" title="Facebook"></a></li>
-								<li> <a class="linkedin" href="#home" title="Linked-in"></a></li>
-							</ul>
-						</div> <!-- footer right -->
-					</div>
+						<div>
+							<p>Technicien Services Généraux H/F, <span>Switzerland</span></p>
+							<a href="#">View</a>
+						</div>
+						<div>
+							<p>Technicien Services Généraux H/F, <span>Switzerland</span></p>
+							<a href="#">View</a>
+						</div>
+					</aside> <!-- tab_content_right -->
+					<aside class="view_jobs">
+						<p>Join us in writing our
+							next chapter today...</p>
+							<form method="GET" action="#" name="search">
+								<a href="#">View all jobs</a>
+							</form>
+						</div> <!-- view_jobs -->
+					</aside>
+				</div> <!-- tab_content_full -->
+				<div class="social_links">
+					<ul>
+						<li><a class="share" href="#" title="Share"></a></li>
+						<li><a class="tweet" href="#career-paths" title="Twitter"></a></li>
+						<li><a class="fb" href="#career-paths" title="Facebook"></a></li>
+						<li><a class="gplus" href="#career-paths" title="gPlus"></a></li>
+						<li><a class="pin" href="#career-paths" title="Pin"></a></li>
+					</ul>
 				</div>
 			</div>
-		</footer>
-	</div> <!-- wrapper -->
-	<script type="text/javascript" data-main="js/main" src="js/vendor/require.js">
-	</script>
-	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-	<script>
-	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-		g.src='//www.google-analytics.com/ga.js';
-		s.parentNode.insertBefore(g,s)}(document,'script'));
-	</script>
+
+		</section>
+	</div>
+	<footer>
+		<div class="container">
+			<div class="row footer_main">
+				<div class="col span_6">
+					<div class="footer_left ml">
+						<p>www.richemont.com</p>
+						<nav>
+							<ul class="second_row">
+								<li><a href="FAQ.html">FAQs</a></li> 
+								<li><a href="terms-and-condition.html">Terms and conditions</a></li> 
+								<li><a href="contact.html">Contact Us</a></li> 
+							</ul>
+						</nav>
+					</div> <!-- footer left -->
+				</div>
+				<div class="col span_6">
+					<div class="scroll_top mr">
+						<a href="#"><img src="img/parallax/scroll_top.png" alt="Scroll Top" /></a>
+					</div>
+					<div class="footer_right mr">
+						<ul>
+							<li> <a class="twitter" href="#" title="Twitter"></a></li>
+							<li> <a class="fb" href="#home" title="Facebook"></a></li>
+							<li> <a class="linkedin" href="#home" title="Linked-in"></a></li>
+						</ul>
+					</div> <!-- footer right -->
+				</div>
+			</div>
+		</div>
+	</footer>
+</div> <!-- wrapper -->
+<script type="text/javascript" data-main="js/main" src="js/vendor/require.js">
+</script>
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src='//www.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
 </body>
 </html>

@@ -84,7 +84,7 @@ video-test/video-js/video-js.min.css
 js/main.js
 ----------------
 js/vendor/jquery-1.9.1.min.js
-js/parallex.js
+js/parallax.js
 js/navigation.js
 js/customselect.js
 js/our-maisons.js
@@ -94,4 +94,5 @@ js/why-work-us.js
 js/share-icons.js
 js/richemont-main.js
 js/video.js
+js/location.js
 js/main.js

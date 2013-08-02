@@ -1,15 +1,20 @@
-var widthElCnt  = [
+if (typeof(_richemontCareers) != 'object') {
+    _richemontCareers = {};
+}
+
+_richemontCareers.widthElCnt  = [
     { width: 1007, elCnt: 5 },
     { width: 817, elCnt: 4 },
     { width: 627, elCnt: 3 },
     { width: 100, elCnt: 2 }
 ]
 
-var prevElsInRow, ajaxData;
+_richemontCareers.prevElsInRow = '';
+_richemontCareers.ajaxData = '';
 
-function MaisonBox(container, callback) {
-    repositionItems(container);
-    $(window).resize(function(){ repositionItems(container,callback); });
+_richemontCareers.MaisonBox = function (container, callback) {
+    _richemontCareers.repositionItems(container);
+    $(window).resize(function(){ _richemontCareers.repositionItems(container,callback); });
 
     container.on('click', '>ul li a', function () {
         var link = this.href,
@@ -20,7 +25,7 @@ function MaisonBox(container, callback) {
         anchor.parent().addClass('active');
 
         $.get(link, function (data) {
-            ajaxData = data;
+            _richemontCareers.ajaxData = data;
             var oldMaison = listCont.parent().find('.our_maison_gallery').parent();
             oldMaison.remove();
             var $responseEl = $(data);
@@ -29,14 +34,13 @@ function MaisonBox(container, callback) {
             } else {
                 listCont.after($responseEl)
             }
-            MaisonSildeshow($responseEl, anchor, oldMaison.length < 1,callback)
+            _richemontCareers.MaisonSlideshow($responseEl, anchor, oldMaison.length < 1,callback)
         });
         return false;
     })
 
 }
-
-function MaisonSildeshow(gallery, anchorel,animate,callback) {
+_richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback) {
     var escHandler = function(e){
         if(e.keyCode == 27 || e.which == 27){
             gallery.find('.maison_close').click();
@@ -45,7 +49,7 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
 
     $('body').on('keypress',escHandler);
 
-    videoHandler(gallery);
+    _richemontCareers.videoHandler(gallery);
 
     gallery.find('.maison_close').click(function () {
         $('body').off('keypress',escHandler);
@@ -133,14 +137,14 @@ function MaisonSildeshow(gallery, anchorel,animate,callback) {
 
 }
 
-function repositionItems(container,callback){
+_richemontCareers.repositionItems = function(container,callback){
     var list = container.find('>ul'),
         listEls = list.find('>li'),
-        noElsInRow = getNoElsInRow(),
+        noElsInRow = _richemontCareers.getNoElsInRow(),
         curList = $('<ul>');
     
-    if(prevElsInRow == noElsInRow) return;
-    prevElsInRow = noElsInRow;
+    if(_richemontCareers.prevElsInRow == noElsInRow) return;
+    _richemontCareers.prevElsInRow = noElsInRow;
 
     listEls.each(function(i){
         var elNo = i + 1;
@@ -157,27 +161,28 @@ function repositionItems(container,callback){
     if(lightbox.length > 0){
         lightbox.remove();
         var listCont = listEls.filter('.active').parent(),
-            lightbox = $(ajaxData);
+            lightbox = $(_richemontCareers.ajaxData);
         if(listCont.next().length > 0){
             listCont.after(lightbox);
         }else{
             listCont.before(lightbox);
         }
-        MaisonSildeshow(lightbox,listEls.filter('.active a'),false,callback)
+        _richemontCareers.MaisonSlideshow(lightbox,listEls.filter('.active a'),false,callback)
     }
 }
 
-function getNoElsInRow(){
+_richemontCareers.getNoElsInRow = function(){
     var w = $(window).width();
-    for (var i = 0; i < widthElCnt.length; i++) {
-        if(w > widthElCnt[i].width){
-            return widthElCnt[i].elCnt;
+    for (var i = 0; i < _richemontCareers.widthElCnt.length; i++) {
+        if(w > _richemontCareers.widthElCnt[i].width){
+            return _richemontCareers.widthElCnt[i].elCnt;
         }
     };
     return 1;
 }
-var videoNo = 0;
-function videoHandler(el){
+_richemontCareers.videoNo = 0;
+
+_richemontCareers.videoHandler = function(el){
     el.find('a[rel="video"]').click(function(e){
         e.preventDefault();
         $.get($(this).attr('href'),function(data){
@@ -192,8 +197,8 @@ function videoHandler(el){
                 'z-index':'1000'
             });
             cont.appendTo(document.body);
-            $('#video_content').attr('id','maison_video_content' + videoNo);
-            videojs('maison_video_content' + videoNo++);
+            $('#video_content').attr('id','maison_video_content' + _richemontCareers.videoNo);
+            videojs('maison_video_content' + _richemontCareers.videoNo++);
             cont.find('a.video_close').click(function(e){
                 e.preventDefault();
                 cont.remove();

@@ -1,4 +1,8 @@
-function ParallexPosition(top,bottom,speed,screenH){
+if (typeof(_richemontCareers) != 'object') {
+    _richemontCareers = {};
+}
+
+_richemontCareers.ParallaxPosition = function(top,bottom,speed,screenH){
 	this.top = top;
 	this.bottom = bottom;
 	this.speed = speed;
@@ -39,7 +43,7 @@ function ParallexPosition(top,bottom,speed,screenH){
 	}
 }
 
-function ParallexRelEl(el,parentTop){
+_richemontCareers.ParallaxRelEl = function(el,parentTop){
 	el.css('position','relative');
 	this.speed = el.data('speed');
 	if(!this.speed) this.speed = 0.2;
@@ -49,7 +53,7 @@ function ParallexRelEl(el,parentTop){
 	}
 }
 
-function ParallexEl(el,top,screenH,topDelta){
+_richemontCareers.ParallaxEl = function(el,top,screenH,topDelta){
 
 	var parallexEl = this;
 
@@ -57,13 +61,13 @@ function ParallexEl(el,top,screenH,topDelta){
 	this.top = top;
 	this.bottom = top + el.outerHeight();
 
-	this.position = new ParallexPosition(top,this.bottom,el.data('speed'),screenH);
+	this.position = new _richemontCareers.ParallaxPosition(top,this.bottom,el.data('speed'),screenH);
 
 	this.relEls = el.find('.rel_position');
 	this.relParallex = [];
 
 	this.relEls.each(function(i,el){
-		var pRel = new ParallexRelEl($(el),parallexEl.top);
+		var pRel = new _richemontCareers.ParallaxRelEl($(el),parallexEl.top);
 		pRel.scroll(0);
 		parallexEl.relParallex.push(pRel);
 	})
@@ -107,7 +111,7 @@ function ParallexEl(el,top,screenH,topDelta){
 	}
 }
 
-function Parallex(els,topDelta){
+_richemontCareers.Parallax = function(els,topDelta){
 
 	var parallex = this,
 		$els = $(els);
@@ -124,7 +128,7 @@ function Parallex(els,topDelta){
 		this.parallexEls = [];
 		var top = topDelta;
 		$els.each(function(){
-			var parallexEl = new ParallexEl($(this),top,getWindowSize().height-topDelta,topDelta);
+			var parallexEl = new _richemontCareers.ParallaxEl($(this),top,_richemontCareers.getWindowSize().height-topDelta,topDelta);
 			parallex.parallexEls.push(parallexEl);
 			$(this).data('parallexel',parallexEl);
 			top += $(this).outerHeight();
@@ -138,7 +142,7 @@ function Parallex(els,topDelta){
 
 	$window.on('scroll',function(){
 		var scrollTop = $window.scrollTop() + topDelta,
-			scrollBottom = $window.scrollTop() + getWindowSize().height;
+			scrollBottom = $window.scrollTop() + _richemontCareers.getWindowSize().height;
 
 		for (var i = 0; i < parallex.parallexEls.length; i++) {
 			parallex.parallexEls[i].updatePos(scrollTop,scrollBottom,topDelta);
@@ -146,7 +150,7 @@ function Parallex(els,topDelta){
 	})
 }
 
-function getWindowSize() {
+_richemontCareers.getWindowSize = function() {
   var myWidth = 0, myHeight = 0;
   if( typeof( window.innerWidth ) == 'number' ) {
     //Non-IE

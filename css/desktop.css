@@ -739,7 +739,9 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .locations {float:left;clear:both;width:65%;margin-left:15px;border-right: 1px solid #D2D2D2;}
 .locations .section_left {width:100%;}
 .locations .section_left img {width:70%;}
-.locations-list h5{font-size:1.4em;color:#00436e;padding-left:12px;background: url("../img/right-arrow.jpg") no-repeat left 4px;}
+.locations-list h5{font-size:1.4em;color:#00436e;padding-left:15px;cursor:pointer;background: url("../img/right-arrow.jpg") no-repeat left 4px;}
+.locations-list h5.right-arrow{background: url("../img/right-arrow.jpg") no-repeat left 4px;}
+.locations-list h5.down-arrow{background: url("../img/down-arrow.jpg") no-repeat left 8px;}
 .accord-content {display:none;}
 .accord-content p{color: #5e5e5e;font-size: 1.4em;}
 .accord-content p span{font-weight: bold;}

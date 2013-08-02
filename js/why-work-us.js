@@ -18,8 +18,8 @@ function WhyworkUs(container){
 		e.preventDefault();
 		var anchor = $(this)
 		$.get($(this).attr('href'),function(data){
-			anchor.parent().parent().find('li').removeClass('active');
-			anchor.parent().addClass('active');
+			anchor.parent().parent().parent().find('li').removeClass('active');
+			anchor.parent().parent().addClass('active');
 			
 			var ajaxCont = $(data),
 				maisonCont = ajaxCont.find('.main_cont'),
@@ -36,12 +36,14 @@ function WhyworkUs(container){
 	})
 	videoHandler(mainCont);
 
+
 	prevBtn.click(function(){
-		tabAnchors.parent().parent().find('li.active').prev().find('a').click();
+		tabAnchors.parent().parent().parent().find('li.active').prev().find('a').click();
 	})
 
 	nextBtn.click(function(){
-		tabAnchors.parent().parent().find('li.active').next().find('a').click();
+		console.log('here');
+		tabAnchors.parent().parent().parent().find('li.active').next().find('a').click();
 	})
 
 	function videoHandler(el){

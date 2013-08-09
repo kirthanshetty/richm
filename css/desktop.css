@@ -742,7 +742,7 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .faq_section div.ans_section .pt{padding-top:0px;}
 
 /* Style for Locations page */
-.locations {float:left;clear:both;width:65%;margin-left:15px;border-right: 1px solid #D2D2D2;}
+.locations {float:left;clear:both;width:65%;margin-left:30px;border-right: 1px solid #D2D2D2;}
 .locations .section_left {width:100%;}
 .locations .section_left img {width:70%;}
 .locations-list h5{font-size:1.4em;color:#00436e;padding-left:15px;cursor:pointer;background: url("../img/right-arrow.jpg") no-repeat left 4px;}
@@ -757,12 +757,12 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .jobalert label{display:block; padding-bottom: 5px;}
 .jobalert p{font-size:0.9em;padding-top: 8px;float: left;margin: 0px;}
 .jobalert input[type='submit']{padding:5px 8px;font-size:0.9em;clear: both;}
-#wrapper .jobalert .section_left {float: left; width: 42%; clear: both;margin-left: 30px;border-right: 1px solid #D2D2D2;padding-right:15px;}
+#wrapper .jobalert .section_left {float: left; width: 43%; clear: both;margin-left: 30px;border-right: 1px solid #D2D2D2;padding-right:15px;}
 .jobalert input#firstname { border: 1px solid #B8B8B8;padding: 10px 5px;width: 280px;}
 .jobalert span{padding:20px 0px 15px;display: block;}
 .jobalert .section_left div{float: left;width: 100%;padding-bottom: 5px;}
 .jobalert .section_left div label{float: left;}
-.jobalert .section_left div input{ float: left;margin-right: 8px;margin-top: 4px;}
+.jobalert .section_left div input{ float: left;margin-right: 8px;margin-top: 5px;}
 
 
 .join_us_gallery .maison_prev, .join_us_gallery .maison_next{text-indent: -9999px;}

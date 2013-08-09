@@ -71,23 +71,22 @@
                 </div>
                 <div class="search_results jobalert row">
                     <div class="col span_7 section_left">
-                        <label for ="firstname">Email address: </label>
-                        <input type="email" name="firstname" id="firstname" />
-                        <span>Periodicity:</span>
-                        <div>
-                            <input type="radio" name="daily" id="daily" />
-                            <label for="daily">Daily</label>  
-                        </div>
-                        <div>
-                            <input type="radio" name="weekly" id="weekly" />
-                            <label for="daily">Weekly</label> 
-                        </div>
-                        <div> 
-                            <input type="radio" name="monthly" id="monthly" />
-                            <label for="daily">Monthly</label>  
-                        </div>                     
-                        <p>We are collecting your email address to allow us to send you the job alerts you have signed up for</p>
-                        <input type="submit" value="Submit" id="submit" />
+                        <form>
+                            <label for ="firstname">Email address: </label>
+                            <input type="email" name="firstname" id="firstname" />
+                            <span>Periodicity:</span>
+                            <div>
+                                <input type="radio" name="period" value="daily">Daily<br>
+                            </div>
+                            <div>
+                                <input type="radio" name="period" value="weekly">Weekly<br>
+                            </div>
+                            <div> 
+                                <input type="radio" name="period" value="monthly">Monthly
+                            </div>                   
+                            <p>We are collecting your email address to allow us to send you the job alerts you have signed up for</p>
+                            <input type="submit" value="Submit" id="submit" />
+                        </form>
                     </div> <!-- section left -->
                     </section> <!-- search results -->
                  </div>

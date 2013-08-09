@@ -246,7 +246,7 @@ background: -webkit-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #
 background: -o-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* IE10+ */
 background: linear-gradient(to bottom, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* W3C */}
-.inner_block input[type='submit'], .search_block .submit, .maisons_lists ul li input[type='submit'], .view_jobs a, .maison_main_content .maison_desc input[type='submit'], .jobalert input[type='submit'] {float:left;margin-right:15px;color:#fff;font-size:1.1em;font-weight:bold;padding:8px 10px;border:1px solid #054670;margin-top:24px;
+.inner_block input[type='submit'], .search_block .submit, .maisons_lists ul li input[type='submit'], .view_jobs a, .maison_main_content .maison_desc input[type='submit'], .job_alert input[type='submit'] {float:left;margin-right:15px;color:#fff;font-size:1.1em;font-weight:bold;padding:8px 10px;border:1px solid #054670;margin-top:24px;
 background: -moz-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#255e83), color-stop(20%,#245d82), color-stop(40%,#215a7f), color-stop(50%,#1d577b), color-stop(60%,#195377), color-stop(80%,#124b70), color-stop(100%,#10496d)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* Chrome10+,Safari5.1+ */
@@ -607,7 +607,7 @@ button.collapsed{display:none;}
 .lt-ie8 .videos .section_one h4{width:94.3%;}
 .lt-ie8 .maisons_lists ul li{width:19%;}
 .lt-ie8 .maisons_lists ul li.join-us{width:728px;}
-.lt-ie8 .join_us_gallery ul{top:288px;width:98.5%;}
+.lt-ie8 .join_us_gallery ul{top:288px;width:91%;}
 .lt-ie8 .tab_content .main_cont{top:335px;}
 .lt-ie8 .career_gallery a.prev, .lt-ie8 .career_gallery a.next{height:16px;}
 .lt-ie8 .maisons_lists ul li.join-us input, .tab_content_left form input[type="button"]{border:0px;}
@@ -622,6 +622,7 @@ button.collapsed{display:none;}
 .lt-ie8 .career_gallery ul li.active {height:102px;}
 .lt-ie8 .career_gallery ul li.active .chat-bubble-arrow{border:0px;}
 .lt-ie8 .career_gallery ul li {height:79px;}
+.lt-ie8 .join_us_gallery ul li{margin:0px 12px 0px 12px;}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;  }
@@ -760,16 +761,16 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .accord-content p span{font-weight: bold;}
 
 /* Style for Job alerts page */
-.jobalert {font-size:1.4em;color:#5e5e5e;}
-.jobalert label{display:block; padding-bottom: 5px;}
-.jobalert p{font-size:0.9em;padding-top: 8px;float: left;margin: 0px;}
-.jobalert input[type='submit']{padding:5px 8px;font-size:0.9em;clear: both;}
-#wrapper .jobalert .section_left {float: left; width: 43%; clear: both;margin-left: 30px;border-right: 1px solid #D2D2D2;padding-right:15px;}
-.jobalert input#firstname { border: 1px solid #B8B8B8;padding: 10px 5px;width: 280px;}
-.jobalert span{padding:20px 0px 15px;display: block;}
-.jobalert .section_left div{float: left;width: 100%;padding-bottom: 5px;}
-.jobalert .section_left div label{float: left;}
-.jobalert .section_left div input{ float: left;margin-right: 8px;margin-top: 5px;}
+.job_alert {font-size:1.4em;color:#5e5e5e;}
+.job_alert label{display:block; padding-bottom: 5px;}
+.job_alert p{font-size:0.9em;padding-top: 8px;float: left;margin: 0px;}
+.job_alert input[type='submit']{padding:5px 8px;font-size:0.9em;clear: both;}
+#wrapper .job_alert .section_left {float: left; width: 43%; clear: both;margin-left: 30px;border-right: 1px solid #D2D2D2;padding-right:15px;}
+.job_alert input#firstname { border: 1px solid #B8B8B8;padding: 10px 5px;width: 280px;}
+.job_alert span{padding:20px 0px 15px;display: block;}
+.job_alert .section_left div{float: left;width: 100%;padding-bottom: 5px;}
+.job_alert .section_left div label{float: left;}
+.job_alert .section_left div input{ float: left;margin-right: 8px;margin-top: 5px;}
 
 
 .join_us_gallery .maison_prev, .join_us_gallery .maison_next{text-indent: -9999px;}

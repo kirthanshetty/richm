@@ -23,16 +23,28 @@ _richemontCareers.CareerPath = function(container){
 
 	var marginLeft = 0;
 
-	$('.career_gallery a.next').click(function(){
+	var nextBtn = $('.career_gallery a.next').click(function(){
 		marginLeft += wdt;
 		if(marginLeft > totalW - $('.career_gallery_container').width())
 			marginLeft = totalW - $('.career_gallery_container').width()
-	  slides.animate({'margin-left': -1 * marginLeft });
+		slides.animate({'margin-left': -1 * marginLeft });
 	});
-	$('.career_gallery a.prev').click(function(){
+	var prevBtn = $('.career_gallery a.prev').click(function(){
 		marginLeft -= wdt;
 		if(marginLeft < 0)
 			marginLeft = 0
-	  slides.animate({'margin-left': -1 * marginLeft });
+		slides.animate({'margin-left': -1 * marginLeft });
 	});
+
+	var keys = _richemontCareers.KeyCodes;
+	var handler = {};
+	handler[keys.LEFT] = function(){ 
+		container.find('.career_gallery ul li.active').prev().find('a').click(); 
+		prevBtn.click();
+	}
+	handler[keys.RIGHT] = function(){ 
+		container.find('.career_gallery ul li.active').next().find('a').click(); 
+		nextBtn.click();
+	}
+	_richemontCareers.KeyboardAccess(container,handler);
 }

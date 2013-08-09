@@ -2,6 +2,7 @@ $(function(){
 	// var wd = $(".gallery_container").find('.content:eq(0)').outerWidth()
 
 	$(".gallery_container").width('100%').css('overflow','hidden');
+
 	$(".gallery_container .content").width('33.33%');
 	var slides = $(".gallery_container").find('.slides').width('300%');
 	$('.our_world h2').css('padding-left','3px');
@@ -59,10 +60,8 @@ $(function(){
 		}
 
 		slides.animate({'margin-left': (-100 * curSlide) + '%' });
+	
 	}
-
-	
-	
 
 	$('.gallery_join .our_world a.next, #work-with-us a.next').click(function(){
 		changeSlide('next');
@@ -77,5 +76,16 @@ $(function(){
 		changeSlide($(this).parent().index());
 	});
 
+	var keys = _richemontCareers.KeyCodes;
+	var handler = {};
+	handler[keys.LEFT] = function(){ 
+		changeSlide('prev')
+	}
+	handler[keys.RIGHT] = function(){ 
+		changeSlide('next')
+	}
+	
+	_richemontCareers.KeyboardAccess($(".gallery_container"),handler);
+	_richemontCareers.KeyboardAccess($("#work-with-us"),handler);
 });
 

@@ -614,7 +614,8 @@ button.collapsed{display:none;}
 .lt-ie8 .maisons_lists ul li{border-bottom:1px solid #b8b8b8;border-right:1px solid #b8b8b8;}
 .lt-ie9 .jobs_main_content .quick_search input[type="submit"]{top:5px;padding-bottom: 8px;}
 .lt-ie9 .maisons_lists .fading a:hover img{background: none;}
-
+.lt-ie9 .gallery_join .col.span_5 .our_world {width:92%;}
+.lt-ie9 .locations .section_left img{margin:20px 0px;}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;  }

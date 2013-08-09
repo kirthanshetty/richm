@@ -52,7 +52,7 @@ _richemontCareers.WhyworkUs = function(container){
 	})
 
 	function videoHandler(el){
-		el.find('a[rel="video"]').click(function(e){
+		el.find('a[data-rel="video"]').click(function(e){
 			e.preventDefault();
 			$.get($(this).attr('href'),function(data){
 				var cont = $(data);
@@ -67,11 +67,12 @@ _richemontCareers.WhyworkUs = function(container){
 				});
 				cont.appendTo(document.body);
 				$('#video_content').attr('id','video_content' + videoNo);
-				videojs('video_content' + videoNo++);
+				var vidId = 'video_content' + videoNo++;
 				cont.find('a.video_close').click(function(e){
 					e.preventDefault();
 					cont.remove();
 				})
+				videojs(vidId);
 			})
 		})
 	}
@@ -84,5 +85,5 @@ _richemontCareers.WhyworkUs = function(container){
 	handler[keys.RIGHT] = function(){ 
 		nextBtn.click();
 	}
-	_richemontCareers.KeyboardAccess(container,handler);
+	_richemontCareers.KeyboardAccess(container.find('.join_us_gallery'),handler);
 }

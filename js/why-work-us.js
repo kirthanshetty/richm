@@ -75,4 +75,14 @@ _richemontCareers.WhyworkUs = function(container){
 			})
 		})
 	}
+
+	var keys = _richemontCareers.KeyCodes;
+	var handler = {};
+	handler[keys.LEFT] = function(){ 
+		prevBtn.click();
+	}
+	handler[keys.RIGHT] = function(){ 
+		nextBtn.click();
+	}
+	_richemontCareers.KeyboardAccess(container,handler);
 }

@@ -80,6 +80,8 @@ src: url("data:font/opentype;base64,AAEAAAAMAIAAAwBAT1MvMl2l8sYAAAEkAAAAVmNtYXAH
 a{text-decoration:none;}
 ul, ol{padding:0px;margin:0px;}
 label{display:none;}
+*:focus {outline: 1px dotted #929292;}
+.focused {outline: 1px dotted #929292;}
 #wrapper{font-family: 'Lato', sans-serif;display:block;margin:0 auto;background:url("../img/body_bg.jpg") no-repeat right top;overflow: auto;}
 .hide{display: none;}
 /* style for Header */

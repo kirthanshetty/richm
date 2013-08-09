@@ -10,7 +10,7 @@ _richemontCareers.KeyboardAccess = function(container, handlers){
 			top: 0,
 			left: 0,
 			width: '100%',
-			opacity: 0.1
+			opacity: 0
 		}
 	});
 	container.append(keyHandler);

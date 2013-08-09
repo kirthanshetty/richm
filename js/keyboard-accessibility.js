@@ -24,7 +24,11 @@ _richemontCareers.KeyboardAccess = function(container, handlers){
 
 	keyHandler.focus(function() {
 		container.addClass('focused');
-	});
+	}).blur(function() {
+		container.removeClass('focused')
+	});;
+
+
 
 
 	keyHandler.keypress(function(e) {

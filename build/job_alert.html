@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Richemont - Locations</title>
+    <title>Richemont - Job alerts</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/main.css">
@@ -67,52 +67,30 @@
         <div class="container">
             <div class="row content_block jobs_main_content">
                 <div class="col span_5 view_jobs">
-                    <h2 class="ml">Locations</h2>
+                    <h2 class="ml">Job alerts</h2>
                 </div>
-                <div class="search_results locations row">
+                <div class="search_results jobalert row">
                     <div class="col span_7 section_left">
-                        <div class="locations-list">
-                            <h5>Maisons</h5>
-                            <div class="accord-content">
-                                <img src="img/maps-assets/maisons.png" alt="maisons" />
-                            </div>
+                        <label for ="firstname">Email address: </label>
+                        <input type="email" name="firstname" id="firstname" />
+                        <span>Periodicity:</span>
+                        <div>
+                            <input type="radio" name="daily" id="daily" />
+                            <label for="daily">Daily</label>  
                         </div>
-                        <div class="locations-list">
-                            <h5>Richemont Offices</h5>
-                            <div class="accord-content">
-                                <img src="img/maps-assets/offices.png" alt="Offices" />
-                            </div>
+                        <div>
+                            <input type="radio" name="weekly" id="weekly" />
+                            <label for="daily">Weekly</label> 
                         </div>
-                        <div class="locations-list">
-                            <h5>Partner training institutions</h5>
-                            <div class="accord-content">
-                                <img src="img/maps-assets/partner-training.png" alt="Partner Training" />
-                                <p><span>Cartier</span>, Paris, France</p>
-                                <p><span>Van Cleef &amp; Arpels</span>, Paris, France</p>
-                                <p><span>A. Lange &amp; Söhne</span>, Glashütte, Germany</p>
-                                <p><span>Baume &amp; Mercier</span>, Geneva, Switzerland</p>
-                                <p><span>IWC</span>, Schaffhausen, Switzerland</p>
-                                <p><span>Jaeger-LeCoultre</span>, Le Sentier, Switzerland</p>
-                                <p><span>Officine Panerai</span>, Milan, Italy</p>
-                                <p><span>Piaget</span>, Geneva, Switzerland</p>
-                                <p><span>Ralph Lauren Watch &amp; Jewelry Co.</span>, Geneva, Switzerland</p>
-                                <p><span>Roger Dubuis</span>, Geneva, Switzerland</p>
-                                <p><span>Vacheron Constantin</span>, Geneva, Switzerland</p>
-                                <p><span>Montblanc</span>, Hamburg, Germany</p>
-                                <p><span>Alfred Dunhill</span>, London, UK</p>
-                                <p><span>Chloé</span>, Paris, France</p>
-                                <p><span>Azzedine Alaïa</span>, Paris, France</p>
-                                <p><span>Lancel</span>,  Paris, France</p>
-                                <p><span>NET-A-PORTER.COM</span>, London, UK</p>
-                                <p><span>Purdey</span>, London, UK</p>
-                                <p><span>Shanghai Tang</span>, Hong Kong</p>
-                                <p><span>Peter Millar</span>, Raleigh, USA</p>
-                                <p><span>Bodino Brand</span>, Geneva, Switzerland</p>
-                            </div>
-                        </div>
+                        <div> 
+                            <input type="radio" name="monthly" id="monthly" />
+                            <label for="daily">Monthly</label>  
+                        </div>                     
+                        <p>We are collecting your email address to allow us to send you the job alerts you have signed up for</p>
+                        <input type="submit" value="Submit" id="submit" />
                     </div> <!-- section left -->
                     </section> <!-- search results -->
-                    </div>
+                 </div>
                 </div>
             </div>
             <footer>

@@ -766,7 +766,7 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .job_alert p{font-size:0.9em;padding-top: 8px;float: left;margin: 0px;}
 .job_alert input[type='submit']{padding:5px 8px;font-size:0.9em;clear: both;}
 #wrapper .job_alert .section_left {float: left; width: 43%; clear: both;margin-left: 30px;border-right: 1px solid #D2D2D2;padding-right:15px;}
-.job_alert input#firstname { border: 1px solid #B8B8B8;padding: 10px 5px;width: 280px;}
+.job_alert input#email { border: 1px solid #B8B8B8;padding: 10px 5px;width: 280px;}
 .job_alert span{padding:20px 0px 15px;display: block;}
 .job_alert .section_left div{float: left;width: 100%;padding-bottom: 5px;}
 .job_alert .section_left div label{float: left;}

@@ -87,6 +87,8 @@ js/vendor/jquery-1.9.1.min.js
 js/parallax.js
 js/navigation.js
 js/customselect.js
+js/social-links.js
+js/keyboard-accessibility.js
 js/our-maisons.js
 js/joining-us.js
 js/career-path.js

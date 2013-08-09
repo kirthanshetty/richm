@@ -1,1 +1,0 @@
-$(function(){$(".locations-list h5").click(function(){$(this).hasClass("down-arrow")?$(this).removeClass("down-arrow"):$(this).addClass("down-arrow"),$(this).next().slideToggle()})});

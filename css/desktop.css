@@ -766,6 +766,7 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .accord-content {display:none;}
 .accord-content p{color: #5e5e5e;font-size: 1.4em;}
 .accord-content p span{font-weight: bold;}
+.locations .section_left .locations-list:first-child .accord-content, .faq_section .locations-list:first-child .accord-content {display:block;}
 
 /* Style for Job alerts page */
 .job_alert {font-size:1.4em;color:#5e5e5e;}

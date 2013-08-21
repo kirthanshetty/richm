@@ -441,19 +441,36 @@ footer{margin-top:50px;}
     margin-top: 1px;
     width: 96%;
     */
+    
     height: 126px;
-    left: -8%;
+    left: -3%;
     position: absolute;
-    top: -8%;
+    top: -3%;
     width: 215px;
-    transition:all 0.4s ease 0.2s;
-    -webkit-transition: all 0.4s ease 0.2s;
-      -moz-transition: all 0.4s ease 0.2s;
-      -o-transition: all 0.4s ease 0.2s;
-      -ms-transition: all 0.4s ease 0.2s;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
     }
-.maisons_lists .fading a img{background: #00436E;transition: opacity 1s ease-in-out 0s;-moz-transition: opacity 1s ease-in-out 0s;}
-.maisons_lists .fading a img.blur-img{visibility: hidden;}
+.maisons_lists ul li a img{
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    }
+
+.maisons_lists .fading a img{background: #00436E;
+  /*
+-moz-transition: opacity 1s ease-in-out 0s;
+-webkit-transition: opacity 1s ease-in-out 0s;
+-o-transition: opacity 1s ease-in-out 0s;
+-ms-transition: opacity 1s ease-in-out 0s;
+transition: opacity 1s ease-in-out 0s;
+*/
+}
+.maisons_lists .fading a img.blur-img{display: none;}
 
 
 .page_3 .maisons_lists ul.buttons li{border:0px;}
@@ -582,6 +599,8 @@ button.collapsed{display:none;}
 #wrapper .tab_content_full .tab_content_left h3{ color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;font-family: lato;}
 .social_links ul{margin-right:30px;}
 .page_2 .two_sections .section_one{margin: 0 0 0 20px;}
+#wrapper, header, footer, #wrapper .container.main .page{max-width: 1280px;}
+
 
 /* CSS for IE to Fallback */
 .no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us input, .no-cssgradients .jobalert input[type='submit']{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}

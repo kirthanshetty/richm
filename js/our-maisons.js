@@ -106,7 +106,7 @@ _richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback)
             prevEl = prevParent.find('li:last a');
         }
         prevEl.click();
-        return false;
+        //return false;
     })
 
     var timer = setInterval(function(){

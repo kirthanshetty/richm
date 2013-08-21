@@ -3,6 +3,9 @@ if (typeof(_richemontCareers) != 'object') {
 }
 
 _richemontCareers.KeyboardAccess = function(container, handlers){
+	/*
+	* Dummy input to handle keypress
+	*/
 	var keyHandler =  $('<input>',{
 		'type':'text',
 		'css': {
@@ -13,8 +16,10 @@ _richemontCareers.KeyboardAccess = function(container, handlers){
 			opacity: 0
 		}
 	});
+	// append it to the container
 	container.append(keyHandler);
 	
+	// Make sure the dummy input is focused if the container or any child element get focus
 	container.click(function(){ keyHandler.focus(); });
 	container.focus(function(){ keyHandler.focus(); });
 	container.find('*').focus(function(){ 
@@ -22,15 +27,15 @@ _richemontCareers.KeyboardAccess = function(container, handlers){
 			keyHandler.focus(); 
 	});
 
+	// Add a class to the container to show the focus outline
 	keyHandler.focus(function() {
 		container.addClass('focused');
 	}).blur(function() {
 		container.removeClass('focused')
 	});;
 
-
-
-
+	// Handle keypress events. Handlers is an object, with keycodes as keys and 
+	// relevant functions
 	keyHandler.keypress(function(e) {
 		var key = e.which || e.keyCode;
 		if(handlers[key]){
@@ -39,6 +44,7 @@ _richemontCareers.KeyboardAccess = function(container, handlers){
 	});
 }
 
+// General keycodes for easy access.
 _richemontCareers.KeyCodes = {
     SPACE:        32 ,
     ENTER:        13 ,

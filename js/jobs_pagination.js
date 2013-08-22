@@ -4,11 +4,9 @@ $(function() {
 		e.preventDefault();
 		var link = this.href,				
 			anchor = $(this),
-			container = $(this).parent().parent().parent().prev();
+			container = anchor.parent().parent().parent().prev();
 		$.get(link,function(data){
 			container.html(data);
-			anchor.parent().parent().find('li.active').removeClass('active');
-			anchor.parent().addClass('active');
 		});
 	});
 });

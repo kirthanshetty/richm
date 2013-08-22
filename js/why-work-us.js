@@ -43,12 +43,15 @@ _richemontCareers.WhyworkUs = function(container){
 
 
 	prevBtn.click(function(){
-		tabAnchors.parent().parent().parent().find('li.active').prev().find('a').click();
+		var el = tabAnchors.parent().parent().parent().find('li.active').prev();
+		if(el.length < 1) el = tabAnchors.parent().parent().parent().find('li:last');
+		el.find('a').click();
 	})
 
 	nextBtn.click(function(){
-		console.log('here');
-		tabAnchors.parent().parent().parent().find('li.active').next().find('a').click();
+		var el = tabAnchors.parent().parent().parent().find('li.active').next();
+		if(el.length < 1) el = tabAnchors.parent().parent().parent().find('li:first');
+		el.find('a').click();
 	})
 
 	function videoHandler(el){

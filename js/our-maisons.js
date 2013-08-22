@@ -88,23 +88,30 @@ _richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback)
         callback();
     }
 
+    var nextEl = anchorel.parent().next().find('a');
+    if (nextEl.length < 1) {
+        nextEl = anchorel.parent().parent().next().next().find('li:first a');
+    }
+
+    var prevEl = anchorel.parent().prev().find('a');
+    if (prevEl.length < 1) {
+        var prevParent = anchorel.parent().parent().prev();
+        if(prevParent.length > 0 && /div/i.test(prevParent[0].tagName))
+            prevParent = prevParent.prev();
+        prevEl = prevParent.find('li:last a');
+    }
+    console.log(prevEl,gallery.find('.maison_prev'));
+    if(prevEl.length < 1){
+        gallery.find('.maison_prev').hide();
+    }
+    if(nextEl.length < 1)
+        gallery.find('.maison_next').hide();
     gallery.find('.maison_next').click(function () {
-        var nextEl = anchorel.parent().next().find('a');
-        if (nextEl.length < 1) {
-            nextEl = anchorel.parent().parent().next().next().find('li:first a');
-        }
         nextEl.click();
         return false;
     })
 
     gallery.find('.maison_prev').click(function () {
-        var prevEl = anchorel.parent().prev().find('a');
-        if (prevEl.length < 1) {
-            var prevParent = anchorel.parent().parent().prev();
-            if(/div/i.test(prevParent[0].tagName))
-                prevParent = prevParent.prev();
-            prevEl = prevParent.find('li:last a');
-        }
         prevEl.click();
         return false;
     })

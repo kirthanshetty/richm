@@ -6,7 +6,7 @@ require.config({
 });
 
 require([
-    'jquery', 'navigation', 'search', 'customselect'
+    'jquery', 'navigation', 'search', 'customselect', 'jobs_pagination'
 ],function($){
 	_richemontCareers.Navigation();
 });

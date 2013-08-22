@@ -79,7 +79,6 @@ src: url("data:font/opentype;base64,AAEAAAAMAIAAAwBAT1MvMl2l8sYAAAEkAAAAVmNtYXAH
 }
 a{text-decoration:none;}
 ul, ol{padding:0px;margin:0px;}
-/*label{display:none;}*/
 .first_row label, .quick_search label{display:none;}
 *:focus {outline: 1px dotted #929292;}
 .focused {outline: 1px dotted #929292;}
@@ -275,6 +274,7 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .search_list div.img_date{width:15%;}
 .search_list div.img_details{width:16%;padding-right:0px;}
 .search_list div h4{font-size:1em;margin:0px 0px 3px 0px;font-weight: bold;}
+.search_list div strong{float:left;}
 .search_list div span{font-weight:normal;float:left;clear:both;}
 .search_list div h5{font-weight:normal;margin:0px;font-size:1em;}
 .search_list div a{color:#00436e;font-weight:bold;}

@@ -1,1 +1,1 @@
-$(function(){var e=$(".search_results");e.find(".pagination ul li a").click(function(e){e.preventDefault();var t=this.href,n=$(this),r=$(this).parent().parent().parent().prev();$.get(t,function(e){r.html(e),n.parent().parent().find("li.active").removeClass("active"),n.parent().addClass("active")})})});
+$(function(){var e=$(".search_results");e.find(".pagination ul li a").click(function(e){e.preventDefault();var t=this.href,n=$(this),r=n.parent().parent().parent().prev();$.get(t,function(e){r.html(e)})})});

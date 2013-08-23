@@ -88,7 +88,7 @@ _richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback)
         callback();
     }
 
-    gallery.find('.maison_next').click(function () {
+    var nextBtn = gallery.find('.maison_next').click(function () {
         var nextEl = anchorel.parent().next().find('a');
         if (nextEl.length < 1) {
             nextEl = anchorel.parent().parent().next().next().find('li:first a');
@@ -97,7 +97,7 @@ _richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback)
         return false;
     })
 
-    gallery.find('.maison_prev').click(function () {
+    var prevBtn = gallery.find('.maison_prev').click(function () {
         var prevEl = anchorel.parent().prev().find('a');
         if (prevEl.length < 1) {
             var prevParent = anchorel.parent().parent().prev();
@@ -108,6 +108,16 @@ _richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback)
         prevEl.click();
         return false;
     })
+
+    var keys = _richemontCareers.KeyCodes;
+    var handler = {};
+    handler[keys.LEFT] = function(){ 
+        prevBtn.click();
+    }
+    handler[keys.RIGHT] = function(){ 
+        nextBtn.click();
+    }
+    _richemontCareers.KeyboardAccess(gallery,handler);
 
     var timer = setInterval(function(){
         var nextBtn = buttons.parent().parent().find('li.active').next();
@@ -134,7 +144,7 @@ _richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback)
         prev.fadeOut();
         cur.fadeIn();
     })
-
+    gallery.click();
 }
 
 _richemontCareers.repositionItems = function(container,callback){

@@ -417,7 +417,7 @@ footer{margin-top:50px;}
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;}
 .maisons_lists ul li img.top{width:100%;  z-index: 9999;}
-.maisons_lists ul li a:hover img.top {opacity:0;}
+.maisons_lists ul li a:hover img.top,.maisons_lists ul li a:focus img.top {opacity:0;}
 .maisons_lists ul li img.overlay{z-index: 999;width:100%;}
 /*
 .maisons_lists ul li img.overlay:hover{ filter: blur(0px);
@@ -426,7 +426,7 @@ footer{margin-top:50px;}
     -o-filter: blur(0px);
     -ms-filter: blur(0px);}
  */   
-.maisons_lists ul li a:hover img.add_blur{
+.maisons_lists ul li a:hover img.add_blur,.maisons_lists ul li a:focus img.add_blur{
   /*
       transition: all 0.3s ease-in-out 0.5s;
       -webkit-transition: all 0.3s ease-in-out 0.2s;

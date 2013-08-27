@@ -280,11 +280,11 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .search_list div a{color:#00436e;font-weight:bold;}
 .pagination{margin-top:10px;}
 .pagination ul li{float:left;margin-right:6px;font-size:1.3em;color:#454545;}
-.pagination ul li a{color:#454545;}
-.pagination ul li.first-page a, .pagination ul li.last-page a{color:#808080;}
+.pagination ul li a{color:#00436E;}
+.pagination ul li.first-page a, .pagination ul li.last-page a{color:#00436E;}
 .pagination ul li.active a{color:#00436e;border-bottom:1px solid #00436e;}
 .pagination ul li a:hover{color:#00436e;}
-.pagination ul li.previous a, .pagination ul li.next a{margin:0px 10px;border:0px;}
+.pagination ul li.previous a, .pagination ul li.next a, .pagination ul li.previous span, .pagination ul li.next span{margin:0px 7px;border:0px;}
 /* Section Right */
 .section_right{float:left;padding-left:30px;width:320px;}
 .section_right h3{font-size:1.6em;color:#5e5e5e;margin:0px 0px 4px 0px; padding: 0;}
@@ -473,7 +473,6 @@ transition: opacity 1s ease-in-out 0s;
 */
 }
 .maisons_lists .fading a img.blur-img{display: none;}
-
 
 .page_3 .maisons_lists ul.buttons li{border:0px;}
 .align-center{text-align: center;}

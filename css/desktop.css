@@ -81,7 +81,7 @@ a{text-decoration:none;}
 ul, ol{padding:0px;margin:0px;}
 .first_row label, .quick_search label{display:none;}
 *:focus {outline: 1px dotted #929292;}
-.focused {outline: 1px dotted #929292;}
+.focused,.customSelectFocus {outline: 1px dotted #929292;}
 iframe{border: 0px;}
 #wrapper{font-family: 'Lato', sans-serif;display:block;margin:0 auto;background:url("../img/body_bg.jpg") no-repeat right top;overflow: auto;}
 .hide{display: none;}
@@ -1151,10 +1151,6 @@ body {
     margin: 0;
     font-size:62.5%;
     overflow-x:hidden; 
-}
-
-a:focus {
-    outline: thin dotted;
 }
 
 a:active,

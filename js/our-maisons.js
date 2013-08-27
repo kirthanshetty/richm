@@ -41,18 +41,9 @@ _richemontCareers.MaisonBox = function (container, callback) {
 
 }
 _richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback) {
-    var escHandler = function(e){
-        if(e.keyCode == 27 || e.which == 27){
-            gallery.find('.maison_close').click();
-        }
-    }
-
-    $('body').on('keypress',escHandler);
-
     _richemontCareers.videoHandler(gallery);
 
     gallery.find('.maison_close').click(function () {
-        $('body').off('keypress',escHandler);
         $(this).parent().parent().slideUp(function () {
             $(this).remove();
             callback();
@@ -125,6 +116,12 @@ _richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback)
     }
     handler[keys.RIGHT] = function(){ 
         nextBtn.click();
+    }
+        console.log(keys);
+
+    handler[keys.ESCAPE] = function(){
+        console.log('here');
+        gallery.find('.maison_close').click();
     }
     _richemontCareers.KeyboardAccess(gallery,handler);
 

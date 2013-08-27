@@ -97,4 +97,5 @@ js/share-icons.js
 js/richemont-main.js
 js/video.js
 js/location.js
+js/find_browser.js
 js/main.js

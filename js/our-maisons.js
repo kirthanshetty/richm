@@ -67,6 +67,8 @@ _richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback)
         return false;
     });
 
+     
+
     // var w = gallery.find('.maison_main_content:eq(0)').outerWidth()
     gallery.find('.slides-container').//width(w).
         css('overflow', 'hidden');
@@ -223,3 +225,4 @@ _richemontCareers.videoHandler = function(el){
         })
     })
 }
+

@@ -473,7 +473,22 @@ footer{margin-top:50px;}
 transition: opacity 1s ease-in-out 0s;
 */
 }
-.maisons_lists .shading.fading a img, .maisons_lists .shading.fading a .grow .image {background: #00436E;-webkit-transition: all 0s ease;transition: all 0s ease;}
+.maisons_lists ul li.shading a:hover img.top{opacity: 1;background: transparent;}
+.maisons_lists ul li.shading.lightbox-open a img.top{opacity: 0.3;background: transparent;}
+.maisons_lists ul li.shading a:hover .grow .image {
+    width: 250px;
+    height: 150px;
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.maisons_lists .shading.fading a .grow .image {background: #00436E;-webkit-transition: all 0s ease;transition: all 0s ease;}
+.maisons_lists .shading.fading a img.top{display: block;}
 .maisons_lists .shading .image img{
       -webkit-transition: all 0.3s ease-in-out 0s;
       transition: all 0.3s ease-in-out 0s;
@@ -502,7 +517,7 @@ transition: opacity 1s ease-in-out 0s;
 .maisons_lists ul li a .grow .image:hover{width: 250px;height: 155px;position: absolute;top:-10px;left: -10px;}
 */
 
-.maisons_lists .fading a img.blur-img, .maisons_lists .fading.shading a img.blur-img{display: none;}
+.maisons_lists .fading a img.blur-img{display: none;}
 
 .page_3 .maisons_lists ul.buttons li{border:0px;}
 .align-center{text-align: center;}
@@ -686,7 +701,9 @@ button.collapsed{display:none;}
     height: 114px;
     width: 190px;
     background: #00436e;
+    z-index: 9999;
   }
+  .maisons_lists ul li.shading {position: relative;float: left;display: block;}
   .maisons_lists ul li.shading .grow .image {
     background:url("../img/parallax/watch2.jpg") no-repeat left top;
     background-size: cover;
@@ -717,8 +734,10 @@ button.collapsed{display:none;}
   }
  
   .maisons_lists ul li.shading a img{display: none;}
+  .maisons_lists ul li.shading a img.top{display: block;}
   .maisons_lists ul li.shading a .grow img{display: block;}
   .maisons_lists ul li.shading.lightbox-open .image { background: none repeat scroll 0 0 #1F1F1F;}
+
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;  }

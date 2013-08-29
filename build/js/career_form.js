@@ -1,0 +1,1 @@
+$(function(){var e=$(".form_submission");e.delegate(".submission a","click",function(e){e.preventDefault();var t=this.href,n=$(this),r=n.parent().parent().parent();$.get(t,function(e){r.html(e)})})});

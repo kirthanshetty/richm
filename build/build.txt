@@ -98,4 +98,5 @@ js/richemont-main.js
 js/video.js
 js/location.js
 js/find_browser.js
+js/career_form.js
 js/main.js

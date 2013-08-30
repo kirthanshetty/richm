@@ -670,6 +670,25 @@ button.collapsed{display:none;}
 #wrapper .tab_content_full .tab_content_left .form_submission a.next, #wrapper .tab_content_full .tab_content_left .form_submission a.prev{padding:2px 5px;margin-right: 10px;}
 #wrapper .tab_content_full .tab_content_left input[type='radio'], #wrapper .tab_content_full .tab_content_left input[type='checkbox'] {margin-top:3px;}
 
+.job_dialog p.descrpt{font-size:1em;color:#5E5E5E;padding-bottom: 15px;}
+#wrapper .job_dialog.job_alert .section_left{border: 0px;padding-right: 0px;margin-left: 0px;}
+.job_dialog.job_alert .section_left div{width:auto;margin-right: 20px;}
+#wrapper .job_dialog.job_alert .section_left{width:auto;}
+.job_dialog.job_alert .section_left div.header{width:100%;padding: 0px;margin: 0px;}
+.job_dialog.job_alert input[type="submit"]{float: right;}
+.job_dialog .header h3{font-size:1em;color:#4E4E4E;font-weight: bold;float: left;padding-left: 10px;padding-bottom: 0px;margin: 8px 0px;}
+.job_dialog .header img{float: right;padding: 6px;}
+.job_dialog.job_alert .section_left .content{padding:10px;margin: 0px;}
+.job_dialog .header{border-bottom:1px solid #c1c1c1;width:100%;
+background: -moz-linear-gradient(top, #cfcfcf 0%,  #e6e6e6 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cfcfcf), color-stop(100%,#e6e6e6)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #cfcfcf 0%, #e6e6e6 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #cfcfcf 0%, #e6e6e6 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #cfcfcf 0%, #e6e6e6 100%); /* IE10+ */
+background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
+.job_dialog{width:660px;margin: 0px;}
+.job_dialog.job_alert input#email, .job_dialog.job_alert span{clear: both;}
+
 /* CSS for IE to Fallback */
 .no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us a, .no-cssgradients .jobalert input[type='submit']{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type='submit']{background: url("../img/parallax/shade_bg.jpg") repeat-x scroll left top;}

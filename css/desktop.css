@@ -251,7 +251,7 @@ background: -webkit-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #
 background: -o-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* IE10+ */
 background: linear-gradient(to bottom, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* W3C */}
-.inner_block input[type='submit'], .search_block .submit, .maisons_lists ul li input[type='submit'], .view_jobs a, .maison_main_content .maison_desc input[type='submit'], .job_alert input[type='submit'], #wrapper .tab_content_full .tab_content_left input.attach {float:left;margin-right:15px;color:#fff;font-size:1.1em;font-weight:bold;padding:8px 10px;border:1px solid #054670;margin-top:24px;
+.inner_block input[type='submit'], .search_block .submit, .maisons_lists ul li.join-us a, .view_jobs a, .maison_main_content .maison_desc input[type='submit'], .job_alert input[type='submit'], #wrapper .tab_content_full .tab_content_left input.attach, .maisons_lists ul li.join-us a, .our_maison_gallery .maison_main_content .maison_desc a.invite {float:left;margin-right:15px;color:#fff;font-size:1.1em;font-weight:bold;padding:8px 10px;border:1px solid #054670;margin-top:24px;
 background: -moz-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#255e83), color-stop(20%,#245d82), color-stop(40%,#215a7f), color-stop(50%,#1d577b), color-stop(60%,#195377), color-stop(80%,#124b70), color-stop(100%,#10496d)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* Chrome10+,Safari5.1+ */
@@ -373,7 +373,7 @@ footer{margin-top:50px;}
 .container.main{overflow: hidden;max-width:100%;margin:0px;}
 #home, #why-join-us, #career-paths {background:url("../img/parallax/body_bg.jpg") repeat center top #fff;width: 100%;}
 #why-join-us {z-index: 9;padding-bottom: 100px;min-height: 855px;}
-#career-paths {z-index: 10;padding-bottom:150px;}
+#career-paths {z-index: 10;padding-bottom:175px;}
 #home .inner_content, #why-join-us .inner_content, #career-paths .inner_content {/*width: 100%;*/background: #fff;}
 #our-world {/*background:url("../img/parallax/section_bg.jpg") no-repeat center top transparent;background-size:cover;*/min-height: 685px; width: 100%;}
 #work-with-us{/*background:url("../img/parallax/img14.jpg") no-repeat center top transparent;background-size:cover;*/min-height: 685px; width: 100%;z-index: 10;}
@@ -395,9 +395,16 @@ footer{margin-top:50px;}
 .maisons_lists ul li.join-us{background:#dadada;width:760px;height: 113px;opacity:0.7;filter:alpha(opacity=90);border:0px !important;}
 .maisons_lists ul li.join-us section{float:right;padding:30px 40px;width:665px;}
 .maisons_lists ul li.join-us h3{font-size:2.5em;font-weight: normal;color:#4e4e4e;float:left;margin:7px 0 0;}
-.maisons_lists ul li.join-us input{float:right;margin:10px 0px 0px 28px;font-size:1.3em;font-weight: normal;}
+.maisons_lists ul li.join-us a{height:auto;float:right;margin:10px 0px 0px 28px;font-size:1.3em;font-weight: normal;}
 .maisons_lists ul li.lightbox-open img.overlay{opacity:0.2;filter:alpha(opacity=20);}
 .maisons_lists ul li.lightbox-open a{background: #1f1f1f;border-color: #414141;}
+.maisons_lists ul li.lightbox-open.join-us a{border:1px solid #054670;
+background: -moz-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#255e83), color-stop(20%,#245d82), color-stop(40%,#215a7f), color-stop(50%,#1d577b), color-stop(60%,#195377), color-stop(80%,#124b70), color-stop(100%,#10496d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* IE10+ */
+background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* W3C */}
 .our_maison_gallery ul.buttons li.active.lightbox-open a{background:url("../img/parallax/sprite.png") repeat scroll left -292px transparent !important;}
 .our_maison_gallery ul.buttons li.lightbox-open a{background: url("../img/parallax/sprite.png") repeat scroll left -269px transparent !important;}
 .maisons_lists ul li.lightbox-open a img {opacity: 0;filter:alpha(opacity=0);
@@ -624,7 +631,7 @@ ul.buttons li.active a{ background: url("../img/parallax/sprite.png") left -292p
 .maison_main_content .maison_image ul li a{height:auto; border: 0 none;}
 .maison_main_content .maison_desc a.maison_info{color: #00436E;float: right;padding: 0;clear:both;display: block; margin: 15px 0; font-size: 1.2em;}
 .maison_main_content .maison_desc p.highlight{padding:10px 0px;}
-.our_maison_gallery .maison_main_content .maison_desc input{margin-top:12px;}
+.our_maison_gallery .maison_main_content .maison_desc input, .our_maison_gallery .maison_main_content .maison_desc a.invite{margin-top:12px;}
 
 button.collapsed{display:none;}
 .container.main .page .inner_content{margin:0 auto;max-width:1024px;float:none;}
@@ -642,29 +649,29 @@ button.collapsed{display:none;}
 .social_links ul{margin-right:30px;}
 .page_2 .two_sections .section_one{margin: 0 0 0 20px;}
 #wrapper, header, footer, #wrapper .container.main .page{max-width: 1280px;}
-#wrapper .tab_content_full .tab_content_left .second_step, #wrapper .tab_content_full .tab_content_left .third_step, #wrapper .tab_content_full .tab_content_left .first_step, #wrapper .tab_content_full .tab_content_left .fourth_step, #wrapper .tab_content_full .tab_content_left .fifth_step{float: left;width: 100%;}
+#wrapper .tab_content_full .tab_content_left .second_step, #wrapper .tab_content_full .tab_content_left .third_step, #wrapper .tab_content_full .tab_content_left .first_step, #wrapper .tab_content_full .tab_content_left .fourth_step, #wrapper .tab_content_full .tab_content_left .fifth_step{float: left;width: 100%;border: 0px;padding:0px;}
 #wrapper .tab_content_full .tab_content_left .second_step h3, #wrapper .tab_content_full .tab_content_left .third_step h3 {font-size: 1.4em;font-style: normal;font-weight: bold;color: #5e5e5e;}
 #wrapper .tab_content_full .tab_content_left .form_submission label {color: #666666;padding:0px;cursor: default;font-size: 1.3em;float:right;}
 #wrapper .tab_content_full .tab_content_left .first_step label{float:left;}
 #wrapper .tab_content_full .tab_content_left .form_submission input{float: left;margin-top: 2px;}
 #wrapper .tab_content_full .tab_content_left .form_submission input[type='text']{width:193px;padding: 5px 0;}
-#wrapper .tab_content_full .tab_content_left .form_submission form div{ clear: both;width: 165px;}
+#wrapper .tab_content_full .tab_content_left .form_submission form .second_step div, #wrapper .tab_content_full .tab_content_left .form_submission form .third_step div{ clear: both;width: 165px;}
 #wrapper .tab_content_full .tab_content_left .form_submission div.first_step form div{width: 100%;}
 #wrapper .tab_content_full .tab_content_left .form_submission div.first_step form div.submission, #wrapper .tab_content_full .tab_content_left .form_submission div.second_step form div.submission, #wrapper .tab_content_full .tab_content_left .form_submission div.third_step form div.submission{width: 76%;}
 #wrapper .tab_content_full .tab_content_left input[type='button']{margin-right: 10px;}
 #wrapper .tab_content_full .tab_content_left .form_submission form{float:left;width: 80%;}
-#wrapper .tab_content_full .tab_content_left .second_step div.submission{width: 100%;}
+#wrapper .tab_content_full .tab_content_left .form_submission form .second_step div.submission, #wrapper .tab_content_full .tab_content_left .form_submission form .third_step div.submission{width: 100%;}
 #wrapper .tab_content_full .tab_content_left div.submission{margin:20px 0px 0px;}
 #wrapper .tab_content_full .tab_content_left div.submission p{margin:0px;}
 #wrapper .tab_content_full .tab_content_left input.attach{ border: 1px solid #054670;margin-left:0px;margin-top:10px;color: #FFFFFF;float: left;font-size: 1.1em;font-weight: bold;}
-#wrapper .tab_content_full .tab_content_left .form_submission div.fourth_step div{width:80%;}
-#wrapper .tab_content_full .tab_content_left .form_submission div.fourth_step label, #wrapper .tab_content_full .tab_content_left .form_submission div.first_step label{float:left;padding-left: 8px;padding-top: 5px;}
+#wrapper .tab_content_full .tab_content_left .form_submission .fourth_step div{width:80%;}
+#wrapper .tab_content_full .tab_content_left .form_submission .fourth_step label, #wrapper .tab_content_full .tab_content_left .form_submission div.first_step label{float:left;padding-top: 5px;}
 #wrapper .tab_content_full .tab_content_left span.error{font-size: 1.4em;color:#d71d1d; font-weight: bold;float: left;}
 #wrapper .tab_content_full .tab_content_left .form_submission a.next, #wrapper .tab_content_full .tab_content_left .form_submission a.prev{padding:2px 5px;margin-right: 10px;}
-#wrapper .tab_content_full .tab_content_left input[type='radio'], #wrapper .tab_content_full .tab_content_left input[type='checkbox'] {margin-top:7px;}
+#wrapper .tab_content_full .tab_content_left input[type='radio'], #wrapper .tab_content_full .tab_content_left input[type='checkbox'] {margin-top:3px;}
 
 /* CSS for IE to Fallback */
-.no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us input, .no-cssgradients .jobalert input[type='submit']{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
+.no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us a, .no-cssgradients .jobalert input[type='submit']{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type='submit']{background: url("../img/parallax/shade_bg.jpg") repeat-x scroll left top;}
 .no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button']{background: url("../img/parallax/grey_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type="submit"]{background: url("../img/shade_button.jpg") repeat-x left top;}
@@ -697,7 +704,7 @@ button.collapsed{display:none;}
 .lt-ie8 .maison_slide_container .our_maison_gallery{padding-bottom: 15px;}
 .lt-ie8 .tab_content .main_cont{top:335px;}
 .lt-ie8 .career_gallery a.prev, .lt-ie8 .career_gallery a.next{height:16px;}
-.lt-ie8 .maisons_lists ul li.join-us input, .tab_content_left form input[type="button"]{border:0px;}
+.lt-ie8 .maisons_lists ul li.join-us a, .tab_content_left form input[type="button"]{border:0px;}
 .lt-ie9 .jobs_main_content .quick_search input[type="submit"]{top:5px;padding-bottom: 8px;}
 .lt-ie9 .maisons_lists .fading a:hover img{background: none;}
 .lt-ie9 .gallery_join .col.span_5 .our_world {width:92%;}

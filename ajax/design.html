@@ -5,7 +5,129 @@
 			<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
 			<p>Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. Aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 			<h4>SUBMIT YOUR PROFILE: DESIGN &amp; CREATION POSITIONS</h4>
-			<iframe width="540" align="middle" height="550" frameborder="0" style="vertical-align: middle;" src="https://careers.richemont.com/sap/bc/webdynpro/sap/zghr_rc_questionnr?category=BRAND&amp;sap-language=EN&amp;sap-ep-themeroot=/SAP/PUBLIC/BC/UR/nw5/themes/ric2&amp;SAP-IE=Edge"></iframe>
+			<div class="form_submission">	
+							<form method="GET" action="#" name="search">
+								<fieldset class="first_step">
+										<h3>Preferred work type / Location:</h3>
+										<div>
+											<label for="position">Type of position: <span>*</span></label>
+											<select id="position">
+												<option>11</option>
+												<option>22</option>
+											</select>
+										</div>
+										<div>
+											<label for="country">Country: <span>*</span></label>
+											<select id="country">
+												<option>11</option>
+												<option>22</option>
+											</select>
+										</div>
+										<div>
+											<label for="region">Region: </label>
+											<select id="region">
+												<option>11</option>
+												<option>22</option>
+											</select>
+										</div>
+										<div>
+											<label for="location">Location: </label>
+											<select id="location">
+												<option>11</option>
+												<option>22</option>
+											</select>
+										</div>
+										<div class="submission">
+											<a class="next" href="javascript:void(0)">Next</a>
+											<p>Step 1 of 4</p>
+										</div>
+								</fieldset>
+								<fieldset class="second_step" style="display:none;">
+									<h3>Select the area(s) in Manufacturing in which you have experience:</h3>
+									
+										<div>
+											<input type="checkbox" name="q" id="q" >
+											<label for="q"> Watchmaking </label> 
+										</div>
+										<div>
+											<input type="checkbox" name="q" id="q" >
+											<label for="q"> Polishing </label>
+										</div>
+										<div>
+											<input type="checkbox" name="q" id="q" >
+											<label for="q"> Gemology </label> 
+										</div>
+										<div> 
+											<input type="checkbox" name="q" id="q" >
+											<label for="q"> Machine shop </label>
+										</div>
+										<div class="submission">
+											<a class="prev" href="javascript:void(0)">Previous</a>
+											<a class="next" href="javascript:void(0)">Next</a>
+											<p>Step 2 of 4</p>
+										</div>
+									
+								</fieldset>
+								<fieldset class="third_step" style="display:none;">
+									<h3>How many years of relevant work experience you have in the about mentioned area?</h3>
+									
+										<div>
+											<input type="radio" name="q" id="q" >
+											<label for="q"> 1-3 </label> 
+										</div>
+										<div> 
+											<input type="radio" name="q" id="q" >
+											<label for="q"> 4-8 </label>
+										</div>
+										<div>
+											<input type="radio" name="q" id="q" >
+											<label for="q"> Over 12 years </label> 
+										</div>
+										<div>
+											<input type="radio" name="q" id="q" >
+											<label for="q"> None </label> 
+										</div>
+										<div class="submission">
+											<a class="prev" href="javascript:void(0)">Previous</a>
+											<a class="next" href="javascript:void(0)">Next</a>
+											<p>Step 3 of 4</p>
+										</div>
+									
+								</fieldset>
+								<fieldset class="fourth_step" style="display:none;">
+									<h3>Attachments</h3>
+											<div>
+												<label for="q">Document Title:: <span>*</span></label>
+												<input type="text" name="q" id="q">
+											</div>
+											<div>
+												<label for="attach">Attachment Type: <span>*</span></label>
+												<select id="attach">
+													<option>11</option>
+													<option>22</option>
+												</select>
+											</div>
+											<div>
+												<label for="language">Language: </label>
+												<select id="language">
+													<option>11</option>
+													<option>22</option>
+												</select>
+											</div>
+											<div>
+												<label for="file">File: </label>
+												<input type="file" name="q" id="file">
+												<input class="attach" type="button" value="Add Attachment">
+											</div>
+											<span class="error">Please attach your Resume/CV</span>
+											<div class="submission">
+												<a class="prev" href="javascript:void(0)">Previous</a>
+												<a class="next" href="javascript:void(0)">Next</a>
+												<p>Step 4 of 4</p>
+											</div>
+									</fieldset>
+								</form>
+						</div> <!-- form submission -->
 		</div>
 	</div>
 	<div class="span_5 col">
@@ -31,3 +153,15 @@
 		</div> <!-- view_jobs -->
 	</div>
 </div> <!-- tab_content_full -->
+
+<script type="text/javascript">
+	$(function(){
+		$('.form_submission a.prev').click(function(){
+			$(this).parent().parent().hide().prev().show();
+		});
+		$('.form_submission a.next').click(function(){
+			$(this).parent().parent().hide().next().show();
+		});
+		$('.form_submission select').customSelect();
+	});
+</script>

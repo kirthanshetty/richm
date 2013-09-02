@@ -688,6 +688,7 @@ background: -ms-linear-gradient(top, #cfcfcf 0%, #e6e6e6 100%); /* IE10+ */
 background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .job_dialog{font-family: 'Lato', sans-serif;width:660px;margin: 0px;background: none repeat scroll 0 0 #FFFFFF;display: block;left: 50%;margin-left: -330px;margin-top: -160px;position: fixed;top: 50%;z-index: 999;}
 .job_dialog.job_alert input#email, .job_dialog.job_alert span{clear: both;}
+.overlay{position: fixed;left:0px;top: 0px;background: #000;opacity: 0.4;filter:alpha(opacity=60);width:100%;height: 100%;}
 
 /* CSS for IE to Fallback */
 .no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us a, .no-cssgradients .jobalert input[type='submit']{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}

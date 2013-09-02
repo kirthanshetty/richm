@@ -12,6 +12,10 @@ $(function() {
 	$('#job_alert').click(function(){
 		$('.job_dialog').show();
 		$('body').append('<div class="overlay"></div>');
+	});
+	$('#close_alert').click(function(){
+		$('.job_dialog').hide();
+		$('.overlay').remove();
 	})
 });
 

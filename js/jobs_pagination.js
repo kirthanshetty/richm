@@ -1,5 +1,5 @@
 $(function() {
- var container = $(".search_results");
+	var container = $(".search_results");
 	container.delegate('.pagination ul li a', 'click' ,function(e){
 		e.preventDefault();
 		var link = this.href,				
@@ -9,5 +9,9 @@ $(function() {
 			container.html(data);
 		});
 	});
+	$('#job_alert').click(function(){
+		$('.job_dialog').show();
+		$('body').append('<div class="overlay"></div>');
+	})
 });
 

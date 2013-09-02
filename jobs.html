@@ -296,6 +296,26 @@
 
                 </div>
             </div>
+            <div class="job_alert job_alert_activate" style="display:none;">
+                <h2 class="ml">Job alert activated</h2>
+                <p>Your job alert subscription has been activated. The subscription will be deleted automatically after 6 month. Lorem Ipsum Proin gravida nibh Vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum Suctor, nisi elit consequa ipsum, nec sagittis sem nibh id elit. Uis sed odio sit amet nibh vulputate </p>
+                <input type="submit" value="Search for Jobs" id="job_search" />
+            </div>
+            <div class="job_alert erro_alert" style="display:none;">
+                <h2 class="ml">Error</h2>
+                <p>Lorem Ipsum Proin gravida nibh Vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum Suctor, nisi elit consequa ipsum, nec sagittis sem nibh id elit. Uis sed odio sit amet nibh vulputate  </p>
+                <input type="submit" value="Search for Jobs" id="job_search" />
+            </div>
+            <div class="job_alert job_alert_delete" style="display:none;">
+                <h2 class="ml">Job alert deleted</h2>
+                <p>Your job alert subscription has been deleted. The subscription will be deleted automatically after 6 month. Lorem Ipsum Proin gravida nibh Vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum Suctor, nisi elit consequa ipsum, nec sagittis sem nibh id elit. Uis sed odio sit amet nibh vulputate  </p>
+                <input type="submit" value="Search for Jobs" id="job_search" />
+            </div>
+            <div class="job_alert erro_alert" style="display:none;">
+                <h2 class="ml">Error</h2>
+                <p>Lorem Ipsum Proin gravida nibh Vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum Suctor, nisi elit consequa ipsum, nec sagittis sem nibh id elit. Uis sed odio sit amet nibh vulputate </p>
+                <input type="submit" value="Search for Jobs" id="job_search" />
+            </div>
             </div>
             <footer>
                 <div class="container">
@@ -335,8 +355,11 @@
                 <div class="content">
                     <p class="descrpt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
                     <form>
-                        <label for ="email">Email address: </label>
-                        <input type="email" name="email" id="email" placeholder="Enter email address..." />
+                        <div class="emailfield">
+                            <label for ="email">Email address: </label>
+                            <input type="email" name="email" id="email" placeholder="Enter email address..." />
+                            <p>Invalid email address. Please enter a valid email address.</p>
+                        </div>
                         <span>Periodicity:</span>
                         <div>
                             <input type="radio" name="period" value="daily">Daily<br>
@@ -351,9 +374,53 @@
                         <input type="submit" value="Submit" id="submit" />
                     </form>
                  </div>
-            </div> <!-- section left -->
-        </div>
+                 <div class="content job_update">
+                    <p>A job alert for my@mailaddress.com already exists. Do you want to update your job alert?</p>
+                    <input type="submit" value="Update" id="update" />
+                    <input type="submit" value="Cancel" id="cancel" />
+                 </div>
+                 <div class="content job_confirm">
+                    <p>We sent you an email with a confirmation link. Please check you email inbox and click on the confirmation link in the email, so that the job alert subscription becomes active.</p>
+                    <input type="submit" value="Close" id="close" />
+                 </div>
+                 <div class="content error">
+                    <p>An error occured trying to create your job alert subscription. Please try again later</p>
+                    <input type="submit" value="Close" id="close" />
+                 </div> <!-- section left -->
+            </div>
+
+            <div class="col span_8 section_left">
+                <div class="header">
+                    <h3>Unsubscribe Job Alert</h3>
+                    <h3 class="error">ERROR</h3>
+                     <a href="#"><img src="img/dialog_close.png" alt="close" /></a>
+                </div>
+                <div class="content">
+                    <p class="descrpt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                    <form>
+                        <div class="emailfield">
+                            <label for ="email">Email address: </label>
+                            <input type="email" name="email" id="email" placeholder="Enter mail address..." />
+                            <p>Invalid email address. Please enter a valid email address.</p>
+                        </div>                 
+                        <input type="submit" value="Unsubscribe" id="unsubscribe" />
+                    </form>
+                 </div>
+                 <div class="content job_confirm">
+                    <p>We sent you an email with a confirmation link. Please check you email inbox and click on the confirmation link in the email, so that your job alert subscription will be deleted.</p>
+                    <input type="submit" value="Close" id="close" />
+                 </div>
+                 <div class="content error">
+                    <p>No job alert exists for my@mailaddress.com.</p>
+                    <input type="submit" value="Close" id="close" />
+                 </div> <!-- section left -->
+                 <div class="content error">
+                    <p>An error occured trying to create your job alert subscription. Please try again later</p>
+                    <input type="submit" value="Close" id="close" />
+                 </div> <!-- section left -->
+            </div>
         <div class="overlay" style="display:none;"> </div>
+    </div>
 <script type="text/javascript" data-main="js/main-jobs" src="js/vendor/require.js">
 </script> 
 

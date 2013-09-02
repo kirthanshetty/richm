@@ -680,8 +680,8 @@
 						<p>Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim. Aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 						<h4>SUBMIT YOUR PROFILE: DESIGN &amp; CREATION POSITIONS</h4>
 						<div class="form_submission">	
-							<form method="POST" action="#" name="form">
-								<fieldset class="first_step">
+							<form method="POST" action="#" name="Career-form" id="careerForm">
+								<fieldset form="careerForm" class="first_step">
 										<h3>Preferred work type / Location:</h3>
 										<div>
 											<label for="position">Type of position: <span>*</span></label>
@@ -716,7 +716,7 @@
 											<p>Step 1 of 4</p>
 										</div>
 								</fieldset>
-								<fieldset class="second_step" style="display:none;">
+								<fieldset form="careerForm" class="second_step" style="display:none;">
 									<h3>Select the area(s) in Manufacturing in which you have experience:</h3>
 									
 										<div>
@@ -742,7 +742,7 @@
 										</div>
 									
 								</fieldset>
-								<fieldset class="third_step" style="display:none;">
+								<fieldset form="careerForm" class="third_step" style="display:none;">
 									<h3>How many years of relevant work experience you have in the about mentioned area?</h3>
 									
 										<div>
@@ -768,7 +768,7 @@
 										</div>
 									
 								</fieldset>
-								<fieldset class="fourth_step" style="display:none;">
+								<fieldset form="careerForm" class="fourth_step" style="display:none;">
 									<h3>Attachments</h3>
 											<div>
 												<label for="q">Document Title:: <span>*</span></label>
@@ -796,7 +796,7 @@
 											<span class="error">Please attach your Resume/CV</span>
 											<div class="submission">
 												<a class="prev" href="javascript:void(0)">Previous</a>
-												<a class="next" href="onclick="formSubmit()">Next</a>
+												<a class="next" href="#">Next</a>
 												<p>Step 4 of 4</p>
 											</div>
 									</fieldset>
@@ -824,7 +824,7 @@
 					<aside class="view_jobs">
 						<p>Join us in writing our
 							next chapter today...</p>
-							<form method="GET" action="#" name="search">
+							<form method="GET" action="#" name="Jobs">
 								<a href="#">View all jobs</a>
 							</form>
 					</aside> <!-- view_jobs -->

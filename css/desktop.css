@@ -659,7 +659,7 @@ button.collapsed{display:none;}
 #wrapper .tab_content_full .tab_content_left .form_submission div.first_step form div{width: 100%;}
 #wrapper .tab_content_full .tab_content_left .form_submission div.first_step form div.submission, #wrapper .tab_content_full .tab_content_left .form_submission div.second_step form div.submission, #wrapper .tab_content_full .tab_content_left .form_submission div.third_step form div.submission{width: 76%;}
 #wrapper .tab_content_full .tab_content_left input[type='button']{margin-right: 10px;}
-#wrapper .tab_content_full .tab_content_left .form_submission form{float:left;width: 80%;}
+#wrapper .tab_content_full .tab_content_left .form_submission form{float:left;width: 82%;}
 #wrapper .tab_content_full .tab_content_left .form_submission form .second_step div.submission, #wrapper .tab_content_full .tab_content_left .form_submission form .third_step div.submission{width: 100%;}
 #wrapper .tab_content_full .tab_content_left div.submission{margin:20px 0px 0px;}
 #wrapper .tab_content_full .tab_content_left div.submission p{margin:0px;}
@@ -671,9 +671,9 @@ button.collapsed{display:none;}
 #wrapper .tab_content_full .tab_content_left input[type='radio'], #wrapper .tab_content_full .tab_content_left input[type='checkbox'] {margin-top:3px;}
 
 .job_dialog p.descrpt{font-size:1em;color:#5E5E5E;padding-bottom: 15px;}
-#wrapper .job_dialog.job_alert .section_left{border: 0px;padding-right: 0px;margin-left: 0px;}
+.job_dialog.job_alert .section_left{border: 0px;padding-right: 0px;margin-left: 0px;}
 .job_dialog.job_alert .section_left div{width:auto;margin-right: 20px;}
-#wrapper .job_dialog.job_alert .section_left{width:auto;}
+.job_dialog.job_alert .section_left{width:auto;}
 .job_dialog.job_alert .section_left div.header{width:100%;padding: 0px;margin: 0px;}
 .job_dialog.job_alert input[type="submit"]{float: right;}
 .job_dialog .header h3{font-size:1em;color:#4E4E4E;font-weight: bold;float: left;padding-left: 10px;padding-bottom: 0px;margin: 8px 0px;}
@@ -686,7 +686,7 @@ background: -webkit-linear-gradient(top, #cfcfcf 0%, #e6e6e6 100%); /* Chrome10+
 background: -o-linear-gradient(top, #cfcfcf 0%, #e6e6e6 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, #cfcfcf 0%, #e6e6e6 100%); /* IE10+ */
 background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
-.job_dialog{width:660px;margin: 0px;}
+.job_dialog{font-family: 'Lato', sans-serif;width:660px;margin: 0px;background: none repeat scroll 0 0 #FFFFFF;display: block;left: 50%;margin-left: -330px;margin-top: -160px;position: fixed;top: 50%;z-index: 999;}
 .job_dialog.job_alert input#email, .job_dialog.job_alert span{clear: both;}
 
 /* CSS for IE to Fallback */

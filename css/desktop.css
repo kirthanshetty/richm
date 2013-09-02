@@ -661,7 +661,7 @@ button.collapsed{display:none;}
 #wrapper .tab_content_full .tab_content_left input[type='button']{margin-right: 10px;}
 #wrapper .tab_content_full .tab_content_left .form_submission form{float:left;width: 82%;}
 #wrapper .tab_content_full .tab_content_left .form_submission form .second_step div.submission, #wrapper .tab_content_full .tab_content_left .form_submission form .third_step div.submission{width: 100%;}
-#wrapper .tab_content_full .tab_content_left div.submission{margin:20px 0px 0px;}
+#wrapper .tab_content_full .tab_content_left div.submission{margin:20px 0px 0px;width: 75%;}
 #wrapper .tab_content_full .tab_content_left div.submission p{margin:0px;}
 #wrapper .tab_content_full .tab_content_left input.attach{ border: 1px solid #054670;margin-left:0px;margin-top:10px;color: #FFFFFF;float: left;font-size: 1.1em;font-weight: bold;}
 #wrapper .tab_content_full .tab_content_left .form_submission .fourth_step div{width:80%;}

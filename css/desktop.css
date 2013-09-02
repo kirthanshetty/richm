@@ -691,9 +691,11 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .job_dialog.job_alert input#email, .job_dialog.job_alert span{clear: both;}
 .overlay{position: fixed;left:0px;top: 0px;background: #000;opacity: 0.4;filter:alpha(opacity=60);width:100%;height: 100%;}
 .job_dialog.job_alert .error label, .job_dialog.job_alert .error p, .job_dialog.job_alert .error input{color:#f00;}
+.job_dialog.job_alert .activate .error label, .job_dialog.job_alert .activate .error p, .job_dialog.job_alert .delete .error label, .job_dialog.job_alert .delete .error p{color:#555;}
+.job_dialog.job_alert .activate .error input, .job_dialog.job_alert .delete .error input{color:#fff;float: left;}
 .emailfield p, .job_alerts{display: none;}
 .emailfield.error p{display: block;}
-.job_alert .section_left .job_update, .job_alert .section_left .job_confirm{float:none;clear:both;}
+.job_alert .section_left .job_update, .job_alert .section_left .job_confirm{float:none;clear:both;overflow: hidden;}
 .job_alert .section_left .job_update input, .job_alert .section_left .job_confirm input {float:left;clear:none;}
 #wrapper .job_alert h2{margin: 12px 0 0 30px;font-size: 3em;}
 #wrapper .container .job_alert, .error{clear: both;}

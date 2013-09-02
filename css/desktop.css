@@ -670,13 +670,13 @@ button.collapsed{display:none;}
 #wrapper .tab_content_full .tab_content_left .form_submission a.next, #wrapper .tab_content_full .tab_content_left .form_submission a.prev{padding:2px 5px;margin-right: 10px;}
 #wrapper .tab_content_full .tab_content_left input[type='radio'], #wrapper .tab_content_full .tab_content_left input[type='checkbox'] {margin-top:3px;}
 
-.job_dialog p.descrpt{font-size:1em;color:#5E5E5E;padding-bottom: 15px;}
+.job_alert.job_dialog p{font-size:1em;color:#5E5E5E;padding-bottom: 15px;float: none;clear: both;}
 .job_dialog.job_alert .section_left{border: 0px;padding-right: 0px;margin-left: 0px;}
 .job_dialog.job_alert .section_left div{width:auto;margin-right: 20px;}
 .job_dialog.job_alert .section_left{width:auto;}
 .job_dialog.job_alert .section_left div.header{width:100%;padding: 0px;margin: 0px;}
 .job_dialog.job_alert input[type="submit"]{float: right;}
-.job_dialog .header h3{font-size:1em;color:#4E4E4E;font-weight: bold;float: left;padding-left: 10px;padding-bottom: 0px;margin: 8px 0px;}
+.job_dialog .header h3{font-size:1em;color:#4E4E4E;font-weight: bold;float: left;padding-left: 10px;padding-bottom: 0px;margin: 8px 0px;text-transform: uppercase;}
 .job_dialog .header img{float: right;padding: 6px;}
 .job_dialog.job_alert .section_left .content{padding:10px;margin: 0px;}
 .job_dialog .header{border-bottom:1px solid #c1c1c1;width:100%;
@@ -689,6 +689,15 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .job_dialog{font-family: 'Lato', sans-serif;width:660px;margin: 0px;background: none repeat scroll 0 0 #FFFFFF;display: block;left: 50%;margin-left: -330px;margin-top: -160px;position: fixed;top: 50%;z-index: 999;}
 .job_dialog.job_alert input#email, .job_dialog.job_alert span{clear: both;}
 .overlay{position: fixed;left:0px;top: 0px;background: #000;opacity: 0.4;filter:alpha(opacity=60);width:100%;height: 100%;}
+.emailfield label, .emailfield p, .emailfield input{color:#f00;}
+.emailfield p, .job_alerts{display: none;}
+.job_alert .section_left .job_update, .job_alert .section_left .job_confirm{float:none;clear:both;}
+.job_alert .section_left .job_update input, .job_alert .section_left .job_confirm input {float:left;clear:none;}
+#wrapper .job_alert h2{margin: 12px 0 0 30px;font-size: 3em;}
+#wrapper .container .job_alert, .error{clear: both;}
+#wrapper .container .job_alert p, #wrapper .container .job_alert input{margin-left: 30px;}
+.job_dialog.job_alert .section_left .error{float:none;overflow: hidden;}
+.job_dialog.job_alert .section_left h3.error{float: left;}
 
 /* CSS for IE to Fallback */
 .no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us a, .no-cssgradients .jobalert input[type='submit']{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
@@ -980,7 +989,7 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 #wrapper .job_alert .section_left {float: left; width: 43%; clear: both;margin-left: 30px;border-right: 1px solid #D2D2D2;padding-right:15px;}
 .job_alert input#email { border: 1px solid #B8B8B8;padding: 10px 5px;width: 280px;}
 .job_alert span{padding:20px 0px 15px;display: block;}
-.job_alert .section_left div{float: left;width: 100%;padding-bottom: 5px;}
+.job_alert .section_left div{float:left;width: 100%;padding-bottom: 5px;}
 .job_alert .section_left div label{float: left;}
 .job_alert .section_left div input{ float: left;margin-right: 8px;margin-top: 5px;}
 

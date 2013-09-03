@@ -9,7 +9,7 @@ _richemontCareers.KeyboardAccess = function(container, handlers){
 	var keyHandler =  $('<input>',{
 		'type':'text',
 		'css': {
-			position: 'absolute',
+			position: 'fixed',
 			top: 0,
 			left: 0,
 			width: '100%',

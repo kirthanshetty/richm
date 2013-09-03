@@ -16,7 +16,7 @@ _richemontCareers.MaisonBox = function (container, callback) {
     _richemontCareers.repositionItems(container);
     $(window).resize(function(){ _richemontCareers.repositionItems(container,callback); });
 
-    container.on('click', '>ul li a', function () {
+    container.on('click', '>ul li a.two', function () {
         var link = this.href,
             anchor = $(this),
             listCont = $(this).parent().parent();

@@ -19,4 +19,5 @@
     .maisons_lists ul li.join-us section{width:100%;}
     .header_main h1.col.span_4{width:100%;text-align:center;}
     .tab_content_left{float:none;}
+    #wrapper .tab_content_full .tab_content_left .form_submission .fourth_step div {width: 100%;}
 }

@@ -570,7 +570,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .tab_content_left h4, .tab_content_right h4{font-size:1.45em;}
 .tab_content_left select.hasCustomSelect option {background: none repeat scroll 0 0 #F8F8F8;font-size:1.25em;float:left;height:30px;padding-top:7px;font-size: 13px;}
 .tab_content_left label{font-size: 1.4em;color:#5e5e5e;float:left;padding-top: 5px;width:145px;padding-right: 10px;}
-.tab_content_left select, .tab_content_left span.customSelect{float: left;clear: none;right:144px !important;top:auto !important;}
+.tab_content_left select, .tab_content_left span.customSelect{float: left;clear: none;left:144px !important;top:auto !important;width: 193px !important;height:33px !important;}
 .tab_content_left label span{color:#da3939;}
 .tab_content_left form{width:61%;}
 .tab_content_left form div{float:left;width:100%;margin-bottom: 7px;position: relative;}
@@ -613,7 +613,7 @@ ul.buttons li.active a{ background: url("../img/parallax/sprite.png") left -292p
 
 .page_1 .row .col{margin:0px;}
 .page_1 .row .col a{}
-.page_1 .row .col.span_4{width:33.334%;line-height: 7px;}
+.page_1 .row .col.span_4{width:33.33%;line-height: 7px;}
 .page_1 .row .col.span_8{width:66.66%;}
 /*.our_maison_gallery{background:#fff;position: relative;float: left;margin: 0 2px;}*/
 .our_maison_gallery{background:#fff;position: relative;float: left;}
@@ -651,7 +651,8 @@ button.collapsed{display:none;}
 #wrapper, header, footer, #wrapper .container.main .page{max-width: 1280px;}
 #wrapper .tab_content_full .tab_content_left .second_step, #wrapper .tab_content_full .tab_content_left .third_step, #wrapper .tab_content_full .tab_content_left .first_step, #wrapper .tab_content_full .tab_content_left .fourth_step, #wrapper .tab_content_full .tab_content_left .fifth_step{float: left;width: 100%;border: 0px;padding:0px;}
 #wrapper .tab_content_full .tab_content_left .second_step h3, #wrapper .tab_content_full .tab_content_left .third_step h3 {font-size: 1.4em;font-style: normal;font-weight: bold;color: #5e5e5e;}
-#wrapper .tab_content_full .tab_content_left .form_submission label {color: #666666;padding:0px;cursor: default;font-size: 1.3em;float:right;}
+#wrapper .tab_content_full .tab_content_left .form_submission label, #wrapper .tab_content_full .tab_content_left .form_submission span.radio_btn {color: #666666;padding:0px;cursor: default;font-size: 1.3em;float:right;}
+#wrapper .tab_content_full .tab_content_left .form_submission span.radio_btn{float: left;padding-left: 5px;}
 #wrapper .tab_content_full .tab_content_left .first_step label{float:left;}
 #wrapper .tab_content_full .tab_content_left .form_submission input{float: left;margin-top: 2px;}
 #wrapper .tab_content_full .tab_content_left .form_submission input[type='text']{width:193px;padding: 5px 0;}
@@ -702,11 +703,12 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 #wrapper .container .job_alert p, #wrapper .container .job_alert input{margin-left: 30px;}
 .job_dialog.job_alert .section_left .error{float:none;overflow: hidden;}
 .job_dialog.job_alert .section_left h3.error{float: left;}
+.common_right_section{padding-bottom: 25px;}
 
 /* CSS for IE to Fallback */
-.no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us a, .no-cssgradients .jobalert input[type='submit']{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
+.no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us a, .no-cssgradients .jobalert input[type='submit'], .no-cssgradients #wrapper .tab_content_full .tab_content_left input.attach{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type='submit']{background: url("../img/parallax/shade_bg.jpg") repeat-x scroll left top;}
-.no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button']{background: url("../img/parallax/grey_bg2.jpg") repeat-x scroll left top;}
+.no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button'], .no-cssgradients #wrapper .tab_content_full .tab_content_left .form_submission a.next, .no-cssgradients #wrapper .tab_content_full .tab_content_left .form_submission a.prev{background: url("../img/parallax/grey_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type="submit"]{background: url("../img/shade_button.jpg") repeat-x left top;}
 .eq-ie9 .quick_search input[type="submit"], .lt-ie9 .quick_search input[type="submit"]{padding-top:10px;}
 .lt-ie9 .tab_content_full .view_jobs a, .eq-ie9 .tab_content_full .view_jobs a{padding-top:6px;padding-bottom: 6px;}

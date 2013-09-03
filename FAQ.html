@@ -19,23 +19,29 @@
         <header>
             <div class="container">
                 <div class="row header_main">
-                    <h1><a href="index.html" class="col span_4 logo_blk"><img class="logo" src="img/parallax/logo.png" alt="Richemont Logo" /></a></h1>
-                    <div class="col span_8 full_right_header select_language">
+                    <h1>
+                        <a href="index.html" class="col span_4 logo_blk">
+                            <img class="logo" src="img/parallax/logo.png" alt="Richemont Logo" />
+                        </a>
+                    </h1>
+                    <div class="col span_8 select_language">
                         <div class="header_right">
                             <ul class="first_row">
                                 <li><a href="#">Login</a></li> 
                                 <li>
+                                    <form>
                                     <label for="language">language</label>
                                     <select id="language">
                                         <option>English</option>
-                                        <option>English</option>
-                                        <option>English</option>
+                                        <option>German</option>
+                                        <option>Spanish</option>
                                     </select>
+                                    <form>
                                 </li>
                             </ul>
                         </div>
                     </div>
-                    <div class="col span_8 full_right_header header_nav">
+                    <div class="col span_8 header_nav btn btn-navbar collapsed">
                         <nav class="header_right">
                             <ul class="second_row">
                                 <li><a href="index.html#our-world">Our world</a></li>
@@ -47,30 +53,6 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="btn btn-navbar collapsed">
-                            <a class="mobile_menu" href="#" title="Navigation"></a>
-                            <div class="menu_list">
-                                <ul>
-                                    <li><a href="index.html#home">About us</a></li>
-                                    <li><a href="index.html#our-world">Our world</a></li>
-                                    <li><a href="index.html#why-join-us">Why join us</a></li>
-                                    <li><a href="index.html#work-with-us">What to expect</a></li>
-                                    <li><a href="index.html#career-paths">Carrer paths</a></li>
-                                    <li><a href="#">Jobs</a></li>
-                                </ul>
-                            </div>
-                    </div>
-                    <div class="search mobile_search">
-                        <a class="search_icon" href="#" title="Search"></a>
-                        <div class="search_block">
-                            <div class="chat-bubble-arrow"></div>
-                            <form>
-                            <label for="q">Search</label> 
-                            <input class="textbox" type="text" name="q" id="q" placeholder="Quick search for a job or enter job code" />
-                            <input class="submit" type="submit" value="Search jobs" />
-                            </form>
-                        </div>
-                    </div>
                 </div>
             </div>
         </header>
@@ -81,41 +63,153 @@
                 </div>
                 <div class="full_section row">
                         <div class="faq_section ml">
-                           <p>Where can I find a list of open jobs?</p>
-						   <p>How can I apply?</p>
-						   <p>How secure is my personal information?</p>
-						   <div class="ans_section">
-								<p>We recommend you to try the following steps to diagnose the issue: </p>
-                                <p class="pb">Find out whether you can access any other internet sites. If you are sure the issue is specifically related to this site, then take a look at the error message.</p>
-                                <p class="pb pt">If this message relates to a ‘network error message’, it could be that you are accessing our website from within a corporate network which is blocking access.</p>
-                                <p class="pb pt">If some content is not displaying correctly, such as the ‘job offers’ or the ‘candidate overview’, this could be due to popup blockers in your web browser.</p>
-                                <p class="pt">We would suggest you disable the popup blockers by changing your web browser settings. For example:</p>
-								<ul>
-								    <li>for Microsoft Internet Explorer 7: open browser, go to Tools, Pop Up Blocker, Turn off Popup blocker. </li>
-									<li>for Firefox 2.0: open browser, go to Tools menu, Options, click the Content icon located across the top of the window, click the Exceptions button located to the right of Block pop-up windows.</li>
-								</ul>
-                                <p>For security reasons, the system will perform an automatic logout after 30 minutes of inactivity.</p>
-                                <p>If you are still experiencing technical problems, please email e.careers&copy;richemont.com with a description and, ideally, a screenshot of the error you are experiencing.</p>
-						   </div>
-						   <p>What are the advantage of registering a Candidate Profile?</p>
-						   <p>Can I attach a CV/Resume?</p>
-						   <p>How ong will my Candidate Profile be kept online?</p>
-                           <p>How often are new jobs posted and how long do they stay online?</p>
-                           <p>How will I know my application was received and who will view it?</p>
-                           <p>Can I apply for more than one job at a time?</p>
-                           <p>Can I mail or fax my application to you?</p>
-                           <p>Can I delete an application if I change my mind?</p>
-                           <p>Can I submit my details even if I don't see a job that interests me or suits my skills?</p>
-                           <p>Do you offer international positions?</p>
-                           <p>Do you offer Internships?</p>
-                           <p>How do I set a password?</p>
-                           <p>How do I change my password or username?</p>
-                           <p>I have forgotten my password.</p>
-                           <p>How can I change the language settings?</p>
-                           <p>I did not receive your email or the email you sent me does not display correctly.</p>
-                           <p>Why does Richemont apply a pre-employment screening and what specifically does it entail?</p>
-                           <p>Who do I contact for questions related to my application?</p>
-                           <p>General Feedback</p>
+                          
+                            <div class="locations-list">
+                                <h5 class="down-arrow">Where can I find a list of open jobs? </h5>
+                                <div class="accord-content ans_section" style="display: none;">
+                                </div>
+                            </div>
+						  
+                            <div class="locations-list">
+                                    <h5 class="">How can I apply? </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+						 
+                            <div class="locations-list">
+                                    <h5 class="">How secure is my personal information? </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+						  
+                                <div class="locations-list">
+                                    <h5 class="">We recommend you to try the following steps to diagnose the issue: </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                        <p class="pb">Find out whether you can access any other internet sites. If you are sure the issue is specifically related to this site, then take a look at the error message.</p>
+                                        <p class="pb pt">If this message relates to a ‘network error message’, it could be that you are accessing our website from within a corporate network which is blocking access.</p>
+                                        <p class="pb pt">If some content is not displaying correctly, such as the ‘job offers’ or the ‘candidate overview’, this could be due to popup blockers in your web browser.</p>
+                                        <p class="pt">We would suggest you disable the popup blockers by changing your web browser settings. For example:</p>
+                                        <ul>
+                                            <li>for Microsoft Internet Explorer 7: open browser, go to Tools, Pop Up Blocker, Turn off Popup blocker. </li>
+                                            <li>for Firefox 2.0: open browser, go to Tools menu, Options, click the Content icon located across the top of the window, click the Exceptions button located to the right of Block pop-up windows.</li>
+                                        </ul>
+                                        <p>For security reasons, the system will perform an automatic logout after 30 minutes of inactivity.</p>
+                                        <p>If you are still experiencing technical problems, please email e.careers&copy;richemont.com with a description and, ideally, a screenshot of the error you are experiencing.</p>
+                                    </div>
+                                </div>
+                                <div class="locations-list">
+                                    <h5 class="">What are the advantage of registering a Candidate Profile? </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+						  
+                            <div class="locations-list">
+                                    <h5 class="">Can I attach a CV/Resume? </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+						  
+                            <div class="locations-list">
+                                    <h5 class="">How ong will my Candidate Profile be kept online? </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+                           
+                            <div class="locations-list">
+                                    <h5 class="">How often are new jobs posted and how long do they stay online? </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+                         
+                            <div class="locations-list">
+                                    <h5 class="">How will I know my application was received and who will view it?</h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+                          
+                            <div class="locations-list">
+                                    <h5 class="">Can I apply for more than one job at a time? </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+                         
+                            <div class="locations-list">
+                                    <h5 class="">Can I mail or fax my application to you? </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+                        
+                            <div class="locations-list">
+                                    <h5 class="">Can I delete an application if I change my mind? </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+                          
+                            <div class="locations-list">
+                                    <h5 class="">Can I submit my details even if I don't see a job that interests me or suits my skills? </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+                        
+                            <div class="locations-list">
+                                    <h5 class="">Do you offer international positions? </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+                          
+                            <div class="locations-list">
+                                    <h5 class="">Do you offer Internships? </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+                        
+                            <div class="locations-list">
+                                    <h5 class="">How do I set a password? </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+                       
+                            <div class="locations-list">
+                                    <h5 class="">How do I change my password or username?</h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+                     
+                            <div class="locations-list">
+                                    <h5 class="">I have forgotten my password. </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+                        
+                            <div class="locations-list">
+                                    <h5 class="">How can I change the language settings?</h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+                     
+                            <div class="locations-list">
+                                    <h5 class="">I did not receive your email or the email you sent me does not display correctly. </h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+                          
+                            <div class="locations-list">
+                                    <h5 class="">Why does Richemont apply a pre-employment screening and what specifically does it entail?</h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+                        
+                            <div class="locations-list">
+                                    <h5 class="">Who do I contact for questions related to my application?</h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
+
+                            <div class="locations-list">
+                                    <h5 class="">General Feedback</h5>
+                                    <div class="accord-content ans_section" style="display: none;">
+                                    </div>
+                                </div>
                     </div> <!-- left section -->
                     <div class="right_section faq mr ml">
                     <section class="search_main_block row">
@@ -168,7 +262,7 @@
                 <div class="row footer_main">
                     <div class="col span_6">
                         <div class="footer_left ml">
-                            <h3>www.richemont.com</h3>
+                            <p><a href="#">www.richemont.com</a></p>
                             <nav>
                                 <ul class="second_row">
                                     <li><a href="FAQ.html">FAQs</a></li> 
@@ -193,7 +287,7 @@
         </footer>
     </div> <!-- wrapper -->
 
-    <script type="text/javascript" data-main="js/main-jobs" src="js/vendor/require.js">
+    <script type="text/javascript" data-main="js/main" src="js/vendor/require.js">
     </script> 
     <script>
     var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

@@ -19,7 +19,11 @@
         <header>
             <div class="container">
                 <div class="row header_main jobs_main">
-                    <h1><a href="index.html" class="col span_4 logo_blk"><img class="logo" src="img/parallax/logo.png" alt="Richemont Careers" /></a></h1>
+                    <h1>
+                        <a href="index.html" class="col span_4 logo_blk">
+                            <img class="logo" src="img/parallax/logo.png" alt="Richemont Careers" />
+                        </a>
+                    </h1>
                     <div class="col span_8 full_right_header select_language">
                         <div class="header_right">
                             <ul class="first_row">
@@ -29,8 +33,8 @@
                                         <label for="language">language</label>
                                         <select id="language">
                                             <option>English</option>
-                                            <option>English</option>
-                                            <option>English</option>
+                                            <option>German</option>
+                                            <option>Spanish</option>
                                         </select>
                                     </form>
                                 </li>
@@ -49,18 +53,6 @@
                             </ul>
                         </nav>
                     </div>
-
-                    <div class="search mobile_search">
-                        <a class="search_icon" href="#" title="Search"></a>
-                        <div class="search_block">
-                            <div class="chat-bubble-arrow"></div>
-                            <form>
-                                <label for="q">Search</label> 
-                                <input class="textbox" type="text" name="q" id="q" placeholder="Quick search for a job or enter job code" />
-                                <input class="submit" type="submit" value="Search jobs" />
-                            </form>
-                        </div>
-                    </div>
                 </div>
             </div>
         </header>
@@ -68,7 +60,7 @@
             <div class="row content_block jobs_main_content">
                 <div class="col span_5 view_jobs">
                     <h2 class="ml">Jobs</h2>
-                    <h3 class="mr"><a href="#">View FAQs</a></h3>
+                    <h3 class="mr"><a href="FAQ.html">View FAQs</a></h3>
                     <div class="quick_search ml">
                         <form>
                             <label for="q">Search</label> 
@@ -78,7 +70,7 @@
                     </div>
                 </div>
                 <div class="col span_7 view_faq">
-                    <h3 class="mr"><a href="#">View FAQs</a></h3>
+                    <h3 class="mr"><a href="FAQ.html">View FAQs</a></h3>
                 </div>
                 <section class="search_main_block row ml mr">
                     <h2 class="col span_12">SEARCH JOBS</h2>
@@ -112,11 +104,11 @@
                                 </select>
                             </div>
                             <div class="search_buttons">
-                                <input type="button" value="Save as job alert" />
+                                <input type="button" value="Save as job alert"  id="job_alert"/>
                                 <input type="submit" value="Search" />
                                 <a href="#" class="reset">Reset all </a>
                                 <div class="save_search">
-                                    <input type="button" value="Save as job alert" />
+                                    <input type="button" value="Save as job alert"/>
                                     <input type="submit" value="Search" />
                                 </div>
                             </div>
@@ -284,40 +276,62 @@
                         </div> <!-- serach_main_lists -->
                         <div class="pagination ml">
                             <ul>
-                                <li class="first-page inactive"><a href="#"> &lt;&lt; First page</a></li>
-                                <li class="previous inactive">
-                                    <a href="#"> &lt; Previous</a></li>
-                                    <li class="inactive"><a href="#">1</a></li>
-                                    <li class="inactive"><a href="#">2</a></li>
-                                    <li class="inactive"><a href="#">3</a></li>
-                                    <li class="inactive"><a href="#">4</a></li>
-                                    <li class="inactive"><a href="#">5</a></li>
-                                    <li class="inactive"><a href="#">6</a></li>
-                                    <li class="active"><a href="#">7</a></li>
-                                    <li class="inactive"><a href="#">8</a></li>
-                                    <li class="inactive"><a href="#">9</a></li>
-                                    <li class="next active"><a href="#"> Next &gt;</a> </li>
-                                    <li class="last-page inactive"><a href="#">Last page &gt;&gt;</a> </li>
-                                </ul>
-                            </div> <!-- pagination -->
+                                <li class="first-page"><span> &lt;&lt; First page</span></li>
+                                <li class="previous"><span> &lt; Previous</span></li>
+                                <li class="active"><span>1</span></li>
+                                <li class=""><a href="ajax/last_search_results.html">2</a></li>
+                                <li class="next"><a href="ajax/last_search_results.html"> Next &gt;</a> </li>
+                                <li class="last-page"><a href="ajax/last_search_results.html">Last page &gt;&gt;</a> </li>
+                            </ul>
+                        </div> <!-- pagination -->
                         </div> <!-- section left -->
                         <div class="span_5 section_right">
-                            <h5>Already submitted your CV?</h5>
-                            <p>Logging into your profile  let’s you lorem ipsum dolor sit amet.</p>
-                            <form>
-                                <input type="button" value="Login" />
-                            </form>
+                            <div class="common_right_section">
+                                <h5>Already submitted your CV?</h5>
+                                <p>Logging into your profile  let’s you lorem ipsum dolor sit amet.</p>
+                                <form>
+                                    <input type="button" value="Login" />
+                                </form>
+                            </div>
+                            <div class="common_right_section">
+                                <h5>Unsubscribe your job alert</h5>
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                                <form>
+                                    <input type="button" id="unsubscribe" value="Unsubscribe job alert" />
+                                </form>
+                            </div>
                         </div> <!-- section right -->
                     </section> <!-- search results -->
 
                 </div>
+            </div>
+            <div class="job_alert job_alert_activate" style="display:none;">
+                <h2 class="ml">Job alert activated</h2>
+                <p>Your job alert subscription has been activated. The subscription will be deleted automatically after 6 month. Lorem Ipsum Proin gravida nibh Vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum Suctor, nisi elit consequa ipsum, nec sagittis sem nibh id elit. Uis sed odio sit amet nibh vulputate </p>
+                <input type="submit" value="Search for Jobs" id="job_search" />
+            </div>
+            <div class="job_alert erro_alert" style="display:none;">
+                <h2 class="ml">Error</h2>
+                <p>Lorem Ipsum Proin gravida nibh Vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum Suctor, nisi elit consequa ipsum, nec sagittis sem nibh id elit. Uis sed odio sit amet nibh vulputate  </p>
+                <input type="submit" value="Search for Jobs" id="job_search" />
+            </div>
+            <div class="job_alert job_alert_delete" style="display:none;">
+                <h2 class="ml">Job alert deleted</h2>
+                <p>Your job alert subscription has been deleted. The subscription will be deleted automatically after 6 month. Lorem Ipsum Proin gravida nibh Vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum Suctor, nisi elit consequa ipsum, nec sagittis sem nibh id elit. Uis sed odio sit amet nibh vulputate  </p>
+                <input type="submit" value="Search for Jobs" id="job_search" />
+            </div>
+            <div class="job_alert erro_alert" style="display:none;">
+                <h2 class="ml">Error</h2>
+                <p>Lorem Ipsum Proin gravida nibh Vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum Suctor, nisi elit consequa ipsum, nec sagittis sem nibh id elit. Uis sed odio sit amet nibh vulputate </p>
+                <input type="submit" value="Search for Jobs" id="job_search" />
+            </div>
             </div>
             <footer>
                 <div class="container">
                     <div class="row footer_main">
                         <div class="col span_6">
                             <div class="footer_left ml">
-                                <h3>www.richemont.com</h3>
+                                <p><a href="#">www.richemont.com</a></p>
                                 <nav>
                                     <ul class="second_row">
                                         <li><a href="FAQ.html">FAQs</a></li> 
@@ -341,16 +355,90 @@
                 </div>
             </footer>
         </div> <!-- wrapper -->
+        <div class="job_alert job_dialog" style="display:none;">
+            <div class="col span_8 section_left activate">
+                <div class="header">
+                    <h3>SAVE A JOB ALERT</h3>
+                    <a class="close_alert" href="javascript:void(0)"><img src="img/dialog_close.png" alt="close" /></a>
+                </div>
+                <div class="content">
+                    <p class="descrpt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                    <form>
+                        <div class="emailfield">
+                            <label for ="email">Email address: </label>
+                            <input type="text" name="email" id="email" placeholder="Enter email address..." />
+                            <p>Invalid email address. Please enter a valid email address.</p>
+                        </div>
+                        <span>Periodicity:</span>
+                        <div>
+                            <label for="dialy"><input id="dialy" type="radio" name="period" value="daily">Daily</label>
+                        </div>
+                        <div>
+                            <label for="weekly"><input id="weekly" type="radio" name="period" value="weekly">Weekly</label>
+                        </div>
+                        <div> 
+                            <label for="monthly"><input id="monthly" type="radio" name="period" value="monthly">Monthly</label>
+                        </div>                   
+                        <p>We are collecting your email address to allow us to send you the job alerts you have signed up for</p>
+                        <input type="submit" value="Submit" id="submit" />
+                    </form>
+                 </div>
+                 <div class="content job_update">
+                    <p>A job alert for my@mailaddress.com already exists. Do you want to update your job alert?</p>
+                    <input type="submit" value="Update" id="update" />
+                    <input type="submit" value="Cancel" id="cancel" />
+                 </div>
+                 <div class="content job_confirm">
+                    <p>We have sent you an email with a confirmation link. Please check you email inbox and click on the confirmation link in the email, your job alert subscription will then become active.</p>
+                    <input type="submit" value="Close" id="close" />
+                 </div>
+                 <div class="content error">
+                    <p>An error occured trying to create your job alert subscription. Please try again later</p>
+                    <input type="submit" value="Close" id="close" />
+                 </div> <!-- section left -->
+            </div>
 
-        <script type="text/javascript" data-main="js/main-jobs" src="js/vendor/require.js">
-        </script> 
+            <div class="col span_8 section_left delete">
+                <div class="header">
+                    <h3>Unsubscribe Job Alert</h3>
+                    <h3 class="error">ERROR</h3>
+                     <a href="#" class="close_alert"><img src="img/dialog_close.png" alt="close" /></a>
+                </div>
+                <div class="content">
+                    <p class="descrpt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                    <form>
+                        <div class="emailfield">
+                            <label for ="email">Email address: </label>
+                            <input type="email" name="email" id="email" placeholder="Enter mail address..." />
+                            <p>Invalid email address. Please enter a valid email address.</p>
+                        </div>                 
+                        <input type="submit" value="Unsubscribe" id="unsubscribe" />
+                    </form>
+                 </div>
+                 <div class="content job_confirm">
+                    <p>We sent you an email with a confirmation link. Please check you email inbox and click on the confirmation link in the email, so that your job alert subscription will be deleted.</p>
+                    <input type="submit" value="Close" id="close" />
+                 </div>
+                 <div class="content error">
+                    <p>No job alert exists for my@mailaddress.com.</p>
+                    <input type="submit" value="Close" id="close" />
+                 </div> <!-- section left -->
+                 <div class="content error">
+                    <p>An error occured trying to create your job alert subscription. Please try again later</p>
+                    <input type="submit" value="Close" id="close" />
+                 </div> <!-- section left -->
+            </div>
+        <div class="overlay" style="display:none;"> </div>
+    </div>
+<script type="text/javascript" data-main="js/main-jobs" src="js/vendor/require.js">
+</script> 
 
-    <!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
-    <script src="js/vendor/jquery-1.9.1.min.js"></script>
-    <script src="js/customselect.js"></script>
-    <script src="js/richemont-v1.js"></script>
-    <script>
+<!--script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="js/vendor/jquery-1.9.1.min.js"></script>
+<script src="js/customselect.js"></script>
+<script src="js/richemont-v1.js"></script>
+<script>
     $(document).ready(function(){
         $('.inner_block select.styled, .header_right .first_row select').customSelect();
     });

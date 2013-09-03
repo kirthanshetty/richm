@@ -47,7 +47,6 @@ function MaisonSildeshow(gallery,anchorel){
     if(nextEl.length < 1){
       nextEl = anchorel.parent().parent().next().next().find('li:first a');
     }
-    console.log(anchorel,nextEl);
     nextEl.click();
     return false;
   })  
@@ -57,7 +56,6 @@ function MaisonSildeshow(gallery,anchorel){
     if(nextEl.length < 1){
       nextEl = anchorel.parent().parent().prev().find('li:first a');
     }
-    console.log(anchorel,nextEl);
     nextEl.click();
     return false;
   }) 

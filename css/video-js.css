@@ -80,6 +80,7 @@ body.vjs-full-window {
   padding: 0;
   position: relative;
   width: 100%;
+  background-color: #000;
 }
 .vjs-poster img {
   display: block;

@@ -93,5 +93,6 @@
   .page_2 .two_sections{margin-top:0px;}
   header .logo_blk img{margin-left:20px;}
   .page_2 .two_sections .section_one, .page_4 .videos .section_one, .page_6 .two_sections .section_one{float: none;margin: 0 auto 30px;width: 260px;}
-
+  #wrapper .jobalert .section_left {border:0px;width:auto;}
+  #wrapper .tab_content_full .tab_content_left input.attach{clear: both;margin-left: 144px;}
 }

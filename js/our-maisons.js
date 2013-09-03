@@ -16,7 +16,7 @@ _richemontCareers.MaisonBox = function (container, callback) {
     _richemontCareers.repositionItems(container);
     $(window).resize(function(){ _richemontCareers.repositionItems(container,callback); });
 
-    container.on('click', '>ul li a', function () {
+    container.on('click', '>ul li a.two', function () {
         var link = this.href,
             anchor = $(this),
             listCont = $(this).parent().parent();
@@ -41,18 +41,9 @@ _richemontCareers.MaisonBox = function (container, callback) {
 
 }
 _richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback) {
-    var escHandler = function(e){
-        if(e.keyCode == 27 || e.which == 27){
-            gallery.find('.maison_close').click();
-        }
-    }
-
-    $('body').on('keypress',escHandler);
-
     _richemontCareers.videoHandler(gallery);
 
     gallery.find('.maison_close').click(function () {
-        $('body').off('keypress',escHandler);
         $(this).parent().parent().slideUp(function () {
             $(this).remove();
             callback();
@@ -66,6 +57,8 @@ _richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback)
 
         return false;
     });
+
+     
 
     // var w = gallery.find('.maison_main_content:eq(0)').outerWidth()
     gallery.find('.slides-container').//width(w).
@@ -88,26 +81,45 @@ _richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback)
         callback();
     }
 
-    gallery.find('.maison_next').click(function () {
-        var nextEl = anchorel.parent().next().find('a');
-        if (nextEl.length < 1) {
-            nextEl = anchorel.parent().parent().next().next().find('li:first a');
-        }
+    var nextEl = anchorel.parent().next().find('a');
+    if (nextEl.length < 1) {
+        nextEl = anchorel.parent().parent().next().next().find('li:first a');
+    }
+
+    var prevEl = anchorel.parent().prev().find('a');
+    if (prevEl.length < 1) {
+        var prevParent = anchorel.parent().parent().prev();
+        if(prevParent.length > 0 && /div/i.test(prevParent[0].tagName))
+            prevParent = prevParent.prev();
+        prevEl = prevParent.find('li:last a');
+    }
+    if(prevEl.length < 1){
+        gallery.find('.maison_prev').hide();
+    }
+    if(nextEl.length < 1)
+        gallery.find('.maison_next').hide();
+    var nextBtn = gallery.find('.maison_next').click(function () {
         nextEl.click();
         return false;
     })
 
-    gallery.find('.maison_prev').click(function () {
-        var prevEl = anchorel.parent().prev().find('a');
-        if (prevEl.length < 1) {
-            var prevParent = anchorel.parent().parent().prev();
-            if(/div/i.test(prevParent[0].tagName))
-                prevParent = prevParent.prev();
-            prevEl = prevParent.find('li:last a');
-        }
+    var prevBtn = gallery.find('.maison_prev').click(function () {
         prevEl.click();
         return false;
     })
+
+    var keys = _richemontCareers.KeyCodes;
+    var handler = {};
+    handler[keys.LEFT] = function(){ 
+        prevBtn.click();
+    }
+    handler[keys.RIGHT] = function(){ 
+        nextBtn.click();
+    }
+    handler[keys.ESCAPE] = function(){
+        gallery.find('.maison_close').click();
+    }
+    _richemontCareers.KeyboardAccess(gallery,handler);
 
     var timer = setInterval(function(){
         var nextBtn = buttons.parent().parent().find('li.active').next();
@@ -134,7 +146,7 @@ _richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback)
         prev.fadeOut();
         cur.fadeIn();
     })
-
+    gallery.click();
 }
 
 _richemontCareers.repositionItems = function(container,callback){
@@ -206,3 +218,4 @@ _richemontCareers.videoHandler = function(el){
         })
     })
 }
+

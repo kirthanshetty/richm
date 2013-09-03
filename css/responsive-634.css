@@ -43,6 +43,6 @@
     .maisons_lists ul li.join-us section{padding:30px 40px;}
     .maisons_lists ul li a:hover img.top{opacity: 0;}
     .header_main h1.col.span_4{width:auto;}
-    .locations {border:0px;width:95%;}
-    .locations .section_left img {width: 100%;}
+    .locations {border:0px;width:auto;}
+    .locations .section_left img {width: 95%;}
 }

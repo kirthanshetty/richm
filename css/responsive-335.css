@@ -658,4 +658,5 @@
   #wrapper .jobs_main_content .view_jobs h2{margin-left:0px;float:left;}
   #wrapper .jobs_main_content .view_jobs h3{float:right;margin-right:0px;display: block;}
   #wrapper .jobs_main_content .view_jobs h3 a{background: none;border:0px;color:#00436e;margin-right: 0px;padding-right: 0px;}
+  #wrapper .jobalert .section_left{margin-left: 0px;}
 }

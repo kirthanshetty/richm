@@ -43,16 +43,19 @@ _richemontCareers.WhyworkUs = function(container){
 
 
 	prevBtn.click(function(){
-		tabAnchors.parent().parent().parent().find('li.active').prev().find('a').click();
+		var el = tabAnchors.parent().parent().parent().find('li.active').prev();
+		if(el.length < 1) el = tabAnchors.parent().parent().parent().find('li:last');
+		el.find('a').click();
 	})
 
 	nextBtn.click(function(){
-		console.log('here');
-		tabAnchors.parent().parent().parent().find('li.active').next().find('a').click();
+		var el = tabAnchors.parent().parent().parent().find('li.active').next();
+		if(el.length < 1) el = tabAnchors.parent().parent().parent().find('li:first');
+		el.find('a').click();
 	})
 
 	function videoHandler(el){
-		el.find('a[rel="video"]').click(function(e){
+		el.find('a[data-rel="video"]').click(function(e){
 			e.preventDefault();
 			$.get($(this).attr('href'),function(data){
 				var cont = $(data);
@@ -67,12 +70,23 @@ _richemontCareers.WhyworkUs = function(container){
 				});
 				cont.appendTo(document.body);
 				$('#video_content').attr('id','video_content' + videoNo);
-				videojs('video_content' + videoNo++);
+				var vidId = 'video_content' + videoNo++;
 				cont.find('a.video_close').click(function(e){
 					e.preventDefault();
 					cont.remove();
 				})
+				videojs(vidId);
 			})
 		})
 	}
+
+	var keys = _richemontCareers.KeyCodes;
+	var handler = {};
+	handler[keys.LEFT] = function(){ 
+		prevBtn.click();
+	}
+	handler[keys.RIGHT] = function(){ 
+		nextBtn.click();
+	}
+	_richemontCareers.KeyboardAccess(container.find('.join_us_gallery'),handler);
 }

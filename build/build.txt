@@ -81,18 +81,11 @@ video-test/video-js/video-js.min.css
 ----------------
 video-test/video-js/video-js.min.css
 
-js/main.js
+js/main-jobs.js
 ----------------
 js/vendor/jquery-1.9.1.min.js
-js/parallax.js
 js/navigation.js
+js/search.js
 js/customselect.js
-js/our-maisons.js
-js/joining-us.js
-js/career-path.js
-js/why-work-us.js
-js/share-icons.js
-js/richemont-main.js
-js/video.js
-js/location.js
-js/main.js
+js/jobs_pagination.js
+js/main-jobs.js

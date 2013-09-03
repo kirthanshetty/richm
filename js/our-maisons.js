@@ -93,7 +93,6 @@ _richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback)
             prevParent = prevParent.prev();
         prevEl = prevParent.find('li:last a');
     }
-    console.log(prevEl,gallery.find('.maison_prev'));
     if(prevEl.length < 1){
         gallery.find('.maison_prev').hide();
     }
@@ -117,10 +116,7 @@ _richemontCareers.MaisonSlideshow = function(gallery, anchorel,animate,callback)
     handler[keys.RIGHT] = function(){ 
         nextBtn.click();
     }
-        console.log(keys);
-
     handler[keys.ESCAPE] = function(){
-        console.log('here');
         gallery.find('.maison_close').click();
     }
     _richemontCareers.KeyboardAccess(gallery,handler);

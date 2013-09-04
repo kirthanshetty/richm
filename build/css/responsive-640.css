@@ -1,1 +1,1 @@
-@media only screen and (max-width:640px) {.maisons_lists {width: 380px;} .maisons_lists ul li.join-us{width: 190px}}
+@media only screen and (max-width:640px) {.maisons_lists {width: 380px;} .maisons_lists ul li.join-us{width: 190px} .maisons_lists ul li.join-us a {left: 50%;margin-left: -50px;margin-top: -20px;position: absolute;top: 50%;width: 95px;} .maisons_lists ul li.join-us h3{display: none;} .maisons_lists ul li section{padding: 0px;}}

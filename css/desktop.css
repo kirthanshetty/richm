@@ -198,12 +198,6 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .no-cssgradients .quick_search input[type='submit']{background: url("../img/shade_bg.jpg") repeat-x scroll left top;}
 .no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button']{background: url("../img/grey_bg.jpg") repeat-x scroll left top;}
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
- .quick_search input[type="submit"]  {left:-2px; top:1px;}
- .view_jobs .quick_search input[type="submit"]{top:1px;}
-}
-
-
 /* style for Header */
 header, footer{background:#00436e;float:left;width:100%;position:relative;z-index: 99;}
 header{position: fixed;z-index: 1000;}
@@ -223,8 +217,8 @@ header img.logo{float:left;margin:29px 0px 30px 30px;}
 #container{float:left;width:100%;}
 .inner_container{margin:34px;float:left;width:956px;}
 #wrapper h2{font-family: SabonLT-Roman;color:#a3a3a3;font-weight:normal;}
-.quick_search input[type='text']{font-size:1.2em;font-style:italic;color:#747476;font-family:georgia;border:1px solid #a8a8a8;width:250px;height:35px;padding:0px 10px;}
-.quick_search input[type='submit']{color:#00436e;font-size:1.2em;border:1px solid #a8a8a8;border-left:0px;padding:0px 9px;height:35px;position: relative;left:-2px;top:0px;}
+.quick_search input[type='text']{font-size:1.2em;font-style:italic;color:#747476;font-family:georgia;border:1px solid #a8a8a8;width:250px;height:35px;padding:0px 10px;float:left;}
+.quick_search input[type='submit']{color:#00436e;font-size:1.2em;border:1px solid #a8a8a8;border-left:0px;padding:0px 9px;height:35px;position: relative;left:0px;top:0px;float:left;}
 .quick_search input[type='submit'], .search_block h2{background: -moz-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dcdcdc), color-stop(20%,#e0e0e0), color-stop(40%,#e8e8e8), color-stop(60%,#ededee), color-stop(80%,#f2f2f2), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* Chrome10+,Safari5.1+ */
@@ -800,7 +794,8 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
- .quick_search input[type="submit"]  {left:-2px;  }
+ .quick_search input[type="submit"]  {left:-2px;}
+ .view_jobs .quick_search input[type="submit"]{left:0px;}
  .video-js{position: static;}
  
   

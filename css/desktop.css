@@ -718,11 +718,15 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .eq-ie9 .header_right ul.first_row{font-family: lato;}
 .eq-ie9 .quick_search input[type="submit"]{top:0px !important;}
 .eq-ie9 .second_row .quick_search input[type="submit"]{top:-1px;}
-.lt-ie9 .quick_search input[type="text"]{position: relative;top:-5px;}
+.lt-ie9 .view_jobs .quick_search input[type="text"]{position: relative;top:-5px;}
 .lt-ie9 #our-maisons{background-position: center top;}
 .lt-ie8 .page_1 .row .inner_block input[type="submit"]{border:0px;}
-.lt-ie8 .quick_search input[type="text"]{height:26px !important;position:relative;top:0px !important;}
-.lt-ie8 .quick_search input[type="submit"]{left:-3px;}
+.lt-ie8 .quick_search input[type="submit"]{left:-2px;}
+.lt-ie8 .quick_search input[type="text"]{height:26px !important;line-height: 25px;}
+.lt-ie8 .view_jobs .quick_search input[type="text"]{height: 33px !important;line-height: 30px;}
+.lt-ie9 .quick_search input[type="text"]{line-height: 25px;}
+.lt-ie9 .view_jobs .quick_search input[type="text"]{line-height: 30px;}
+.lt-ie8 .view_jobs .quick_search input[type="submit"]{line-height: 10px;left:0px;}
 .lt-ie8 header{height:70px;}
 .lt-ie8 .social_links ul li{height:28px;display:inline;}
 .lt-ie8 .social_links ul li a{height:18px;}
@@ -736,7 +740,7 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie8 .tab_content .main_cont{top:335px;}
 .lt-ie8 .career_gallery a.prev, .lt-ie8 .career_gallery a.next{height:16px;}
 .lt-ie8 .maisons_lists ul li.join-us a, .tab_content_left form input[type="button"]{border:0px;}
-.lt-ie9 .jobs_main_content .quick_search input[type="submit"]{top:5px;padding-bottom: 8px;}
+.lt-ie9 .jobs_main_content .quick_search input[type="submit"]{top:-5px;padding-bottom: 8px;}
 .lt-ie9 .maisons_lists .fading a:hover img{background: none;}
 .lt-ie9 .gallery_join .col.span_5 .our_world {width:92%;}
 .lt-ie8 .gallery_join .col.span_5 .our_world {width:78%;}
@@ -747,6 +751,7 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie8 .career_gallery ul li.active .chat-bubble-arrow{border:0px;}
 .lt-ie8 .career_gallery ul li {height:79px;}
 .lt-ie8 .join_us_gallery ul li{margin:0px 12px 0px 12px;}
+.lt-ie8 .page_1 .row .col.span_4{width: 33.32%;}
 
 .maisons_lists ul li.shading .grow {
     display: block;
@@ -1037,6 +1042,10 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .lt-ie9 .container.main .page .inner_content {
     width: 1025px;
 }
+.lt-ie8 .span_7 { width: 56.5%; }
+.lt-ie8 .serach_main_lists{float:none;overflow: hidden;}
+.lt-ie8 .result_list{width:auto;}
+.lt-ie8 .result_list .search_list{width:100%;}
 
 /* End of ie.css */
 

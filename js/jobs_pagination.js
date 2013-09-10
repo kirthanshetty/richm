@@ -17,6 +17,7 @@ $(function() {
 	});
 	$('#job_alert').click(function(){
 		$('.job_dialog, .job_dialog .activate').show();
+		$('.job_dialog .activate .content').hide();
 		var content = $('.job_dialog .activate .content:first').show();
 		content.find('form').submit(function(e){
 			e.preventDefault();
@@ -28,6 +29,8 @@ $(function() {
 			}
 			return false;
 		})
+
+		content.find('form #email').val('').parent().removeClass('error');
 		$('body').append('<div class="overlay"></div>');
 	});
 	$('.close_alert').click(function(){

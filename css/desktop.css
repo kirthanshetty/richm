@@ -198,12 +198,6 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .no-cssgradients .quick_search input[type='submit']{background: url("../img/shade_bg.jpg") repeat-x scroll left top;}
 .no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button']{background: url("../img/grey_bg.jpg") repeat-x scroll left top;}
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
- .quick_search input[type="submit"]  {left:-2px; top:1px;}
- .view_jobs .quick_search input[type="submit"]{top:1px;}
-}
-
-
 /* style for Header */
 header, footer{background:#00436e;float:left;width:100%;position:relative;z-index: 99;}
 header{position: fixed;z-index: 1000;}
@@ -223,8 +217,8 @@ header img.logo{float:left;margin:29px 0px 30px 30px;}
 #container{float:left;width:100%;}
 .inner_container{margin:34px;float:left;width:956px;}
 #wrapper h2{font-family: SabonLT-Roman;color:#a3a3a3;font-weight:normal;}
-.quick_search input[type='text']{font-size:1.2em;font-style:italic;color:#747476;font-family:georgia;border:1px solid #a8a8a8;width:250px;height:35px;padding:0px 10px;}
-.quick_search input[type='submit']{color:#00436e;font-size:1.2em;border:1px solid #a8a8a8;border-left:0px;padding:9.1px 9px 9px;position: relative;left:-2px;top:0px;}
+.quick_search input[type='text']{font-size:1.2em;font-style:italic;color:#747476;font-family:georgia;border:1px solid #a8a8a8;width:250px;height:35px;padding:0px 10px;float:left;}
+.quick_search input[type='submit']{color:#00436e;font-size:1.2em;border:1px solid #a8a8a8;border-left:0px;padding:0px 9px;height:35px;position: relative;left:0px;top:0px;float:left;}
 .quick_search input[type='submit'], .search_block h2{background: -moz-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dcdcdc), color-stop(20%,#e0e0e0), color-stop(40%,#e8e8e8), color-stop(60%,#ededee), color-stop(80%,#f2f2f2), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* Chrome10+,Safari5.1+ */
@@ -724,11 +718,15 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .eq-ie9 .header_right ul.first_row{font-family: lato;}
 .eq-ie9 .quick_search input[type="submit"]{top:0px !important;}
 .eq-ie9 .second_row .quick_search input[type="submit"]{top:-1px;}
-.lt-ie9 .quick_search input[type="text"]{position: relative;top:-5px;}
+.lt-ie9 .view_jobs .quick_search input[type="text"]{position: relative;top:-5px;}
 .lt-ie9 #our-maisons{background-position: center top;}
 .lt-ie8 .page_1 .row .inner_block input[type="submit"]{border:0px;}
-.lt-ie8 .quick_search input[type="text"]{height:26px !important;position:relative;top:0px !important;}
-.lt-ie8 .quick_search input[type="submit"]{left:-3px;}
+.lt-ie8 .quick_search input[type="submit"]{left:-2px;}
+.lt-ie8 .quick_search input[type="text"]{height:26px !important;line-height: 25px;}
+.lt-ie8 .view_jobs .quick_search input[type="text"]{height: 33px !important;line-height: 30px;}
+.lt-ie9 .quick_search input[type="text"]{line-height: 25px;}
+.lt-ie9 .view_jobs .quick_search input[type="text"]{line-height: 30px;}
+.lt-ie8 .view_jobs .quick_search input[type="submit"]{line-height: 10px;left:0px;}
 .lt-ie8 header{height:70px;}
 .lt-ie8 .social_links ul li{height:28px;display:inline;}
 .lt-ie8 .social_links ul li a{height:18px;}
@@ -742,7 +740,7 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie8 .tab_content .main_cont{top:335px;}
 .lt-ie8 .career_gallery a.prev, .lt-ie8 .career_gallery a.next{height:16px;}
 .lt-ie8 .maisons_lists ul li.join-us a, .tab_content_left form input[type="button"]{border:0px;}
-.lt-ie9 .jobs_main_content .quick_search input[type="submit"]{top:5px;padding-bottom: 8px;}
+.lt-ie9 .jobs_main_content .quick_search input[type="submit"]{top:-5px;padding-bottom: 8px;}
 .lt-ie9 .maisons_lists .fading a:hover img{background: none;}
 .lt-ie9 .gallery_join .col.span_5 .our_world {width:92%;}
 .lt-ie8 .gallery_join .col.span_5 .our_world {width:78%;}
@@ -753,6 +751,7 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie8 .career_gallery ul li.active .chat-bubble-arrow{border:0px;}
 .lt-ie8 .career_gallery ul li {height:79px;}
 .lt-ie8 .join_us_gallery ul li{margin:0px 12px 0px 12px;}
+.lt-ie8 .page_1 .row .col.span_4{width: 33.32%;}
 
 .maisons_lists ul li.shading .grow {
     display: block;
@@ -800,7 +799,8 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
- .quick_search input[type="submit"]  {left:-2px;  }
+ .quick_search input[type="submit"]  {left:-2px;}
+ .view_jobs .quick_search input[type="submit"]{left:0px;}
  .video-js{position: static;}
  
   
@@ -1042,6 +1042,10 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .lt-ie9 .container.main .page .inner_content {
     width: 1025px;
 }
+.lt-ie8 .span_7 { width: 56.5%; }
+.lt-ie8 .serach_main_lists{float:none;overflow: hidden;}
+.lt-ie8 .result_list{width:auto;}
+.lt-ie8 .result_list .search_list{width:100%;}
 
 /* End of ie.css */
 

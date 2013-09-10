@@ -75,7 +75,12 @@ _richemontCareers.WhyworkUs = function(container){
 					e.preventDefault();
 					cont.remove();
 				})
-				videojs(vidId);
+    			// videojs.options.flash.swf = "video-js.swf";
+    			// console.log(vidId);
+				videojs(vidId,{
+					"techOrder": ["youtube"],
+					"src" : $('#' + vidId).data('src')
+				});
 			})
 		})
 	}

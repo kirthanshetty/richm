@@ -1,3 +1,9 @@
+// -----------------------------------------------------------------
+//                        REQUIREJS MODULE
+require(['jquery'],function(){
+// -----------------------------------------------------------------
+
+
 if (typeof(_richemontCareers) != 'object') {
     _richemontCareers = {};
 }
@@ -25,3 +31,7 @@ $(function(){
 
 	_richemontCareers.objects.SocialShare = _richemontCareers.ShareIcons($, '.social_links');
 })
+
+// -----------------------------------------------------------------
+})
+// -----------------------------------------------------------------

@@ -1039,6 +1039,9 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .column-content h4.pt{padding-top: 20px;padding-bottom: 10px;float: left;width: 100%;}
 .column-content .column-tab-content p{font-weight: bold;}
 
+.lt-ie8 .column-content span{padding-top: 0px;}
+.lt-ie8 .column-content ul li{float:left;width: 100%;}
+
 /* ie.css */
 
 /* CLEARFIX HACK */

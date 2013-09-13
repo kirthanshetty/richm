@@ -35,6 +35,9 @@ $(function() {
 		})
 
 		content.find('form #email').val('').parent().removeClass('error');
+		content.find('form input:radio:gt(0)').attr('checked',false)
+		content.find('form input:radio:first').trigger('click');
+
 		$('body').append('<div class="overlay"></div>');
 	});
 	$('.close_alert').click(function(){

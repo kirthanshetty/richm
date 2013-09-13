@@ -22,4 +22,6 @@
     #wrapper .tab_content_full .tab_content_left .form_submission .fourth_step div {width: 100%;}
     .maisons_lists ul li.join-us h3{font-size: 2em;}
     .column-content span.tab_option{height:70px;}
+    #wrapper .job_alert .section_left{border:0px;width:90%;}
+    .credit_section{width:80%;}
 }

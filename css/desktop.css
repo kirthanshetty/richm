@@ -258,7 +258,7 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 
 .search_sections, .pagination, .pagination ul, .search_list{float:left;}
 .inner_block a.view-job{margin: 0px;padding: 5px 10px;}
-.section_right .common_right_section a#login, .section_right .common_right_section a#unsubscribe{display: inline-block;font-size: 1.3em;}
+.section_right .common_right_section a#login, .section_right .common_right_section a#unsubscribe{display: inline-block;font-size: 1.3em;padding: 4px 10px;}
 /* Section Left */
 .section_left{float:left;width:605px;}
 .serach_main_lists{float:left;padding-right:30px;border-right:1px solid #D2D2D2;}

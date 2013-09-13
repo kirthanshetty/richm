@@ -22,10 +22,10 @@ _richemontCareers.KeyboardAccess = function(container, handlers){
 	// Make sure the dummy input is focused if the container or any child element get focus
 	container.click(function(){ keyHandler.focus(); });
 	container.focus(function(){ keyHandler.focus(); });
-	container.find('*').focus(function(){ 
-		if(!keyHandler.is(':focus')) 
-			keyHandler.focus(); 
-	});
+	// container.find('*').focus(function(){ 
+	// 	if(!keyHandler.is(':focus')) 
+	// 		keyHandler.focus(); 
+	// });
 
 	// Add a class to the container to show the focus outline
 	keyHandler.focus(function() {

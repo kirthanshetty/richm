@@ -210,7 +210,11 @@ _richemontCareers.videoHandler = function(el){
             });
             cont.appendTo(document.body);
             $('#video_content').attr('id','maison_video_content' + _richemontCareers.videoNo);
-            videojs('maison_video_content' + _richemontCareers.videoNo++);
+            var vidId = 'maison_video_content' + _richemontCareers.videoNo++;
+            videojs(vidId,{
+                "techOrder": ["youtube"],
+                "src" : $('#' + vidId).data('src')
+            });
             cont.find('a.video_close').click(function(e){
                 e.preventDefault();
                 cont.remove();

@@ -1028,7 +1028,7 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .column-content span{padding-top: 20px;display: block;}
 .column-content ul, .column-content ol{padding-left:40px;padding-top:20px;}
 .column-content ul{padding-left: 15px;}
-.column-content ul li{background: url("../img/parallax/sprite.png") no-repeat scroll left -1209px transparent;padding-left: 23px;}
+.column-content ul li{background: url("../img/parallax/sprite.png") no-repeat scroll 2px -1210px transparent;padding-left: 25px;}
 .column-content li a{text-decoration: underline;font-size: 1em;margin: 0px;color:#00436e;}
 .column-content a.top{color:#00436e;font-size:1.4em;margin-top: 25px;display: block;margin-bottom: 25px;font-weight: bold;}
 .column-content ul li span{  background: url("../img/parallax/sprite.png") repeat scroll left -1209px transparent;float: left;margin-right: 8px;width: 12px;}

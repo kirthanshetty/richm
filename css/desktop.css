@@ -956,9 +956,11 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 #wrapper .privacy p a{font-size:1em;float:none;padding:0px;margin:0px;}
 #wrapper .privacy a.top{margin:0px 0px 30px 20px;font-size:1.4em;}
 /* Style for Credits page */
-.credit_section{ float: left;width: 40%;}
+.credit_section{ float: left;width: 55%;}
 .credit_section h5{font-size:1.5em;margin:10px 0px;width:255px;color:#00436e;float:left;padding-right:10px;}
-.credit_section p{margin:10px 0px;padding-left:15px;font-size:1.5em;line-height: 25px;color:#5e5e5e;float:left;}
+.credit_section p{margin:10px 0px;padding-left:15px;font-size:1.5em;line-height: 25px;color:#5e5e5e;}
+.credit-tab{height: 100px;}
+.credit_section div{overflow: hidden;}
 #wrapper .jobs_main_content .view_jobs h2{margin: 20px 0 15px 30px;}
 /* Style for FAQs page */
 #wrapper .faq  label {display:block;color: #5E5E5E;float: left;font-size: 1.5em;padding-bottom: 8px;}
@@ -1003,6 +1005,7 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .job_alert .section_left div{float:left;width: 100%;padding-bottom: 5px;}
 .job_alert .section_left div label{float: left;}
 .job_alert .section_left div input{ float: left;margin-right: 8px;margin-top: 5px;}
+#wrapper .search_results.job_alert .section_left input, #wrapper .search_results.job_alert .section_left p{margin-left: 0px;}
 
 
 .join_us_gallery .maison_prev, .join_us_gallery .maison_next{text-indent: -9999px;}

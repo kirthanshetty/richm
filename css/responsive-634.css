@@ -47,4 +47,8 @@
     .locations .section_left img {width: 95%;}
     .column-content{margin:30px 10px 0px;}
     .column-content span.tab_option{height:180px;}
+    #wrapper .terms-condition h2{font-size: 2.8em;}
+    .credit-tab{height: auto;}
+    .credit_section p{padding-left: 0px;}
+    /*#wrapper .faq.right_section, .faq_section, #wrapper .view_jobs h1, .terms-condition p, #wrapper .terms-condition h3, #wrapper .jobs_main_content .view_jobs h2, .terms-condition span{margin-left:10px;}*/
 }

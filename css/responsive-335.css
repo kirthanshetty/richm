@@ -663,4 +663,7 @@
   .column-content ul{padding-left: 0px;}
   .column-content ol{padding-left: 25px;}
   .column-content span.tab_option{height:200px;}
+  #wrapper .faq.right_section{width:87%;}
+  #wrapper .terms-condition h2{font-size: 2em;}
+  
 }

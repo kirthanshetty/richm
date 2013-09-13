@@ -1080,6 +1080,7 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .lt-ie8 .serach_main_lists{float:none;overflow: hidden;}
 .lt-ie8 .result_list{width:auto;}
 .lt-ie8 .result_list .search_list{width:100%;}
+.lt-ie8 header{left:50%;margin-left:-640px;}
 
 /* End of ie.css */
 

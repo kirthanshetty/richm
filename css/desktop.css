@@ -704,15 +704,16 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .common_right_section{padding-bottom: 25px;}
 
 /* CSS for IE to Fallback */
-.no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us a, .no-cssgradients .jobalert input[type='submit'], .no-cssgradients #wrapper .tab_content_full .tab_content_left input.attach{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
+.no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us a, .no-cssgradients .jobalert input[type='submit'], .no-cssgradients #wrapper .tab_content_full .tab_content_left input.attach, .no-cssgradients .inner_block a.view-job, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc a.invite{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type='submit']{background: url("../img/parallax/shade_bg.jpg") repeat-x scroll left top;}
-.no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button'], .no-cssgradients #wrapper .tab_content_full .tab_content_left .form_submission a.next, .no-cssgradients #wrapper .tab_content_full .tab_content_left .form_submission a.prev{background: url("../img/parallax/grey_bg2.jpg") repeat-x scroll left top;}
+.no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button'], .no-cssgradients #wrapper .tab_content_full .tab_content_left .form_submission a.next, .no-cssgradients #wrapper .tab_content_full .tab_content_left .form_submission a.prev, .no-cssgradients .section_right .common_right_section a#login, .no-cssgradients .section_right .common_right_section a#unsubscribe{background: url("../img/parallax/grey_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type="submit"]{background: url("../img/shade_button.jpg") repeat-x left top;}
 .eq-ie9 .quick_search input[type="submit"], .lt-ie9 .quick_search input[type="submit"]{padding-top:10px;}
 .lt-ie9 .tab_content_full .view_jobs a, .eq-ie9 .tab_content_full .view_jobs a{padding-top:6px;padding-bottom: 6px;}
 .lt-ie9 .tab_content_left form input[type="button"], .eq-ie9 .tab_content_left form input[type="button"]{background: url("../img/grey_bg.jpg") repeat-x scroll left top;}
 .lt-ie9 .search_block .submit, .eq-ie9 .search_block .submit{background: url("../img/blue_bg.jpg") repeat-x scroll left top;}
 .eq-ie9 .quick_search input[type="submit"]{top:-1px;}
+.no-cssgradients .section_right .common_right_section a#login, .no-cssgradients .section_right .common_right_section a#unsubscribe, .no-cssgradients .maisons_lists ul li.join-us a{padding-bottom: 6px;}
 
 .eq-ie9 .join_us_gallery ul li{margin:0px 22px 0px 23px;}
 .lt-ie9 .join_us_gallery ul li{margin:0px 16px 0px 17.5px;}

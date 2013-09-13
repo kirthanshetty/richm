@@ -238,14 +238,14 @@ background: linear-gradient(to bottom, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ed
 .header_right select option{border:1px solid #d2d2d2;border-top:0px;background:#e7e7e7;color:#4e4e4e;font-size:1em;padding:2px 2px;}
 .inner_block div select option:hover, .inner_block div select option:focus{background:#a3a3a3;color:#fff; float: left;}
 .inner_block input[type='button']{float:left;margin-right:20px;margin-top:24px;}
-.inner_block input[type='button'], .section_right input[type='button'], .tab_content_left form input[type='button'], #wrapper .tab_content_full .tab_content_left .form_submission a.next, #wrapper .tab_content_full .tab_content_left .form_submission a.prev{color:#fff;font-size:1.2em;font-weight:bold;padding:8px 10px;border:1px solid #4c4b4b;
+.inner_block input[type='button'], .section_right input[type='button'], .tab_content_left form input[type='button'], #wrapper .tab_content_full .tab_content_left .form_submission a.next, #wrapper .tab_content_full .tab_content_left .form_submission a.prev, .section_right .common_right_section a#login, .section_right .common_right_section a#unsubscribe{color:#fff;font-size:1.2em;font-weight:bold;padding:8px 10px;border:1px solid #4c4b4b;
 background: -moz-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8b8b8b), color-stop(20%,#848484), color-stop(40%,#787878), color-stop(50%,#737373), color-stop(60%,#6a6a6a), color-stop(80%,#585858), color-stop(100%,#4e4e4e)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* Chrome10+,Safari5.1+ */
 background: -o-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* IE10+ */
 background: linear-gradient(to bottom, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* W3C */}
-.inner_block input[type='submit'], .search_block .submit, .maisons_lists ul li.join-us a, .view_jobs a, .maison_main_content .maison_desc input[type='submit'], .job_alert input[type='submit'], #wrapper .tab_content_full .tab_content_left input.attach, .maisons_lists ul li.join-us a, .our_maison_gallery .maison_main_content .maison_desc a.invite {float:left;margin-right:15px;color:#fff;font-size:1.1em;font-weight:bold;padding:8px 10px;border:1px solid #054670;margin-top:24px;
+.inner_block input[type='submit'], .search_block .submit, .maisons_lists ul li.join-us a, .view_jobs a, .maison_main_content .maison_desc input[type='submit'], .job_alert input[type='submit'], #wrapper .tab_content_full .tab_content_left input.attach, .maisons_lists ul li.join-us a, .our_maison_gallery .maison_main_content .maison_desc a.invite, .inner_block a.view-job {float:left;margin-right:15px;color:#fff;font-size:1.1em;font-weight:bold;padding:8px 10px;border:1px solid #054670;margin-top:24px;
 background: -moz-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#255e83), color-stop(20%,#245d82), color-stop(40%,#215a7f), color-stop(50%,#1d577b), color-stop(60%,#195377), color-stop(80%,#124b70), color-stop(100%,#10496d)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* Chrome10+,Safari5.1+ */
@@ -257,6 +257,8 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .customSelectInner{font-family: 'Lato', sans-serif; font-size: 13px}
 
 .search_sections, .pagination, .pagination ul, .search_list{float:left;}
+.inner_block a.view-job{margin: 0px;padding: 5px 10px;}
+.section_right .common_right_section a#login, .section_right .common_right_section a#unsubscribe{display: inline-block;font-size: 1.3em;}
 /* Section Left */
 .section_left{float:left;width:605px;}
 .serach_main_lists{float:left;padding-right:30px;border-right:1px solid #D2D2D2;}
@@ -702,15 +704,16 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .common_right_section{padding-bottom: 25px;}
 
 /* CSS for IE to Fallback */
-.no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us a, .no-cssgradients .jobalert input[type='submit'], .no-cssgradients #wrapper .tab_content_full .tab_content_left input.attach{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
+.no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us a, .no-cssgradients .jobalert input[type='submit'], .no-cssgradients #wrapper .tab_content_full .tab_content_left input.attach, .no-cssgradients .inner_block a.view-job, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc a.invite{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type='submit']{background: url("../img/parallax/shade_bg.jpg") repeat-x scroll left top;}
-.no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button'], .no-cssgradients #wrapper .tab_content_full .tab_content_left .form_submission a.next, .no-cssgradients #wrapper .tab_content_full .tab_content_left .form_submission a.prev{background: url("../img/parallax/grey_bg2.jpg") repeat-x scroll left top;}
+.no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button'], .no-cssgradients #wrapper .tab_content_full .tab_content_left .form_submission a.next, .no-cssgradients #wrapper .tab_content_full .tab_content_left .form_submission a.prev, .no-cssgradients .section_right .common_right_section a#login, .no-cssgradients .section_right .common_right_section a#unsubscribe{background: url("../img/parallax/grey_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type="submit"]{background: url("../img/shade_button.jpg") repeat-x left top;}
 .eq-ie9 .quick_search input[type="submit"], .lt-ie9 .quick_search input[type="submit"]{padding-top:10px;}
 .lt-ie9 .tab_content_full .view_jobs a, .eq-ie9 .tab_content_full .view_jobs a{padding-top:6px;padding-bottom: 6px;}
 .lt-ie9 .tab_content_left form input[type="button"], .eq-ie9 .tab_content_left form input[type="button"]{background: url("../img/grey_bg.jpg") repeat-x scroll left top;}
 .lt-ie9 .search_block .submit, .eq-ie9 .search_block .submit{background: url("../img/blue_bg.jpg") repeat-x scroll left top;}
 .eq-ie9 .quick_search input[type="submit"]{top:-1px;}
+.no-cssgradients .section_right .common_right_section a#login, .no-cssgradients .section_right .common_right_section a#unsubscribe, .no-cssgradients .maisons_lists ul li.join-us a{padding-bottom: 6px;}
 
 .eq-ie9 .join_us_gallery ul li{margin:0px 22px 0px 23px;}
 .lt-ie9 .join_us_gallery ul li{margin:0px 16px 0px 17.5px;}
@@ -1010,6 +1013,38 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .section_images .section_bg.active, .gallery_join .span_7.col .two_sections.active{display:block;}
 .search_main_block .inner_block .search_buttons {margin-top: 24px;}
 /*.menu_list{display:block;}*/
+
+/* Style for Single-Column page */
+#wrapper .column-content .col h2{font-size: 5em;margin: 30px 0 20px 0px;}
+.column-content{margin-top: 75px;margin-left:30px;margin-right:20px;}
+.column-content h3, .column-content .column-tab-content span{font-size:1.4em;margin:0px;color:#00436e;line-height: 22px;}
+.column-content h4, .column-content .column-tab-content p{font-size:1.4em;margin:0px;color:#000;padding-top: 15px;line-height: 22px;}
+.column-content p, .column-content .ans_section{font-size:1.4em;margin:0px;color:#5e5e5e;line-height: 24px;padding-top: 15px;padding-bottom: 5px;font-weight: bold;}
+.column-content p.red{padding-bottom: 18px;color:#e90000;}
+.column-content li, .column-content span{font-size:1.4em;margin:0px;color:#000;line-height: 22px;font-weight: bold;}
+.column-content span{padding-top: 20px;display: block;}
+.column-content ul, .column-content ol{padding-left:40px;padding-top:20px;}
+.column-content ul{padding-left: 15px;}
+.column-content li a{text-decoration: underline;font-size: 1em;margin: 0px;color:#00436e;}
+.column-content a.top{color:#00436e;font-size:1.4em;margin-top: 25px;display: block;margin-bottom: 25px;font-weight: bold;}
+.column-content ul li span{  background: url("../img/parallax/sprite.png") repeat scroll left -1209px transparent;float: left;margin-right: 8px;width: 12px;}
+.column-content ol li{list-style-type: decimal;}
+.column-content .locations-list{padding-bottom: 12px;}
+.column-tab-content{float: left;width: 100%;}
+.column-tab-content span{width:290px;padding-right: 10px;float:left;padding-top: 15px;height:55px;}
+.column_faq_section{float:left;width:100%;padding-top: 20px;padding-bottom: 10px;}
+.column_faq_section ul{padding-bottom: 30px;}
+.column_faq_section ul li{color:#00436e;}
+.column-content .terms-condition h2, #wrapper .column-content .terms-condition h3{margin-left: 0px;}
+.column-content .terms-condition h4.tc-subhead {clear: both;color: #E90000;float: left;font-size: 1.2em;margin: 0 10px 5px 0px;padding-top:0px;}
+.column-content .terms-condition p{font-size: 1.2em; line-height: 19px;font-weight: normal;}
+.column_faq_section p{padding-bottom: 20px;}
+.column-content h4.pt{padding-top: 20px;padding-bottom: 10px;float: left;width: 100%;}
+.column-content .column-tab-content p{font-weight: bold;}
+
+.lt-ie8 .column-content span{padding-top: 0px;}
+.lt-ie8 .column-content ul li{width: 100%;}
+
 /* ie.css */
 
 /* CLEARFIX HACK */
@@ -1046,6 +1081,7 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .lt-ie8 .serach_main_lists{float:none;overflow: hidden;}
 .lt-ie8 .result_list{width:auto;}
 .lt-ie8 .result_list .search_list{width:100%;}
+.lt-ie8 header{left:50%;margin-left:-640px;}
 
 /* End of ie.css */
 

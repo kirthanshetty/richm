@@ -10,4 +10,8 @@
   #our-world{margin-bottom: 40px;}
   #why-join-us{padding-bottom:40px;}
   .maisons_lists ul li.lightbox-open:last-child{border-right: 0px;}
+  #wrapper .column-content .view_jobs h2{font-size:3em;}
+  #wrapper .column-content .terms-condition h2.language3{font-size: 2.3em;}
+  .column-tab-content span{width:210px;}
+  .column-content span.tab_option{height: 125px;}
 }

@@ -45,4 +45,6 @@
     .header_main h1.col.span_4{width:auto;}
     .locations {border:0px;width:auto;}
     .locations .section_left img {width: 95%;}
+    .column-content{margin:30px 10px 0px;}
+    .column-content span.tab_option{height:180px;}
 }

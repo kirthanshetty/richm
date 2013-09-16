@@ -39,6 +39,7 @@ _richemontCareers.Navigation = function() {
 	var prevWidth;
 	function fixnav(){
 		if($(window).width() < 630 && (!prevWidth || prevWidth >= 630) ) {
+			/*
 			$(".collapsed").mouseover(function(){
 				$(".header_right").addClass('menu_list');
 				$(".header_right ul").removeClass('second_row');
@@ -47,6 +48,21 @@ _richemontCareers.Navigation = function() {
 			$(".collapsed").mouseout(function(){
 				$(".menu_list").hide();
 			});
+			*/
+			 $('.collapsed').on('mouseover', function(){
+        		$(this).addClass('hover');
+        		$(".header_right").addClass('menu_list');
+				$(".header_right ul").removeClass('second_row');
+				$(".menu_list").show();
+    		 });
+    		 $('.collapsed').on('mouseout', function(){
+        		 $(this).removeClass('hover');
+        		 $(".menu_list").hide();
+    		 });
+    		 $('.collapsed').on('touchend', function(){
+        		 $(this).toggleClass('hover');
+    		 });
+
 		}
 
 		if($(window).width() >= 630 && (!prevWidth || prevWidth < 630) ) {

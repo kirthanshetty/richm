@@ -909,8 +909,8 @@ img.section_bg{left: 0;position: absolute;top: 0;width: 100%;}
 /*img.section_bg.global { left: auto !important;right: 24%;width: auto !important;}*/
 .lt-ie7 img.section_bg{z-index: -1;}
 h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs h3{display: none;}
-.page_6 .section_one{float:right;margin:0px 10px;}
-
+.page_6 .section_one{float:right;margin:0px 10px;width:46%;}
+.page_6 .section_one img{width: 100%;}
 
 
 /* Style for Other pages */

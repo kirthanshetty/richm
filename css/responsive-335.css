@@ -238,7 +238,7 @@
   
   #work-with-us img.section_bg
   {
-    top:155px;
+    top:130px;
   }
   
   a.mobile_link
@@ -651,10 +651,12 @@
 
   #wrapper #our-world .our_world h2{ display: block;padding:0px;font-size: 3.4em;position: relative;top: -130px;}
   .gallery_join .our_world a.prev, .gallery_join .our_world a.next{display:block;position: relative;top: -576px;}
-  #work-with-us .gallery_container{ position: relative;top: -145px;width: 100;}
+  #work-with-us .gallery_container{ position: relative;top: -15px;}
   #work-with-us .gallery_container .content h2{display: block;margin-top: -4px;padding-bottom: 190px;}
   #wrapper #work-with-us .our_world h2{top:-703px;font-size:3.4em;}
-  #work-with-us .gallery_join .our_world a.prev, #work-with-us .gallery_join .our_world a.next{top: -737px;}
+  #work-with-us .gallery_join .our_world a.prev, #work-with-us .gallery_join .our_world a.next{position: absolute;top:45px;}
+  #work-with-us .gallery_join .our_world a.prev{left:0px;}
+  #work-with-us .gallery_join .our_world a.next{right:0px;}
   #wrapper .jobs_main_content .view_jobs h2{margin-left:0px;float:left;}
   #wrapper .jobs_main_content .view_jobs h3{float:right;margin-right:0px;display: block;}
   #wrapper .jobs_main_content .view_jobs h3 a{background: none;border:0px;color:#00436e;margin-right: 0px;padding-right: 0px;}
@@ -665,5 +667,13 @@
   .column-content span.tab_option{height:200px;}
   #wrapper .faq.right_section{width:87%;}
   #wrapper .terms-condition h2{font-size: 2em;}
-  
+  #work-with-us .gallery_container .content{padding-bottom: 0px;}
+  #work-with-us .gallery_join .col.span_5 .our_world{padding: 0px;}
+  .container.main #work-with-us .gallery_join .col.span_7 .two_sections .section_one{margin-top:0px;}
+  .container.main #work-with-us .gallery_join .col.span_7 .two_sections .section_two{margin-top:20px;}
+  .scroll_top img {bottom: 105px;}
+  #wrapper .tab_content_full .tab_content_left .form_submission a.next{float: right;}
+  #wrapper .tab_content_full .tab_content_left div.submission, #why-join-us .videos .section_one a{width: 100%;}
+  #career-paths .tab_content_left select, #career-paths .tab_content_left span.customSelect{top: 18px !important;}
+  #work-with-us{padding-top: 0px;}
 }

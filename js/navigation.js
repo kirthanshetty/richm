@@ -76,6 +76,14 @@ _richemontCareers.Navigation = function() {
 			 			$(".collapsed nav ul").removeClass('second_row');
             			mobileNav.toggle(20);
         	 		});
+        	 		setTimeout(function() {
+      					$(".container").click(function(){
+        	 				mobileNav.hide();
+        	 			});
+					}, 100);
+					timeout = setTimeout('timeout_trigger()', 400);
+					clearTimeout(timeout);
+        	 		
 				}
 		}
 

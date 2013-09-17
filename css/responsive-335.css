@@ -672,8 +672,9 @@
   .container.main #work-with-us .gallery_join .col.span_7 .two_sections .section_one{margin-top:0px;}
   .container.main #work-with-us .gallery_join .col.span_7 .two_sections .section_two{margin-top:20px;}
   .scroll_top img {bottom: 105px;}
-  #wrapper .tab_content_full .tab_content_left .form_submission a.next{float: right;}
-  #wrapper .tab_content_full .tab_content_left div.submission, #why-join-us .videos .section_one a{width: 100%;}
-  #career-paths .tab_content_left select, #career-paths .tab_content_left span.customSelect{top: 18px !important;}
+  #wrapper .tab_content_full .tab_content_left div.submission p{float: right;}
+  #wrapper .tab_content_full .tab_content_left div.submission, #why-join-us .videos .section_one a, #wrapper .tab_content_full .tab_content_left .form_submission input[type="text"]{width: 100%;}
+  #career-paths .tab_content_left select, #career-paths .tab_content_left span.customSelect{top: 24px !important;}
   #work-with-us{padding-top: 0px;}
+  #wrapper .tab_content_full .tab_content_left .form_submission .fourth_step label, #wrapper .tab_content_full .tab_content_left .form_submission div.first_step label{padding-bottom: 3px;}
 }

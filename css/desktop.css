@@ -605,7 +605,7 @@ ul.buttons li a{ background: url("../img/parallax/sprite.png") left -269px;width
 ul.buttons li.active a{ background: url("../img/parallax/sprite.png") left -292px;}
 .gallery_container{float:left;width:100%;}
 #work-with-us .gallery_container .content{float:left;padding-bottom: 15px;}
-.container.main #work-with-us.page .gallery_join .two_sections{position:absolute; bottom: 78px;}
+.container.main #work-with-us.page .gallery_join .two_sections{position:absolute; bottom: 78px;width:55%;}
 .popup_overlay{background: none repeat scroll 0 0 #DDDDDD;height: 350px;left: 0;position: relative;width: 100%;float:left;}
 .popup_overlay span{margin:auto;display: block;}
 

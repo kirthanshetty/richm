@@ -76,14 +76,30 @@ _richemontCareers.Navigation = function() {
 			 			$(".collapsed nav ul").removeClass('second_row');
             			mobileNav.toggle(20);
         	 		});
+        	 		$('.collapsed ul li a').on('touchend', function(){
+        	 			var el = $(this);
+    					var link = el.attr('href');
+    					window.location = link;
+    					mobileNav.toggle();
+        	 		});
         	 		setTimeout(function() {
       					$(".container").click(function(){
         	 				mobileNav.hide();
         	 			});
 					}, 100);
-					timeout = setTimeout('timeout_trigger()', 400);
+					/*
+					setTimeout(function() {
+      					$(".collapsed").click(function(){
+        	 				$(".collapsed").removeClass('no-touch');
+        	 			});
+					}, 200);
+					timeout = setTimeout('timeout_trigger()', 1000);
 					clearTimeout(timeout);
-        	 		
+					*/
+					/*
+					$('.collapsed').on('touchend', function() {
+  						$(this).removeCss('background', 'url("../img/parallax/sprite.png") no-repeat scroll 3px -960px #E7E7E7');
+					});*/
 				}
 		}
 

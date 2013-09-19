@@ -3,6 +3,7 @@ if (typeof(_richemontCareers) != 'object') {
 }
 
 _richemontCareers.KeyboardAccess = function(container, handlers){
+	if(Modernizr.touch) return;
 	/*
 	* Dummy input to handle keypress
 	*/

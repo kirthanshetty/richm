@@ -702,6 +702,5 @@ a.video_close{display:block;background: url("../img/video-close.png") no-repeat 
      -moz-box-shadow: 0 0 1em rgba(255, 255, 255, 1);
           box-shadow: 0 0 1em rgba(255, 255, 255, 1);
 }
-a.video_close{top:0px;}
-.close_buton{width:100%;background: #000;height: 28px;}
 a.video_close{z-index: 99999;}
+

@@ -12,7 +12,7 @@ _richemontCareers.ShareIcons = function($, container){
 		var timeout;
 
 		$(this).find('ul li').hover(function(){
-			$(this).siblings().show();
+			$(this).siblings().fadeIn();
 			showing = true;
 			clearTimeout(timeout);
 		}, function(){

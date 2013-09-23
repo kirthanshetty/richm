@@ -75,7 +75,7 @@
     width:25%;
   }
   
-  .page_1 .row span.scroll_down
+  .page_1 .row a.scroll_down
   {
     display:block;
     float:none;

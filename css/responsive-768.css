@@ -1,8 +1,8 @@
 @media only screen and (max-width:767px) {
   #wrapper .page_1 h2{font-size:1.4em;}
-  .page_1 .row span.scroll_down{height:52px;}
+  .page_1 .row a.scroll_down{height:52px;}
   .page_1 .first_row, .page_1 .second_row .col.span_4, .page_1 .third_row, .page_1 .row .quick_search, .page_1 .row span{display:none;}
-  .page_1 .row span.scroll_down{display: block; margin: 40px auto 30px;float: none;}
+  .page_1 .row a.scroll_down{display: block; margin: 40px auto 30px;float: none;}
   .page_1 .second_row .col.span_8{text-align: center;width:100%;}
   #wrapper .page_1 h2{font-size:2.2em; margin-top: 100px;}
   .page_1 .row .inner_block {border: 0 none;float: none;margin: 0 auto;overflow: hidden;padding: 0;width: 110px;}

@@ -82,4 +82,12 @@ _richemontCareers.Navigation = function () {
         }, "slow");
         return false;
     });
+    /* jQuery to add effect to Home page Chevron */
+    $("a.scroll_down").click(function (e) {
+        var targetOffset = $("#our-world").offset().top - 70 + 'px';
+        $('html, body').animate({
+            scrollTop: targetOffset
+        }, "slow");
+        e.preventDefault();
+    });
 }

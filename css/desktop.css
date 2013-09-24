@@ -801,7 +801,9 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
   .maisons_lists ul li.shading a .grow img{display: block;}
   .maisons_lists ul li.shading.lightbox-open .image { background: none repeat scroll 0 0 #1F1F1F;}
 
-
+@-moz-document url-prefix() {
+    .page_1 .row .col.span_4 {width:33.334%;}
+}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;}
  .view_jobs .quick_search input[type="submit"]{left:0px;}

@@ -703,4 +703,6 @@ a.video_close{display:block;background: url("../img/video-close.png") no-repeat 
           box-shadow: 0 0 1em rgba(255, 255, 255, 1);
 }
 a.video_close{z-index: 99999;}
-
+#video_content1{top:50px;}
+a.video_close{top:0px;z-index:99999;background:url("../img/video-close.png") no-repeat scroll left top #f00;}
+.close_buton{background-color:#000;height:28px;}

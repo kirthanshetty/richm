@@ -5,5 +5,5 @@ require.config({
 });
 
 require([
-    'jquery', 'parallax', 'navigation', 'customselect', 'social-links', 'keyboard-accessibility', 'our-maisons', 'joining-us', 'career-path', 'why-work-us', 'share-icons', 'richemont-main', 'video', 'vendor/vjs.youtube' ,'location', 'find_browser', 'career_form'
+    'jquery', 'parallax', 'navigations', 'customselect', 'social-links', 'keyboard-accessibility', 'our-maisons', 'joining-us', 'career-path', 'why-work-us', 'share-icons', 'richemont-main', 'video', 'vendor/vjs.youtube' ,'location', 'find_browser', 'career_form'
 ]);

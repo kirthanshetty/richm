@@ -337,7 +337,7 @@ footer{margin-top:50px;}
 .our_world .slides .content p{padding-bottom: 12px; padding-left: 4px;}
 .icon-pinterest{color:#00436e;font-size:1.4em;}
 .social_links{float:left;width:100%;margin-top:45px;}
-.page_1 .social_links, .page_2 .social_links, .page_3 .social_links, .page_4 .social_links, .page_5 .social_links, .page_6 .social_links {position: absolute;right: 0px;top:30px;width: 100%;margin-top:0px;max-width: 1024px;}
+.page_1 .social_links, .page_2 .social_links, .page_3 .social_links, .page_4 .social_links, .page_5 .social_links, .page_6 .social_links {position: absolute;right: 0px;top:30px;width: 100%;margin-top:0px;max-width: 1024px;z-index: 1;}
 .page_1 .social_link_container{margin:0 auto; position:relative;}
 .page_5 .inner_content, .page_2 .inner_content{position: relative;}
 .page_4 .tab_content .social_links{top:-90px; right: -29px;}
@@ -807,9 +807,7 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
   .maisons_lists ul li.shading a .grow img{display: block;}
   .maisons_lists ul li.shading.lightbox-open .image { background: none repeat scroll 0 0 #1F1F1F;}
 
-@-moz-document url-prefix() {
-    .page_1 .row .col.span_4 {width:33.334%;}
-}
+.page_1 .row .col.span_4:last-child {position: relative;right: -0.033%;}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;}
  .view_jobs .quick_search input[type="submit"]{left:0px;}

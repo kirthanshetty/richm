@@ -921,7 +921,6 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 /*div.collapsed .menu_list{display:none;}
 div.collapsed.hover .menu_list{display:block;}*/
 
-
 /* Style for Other pages */
 /* Style for Contact page */
 .full_section{float:left;width:100%;}
@@ -1096,7 +1095,7 @@ div.collapsed.hover .menu_list{display:block;}*/
 .lt-ie8 .serach_main_lists{float:none;overflow: hidden;}
 .lt-ie8 .result_list{width:auto;}
 .lt-ie8 .result_list .search_list{width:100%;}
-.lt-ie8 header{left:50%;margin-left:-622px;}
+.lt-ie8 header{margin:0px auto;}
 
 /* End of ie.css */
 

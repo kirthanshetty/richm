@@ -22,11 +22,17 @@ _richemontCareers.ShareIcons = function($, container){
 		$(this).mouseout(function(){
 			timeout = setTimeout(function(){
 				if (!showing) {
-				shareIcons.delay(1000).fadeOut();
-			}
-		}, 1000);
-			
+					shareIcons.delay(1000).fadeOut();
+				}
+			}, 1000);
 		});
+
+		$(this).find('ul li a').focus(function(){ 
+			console.log('focus'); 
+			$(this).parent().mouseover(); 
+		}).blur(function(){ 
+			$(this).parent().mouseout(); 
+		})
 	});
 }
 

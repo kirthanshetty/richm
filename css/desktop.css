@@ -1059,6 +1059,10 @@ div.collapsed.hover .menu_list{display:block;}*/
 .lt-ie8 .column-content span{padding-top: 0px;}
 .lt-ie8 .column-content ul li{width: 100%;}
 
+#wrapper .job_alert .section_left{margin:0px;padding:0px;width:100%;}
+#wrapper .container .job_alert p, #wrapper .container .job_alert input{margin-left:0px;}
+
+
 /* ie.css */
 
 /* CLEARFIX HACK */

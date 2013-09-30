@@ -159,7 +159,7 @@ require(['jquery'],function(){
     });
 })(jQuery);
 
-$('.header_right .first_row select, .tab_content_left select, .inner_block div select.styled, .form_submission select').customSelect();
+$('.header_right .first_row select, .tab_content_left select, .inner_block div select.styled, .tab_content_left select').customSelect();
 
 // -----------------------------------------------------------------
 })

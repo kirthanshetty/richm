@@ -17,6 +17,17 @@ $(function() {
 		$('.job_dialog, .job_dialog .delete').show();
 		var content = $('.job_dialog .delete .content:first').show();
 		$('.job_dialog .delete .header h3:gt(0)').hide();
+		var content = $('.job_dialog .delete .content:first').show();
+		content.find('form').submit(function(e){
+			e.preventDefault();
+			var emailVal = $(this).find('#email').val();
+			if(/\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b/.test(emailVal.toUpperCase())){
+				content.hide().next().show();
+			}else{
+				$(this).find('#email').parent().addClass('error');
+			}
+			return false;
+		})
 		$('body').append('<div class="overlay"></div>');
 	});
 	$('#job_alert').click(function(){

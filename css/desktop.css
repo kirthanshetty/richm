@@ -1071,6 +1071,7 @@ div.collapsed.hover .menu_list{display:block;}*/
 
 #wrapper .job_alert .section_left{margin:0px;padding:0px;width:100%;}
 #wrapper .container .job_alert p, #wrapper .container .job_alert input{margin-left:0px;}
+#wrapper .container .job_alert.erro_alert p, #wrapper .container .job_alert.erro_alert input, #wrapper .container .job_alert.job_alert_activate p, #wrapper .container .job_alert.job_alert_activate input, #wrapper .container .job_alert.job_alert_delete p, #wrapper .container .job_alert.job_alert_delete input{margin-left:30px;}
 
 
 /* ie.css */

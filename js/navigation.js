@@ -84,7 +84,7 @@ _richemontCareers.Navigation = function () {
     });
     /* jQuery to add effect to Home page Chevron */
     $("a.scroll_down").click(function (e) {
-        var targetOffset = $("#our-world").offset().top - 70 + 'px';
+        var targetOffset = $("#our-world").offset().top;
         $('html, body').animate({
             scrollTop: targetOffset
         }, "slow");

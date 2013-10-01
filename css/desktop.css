@@ -772,7 +772,7 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie8 .career_gallery_container, .lt-ie8 .career_gallery_container .slides, .lt-ie8 .career_gallery_container .slides ul{width:1024px;overflow: hidden;}
 .lt-ie8 .page_1 .row .col.span_4{width:33.325%;}
 .lt-ie8 .page_1 .row .col.span_4 img{position: relative;z-index: -1;right: -1px;}
-.page_6 .career_gallery{width: 90%;}
+.lt-ie8 .page_6 .career_gallery{width: 90%;}
 
 .maisons_lists ul li.shading .grow {
     display: block;

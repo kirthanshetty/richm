@@ -22,7 +22,7 @@
     margin-top:0;
   }
   
-  .page_5 .maisons_head p
+  .page_6 .maisons_head p
   {
     line-height:25px;
     text-align:left;
@@ -64,7 +64,7 @@
     padding:0;
   }
   
-  .maisons_head,.page_5 .maisons_head
+  .maisons_head,.page_6 .maisons_head
   {
     width:100%;
     overflow:hidden;
@@ -158,7 +158,7 @@
     padding:10px;
   }
   
-  #wrapper .page_3 .maisons_head h2,#wrapper #why-join-us h2,#wrapper .page_5 .maisons_head h2
+  #wrapper .page_3 .maisons_head h2,#wrapper #why-join-us h2,#wrapper .page_6 .maisons_head h2
   {
     font-size:3.4em;
     float:left;
@@ -352,7 +352,7 @@
     width:auto;
   }
   
-  .tab_content_right,.tab_content_left,.page_5 .maisons_head h2,.page_5 .maisons_head p
+  .tab_content_right,.tab_content_left,.page_6 .maisons_head h2,.page_6 .maisons_head p
   {
     padding-left:12px;
     padding-right:12px;
@@ -379,7 +379,7 @@
     padding:10px 0;
   }
   
-  .page_6 .two_sections .section_one
+  .page_5 .two_sections .section_one
   {
     width:100%;
     margin:0;

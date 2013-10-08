@@ -44,6 +44,8 @@ _richemontCareers.Navigation = function () {
                 $(".header_right").addClass('menu_list');
                 $(".header_right ul").removeClass('second_row');
                 $(".menu_list").show();
+            }).find('nav ul li').click(function(){
+                $(".menu_list").hide();
             });
             $(".collapsed").mouseout(function () {
                 $(".menu_list").hide();

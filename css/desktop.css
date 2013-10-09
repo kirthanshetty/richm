@@ -1041,22 +1041,22 @@ div.collapsed.hover .menu_list{display:block;}*/
 /* Style for Single-Column page */
 #wrapper .column-content .col h2{font-size: 5em;margin: 30px 0 20px 0px;}
 .column-content{margin-top: 75px;margin-left:30px;margin-right:20px;}
-.column-content h3, .column-content .column-tab-content span{font-size:1.4em;margin:0px;color:#00436e;line-height: 22px;}
+.column-content h3, .column-content .column-tab-content h6, .column-content h5.bold_text{font-size:1.4em;margin:0px;color:#00436e;line-height: 22px;}
 .column-content h4, .column-content .column-tab-content p{font-size:1.4em;margin:0px;color:#000;padding-top: 15px;line-height: 22px;}
 .column-content p, .column-content .ans_section{font-size:1.4em;margin:0px;color:#5e5e5e;line-height: 24px;padding-top: 15px;padding-bottom: 5px;font-weight: bold;}
 .column-content p.red{padding-bottom: 18px;color:#e90000;}
-.column-content li, .column-content span{font-size:1.4em;margin:0px;color:#000;line-height: 22px;font-weight: bold;}
-.column-content span{padding-top: 20px;display: block;}
+.column-content li, .column-content h6{font-size:1.4em;margin:0px;color:#000;line-height: 22px;font-weight: bold;}
+.column-content h6{padding-top: 20px;display: block;margin:0px;}
 .column-content ul, .column-content ol{padding-left:40px;padding-top:20px;}
 .column-content ul{padding-left: 15px;}
 .column-content ul li{background: url("../img/parallax/sprite.png") no-repeat scroll 2px -1210px transparent;padding-left: 25px;}
 .column-content li a{text-decoration: underline;font-size: 1em;margin: 0px;color:#00436e;}
 .column-content a.top{color:#00436e;font-size:1.4em;margin-top: 25px;display: block;margin-bottom: 25px;font-weight: bold;}
-.column-content ul li span{  background: url("../img/parallax/sprite.png") repeat scroll left -1209px transparent;float: left;margin-right: 8px;width: 12px;}
+/*.column-content ul li span{  background: url("../img/parallax/sprite.png") repeat scroll left -1209px transparent;float: left;margin-right: 8px;width: 12px;}*/
 .column-content ol li{list-style-type: decimal;}
 .column-content .locations-list{padding-bottom: 12px;}
 .column-tab-content{float: left;width: 100%;}
-.column-tab-content span{width:290px;padding-right: 10px;float:left;padding-top: 15px;height:55px;}
+.column-tab-content h6{width:290px;padding-right: 10px;float:left;padding-top: 15px;height:55px;}
 .column_faq_section{float:left;width:100%;padding-top: 20px;padding-bottom: 10px;}
 .column_faq_section ul{padding-bottom: 30px;}
 .column_faq_section ul li{color:#00436e;}
@@ -1064,10 +1064,10 @@ div.collapsed.hover .menu_list{display:block;}*/
 .column-content .terms-condition h4.tc-subhead {clear: both;color: #E90000;float: left;font-size: 1.2em;margin: 0 10px 5px 0px;padding-top:0px;}
 .column-content .terms-condition p{font-size: 1.2em; line-height: 19px;font-weight: normal;}
 .column_faq_section p{padding-bottom: 20px;}
-.column-content h4.pt{padding-top: 20px;padding-bottom: 10px;float: left;width: 100%;}
+.column-content h5.pt{padding-top: 20px;padding-bottom: 10px;float: left;width: 100%;font-size:1.4em;margin:0px;color:#000;}
 .column-content .column-tab-content p{font-weight: bold;}
 
-.lt-ie8 .column-content span{padding-top: 0px;}
+.lt-ie8 .column-content h6{padding-top: 0px;}
 .lt-ie8 .column-content ul li{width: 100%;}
 
 #wrapper .job_alert .section_left{margin:0px;padding:0px;width:100%;}

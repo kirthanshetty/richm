@@ -533,7 +533,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .creativity_head, .tab_content{width:100%;position: relative;}
 .tab_content .main_cont{position: relative;}
 .creativity_head{position: relative;margin-bottom: 18px;overflow: hidden;}
-.creativity_head .bg_img{background: url("../img/parallax/img21.jpg") no-repeat scroll left top transparent;height: 288px;text-align: center;width:auto;}
+.creativity_head .bg_img{/*background: url("../img/parallax/img21.jpg") no-repeat scroll left top transparent;*/height: 288px;text-align: center;width:auto;}
 .creativity_head .bg_img.craft{background: url("../img/parallax/join2.jpg") no-repeat scroll left top transparent;}
 .creativity_head h2{color:#00436e;font-size:5em;font-family: 'SabonLT-Roman';}
 .creativity_head p{font-size: 1.4em;color: #fff;margin:0px;}
@@ -1030,7 +1030,7 @@ div.collapsed.hover .menu_list{display:block;}*/
 
 
 .join_us_gallery .maison_prev, .join_us_gallery .maison_next{text-indent: -9999px;}
-.creativity_head .bg_img img{display: none;}
+.creativity_head .bg_img img{/*display: none;*/}
 .our_world .slides .content a{ color: #2B2B2B;font-size: 1.4em;margin-bottom: 10px;text-decoration: underline;padding-left: 4px;}
 /*.career, .global, .career_two_sections, .global_two_sections { display:none;}*/
 .section_images .section_bg, .gallery_join .span_7.col .two_sections{display:none;}

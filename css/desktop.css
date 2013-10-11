@@ -599,7 +599,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .gallery_join .our_world a.prev{float:left;color:#00436e;font-family: georgia;font-size: 1.5em;font-style: italic;font-weight: bold;}
 .gallery_join .our_world a.next{ float: right;color:#00436e;font-family: georgia;font-size: 1.5em;font-style: italic;font-weight: bold;}
 .gallery_join .our_world a.inactive{opacity:0.6;filter:alpha(opacity=60);}
-.gallery_join .our_world ul.buttons {left: 297px;top: 5px;}
+.gallery_join .our_world ul.buttons {position: static; margin-top: -20px;}
 ul.buttons{float: right;left: 375px;position: absolute;top: 320px;z-index: 9;}
 ul.buttons li{float:left;width:14px;height: 20px; margin-left: 9px;}
 ul.buttons li a{ background: url("../img/parallax/sprite.png") left -269px;width:14px;height: 20px;display: block;border:none;}

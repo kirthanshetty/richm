@@ -181,6 +181,11 @@ _richemontCareers.repositionItems = function (container, callback) {
             list.eq(0).before(curList)
             curList = $('<ul>');
         }
+
+        if($(this).hasClass('join-us')){
+            $(this).width( (100 / noElsInRow * (noElsInRow - (i % noElsInRow)))+ '%');
+            $(this).attr("class", "join-us cols_" + (noElsInRow - (i % noElsInRow)));
+        }
     });
     list.eq(0).before(curList)
 

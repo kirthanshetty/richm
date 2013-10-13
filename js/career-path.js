@@ -12,6 +12,7 @@ _richemontCareers.CareerPath = function(container){
 			container.html(data);
 			anchor.parent().parent().find('li.active').removeClass('active');
 			anchor.parent().addClass('active');
+			$('.tab_content_left select').customSelect();
 		});
 	})
 	

@@ -22,7 +22,7 @@
     margin-top:0;
   }
   
-  .page_5 .maisons_head p
+  .page_6 .maisons_head p
   {
     line-height:25px;
     text-align:left;
@@ -64,7 +64,7 @@
     padding:0;
   }
   
-  .maisons_head,.page_5 .maisons_head
+  .maisons_head,.page_6 .maisons_head
   {
     width:100%;
     overflow:hidden;
@@ -75,7 +75,7 @@
     width:25%;
   }
   
-  .page_1 .row span.scroll_down
+  .page_1 .row a.scroll_down
   {
     display:block;
     float:none;
@@ -123,7 +123,7 @@
   
   #our-world img.section_bg
   {
-    top:75px;
+    top:92px;
   }
   
   #our-world,#work-with-us
@@ -158,7 +158,7 @@
     padding:10px;
   }
   
-  #wrapper .page_3 .maisons_head h2,#wrapper #why-join-us h2,#wrapper .page_5 .maisons_head h2
+  #wrapper .page_3 .maisons_head h2,#wrapper #why-join-us h2
   {
     font-size:3.4em;
     float:left;
@@ -166,7 +166,6 @@
     padding-top:10px;
     margin:0;
   }
-  
   #wrapper #why-join-us h2
   {
     padding-bottom:50px;
@@ -177,10 +176,11 @@
   
   #why-join-us .inner_content
   {
-    padding-top:0;
+    padding-top:15px;
     padding-bottom:0;
     background:#f7f7f7;
   }
+  #wrapper #our-world .our_world h2{padding-top: 20px;}
   
   #why-join-us .maisons_head p
   {
@@ -238,7 +238,7 @@
   
   #work-with-us img.section_bg
   {
-    top:155px;
+    top:130px;
   }
   
   a.mobile_link
@@ -352,7 +352,7 @@
     width:auto;
   }
   
-  .tab_content_right,.tab_content_left,.page_5 .maisons_head h2,.page_5 .maisons_head p
+  .tab_content_right,.tab_content_left,.page_6 .maisons_head h2,.page_6 .maisons_head p
   {
     padding-left:12px;
     padding-right:12px;
@@ -379,7 +379,7 @@
     padding:10px 0;
   }
   
-  .page_6 .two_sections .section_one
+  .page_5 .two_sections .section_one
   {
     width:100%;
     margin:0;
@@ -649,14 +649,38 @@
   .page_4 .videos .section_one{margin-bottom:16px;}
   .page_4 .videos .section_one.last-video{margin-bottom:0px;}
 
-  #wrapper #our-world .our_world h2{ display: block;padding:0px;font-size: 3.4em;position: relative;top: -130px;}
+  #wrapper #our-world .our_world h2{ display: block;padding:0px;font-size: 3.4em;position: relative;top: -110px;}
   .gallery_join .our_world a.prev, .gallery_join .our_world a.next{display:block;position: relative;top: -576px;}
-  #work-with-us .gallery_container{ position: relative;top: -145px;width: 100;}
+  #work-with-us .gallery_container{ position: relative;top: -15px;}
   #work-with-us .gallery_container .content h2{display: block;margin-top: -4px;padding-bottom: 190px;}
   #wrapper #work-with-us .our_world h2{top:-703px;font-size:3.4em;}
-  #work-with-us .gallery_join .our_world a.prev, #work-with-us .gallery_join .our_world a.next{top: -737px;}
+  #work-with-us .gallery_join .our_world a.prev, #work-with-us .gallery_join .our_world a.next{position: absolute;top:45px;}
+  #work-with-us .gallery_join .our_world a.prev{left:0px;}
+  #work-with-us .gallery_join .our_world a.next{right:0px;}
   #wrapper .jobs_main_content .view_jobs h2{margin-left:0px;float:left;}
   #wrapper .jobs_main_content .view_jobs h3{float:right;margin-right:0px;display: block;}
   #wrapper .jobs_main_content .view_jobs h3 a{background: none;border:0px;color:#00436e;margin-right: 0px;padding-right: 0px;}
   #wrapper .jobalert .section_left{margin-left: 0px;}
+  #wrapper .column-content .terms-condition h2.language3, #wrapper .column-content .view_jobs h2{font-size:2.4em;}
+  .column-content ul{padding-left: 0px;}
+  .column-content ol{padding-left: 25px;}
+  .column-content span.tab_option{height:200px;}
+  #wrapper .faq.right_section{width:87%;}
+  #wrapper .terms-condition h2{font-size: 2em;}
+  #work-with-us .gallery_container .content{padding-bottom: 0px;}
+  #work-with-us .gallery_join .col.span_5 .our_world{padding: 0px;}
+  .container.main #work-with-us .gallery_join .col.span_7 .two_sections .section_one{margin-top:0px;}
+  .container.main #work-with-us .gallery_join .col.span_7 .two_sections .section_two{margin-top:20px;}
+  .scroll_top img {bottom: 105px;}
+  #wrapper .tab_content_full .tab_content_left div.submission p{float: right;}
+  #wrapper .tab_content_full .tab_content_left div.submission, #why-join-us .videos .section_one a, #wrapper .tab_content_full .tab_content_left .form_submission input[type="text"]{width: 100%;}
+  #career-paths .tab_content_left select, #career-paths .tab_content_left span.customSelect{top: 24px !important;}
+  #work-with-us{padding-top: 0px;}
+  #wrapper .tab_content_full .tab_content_left .form_submission .fourth_step label, #wrapper .tab_content_full .tab_content_left .form_submission div.first_step label{padding-bottom: 3px;}
+  .career_gallery_container .slides{width:1475px !important;}
+  .career_gallery ul li{width:184px;}
+  #our-maisons .inner_content{padding-top: 45px;}
+  .gallery_join .our_world h2{padding-top:10px;}
+  #wrapper .page_6 .maisons_head h2{padding-top: 0px;font-size: 3.4em;text-align: left;padding-left: 0;padding-right: 0;margin-left: 10px;}
+  .maisons_head{padding-top: 0px;}
 }

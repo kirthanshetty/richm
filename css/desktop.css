@@ -198,12 +198,6 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .no-cssgradients .quick_search input[type='submit']{background: url("../img/shade_bg.jpg") repeat-x scroll left top;}
 .no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button']{background: url("../img/grey_bg.jpg") repeat-x scroll left top;}
 
-@media screen and (-webkit-min-device-pixel-ratio:0) {
- .quick_search input[type="submit"]  {left:-2px; top:1px;}
- .view_jobs .quick_search input[type="submit"]{top:1px;}
-}
-
-
 /* style for Header */
 header, footer{background:#00436e;float:left;width:100%;position:relative;z-index: 99;}
 header{position: fixed;z-index: 1000;}
@@ -223,8 +217,8 @@ header img.logo{float:left;margin:29px 0px 30px 30px;}
 #container{float:left;width:100%;}
 .inner_container{margin:34px;float:left;width:956px;}
 #wrapper h2{font-family: SabonLT-Roman;color:#a3a3a3;font-weight:normal;}
-.quick_search input[type='text']{font-size:1.2em;font-style:italic;color:#747476;font-family:georgia;border:1px solid #a8a8a8;width:250px;height:35px;padding:0px 10px;}
-.quick_search input[type='submit']{color:#00436e;font-size:1.2em;border:1px solid #a8a8a8;border-left:0px;padding:9.1px 9px 9px;position: relative;left:-2px;top:0px;}
+.quick_search input[type='text']{font-size:1.2em;font-style:italic;color:#747476;font-family:georgia;border:1px solid #a8a8a8;width:250px;height:35px;padding:0px 10px;float:left;}
+.quick_search input[type='submit']{color:#00436e;font-size:1.2em;border:1px solid #a8a8a8;border-left:0px;padding:0px 9px;height:35px;position: relative;left:0px;top:0px;float:left;}
 .quick_search input[type='submit'], .search_block h2{background: -moz-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dcdcdc), color-stop(20%,#e0e0e0), color-stop(40%,#e8e8e8), color-stop(60%,#ededee), color-stop(80%,#f2f2f2), color-stop(100%,#f4f4f4)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ededee 60%, #f2f2f2 80%, #f4f4f4 100%); /* Chrome10+,Safari5.1+ */
@@ -244,14 +238,14 @@ background: linear-gradient(to bottom, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ed
 .header_right select option{border:1px solid #d2d2d2;border-top:0px;background:#e7e7e7;color:#4e4e4e;font-size:1em;padding:2px 2px;}
 .inner_block div select option:hover, .inner_block div select option:focus{background:#a3a3a3;color:#fff; float: left;}
 .inner_block input[type='button']{float:left;margin-right:20px;margin-top:24px;}
-.inner_block input[type='button'], .section_right input[type='button'], .tab_content_left form input[type='button'], #wrapper .tab_content_full .tab_content_left .form_submission a.next, #wrapper .tab_content_full .tab_content_left .form_submission a.prev{color:#fff;font-size:1.2em;font-weight:bold;padding:8px 10px;border:1px solid #4c4b4b;
+.inner_block input[type='button'], .section_right input[type='button'], .tab_content_left form input[type='button'], #wrapper .tab_content_full .tab_content_left .form_submission a.next, #wrapper .tab_content_full .tab_content_left .form_submission a.prev, .section_right .common_right_section a#login, .section_right .common_right_section a#unsubscribe{color:#fff;font-size:1.2em;font-weight:bold;padding:8px 10px;border:1px solid #4c4b4b;
 background: -moz-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8b8b8b), color-stop(20%,#848484), color-stop(40%,#787878), color-stop(50%,#737373), color-stop(60%,#6a6a6a), color-stop(80%,#585858), color-stop(100%,#4e4e4e)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* Chrome10+,Safari5.1+ */
 background: -o-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* IE10+ */
 background: linear-gradient(to bottom, #8b8b8b 0%, #848484 20%, #787878 40%, #737373 50%, #6a6a6a 60%, #585858 80%, #4e4e4e 100%); /* W3C */}
-.inner_block input[type='submit'], .search_block .submit, .maisons_lists ul li.join-us a, .view_jobs a, .maison_main_content .maison_desc input[type='submit'], .job_alert input[type='submit'], #wrapper .tab_content_full .tab_content_left input.attach, .maisons_lists ul li.join-us a, .our_maison_gallery .maison_main_content .maison_desc a.invite {float:left;margin-right:15px;color:#fff;font-size:1.1em;font-weight:bold;padding:8px 10px;border:1px solid #054670;margin-top:24px;
+.inner_block input[type='submit'], .search_block .submit, .maisons_lists ul li.join-us a, .view_jobs a, .maison_main_content .maison_desc input[type='submit'], .job_alert input[type='submit'], #wrapper .tab_content_full .tab_content_left input.attach, .maisons_lists ul li.join-us a, .our_maison_gallery .maison_main_content .maison_desc a.invite, .inner_block a.view-job, .left_section.contact-lft input[type="submit"] {float:left;margin-right:15px;color:#fff;font-size:1.1em;font-weight:bold;padding:8px 10px;border:1px solid #054670;margin-top:24px;
 background: -moz-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#255e83), color-stop(20%,#245d82), color-stop(40%,#215a7f), color-stop(50%,#1d577b), color-stop(60%,#195377), color-stop(80%,#124b70), color-stop(100%,#10496d)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* Chrome10+,Safari5.1+ */
@@ -263,6 +257,8 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .customSelectInner{font-family: 'Lato', sans-serif; font-size: 13px}
 
 .search_sections, .pagination, .pagination ul, .search_list{float:left;}
+.inner_block a.view-job{margin: 0px;padding: 5px 10px;}
+.section_right .common_right_section a#login, .section_right .common_right_section a#unsubscribe{display: inline-block;font-size: 1.3em;padding: 4px 10px;}
 /* Section Left */
 .section_left{float:left;width:605px;}
 .serach_main_lists{float:left;padding-right:30px;border-right:1px solid #D2D2D2;}
@@ -328,7 +324,7 @@ footer .container{position:relative;}
 .page_1 .row .quick_search input[type="text"]{border:1px solid #d1ac46;height:28px;}
 .page_1 .row .quick_search input[type="submit"]{border:1px solid #d1ac46;height:28px;border-left:0px;padding:5px;}
 .page_1 .row span{float:left;color:#5e5e5e;font-size:1.4em;margin:3px 8px;}
-.page_1 .row span.scroll_down{background: url("../img/scroll.png") no-repeat right top;float: right;height: 70px;width: 30px;}
+.page_1 .row a.scroll_down{background: url("../img/scroll.png") no-repeat right top;float: right;margin:3px 8px;height: 70px;width: 30px;}
 .page_1 .row span.scroll_down:hover{background: url("../img/parallax/scroll.gif") no-repeat right top;}
 .page_1 .row .inner_block{padding:0px;border:0px;float:left;}
 .page_1 .row .inner_block input{margin:0px;padding:5px 10px;}
@@ -341,7 +337,7 @@ footer{margin-top:50px;}
 .our_world .slides .content p{padding-bottom: 12px; padding-left: 4px;}
 .icon-pinterest{color:#00436e;font-size:1.4em;}
 .social_links{float:left;width:100%;margin-top:45px;}
-.page_1 .social_links, .page_2 .social_links, .page_3 .social_links, .page_4 .social_links, .page_5 .social_links, .page_6 .social_links {position: absolute;right: -3px;top:30px;width: 100%;margin-top:0px;max-width: 1024px;}
+.page_1 .social_links, .page_2 .social_links, .page_3 .social_links, .page_4 .social_links, .page_5 .social_links, .page_6 .social_links {position: absolute;right: 0px;top:30px;width: 100%;margin-top:0px;max-width: 1024px;z-index: 1;}
 .page_1 .social_link_container{margin:0 auto; position:relative;}
 .page_5 .inner_content, .page_2 .inner_content{position: relative;}
 .page_4 .tab_content .social_links{top:-90px; right: -29px;}
@@ -350,6 +346,7 @@ footer{margin-top:50px;}
 .page_2 .span_3.col{float:right;}
 .social_links ul li a{ float: right;height: 28px;padding: 5px;width: 30px;border-right:1px solid #4383b4;}
 .social_links ul li:first-child a{border:0px;}
+.social_links ul li a.linked{background:url("../img/parallax/sprite.png") no-repeat 6px -1228px #00436e;}
 .social_links ul li a.pin{background:url("../img/parallax/sprite.png") no-repeat 8px -135px #00436e;}
 .social_links ul li a.gplus{background:url("../img/parallax/sprite.png") no-repeat 8px -90px #00436e;}
 .social_links ul li a.fb{background:url("../img/parallax/sprite.png") no-repeat 8px -179px #00436e;}
@@ -359,6 +356,7 @@ footer{margin-top:50px;}
 .section_one{float:left;position:relative;margin-right:20px;}
 .section_two{margin:0px;}
 .section_one figcaption{opacity:0.8;filter:alpha(opacity=80); background:#747474;color:#fff;font-size:1.25em;font-weight:normal;float:left;width:100%;position:absolute;bottom:0px;left :0px;}
+.page_2 .section_one figcaption, .page_5 .section_one figcaption{padding:5px;bottom: 4px;}
 .videos .section_one >a{line-height: 0;float: left;}
 .videos .section_one a figcaption{margin:0px 0px 3px;width: 100%;}
 .section_one figcaption a{color:#fff;margin:3px 8px 5px;display: block;}
@@ -368,7 +366,7 @@ footer{margin-top:50px;}
 .section_text{float:left;width:88%; margin-left: 20px;}
 #our-maisons{background:url("../img/parallax/maisons_bg.png") no-repeat left top #afb0ae;background-size:cover;}
 .maisons_head{width:65%;margin:0 auto;}
-.page_5 .maisons_head{width:59%;}
+.page_6 .maisons_head{width:59%;}
 #wrapper .page_3 .maisons_head h2{font-size:4.8em;font-weight:normal;margin-bottom:0px;margin-top:0px;color:#fff;font-family:'SabonLT-Roman';text-align: center;}
 .maisons_head p{margin:0px;color:#4d4d4d;font-size:1.7em;line-height:28px;text-align: center;}
 .container.main{overflow: hidden;max-width:100%;margin:0px;}
@@ -394,8 +392,8 @@ footer{margin-top:50px;}
 .maisons_lists ul li a.two:hover img{background: transparent;}*/
 .maisons_lists ul li a img{/*left: 20%;position: relative;top: 25%;*/ background: none repeat scroll 0 0 #00436E;height:100%;width:99%;}
 .maisons_lists ul li.join-us{background:#dadada;width:760px;height: 113px;opacity:0.7;filter:alpha(opacity=90);border:0px !important;}
-.maisons_lists ul li.join-us section{float:right;padding:30px 40px;width:665px;}
-.maisons_lists ul li.join-us h3{font-size:2.5em;font-weight: normal;color:#4e4e4e;float:left;margin:7px 0 0;}
+.maisons_lists ul li.join-us section{float:right;padding:30px 40px;width:100%;}
+.maisons_lists ul li.join-us h3{font-size:2.5em;font-weight: normal;color:#4e4e4e;float:right;margin:7px 0 0;}
 .maisons_lists ul li.join-us a{height:auto;float:right;margin:10px 0px 0px 28px;font-size:1.3em;font-weight: normal;}
 .maisons_lists ul li.lightbox-open img.overlay{opacity:0.2;filter:alpha(opacity=20);}
 .maisons_lists ul li.lightbox-open a{background: #1f1f1f;border-color: #414141;}
@@ -535,7 +533,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .creativity_head, .tab_content{width:100%;position: relative;}
 .tab_content .main_cont{position: relative;}
 .creativity_head{position: relative;margin-bottom: 18px;overflow: hidden;}
-.creativity_head .bg_img{background: url("../img/parallax/img21.jpg") no-repeat scroll left top transparent;height: 288px;text-align: center;width:auto;}
+.creativity_head .bg_img{/*background: url("../img/parallax/img21.jpg") no-repeat scroll left top transparent;*/height: 288px;text-align: center;width:auto;}
 .creativity_head .bg_img.craft{background: url("../img/parallax/join2.jpg") no-repeat scroll left top transparent;}
 .creativity_head h2{color:#00436e;font-size:5em;font-family: 'SabonLT-Roman';}
 .creativity_head p{font-size: 1.4em;color: #fff;margin:0px;}
@@ -560,10 +558,10 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .videos .section_one{margin-right:36px;}
 .videos .section_one:last-child{margin:0px;}
 .videos .section_one.last-video{margin:0px;}
-.section_one a span.play{position:absolute;font-family: 'SabonLT-Roman';font-size: 2em;font-weight:normal;margin: 0;font-style: italic;left:28%;top:40%;color: #fff;}
+.section_one a span.play{color: #FFFFFF;font-family: 'SabonLT-Roman';font-size: 2em;font-style: italic;font-weight: normal;left: 50%;margin: -2px 0 0 -62px;position: absolute;top: 50%;}
 .container.main #work-with-us.page .gallery_join{position: relative;height:auto;float:left;width: 100%;}
-.page_5 .maisons_head h2{text-align :center;margin-bottom:0px;}
-#wrapper .page_5 .maisons_head h2{font-size:4.8em;}
+.page_6 .maisons_head h2{text-align :center;margin-bottom:0px;}
+#wrapper .page_6.maisons_head h2{font-size:4.8em;}
 .tab_content_full, .tab_content_right div{float:left;width:100%;}
 .tab_content_left{float:left;}
 .tab_content_left h2, .tab_content_left h3, .tab_content_right h3, .tab_content_right h4 ,.tab_content_left h4 {color:#4e4e4e;font-size: 2.1em;margin:0 0 12px;font-weight:normal;}
@@ -601,14 +599,14 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .gallery_join .our_world a.prev{float:left;color:#00436e;font-family: georgia;font-size: 1.5em;font-style: italic;font-weight: bold;}
 .gallery_join .our_world a.next{ float: right;color:#00436e;font-family: georgia;font-size: 1.5em;font-style: italic;font-weight: bold;}
 .gallery_join .our_world a.inactive{opacity:0.6;filter:alpha(opacity=60);}
-.gallery_join .our_world ul.buttons {left: 297px;top: 5px;}
+.gallery_join .our_world ul.buttons {position: static; margin-top: -20px;}
 ul.buttons{float: right;left: 375px;position: absolute;top: 320px;z-index: 9;}
 ul.buttons li{float:left;width:14px;height: 20px; margin-left: 9px;}
 ul.buttons li a{ background: url("../img/parallax/sprite.png") left -269px;width:14px;height: 20px;display: block;border:none;}
 ul.buttons li.active a{ background: url("../img/parallax/sprite.png") left -292px;}
 .gallery_container{float:left;width:100%;}
 #work-with-us .gallery_container .content{float:left;padding-bottom: 15px;}
-.container.main #work-with-us.page .gallery_join .two_sections{position:absolute; bottom: 78px;}
+.container.main #work-with-us.page .gallery_join .two_sections{position:absolute; bottom: 78px;width:55%;}
 .popup_overlay{background: none repeat scroll 0 0 #DDDDDD;height: 350px;left: 0;position: relative;width: 100%;float:left;}
 .popup_overlay span{margin:auto;display: block;}
 
@@ -647,7 +645,7 @@ button.collapsed{display:none;}
 .section_text h3 { color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;text-transform: uppercase;}
 .maisons_head strong{color: #4E4E4E;font-size: 1.2em;font-weight: normal;margin-bottom: 10px;text-align: center;}
 #wrapper .tab_content_full .tab_content_left h3{ color: #4E4E4E;font-size: 1.4em;font-weight: bold;margin-bottom: 10px;font-family: lato;}
-.social_links ul{margin-right:30px;}
+.social_links ul{margin-right:0px;}
 .page_2 .two_sections .section_one{margin: 0 0 0 20px;}
 #wrapper, header, footer, #wrapper .container.main .page{max-width: 1280px;}
 #wrapper .tab_content_full .tab_content_left .second_step, #wrapper .tab_content_full .tab_content_left .third_step, #wrapper .tab_content_full .tab_content_left .first_step, #wrapper .tab_content_full .tab_content_left .fourth_step, #wrapper .tab_content_full .tab_content_left .fifth_step{float: left;width: 100%;border: 0px;padding:0px;}
@@ -707,15 +705,16 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .common_right_section{padding-bottom: 25px;}
 
 /* CSS for IE to Fallback */
-.no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us a, .no-cssgradients .jobalert input[type='submit'], .no-cssgradients #wrapper .tab_content_full .tab_content_left input.attach{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
+.no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us a, .no-cssgradients .jobalert input[type='submit'], .no-cssgradients #wrapper .tab_content_full .tab_content_left input.attach, .no-cssgradients .inner_block a.view-job, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc a.invite, .job_alert input[type='submit']{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type='submit']{background: url("../img/parallax/shade_bg.jpg") repeat-x scroll left top;}
-.no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button'], .no-cssgradients #wrapper .tab_content_full .tab_content_left .form_submission a.next, .no-cssgradients #wrapper .tab_content_full .tab_content_left .form_submission a.prev{background: url("../img/parallax/grey_bg2.jpg") repeat-x scroll left top;}
+.no-cssgradients .inner_block input[type='button'], .no-cssgradients .section_right input[type='button'], .no-cssgradients #wrapper .tab_content_full .tab_content_left .form_submission a.next, .no-cssgradients #wrapper .tab_content_full .tab_content_left .form_submission a.prev, .no-cssgradients .section_right .common_right_section a#login, .no-cssgradients .section_right .common_right_section a#unsubscribe{background: url("../img/parallax/grey_bg2.jpg") repeat-x scroll left top;}
 .no-cssgradients .quick_search input[type="submit"]{background: url("../img/shade_button.jpg") repeat-x left top;}
 .eq-ie9 .quick_search input[type="submit"], .lt-ie9 .quick_search input[type="submit"]{padding-top:10px;}
 .lt-ie9 .tab_content_full .view_jobs a, .eq-ie9 .tab_content_full .view_jobs a{padding-top:6px;padding-bottom: 6px;}
 .lt-ie9 .tab_content_left form input[type="button"], .eq-ie9 .tab_content_left form input[type="button"]{background: url("../img/grey_bg.jpg") repeat-x scroll left top;}
 .lt-ie9 .search_block .submit, .eq-ie9 .search_block .submit{background: url("../img/blue_bg.jpg") repeat-x scroll left top;}
 .eq-ie9 .quick_search input[type="submit"]{top:-1px;}
+.no-cssgradients .section_right .common_right_section a#login, .no-cssgradients .section_right .common_right_section a#unsubscribe, .no-cssgradients .maisons_lists ul li.join-us a{padding-bottom: 6px;}
 
 .eq-ie9 .join_us_gallery ul li{margin:0px 22px 0px 23px;}
 .lt-ie9 .join_us_gallery ul li{margin:0px 16px 0px 17.5px;}
@@ -723,11 +722,15 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .eq-ie9 .header_right ul.first_row{font-family: lato;}
 .eq-ie9 .quick_search input[type="submit"]{top:0px !important;}
 .eq-ie9 .second_row .quick_search input[type="submit"]{top:-1px;}
-.lt-ie9 .quick_search input[type="text"]{position: relative;top:-5px;}
+.lt-ie9 .view_jobs .quick_search input[type="text"]{position: relative;top:-5px;}
 .lt-ie9 #our-maisons{background-position: center top;}
 .lt-ie8 .page_1 .row .inner_block input[type="submit"]{border:0px;}
-.lt-ie8 .quick_search input[type="text"]{height:26px !important;position:relative;top:0px !important;}
-.lt-ie8 .quick_search input[type="submit"]{left:-3px;}
+.lt-ie8 .quick_search input[type="submit"]{left:-2px;}
+.lt-ie8 .quick_search input[type="text"]{height:26px !important;line-height: 25px;}
+.lt-ie8 .view_jobs .quick_search input[type="text"]{height: 33px !important;line-height: 30px;}
+.lt-ie9 .quick_search input[type="text"]{line-height: 25px;}
+.lt-ie9 .view_jobs .quick_search input[type="text"]{line-height: 30px;}
+.lt-ie8 .view_jobs .quick_search input[type="submit"]{line-height: 10px;left:0px;}
 .lt-ie8 header{height:70px;}
 .lt-ie8 .social_links ul li{height:28px;display:inline;}
 .lt-ie8 .social_links ul li a{height:18px;}
@@ -738,20 +741,38 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie8 .join_us_gallery ul{top:288px;width:91%;}
 .lt-ie8 .maison_slide_container{width:95.8%;}
 .lt-ie8 .maison_slide_container .our_maison_gallery{padding-bottom: 15px;}
-.lt-ie8 .tab_content .main_cont{top:335px;}
+.lt-ie8 .tab_content .main_cont{top:55px;}
 .lt-ie8 .career_gallery a.prev, .lt-ie8 .career_gallery a.next{height:16px;}
 .lt-ie8 .maisons_lists ul li.join-us a, .tab_content_left form input[type="button"]{border:0px;}
-.lt-ie9 .jobs_main_content .quick_search input[type="submit"]{top:5px;padding-bottom: 8px;}
+.lt-ie9 .jobs_main_content .quick_search input[type="submit"]{top:-5px;padding-bottom: 8px;}
 .lt-ie9 .maisons_lists .fading a:hover img{background: none;}
 .lt-ie9 .gallery_join .col.span_5 .our_world {width:92%;}
 .lt-ie8 .gallery_join .col.span_5 .our_world {width:78%;}
 .lt-ie9 .locations .section_left img{margin:20px 0px;}
-.lt-ie8 .section_one figcaption {width:92%;}
+.lt-ie8 .section_one figcaption {width:100%;}
+.lt-ie8 .page_2 .section_one figcaption, .lt-ie8 .page_5 .section_one figcaption {width:96%;}
 .lt-ie8 .videos .section_one a figcaption {width:94%;}
 .lt-ie8 .career_gallery ul li.active {height:102px;}
 .lt-ie8 .career_gallery ul li.active .chat-bubble-arrow{border:0px;}
 .lt-ie8 .career_gallery ul li {height:79px;}
 .lt-ie8 .join_us_gallery ul li{margin:0px 12px 0px 12px;}
+.lt-ie9 .page_1 .social_links, .lt-ie9 .page_2 .social_links, .lt-ie9 .page_3 .social_links, .lt-ie9 .page_4 .social_links, .lt-ie9 .page_5 .social_links, .lt-ie9 .page_6 .social_links {right:-235px;}
+.lt-ie8 .page_1 .social_links, .lt-ie8 .page_2 .social_links, .lt-ie8 .page_3 .social_links, .lt-ie8 .page_4 .social_links, .lt-ie8 .page_5 .social_links, .lt-ie8 .page_6 .social_links {right:0px;}
+.lt-ie9 .social_links ul{float:right;width:17.6%;}
+.lt-ie9 .social_links ul li{float:right;}
+.lt-ie8 .social_links ul{width:23% !important;}
+.lt-ie8 .social_links ul li{width:15%;}
+.lt-ie8 .social_links ul li a{padding-right: 0px;}
+.lt-ie8 .tab_content_left span.customSelect{padding-bottom: 0px;padding-top: 5px;}
+.lt-ie8 .tab_content_left span.customSelect{height: 30px !important;}
+.lt-ie8 .tab_content_full .view_jobs a{float: right;}
+.lt-ie8 .tab_content_left form p{position: relative;top:-20px;}
+.lt-ie8 .join_us_gallery ul li.active{height: 45px;}
+.lt-ie8 .maisons_lists ul li.join-us section{width: auto;}
+.lt-ie8 .career_gallery_container, .lt-ie8 .career_gallery_container .slides, .lt-ie8 .career_gallery_container .slides ul{width:1024px;overflow: hidden;}
+.lt-ie8 .page_1 .row .col.span_4{width:33.325%;}
+.lt-ie8 .page_1 .row .col.span_4 img{position: relative;z-index: -1;right: -1px;}
+.lt-ie8 .page_6 .career_gallery{width: 90%;}
 
 .maisons_lists ul li.shading .grow {
     display: block;
@@ -797,9 +818,10 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
   .maisons_lists ul li.shading a .grow img{display: block;}
   .maisons_lists ul li.shading.lightbox-open .image { background: none repeat scroll 0 0 #1F1F1F;}
 
-
+.page_1 .row .col.span_4:last-child {position: relative;right: -0.033%;}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
- .quick_search input[type="submit"]  {left:-2px;  }
+ .quick_search input[type="submit"]  {left:-2px;}
+ .view_jobs .quick_search input[type="submit"]{left:0px;}
  .video-js{position: static;}
  
   
@@ -905,18 +927,21 @@ img.section_bg{left: 0;position: absolute;top: 0;width: 100%;}
 /*img.section_bg.global { left: auto !important;right: 24%;width: auto !important;}*/
 .lt-ie7 img.section_bg{z-index: -1;}
 h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs h3{display: none;}
-
+.page_5 .section_one{float:right;margin:0px 10px;width:46%;}
+.page_5 .section_one img{width: 100%;}
+/*div.collapsed .menu_list{display:none;}
+div.collapsed.hover .menu_list{display:block;}*/
 
 /* Style for Other pages */
 /* Style for Contact page */
 .full_section{float:left;width:100%;}
 .full_section .col.span_5{border-right:1px solid #d4d4d4;}
 .full_section .col.span_5:last-child{border:0px;}
-.left_section{float:left;width:292px;}
+.left_section.contact-lft{float:left;width:265px;}
 .left_section label{display:block;font-size:1.5em;color:#5e5e5e;padding-bottom: 8px;}
-.left_section input{width:292px;border:1px solid #a8a8a8;height:33px;margin-bottom:20px;}
-.left_section textarea{width:292px;border:1px solid #a8a8a8;height:145px;margin-bottom:20px;}
-.left_section input[type="submit"] {background: linear-gradient(to bottom, #255E83 0%, #245D82 20%, #215A7F 40%, #1D577B 50%, #195377 60%, #124B70 80%, #10496D 100%) repeat scroll 0 0 transparent;border: 1px solid #054670;color: #FFFFFF;float: right;font-size: 1.3em;font-weight: bold;padding: 0px 5px;width:70px;}
+.left_section input{width:265px;border:1px solid #a8a8a8;height:33px;margin-bottom:20px;}
+.left_section textarea{width:265px;border:1px solid #a8a8a8;height:145px;margin-bottom:20px;}
+.left_section.contact-lft input[type="submit"] {border: 1px solid #054670;color: #FFFFFF;float: right;font-size: 1.3em;font-weight: bold;padding: 0px 5px;width:70px;margin-right: 0px;}
 .right_section{float:left;padding-left: 12px;}
 .right_section h4{color:#4e4e4e;font-size:1.7em;font-weight:bold;margin:0px 0px 18px 0px;}
 .right_section ul{padding:0px;}
@@ -952,9 +977,11 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 #wrapper .privacy p a{font-size:1em;float:none;padding:0px;margin:0px;}
 #wrapper .privacy a.top{margin:0px 0px 30px 20px;font-size:1.4em;}
 /* Style for Credits page */
-.credit_section{ float: left;width: 40%;}
+.credit_section{ float: left;width: 55%;}
 .credit_section h5{font-size:1.5em;margin:10px 0px;width:255px;color:#00436e;float:left;padding-right:10px;}
-.credit_section p{margin:10px 0px;padding-left:15px;font-size:1.5em;line-height: 25px;color:#5e5e5e;float:left;}
+.credit_section p{margin:10px 0px;padding-left:15px;font-size:1.5em;line-height: 25px;color:#5e5e5e;}
+.credit-tab{height: 100px;}
+.credit_section div{overflow: hidden;}
 #wrapper .jobs_main_content .view_jobs h2{margin: 20px 0 15px 30px;}
 /* Style for FAQs page */
 #wrapper .faq  label {display:block;color: #5E5E5E;float: left;font-size: 1.5em;padding-bottom: 8px;}
@@ -999,16 +1026,55 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .job_alert .section_left div{float:left;width: 100%;padding-bottom: 5px;}
 .job_alert .section_left div label{float: left;}
 .job_alert .section_left div input{ float: left;margin-right: 8px;margin-top: 5px;}
+#wrapper .search_results.job_alert .section_left input, #wrapper .search_results.job_alert .section_left p{margin-left: 0px;}
 
 
 .join_us_gallery .maison_prev, .join_us_gallery .maison_next{text-indent: -9999px;}
-.creativity_head .bg_img img{display: none;}
+.creativity_head .bg_img img{/*display: none;*/}
 .our_world .slides .content a{ color: #2B2B2B;font-size: 1.4em;margin-bottom: 10px;text-decoration: underline;padding-left: 4px;}
 /*.career, .global, .career_two_sections, .global_two_sections { display:none;}*/
 .section_images .section_bg, .gallery_join .span_7.col .two_sections{display:none;}
 .section_images .section_bg.active, .gallery_join .span_7.col .two_sections.active{display:block;}
 .search_main_block .inner_block .search_buttons {margin-top: 24px;}
 /*.menu_list{display:block;}*/
+
+/* Style for Single-Column page */
+#wrapper .column-content .col h2{font-size: 5em;margin: 30px 0 20px 0px;}
+.column-content{margin-top: 75px;margin-left:30px;margin-right:20px;}
+.column-content h3, .column-content .column-tab-content h6, .column-content h5.bold_text{font-size:1.4em;margin:0px;color:#00436e;line-height: 22px;}
+.column-content h4, .column-content .column-tab-content p{font-size:1.4em;margin:0px;color:#000;padding-top: 15px;line-height: 22px;}
+.column-content p, .column-content .ans_section{font-size:1.4em;margin:0px;color:#5e5e5e;line-height: 24px;padding-top: 15px;padding-bottom: 5px;font-weight: bold;}
+.column-content p.red{padding-bottom: 18px;color:#e90000;}
+.column-content li, .column-content h6{font-size:1.4em;margin:0px;color:#000;line-height: 22px;font-weight: bold;}
+.column-content h6{padding-top: 20px;display: block;margin:0px;}
+.column-content ul, .column-content ol{padding-left:40px;padding-top:20px;}
+.column-content ul{padding-left: 15px;}
+.column-content ul li{background: url("../img/parallax/sprite.png") no-repeat scroll 2px -1210px transparent;padding-left: 25px;}
+.column-content li a{text-decoration: underline;font-size: 1em;margin: 0px;color:#00436e;}
+.column-content a.top{color:#00436e;font-size:1.4em;margin-top: 25px;display: block;margin-bottom: 25px;font-weight: bold;}
+/*.column-content ul li span{  background: url("../img/parallax/sprite.png") repeat scroll left -1209px transparent;float: left;margin-right: 8px;width: 12px;}*/
+.column-content ol li{list-style-type: decimal;}
+.column-content .locations-list{padding-bottom: 12px;}
+.column-tab-content{float: left;width: 100%;}
+.column-tab-content h6{width:290px;padding-right: 10px;float:left;padding-top: 15px;height:55px;}
+.column_faq_section{float:left;width:100%;padding-top: 20px;padding-bottom: 10px;}
+.column_faq_section ul{padding-bottom: 30px;}
+.column_faq_section ul li{color:#00436e;}
+.column-content .terms-condition h2, #wrapper .column-content .terms-condition h3{margin-left: 0px;}
+.column-content .terms-condition h4.tc-subhead {clear: both;color: #E90000;float: left;font-size: 1.2em;margin: 0 10px 5px 0px;padding-top:0px;}
+.column-content .terms-condition p{font-size: 1.2em; line-height: 19px;font-weight: normal;}
+.column_faq_section p{padding-bottom: 20px;}
+.column-content h5.pt{padding-top: 20px;padding-bottom: 10px;float: left;width: 100%;font-size:1.4em;margin:0px;color:#000;}
+.column-content .column-tab-content p{font-weight: bold;}
+
+.lt-ie8 .column-content h6{padding-top: 0px;}
+.lt-ie8 .column-content ul li{width: 100%;}
+
+#wrapper .job_alert .section_left{margin:0px;padding:0px;width:100%;}
+#wrapper .container .job_alert p, #wrapper .container .job_alert input{margin-left:0px;}
+#wrapper .container .job_alert.erro_alert p, #wrapper .container .job_alert.erro_alert input, #wrapper .container .job_alert.job_alert_activate p, #wrapper .container .job_alert.job_alert_activate input, #wrapper .container .job_alert.job_alert_delete p, #wrapper .container .job_alert.job_alert_delete input{margin-left:30px;}
+
+
 /* ie.css */
 
 /* CLEARFIX HACK */
@@ -1039,8 +1105,13 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
   }
 
 .lt-ie9 .container.main .page .inner_content {
-    width: 1025px;
+    width: 1024px;
 }
+.lt-ie8 .span_7 { width: 56.5%; }
+.lt-ie8 .serach_main_lists{float:none;overflow: hidden;}
+.lt-ie8 .result_list{width:auto;}
+.lt-ie8 .result_list .search_list{width:100%;}
+.lt-ie8 header{margin:0px auto;}
 
 /* End of ie.css */
 
@@ -1362,3 +1433,8 @@ figure{
   visibility: hidden;
   clear: both;
 }
+.maisons_lists ul li.cols_1 a,.maisons_lists ul li.cols_2 a{margin: 0;float: none;text-align: center;}
+.maisons_lists ul li.cols_1 h3,.maisons_lists ul li.cols_2 h3{display: none;}
+.maisons_lists ul li.cols_2{}
+.maisons_lists ul li.cols_3{}
+.maisons_lists ul li.cols_4{}

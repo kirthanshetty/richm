@@ -1,4 +1,7 @@
 @media only screen and (max-width:685px) {
    .container.main #work-with-us.page .gallery_join .two_sections{position: static;}
    .container.main #work-with-us.page .gallery_join .two_sections .section_one{margin-left: auto;}
+   .faq .inner_block div{position: relative;}
+   .faq .inner_block div select{top:30px !important;left:0px !important;}
+   .credit_section{width:90%;}
 }

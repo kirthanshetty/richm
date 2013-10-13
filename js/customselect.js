@@ -1,3 +1,8 @@
+// -----------------------------------------------------------------
+//                        REQUIREJS MODULE
+require(['jquery'],function(){
+// -----------------------------------------------------------------
+
 /*!
  * jquery.customSelect() - v0.4.2
  * http://adam.co/lab/jquery/customselect/
@@ -154,4 +159,8 @@
     });
 })(jQuery);
 
-$('.header_right .first_row select, .tab_content_left select, .inner_block div select.styled, .form_submission select').customSelect();
+$('.header_right .first_row select, .tab_content_left select, .inner_block div select.styled, .tab_content_left select').customSelect();
+
+// -----------------------------------------------------------------
+})
+// -----------------------------------------------------------------

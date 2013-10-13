@@ -44,8 +44,6 @@ _richemontCareers.Navigation = function () {
                 $(".header_right").addClass('menu_list');
                 $(".header_right ul").removeClass('second_row');
                 $(".menu_list").show();
-            }).find('nav ul li').click(function(){
-                $(".menu_list").hide();
             });
             $(".collapsed").mouseout(function () {
                 $(".menu_list").hide();
@@ -86,7 +84,7 @@ _richemontCareers.Navigation = function () {
     });
     /* jQuery to add effect to Home page Chevron */
     $("a.scroll_down").click(function (e) {
-        var targetOffset = $("#our-world").offset().top;
+        var targetOffset = $("#our-world").offset().top - 70 + 'px';
         $('html, body').animate({
             scrollTop: targetOffset
         }, "slow");

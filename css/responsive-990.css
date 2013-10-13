@@ -10,7 +10,7 @@
     .header_right ul.second_row li.search-view{ float: right;position: relative;right: 0;width: 15%;}
     .header_right .search{/*display:block;*/}
     .search_block .chat-bubble-arrow{right:19%;}
-    .select_language{position: absolute;right: 0;top: 0;}
+    .select_language{position: absolute;right: 0;top: 0;width: auto;}
     header .header_main{text-align: left;}
     .search_main_block .inner_block div.search_buttons {margin-top: 20px;}
     .inner_block a.reset{float:none;clear:both;position:relative;top:8px;}
@@ -20,4 +20,8 @@
     .header_main h1.col.span_4{width:100%;text-align:center;}
     .tab_content_left{float:none;}
     #wrapper .tab_content_full .tab_content_left .form_submission .fourth_step div {width: 100%;}
+    .maisons_lists ul li.join-us h3{font-size: 2em;}
+    .column-content span.tab_option{height:70px;}
+    #wrapper .job_alert .section_left{border:0px;width:90%;}
+    .credit_section{width:80%;}
 }

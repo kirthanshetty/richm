@@ -75,7 +75,18 @@ _richemontCareers.WhyworkUs = function(container){
 					e.preventDefault();
 					cont.remove();
 				})
-				videojs(vidId);
+				/*$("a.video_close").on('touchend', function() {
+					$(this).css({'top':'-28px'});
+  					$(".video_content").css({'top':'28px'});
+  					$("header").css({'background':'#000'});
+  					$(".header_right").css('display':'none');
+ 				});*/
+    			// videojs.options.flash.swf = "video-js.swf";
+    			// console.log(vidId);
+				videojs(vidId,{
+					"techOrder": ["youtube"],
+					"src" : $('#' + vidId).data('src')
+				});
 			})
 		})
 	}

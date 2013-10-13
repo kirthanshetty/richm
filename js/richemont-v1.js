@@ -82,7 +82,7 @@ function CareerPath(container){
 $(function(){
 	var maisons = MaisonBox($('.maisons_lists'),function(){})
 	var WorkUs = WhyworkUs($('.page_4 .section_main'))
-	var Career = CareerPath($('.page_5 .inner_content'))
+	var Career = CareerPath($('.page_6 .inner_content'))
 })
 
 

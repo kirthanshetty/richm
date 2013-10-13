@@ -187,7 +187,9 @@ _richemontCareers.repositionItems = function (container, callback) {
             $(this).attr("class", "join-us cols_" + (noElsInRow - (i % noElsInRow)));
         }
     });
-    list.eq(0).before(curList)
+    
+    if(curList.find('>li').length > 0)
+        list.eq(0).before(curList)
 
     list.remove();
     var lightbox = container.find('.our_maison_gallery').parent();

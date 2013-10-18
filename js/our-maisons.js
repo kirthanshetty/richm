@@ -162,6 +162,8 @@ _richemontCareers.MaisonSlideshow = function (gallery, anchorel, animate, callba
         prev.fadeOut();
         cur.fadeIn();
     })
+    maisonImages.filter(':gt(0)').hide();
+
     gallery.click();
 }
 

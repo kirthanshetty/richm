@@ -1436,5 +1436,5 @@ figure{
 .maisons_lists ul li.cols_1 a,.maisons_lists ul li.cols_2 a{margin: 0;float: none;text-align: center;}
 .maisons_lists ul li.cols_1 h3,.maisons_lists ul li.cols_2 h3{display: none;}
 .maisons_lists ul li.cols_2{}
-.maisons_lists ul li.cols_3{}
+.maisons_lists ul li.cols_3 h3{font-size: 2em;}
 .maisons_lists ul li.cols_4{}

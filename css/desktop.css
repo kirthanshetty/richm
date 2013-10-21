@@ -580,7 +580,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .tab_content_right div p{color:#333333;font-size:1.15em;margin: 3px 0 4px;float:left;padding-bottom:10px;font-weight: bold;}
 .tab_content_right div p span{font-weight: normal;}
 .tab_content_right div a{color:#02466b;float:right;font-size:1.4em;font-weight: normal;}
-.tab_content_full .view_jobs{float:left;background: url("../img/parallax/job_bg.jpg") no-repeat scroll left top; padding: 30px;margin-top: 35px;}
+.tab_content_full .view_jobs{float:left;background: url("../img/parallax/job_bg.jpg") no-repeat scroll left top; padding: 30px;margin-top: 0px;}
 .tab_content_full .view_jobs p{ color: #5E5E5E;font-size: 2.1em;font-weight: normal;margin: 0;padding: 0;width: 62%;float:left;}
 .tab_content_full .view_jobs a{color:#fff;font-weight:normal;padding: 8px 23px;font-size: 1.5em;margin:0px;margin-top:8px;float:left;}
 .career_gallery{background: none repeat scroll 0 0 #9B9B9B;float: left;height: 138px;margin: 30px 0;padding: 0 58px;position: relative;width:100%;}

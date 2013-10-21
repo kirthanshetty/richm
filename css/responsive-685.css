@@ -4,4 +4,8 @@
    .faq .inner_block div{position: relative;}
    .faq .inner_block div select{top:30px !important;left:0px !important;}
    .credit_section{width:90%;}
+
+   #our-world .col.span_5 .our_world{margin-top:65px;}
+   #why-join-us {padding-top: 60px;}
+   #career-paths{padding-top:90px;}
 }

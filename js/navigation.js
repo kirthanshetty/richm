@@ -97,6 +97,6 @@ _richemontCareers.Navigation = function () {
     });
 
     if(Modernizr.touch) {
-        $("p.note").css('display','block')
+        $("p.note").show();
     }
 }

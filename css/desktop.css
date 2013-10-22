@@ -330,7 +330,7 @@ footer .container{position:relative;}
 .page_1 .row .inner_block input{margin:0px;padding:5px 10px;}
 footer{margin-top:50px;}
 .page_2{/*background:url("../img/parallax/section_bg.jpg") no-repeat left top;*/}
-.col.span_5 .our_world{background:#c2c2c2;padding:30px;font-family:lato;color:#00436e;margin:45px 0px 0px 35px;opacity:0.95;filter:alpha(opacity=95);/*height: 680px;*/}
+.col.span_5 .our_world{background:#c2c2c2;padding:30px;font-family:lato;color:#00436e;margin:50px 0px 0px 35px;opacity:0.95;filter:alpha(opacity=95);/*height: 680px;*/}
 #wrapper .our_world h2{color:#00436e;font-size:4.3em;line-height: 48px;font-family:'SabonLT-Roman';padding-bottom:5px;margin:0px;}
 .our_world p.highlight, .maison_main_content .maison_desc p.highlight{font-size:1.7em;padding-bottom:18px;}
 .our_world p, .maison_main_content .maison_desc p{padding-bottom:25px;font-size:1.3em;margin:0px;line-height: 23px;}
@@ -822,7 +822,7 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;}
  .view_jobs .quick_search input[type="submit"]{left:0px;}
- .video-js{position: static;}
+ 
  
   
  

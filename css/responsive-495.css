@@ -19,4 +19,7 @@
   .page {margin-top: -32px;}
   #our-world{margin-top:0px;}
   .tab_content_left form p.note{width:auto;padding-right:10px;}
+  .video-js, #video_content1{top:20px;}
+  .close_buton{height:40px;}
+  a.video_close{top:15px;}
 }

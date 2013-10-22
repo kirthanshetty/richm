@@ -67,8 +67,11 @@ _richemontCareers.Navigation = function () {
                     mobileNav.hide();
                 });
             }
-        }
 
+       /*  if (navigator.userAgent.match(/(iPhone|iPod)/i))  {
+            $("p.note").css('display','block')
+         } */
+     }
         if ($(window).width() >= 630 && (!prevWidth || prevWidth < 630)) {
             $(".header_right").removeClass('menu_list').show();
             $(".header_right ul:eq(1)").addClass('second_row');
@@ -92,4 +95,8 @@ _richemontCareers.Navigation = function () {
         }, "slow");
         e.preventDefault();
     });
+
+    if(Modernizr.touch) {
+        $("p.note").css('display','block')
+    }
 }

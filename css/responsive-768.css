@@ -101,4 +101,5 @@
   .container.main #work-with-us.page .gallery_join .two_sections{width:auto;}
   .videos .section_one a{width:100%;}
   .tab_content_left form .note p{width:60%;padding-right:10px;}
+  #wrapper .tab_content_full .tab_content_left .form_submission .fifth_step div.submission, #wrapper .tab_content_full .tab_content_left .form_submission form .fifth_step .language_lists{width:65%;}
 }

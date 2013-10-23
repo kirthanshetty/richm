@@ -93,6 +93,6 @@ _richemontCareers.Navigation = function () {
     $("a.scroll_down").click(checkAndGotoHref);
 
     if(Modernizr.touch) {
-        $("p.note").show();
+        $(".note p").show();
     }
 }

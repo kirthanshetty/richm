@@ -67,8 +67,11 @@ _richemontCareers.Navigation = function () {
                     mobileNav.hide();
                 });
             }
-        }
 
+       /*  if (navigator.userAgent.match(/(iPhone|iPod)/i))  {
+            $("p.note").css('display','block')
+         } */
+     }
         if ($(window).width() >= 630 && (!prevWidth || prevWidth < 630)) {
             $(".header_right").removeClass('menu_list').show();
             $(".header_right ul:eq(1)").addClass('second_row');
@@ -86,10 +89,14 @@ _richemontCareers.Navigation = function () {
     });
     /* jQuery to add effect to Home page Chevron */
     $("a.scroll_down").click(function (e) {
-        var targetOffset = $("#our-world").offset().top;
+        var targetOffset = $("#our-world").offset().top - 30 + 'px';
         $('html, body').animate({
             scrollTop: targetOffset
         }, "slow");
         e.preventDefault();
     });
+
+    if(Modernizr.touch) {
+        $("p.note").show();
+    }
 }

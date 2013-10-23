@@ -171,7 +171,7 @@
     padding-bottom:50px;
     font-size:4em;
     line-height:40px;
-    padding-top:40px;
+    padding-top:15px;
   }
   
   #why-join-us .inner_content
@@ -613,7 +613,7 @@
   
   .join_us_gallery .maison_prev,.join_us_gallery .maison_next
   {
-    top:86px;
+    top:65px;
   }
   
   .tab_content_right div a
@@ -668,7 +668,7 @@
   #wrapper .faq.right_section{width:87%;}
   #wrapper .terms-condition h2{font-size: 2em;}
   #work-with-us .gallery_container .content{padding-bottom: 0px;}
-  #work-with-us .gallery_join .col.span_5 .our_world{padding: 0px;}
+  #work-with-us .gallery_join .col.span_5 .our_world{padding: 0px;margin-top:23px;}
   .container.main #work-with-us .gallery_join .col.span_7 .two_sections .section_one{margin-top:0px;}
   .container.main #work-with-us .gallery_join .col.span_7 .two_sections .section_two{margin-top:20px;}
   .scroll_top img {bottom: 105px;}
@@ -683,4 +683,5 @@
   .gallery_join .our_world h2{padding-top:10px;}
   #wrapper .page_6 .maisons_head h2{padding-top: 0px;font-size: 3.4em;text-align: left;padding-left: 0;padding-right: 0;margin-left: 10px;}
   .maisons_head{padding-top: 0px;}
+  #our-world .col.span_5 .our_world, .container.main #work-with-us.page .gallery_join {margin-top: 0;}
 }

@@ -330,8 +330,8 @@ footer .container{position:relative;}
 .page_1 .row .inner_block input{margin:0px;padding:5px 10px;}
 footer{margin-top:50px;}
 .page_2{/*background:url("../img/parallax/section_bg.jpg") no-repeat left top;*/}
-.col.span_5 .our_world{background:#c2c2c2;padding:30px;font-family:lato;color:#00436e;margin:45px 0px 0px 35px;opacity:0.95;filter:alpha(opacity=95);/*height: 680px;*/}
-#wrapper .our_world h2{color:#00436e;font-size:4.3em;line-height: 48px;font-family:'SabonLT-Roman';padding-bottom:20px;margin:0px;}
+.col.span_5 .our_world{background:#c2c2c2;padding:30px;font-family:lato;color:#00436e;margin:50px 0px 0px 35px;opacity:0.95;filter:alpha(opacity=95);/*height: 680px;*/}
+#wrapper .our_world h2{color:#00436e;font-size:4.3em;line-height: 48px;font-family:'SabonLT-Roman';padding-bottom:5px;margin:0px;}
 .our_world p.highlight, .maison_main_content .maison_desc p.highlight{font-size:1.7em;padding-bottom:18px;}
 .our_world p, .maison_main_content .maison_desc p{padding-bottom:25px;font-size:1.3em;margin:0px;line-height: 23px;}
 .our_world .slides .content p{padding-bottom: 12px; padding-left: 4px;}
@@ -558,7 +558,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .videos .section_one{margin-right:36px;}
 .videos .section_one:last-child{margin:0px;}
 .videos .section_one.last-video{margin:0px;}
-.section_one a span.play{color: #FFFFFF;font-family: 'SabonLT-Roman';font-size: 2em;font-style: italic;font-weight: normal;left: 50%;margin: -2px 0 0 -62px;position: absolute;top: 50%;}
+.section_one a span.play{background: url("../img/play-icon.png") no-repeat scroll left top rgba(0, 0, 0, 0);color: #FFFFFF;font-family: 'SabonLT-Roman';font-size: 2em;font-style: italic;font-weight: normal;left: 50%;margin: -45px 0 0 -32px;position: absolute;top: 50%;width:64px;height:64px;}
 .container.main #work-with-us.page .gallery_join{position: relative;height:auto;float:left;width: 100%;}
 .page_6 .maisons_head h2{text-align :center;margin-bottom:0px;}
 #wrapper .page_6.maisons_head h2{font-size:4.8em;}
@@ -580,7 +580,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman';font-size: 4.8em;font-weight: nor
 .tab_content_right div p{color:#333333;font-size:1.15em;margin: 3px 0 4px;float:left;padding-bottom:10px;font-weight: bold;}
 .tab_content_right div p span{font-weight: normal;}
 .tab_content_right div a{color:#02466b;float:right;font-size:1.4em;font-weight: normal;}
-.tab_content_full .view_jobs{float:left;background: url("../img/parallax/job_bg.jpg") no-repeat scroll left top; padding: 30px;margin-top: 35px;}
+.tab_content_full .view_jobs{float:left;background: url("../img/parallax/job_bg.jpg") no-repeat scroll left top; padding: 30px;margin-top: 0px;}
 .tab_content_full .view_jobs p{ color: #5E5E5E;font-size: 2.1em;font-weight: normal;margin: 0;padding: 0;width: 62%;float:left;}
 .tab_content_full .view_jobs a{color:#fff;font-weight:normal;padding: 8px 23px;font-size: 1.5em;margin:0px;margin-top:8px;float:left;}
 .career_gallery{background: none repeat scroll 0 0 #9B9B9B;float: left;height: 138px;margin: 30px 0;padding: 0 58px;position: relative;width:100%;}
@@ -822,7 +822,7 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;}
  .view_jobs .quick_search input[type="submit"]{left:0px;}
- .video-js{position: static;}
+ 
  
   
  
@@ -1073,7 +1073,7 @@ div.collapsed.hover .menu_list{display:block;}*/
 #wrapper .job_alert .section_left{margin:0px;padding:0px;width:100%;}
 #wrapper .container .job_alert p, #wrapper .container .job_alert input{margin-left:0px;}
 #wrapper .container .job_alert.erro_alert p, #wrapper .container .job_alert.erro_alert input, #wrapper .container .job_alert.job_alert_activate p, #wrapper .container .job_alert.job_alert_activate input, #wrapper .container .job_alert.job_alert_delete p, #wrapper .container .job_alert.job_alert_delete input{margin-left:30px;}
-
+.tab_content_left form p.note{display:none; font-size: 1.2em;line-height: 18px;color:#5e5e5e;width:75%;float:left;}
 
 /* ie.css */
 

@@ -51,8 +51,10 @@
     .credit-tab{height: auto;}
     .credit_section p{padding-left: 0px;}
     /*#wrapper .faq.right_section, .faq_section, #wrapper .view_jobs h1, .terms-condition p, #wrapper .terms-condition h3, #wrapper .jobs_main_content .view_jobs h2, .terms-condition span{margin-left:10px;}*/
-    /*div.collapsed .menu_list{display:block;}*/
+    /*div.collapsed .menu_list{display:block;}
     .maisons_head{padding-top: 20px;}
-    #why-join-us .inner_content h2.align-center{margin-top: 25px;}
-    .page_6 .maisons_head{padding-top: 48px;}
+    #why-join-us .inner_content h2.align-center{margin-top: 25px;}*/
+    .page_6 .maisons_head{padding-top: 12px;}
+    #why-join-us {padding-top: 25px;}
+    #career-paths {padding-top: 40px;}
 }

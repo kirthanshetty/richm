@@ -16,4 +16,10 @@
   .column-content span.tab_option{height: 125px;}
   #wrapper .faq.right_section{width:75%;}
   #wrapper .faq.right_section, .faq_section, #wrapper .view_jobs h1, .terms-condition p, #wrapper .terms-condition h3, #wrapper .jobs_main_content .view_jobs h2, .terms-condition span, .terms-condition h4, .terms-condition div.available_content, #wrapper .privacy a.top, .contact-lft, .footer_left, .credit_section, #wrapper .job_alert .section_left{margin-left:10px;}
+  .page {margin-top: -32px;}
+  #our-world{margin-top:0px;}
+  .tab_content_left form p.note{width:auto;padding-right:10px;}
+  .video-js, #video_content1{top:20px;}
+  .close_buton{height:40px;}
+  a.video_close{top:15px;}
 }

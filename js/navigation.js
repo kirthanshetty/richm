@@ -3,7 +3,8 @@ if (typeof (_richemontCareers) != 'object') {
 }
 
 _richemontCareers.Navigation = function () {
-    $('.header_main a').click(function (e) {
+
+    var checkAndGotoHref = function (e) {
         if ($(window).width() < 1024) {
             return;
         }
@@ -18,8 +19,9 @@ _richemontCareers.Navigation = function () {
         node.attr('id', '');
         window.location.hash = hash;
         node.attr('id', hash.replace(/^#/, ''));
-    })
+    }
 
+    $('.header_main a').click(checkAndGotoHref)
     window.onhashchange = navigate;
     setTimeout(function () {
         navigate();
@@ -88,13 +90,7 @@ _richemontCareers.Navigation = function () {
         return false;
     });
     /* jQuery to add effect to Home page Chevron */
-    $("a.scroll_down").click(function (e) {
-        var targetOffset = $("#our-world").offset().top - 30 + 'px';
-        $('html, body').animate({
-            scrollTop: targetOffset
-        }, "slow");
-        e.preventDefault();
-    });
+    $("a.scroll_down").click(checkAndGotoHref);
 
     if(Modernizr.touch) {
         $("p.note").show();

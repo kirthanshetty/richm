@@ -641,7 +641,7 @@ button.collapsed{display:none;}
 .creativity_head .bg_img h5{color:#fff;font-size: 1.6em;;font-weight: normal; margin: 0 auto;width: 45%;position: relative;}
 .mobile_maison_lists{display: none;}
 .tab_content_left form div label{display: block;}
-.header_main h1{ float: left;margin-bottom: 0;margin-top: 25px;width: auto;}
+.header_main h1{ float: left;margin-bottom: 0;margin-top: 0px;width: auto;}
 .section_text h3 { color: #4E4E4E;font-size: 2em;font-weight: normal;margin-bottom: 10px;text-transform: uppercase;}
 .maisons_head strong{color: #4E4E4E;font-size: 1.2em;font-weight: normal;margin-bottom: 10px;text-align: center;}
 #wrapper .tab_content_full .tab_content_left h3{ color: #4E4E4E;font-size: 1.4em;font-weight: bold;margin-bottom: 10px;font-family: lato;}

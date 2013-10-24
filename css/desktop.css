@@ -670,6 +670,10 @@ button.collapsed{display:none;}
 #wrapper .tab_content_full .tab_content_left .form_submission a.next, #wrapper .tab_content_full .tab_content_left .form_submission a.prev{padding:2px 5px;margin-right: 10px;}
 #wrapper .tab_content_full .tab_content_left input[type='radio'], #wrapper .tab_content_full .tab_content_left input[type='checkbox'] {margin-top:3px;}
 
+#wrapper .tab_content_full .tab_content_left .form_submission form .third_step label{float:left;width:auto;}
+#wrapper .tab_content_full .tab_content_left .form_submission form .third_step label input{margin-right:5px;}
+#wrapper .tab_content_full .tab_content_left .form_submission .second_step label, #wrapper .tab_content_full .tab_content_left .form_submission .fifth_step label, #wrapper .tab_content_full .tab_content_left .form_submission .third_step label{float:left;padding-left:5px;width:auto;}
+
 .job_alert.job_dialog p{font-size:1em;color:#5E5E5E;padding-bottom: 15px;float: none;clear: both;}
 .job_dialog.job_alert .section_left{border: 0px;padding-right: 0px;margin-left: 0px;}
 .job_dialog.job_alert .section_left div{width:auto;margin-right: 20px;}

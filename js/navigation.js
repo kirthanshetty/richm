@@ -17,7 +17,7 @@ _richemontCareers.Navigation = function () {
         var hash = $(this).attr('href');
         var node = $(hash);
 
-        window.location.hash = 'dummy';
+        window.location.hash = 'dummy'; // Change to non-existant hash to make sure scroll and click still works :)
         node.attr('id', '');
         window.location.hash = hash;
         node.attr('id', hash.replace(/^#/, ''));

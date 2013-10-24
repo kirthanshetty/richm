@@ -46,7 +46,7 @@ _richemontCareers.Navigation = function () {
 
             $(".collapsed").mouseover(function () {
                 $(".collapsed .header_right").addClass('menu_list');
-                $(".collapsed .header_right ul").removeClass('second_row');
+               // $(".collapsed .header_right ul").removeClass('second_row');
                 $(".menu_list").show();
             }).find('nav ul li').click(function(){
                 $(".menu_list").hide();
@@ -58,7 +58,7 @@ _richemontCareers.Navigation = function () {
             if (navigator.userAgent.match(/(iPhone|iPod)/i)) {
                 var mobileNav = $("div.collapsed .header_right");
                 $('.collapsed').click(function () {
-                    $(".collapsed nav ul").removeClass('second_row');
+                   // $(".collapsed nav ul").removeClass('second_row');
                     mobileNav.toggle(20);
                 });
                 $('.collapsed ul li a').on('touchend', function () {

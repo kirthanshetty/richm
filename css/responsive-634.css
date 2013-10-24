@@ -1,19 +1,19 @@
 @media only screen and (max-width:634px) {
-    .header_right ul.second_row, .header_right ul.first_row, header .header_nav{display: none;}
+    header .header_nav{display: none;}
     .mobile_search, div.collapsed{display:block;}
     header .header_main{float:left;width: 100%;}
-    header .logo_blk{text-align: left;width:auto;float:left;height:47px;}
-    header .logo_blk img{width:185px;margin:16px 0px 16px 12px; }
+    header .logo_blk{text-align: left;width:auto;float:left;height:40px;}
+    header .logo_blk img{width:185px;margin:10px 0px 12px 12px; }
     .mobile_search:hover{background:url("../img/parallax/sprite.png") no-repeat left -1077px;background-color: #e7e7e7;}
     .collapsed a.mobile_menu{height: 48px;padding: 15px 12px;}
     div.collapsed{background:url("../img/parallax/sprite.png") no-repeat 3px -907px #00436e;}
     div.collapsed:hover{background:url("../img/parallax/sprite.png") no-repeat 3px -960px;background-color: #e7e7e7;}
     .mobile_search{background:url("../img/parallax/sprite.png") no-repeat left -1017px;float:right;padding: 0px;}
-    div.collapsed{height: 47px;float: right;width:56px;}
+    div.collapsed{height: 45px;float: right;width:56px;margin-top: 15px;}
     .search {height: 47px;width:40px;position: static;}
     .search_block{margin-top:47px;right:0px;width:100%;}
     .search_block .chat-bubble-arrow{display: none;}
-    .menu_list{position: absolute;right:0px;margin-top:47px;z-index: 9;}
+    .menu_list{position: absolute;right:0px;margin-top:45px;z-index: 9;}
     .header_right.menu_list ul{width:100%;}
     .search_block .textbox{width:77%;margin:2%;float: left;}
     .search_block .submit{margin:0px;width:17%; margin: 2% 2% 2% 0;}
@@ -42,7 +42,7 @@
     .maisons_lists ul li.join-us h3{display: none;}
     .maisons_lists ul li.join-us section{padding:30px 40px;}
     .maisons_lists ul li a:hover img.top{opacity: 0;}
-    .header_main h1.col.span_4{width:auto;}
+    .header_main h1.col.span_4{width:auto;margin-top: 25px;}
     .locations {border:0px;width:auto;}
     .locations .section_left img {width: 95%;}
     .column-content{margin:30px 10px 0px;}
@@ -57,5 +57,9 @@
     .page_6 .maisons_head{padding-top: 12px;}
     #why-join-us {padding-top: 25px;}
     #career-paths {padding-top: 40px;}
-
+    .select_language{left:8px;right:auto;}
+    .select_language .header_right{display:block;}
+    .collapsed .second_row{display:none;}
+    .collapsed:hover .header_right ul.second_row{display: block;}
+    .header_right ul.second_row li{display: block;overflow: hidden;}
 }

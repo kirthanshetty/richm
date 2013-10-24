@@ -9,6 +9,7 @@
     div.collapsed:hover .menu_list{display:block;}
     .search_main_block .inner_block div.search_buttons {margin-top: 20px;}
     .container.main #work-with-us.page .gallery_join .two_sections{position: absolute;}
-    #wrapper .tab_content_full .tab_content_left .form_submission form{width:95%;}
+     #wrapper .tab_content_full .tab_content_left .form_submission form{width:95%;}
     .column-content span.tab_option{height:70px;}
+    #wrapper .tab_content_full .tab_content_left div.submission{width: 90%;}
 }

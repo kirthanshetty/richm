@@ -22,4 +22,7 @@
   .video-js, #video_content1{top:20px;}
   .close_buton{height:40px;}
   a.video_close{top:15px;}
+  #wrapper .tab_content_full .tab_content_left .form_submission form, #wrapper .tab_content_full .tab_content_left .form_submission form .fifth_step div.submission{width:100%;}
+  #wrapper .tab_content_full .tab_content_left .form_submission form .fifth_step .language_lists div {display: block;float: left;margin-bottom: 5px;}
+  #wrapper .tab_content_full .tab_content_left .form_submission form .fifth_step .language_lists{width:100%;}
 }

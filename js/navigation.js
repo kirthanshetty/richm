@@ -16,6 +16,8 @@ _richemontCareers.Navigation = function () {
             e.preventDefault();
         var hash = $(this).attr('href');
         var node = $(hash);
+
+        window.location.hash = 'dummy';
         node.attr('id', '');
         window.location.hash = hash;
         node.attr('id', hash.replace(/^#/, ''));

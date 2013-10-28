@@ -44,12 +44,10 @@ var prevWidth;
 function fixnav() {
 
     if ($(window).width() < 630 && (!prevWidth || prevWidth >= 630)) {
-
         if( navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) ||navigator.userAgent.match(/iPad/i) )
         {
-            var mobileNav = $("div.collapsed .header_right")    ;
-            console.log(mobileNav);
-            console.log(mobileNav.is(':hidden'));
+            $(".collapsed .header_right.menu_list").hide();
+            var mobileNav = $("div.collapsed .header_right");
             var toggleMobileNav = function(){
                 console.log(mobileNav.is(':hidden'));
                 
@@ -78,7 +76,6 @@ function fixnav() {
             $(".collapsed .header_right").hide();
             $(".collapsed").mouseover(function () {
               $(".collapsed .header_right").addClass('menu_list');
-                    //  $(".collapsed .header_right ul").removeClass('second_row');
                     $(".menu_list").show();
                     $(this).css({'background-position':'3px -960px','background-color':'#e7e7e7'});
                 }).find('nav ul li').click(function(){
@@ -96,10 +93,6 @@ function fixnav() {
            $('.collapsed').removeClass('mobile-hover');
         });
 }
-
-       /*  if (navigator.userAgent.match(/(iPhone|iPod)/i))  {
-            $("p.note").css('display','block')
-        } */
 
         if ($(window).width() >= 630 && (!prevWidth || prevWidth < 630)) {
             $(".header_right").removeClass('menu_list').show();

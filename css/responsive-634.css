@@ -7,7 +7,8 @@
     .mobile_search:hover{background:url("../img/parallax/sprite.png") no-repeat left -1077px;background-color: #e7e7e7;}
     .collapsed a.mobile_menu{height: 48px;padding: 15px 12px;}
     div.collapsed{background:url("../img/parallax/sprite.png") no-repeat 3px -907px #00436e;}
-    div.collapsed:hover{background:url("../img/parallax/sprite.png") no-repeat 3px -960px;background-color: #e7e7e7;}
+    /*div.collapsed:hover{background:url("../img/parallax/sprite.png") no-repeat 3px -960px;background-color: #e7e7e7;}*/
+    div.mobile-hover{background:url("../img/parallax/sprite.png") no-repeat 3px -960px #e7e7e7;}
     .mobile_search{background:url("../img/parallax/sprite.png") no-repeat left -1017px;float:right;padding: 0px;}
     div.collapsed{height: 45px;float: right;width:56px;margin-top: 15px;}
     .search {height: 47px;width:40px;position: static;}
@@ -58,9 +59,7 @@
     #why-join-us {padding-top: 25px;}
     #career-paths {padding-top: 40px;}
     .select_language{left:8px;right:auto;}
-    .select_language .header_right{display:block;}
-    .collapsed .second_row{display:none;}
-    .collapsed:hover .header_right ul.second_row{display: block;}
+    .select_language .header_right{display:block;}  
     .header_right ul.second_row li{display: block;overflow: hidden;}
     .header_main h1{margin-top:25px;float:left;}
 }

@@ -37,7 +37,7 @@ _richemontCareers.KeyboardAccess = function(container, handlers){
 
 	// Handle keypress events. Handlers is an object, with keycodes as keys and 
 	// relevant functions
-	keyHandler.keypress(function(e) {
+	keyHandler.keydown(function(e) {
 		var key = e.which || e.keyCode;
 		if(handlers[key]){
 			handlers[key]();

@@ -62,4 +62,5 @@
     .select_language .header_right{display:block;}  
     .header_right ul.second_row li{display: block;overflow: hidden;}
     .header_main h1{margin-top:25px;float:left;}
+    .collapsed .header_right{display:none;}
 }

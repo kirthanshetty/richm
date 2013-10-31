@@ -98,7 +98,7 @@ body.vjs-full-window {
   bottom: 4em;
   left: 1em; /* Leave padding on left and right */
   right: 1em;
-  font-family: Arial, sans-serif;
+  font-family: Arial, "Times New Roman";
 }
 /* Individual tracks */
 .video-js .vjs-text-track {
@@ -239,7 +239,7 @@ so you can upgrade to newer versions easier. You can remove all these styles by 
   /* Default font settings */
   font-style: normal;
   font-weight: normal;
-  font-family: Arial, sans-serif;
+  font-family: Arial, "Times New Roman";
 }
 
 /* General styles for individual controls. */

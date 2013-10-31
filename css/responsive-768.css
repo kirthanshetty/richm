@@ -32,7 +32,7 @@
 
   .maisons_head h3 {
     color: #00436E;
-    font-family: 'SabonLT-Roman';
+    font-family: 'SabonLT-Roman', "Times New Roman";
     font-size: 2.8em;
     padding: 0 12px;
   }

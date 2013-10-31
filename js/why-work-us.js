@@ -10,7 +10,24 @@ _richemontCareers.WhyworkUs = function(container){
 		mainCont = container.find('.main_cont'),
 		prevBtn = container.find('.maison_prev'),
 		nextBtn = container.find('.maison_next'),
-		videoNo = 1;
+		videoNo = 1,
+		anchorList = container.find('.join_us_gallery ul'),
+		anchorListItem = anchorList.find('>li');
+
+
+
+	function fixMargin(){
+		if($(window).width() > 1160 || $(window).width() < 768) {
+			anchorListItem.filter(':eq(0)').css('margin-left',"");
+			return;
+		}
+		var totalW = anchorList.width();
+		var itemW = 0;
+		anchorListItem.each(function(){ itemW += $(this).outerWidth() + 30; })
+		anchorListItem.filter(':eq(0)').css('margin-left', Math.floor((totalW - itemW) / 2) )
+	}
+	fixMargin();
+	$(window).resize(fixMargin);
 
 	tabAnchors.each(function(i,el){ 
 		$(el).data('idx', i); 

@@ -30,6 +30,11 @@ $(function(){
 	_richemontCareers.objects.Career = _richemontCareers.CareerPath($('.page_6 .inner_content'));
 
 	_richemontCareers.objects.SocialShare = _richemontCareers.ShareIcons($, '.social_links');
+
+	_richemontCareers.AttachFormEvents(function(){
+		_richemontCareers.objects.parallax.init();
+		$('.container.main').height(_richemontCareers.objects.parallax.totalHeight);
+	})
 })
 
 // -----------------------------------------------------------------

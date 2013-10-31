@@ -43,6 +43,8 @@ _richemontCareers.MaisonBox = function (container, callback) {
             } else {
                 listCont.after($responseEl)
             }
+            $responseEl.closest('section.page').height(function(i,oldHeight){ return oldHeight + $responseEl.height(); });
+            callback();
             _richemontCareers.MaisonSlideshow($responseEl, anchor, oldMaison.length < 1, callback)
         });
         return false;
@@ -52,12 +54,13 @@ _richemontCareers.MaisonBox = function (container, callback) {
 _richemontCareers.MaisonSlideshow = function (gallery, anchorel, animate, callback) {
     var top = gallery.offset().top;
     $('html,body').animate({'scrollTop':(top - 190) });
-
     _richemontCareers.videoHandler(gallery);
 
     gallery.find('.maison_close').click(function () {
         $(this).parent().parent().slideUp(function () {
+            $(this).closest('section.page').height('')
             $(this).remove();
+
             callback();
             $('.maisons_lists ul li').removeClass('lightbox-open');
             $('.maisons_lists ul li a img').removeClass('listI').addClass('blur-img');

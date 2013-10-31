@@ -97,7 +97,7 @@ require(['jquery'],function(){
                             display: 'inline-block'
                         });
 
-                        $select.css({
+                        $select.wrap('<div>').parent().css({
                             '-webkit-appearance': 'menulist-button',
                             width:                customSelectSpan.outerWidth(),
                             position:             'absolute',

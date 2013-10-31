@@ -50,6 +50,9 @@ _richemontCareers.MaisonBox = function (container, callback) {
 
 }
 _richemontCareers.MaisonSlideshow = function (gallery, anchorel, animate, callback) {
+    var top = gallery.offset().top;
+    $('html,body').animate({'scrollTop':(top - 190) });
+
     _richemontCareers.videoHandler(gallery);
 
     gallery.find('.maison_close').click(function () {

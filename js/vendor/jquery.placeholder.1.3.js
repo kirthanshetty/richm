@@ -18,6 +18,9 @@
  * Known Issues: 
  * 	Placeholder for Password is currently not supported
  */
+
+define(['jquery'],function(){
+	
 (function($){ 
 	$.Placeholder = {
 		settings : {
@@ -128,4 +131,5 @@
 
 $(function(){
 	$.Placeholder.init();
+})
 })

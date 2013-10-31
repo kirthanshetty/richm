@@ -71,6 +71,8 @@ require(['jquery'],function(){
                 $select
                     .addClass('hasCustomSelect')
                     .on('update', function () {
+                        position = $select.position();
+
 						changed($select,customSelectSpan);
 						
                         var selectBoxWidth = parseInt($select.outerWidth(), 10) -

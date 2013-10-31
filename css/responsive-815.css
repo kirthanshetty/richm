@@ -1,4 +1,5 @@
 @media only screen and (max-width:815px) {
+    .container.main{padding-top: 91px;}
     .col.span_5.view_jobs{width:auto;float:left;}
     .col.span_7.view_faq {float: right;width: auto;}
     .search_buttons{margin-top:0px;}

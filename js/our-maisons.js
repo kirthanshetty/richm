@@ -147,7 +147,7 @@ _richemontCareers.MaisonSlideshow = function (gallery, anchorel, animate, callba
         var nextBtn = buttons.parent().parent().find('li.active').next();
         if (nextBtn.length < 1) nextBtn = buttons.parent().parent().find('li:first');
         nextBtn.find('a').data('auto', true).click();
-    }, 5000)
+    }, 1500)
 
     buttons.click(function (e) {
         e.preventDefault();

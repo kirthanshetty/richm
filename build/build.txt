@@ -84,6 +84,7 @@ video-test/video-js/video-js.min.css
 js/main-jobs.js
 ----------------
 js/vendor/jquery-1.9.1.min.js
+js/vendor/jquery.placeholder.1.3.js
 js/navigation.js
 js/search.js
 js/customselect.js

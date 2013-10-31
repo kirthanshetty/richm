@@ -6,7 +6,7 @@ require(['jquery'],function(){
 if (typeof(_richemontCareers) != 'object') {
 	_richemontCareers = {};
 }
-function _richemontCareers.AttachFormEvents(recomputeCallback){
+_richemontCareers.AttachFormEvents = function(recomputeCallback){
 
  	$('.tab_content_full').delegate('.form_submission a.prev', 'click', function(e){
  		e.preventDefault();

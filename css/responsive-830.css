@@ -1,4 +1,5 @@
 @media only screen and (max-width:835px) {
+  .container.main{padding-top: 91px;}
   .maisons_lists {width: 570px;}
   .maisons_lists ul li.join-us{width: 570px }
   .join_us_gallery ul li{margin:0px 9px;font-size:1.3em;}

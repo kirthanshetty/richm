@@ -1,4 +1,5 @@
 @media only screen and (max-width:990px) {
+    .container.main{padding-top: 81px;}
     header .logo_blk{width:100%;text-align: center;float:none;margin:0px;}
     header .logo_blk img{float:none;margin-left:0px; margin-bottom: 10px; margin-top: 12px;}
     .search{height:30px;float:none;}

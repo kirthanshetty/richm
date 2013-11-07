@@ -1,6 +1,8 @@
 // -----------------------------------------------------------------
 //                        REQUIREJS MODULE
-require(['jquery'],function(){
+require([
+	'jquery', 'vendor/jquery.placeholder.1.3', 'parallax', 'navigation', 'customselect', 'social-links', 'keyboard-accessibility', 'our-maisons', 'joining-us', 'career-path', 'why-work-us', 'share-icons', 'richemont-main', 'video', 'vendor/vjs.youtube' ,'location', 'find_browser', 'career_form'
+	],function(){
 // -----------------------------------------------------------------
 
 

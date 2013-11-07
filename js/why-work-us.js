@@ -12,7 +12,8 @@ _richemontCareers.WhyworkUs = function(container){
 		nextBtn = container.find('.maison_next'),
 		videoNo = 1,
 		anchorList = container.find('.join_us_gallery ul'),
-		anchorListItem = anchorList.find('>li');
+		anchorListItem = anchorList.find('>li'),
+		firstAnchorListItem = anchorListItem.filter(':eq(0)');
 
 
 
@@ -21,10 +22,13 @@ _richemontCareers.WhyworkUs = function(container){
 			anchorListItem.filter(':eq(0)').css('margin-left',"");
 			return;
 		}
-		var totalW = anchorList.width();
-		var itemW = 0;
-		anchorListItem.each(function(){ itemW += $(this).outerWidth() + 30; })
-		anchorListItem.filter(':eq(0)').css('margin-left', Math.floor((totalW - itemW) / 2) )
+		var totalW = anchorList.width(),
+			itemW = 0,
+			itemMargin = parseInt(firstAnchorListItem.next().css('margin-left').replace(/px/,''));
+		anchorListItem.each(function(){ itemW += $(this).width() + itemMargin + itemMargin; })
+
+		if( (totalW - itemW) > itemMargin )
+			firstAnchorListItem.css('margin-left', Math.floor((totalW - itemW) / 2) )
 	}
 	fixMargin();
 	$(window).resize(fixMargin);

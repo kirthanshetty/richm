@@ -369,7 +369,7 @@ footer{margin-top:50px;}
 .page_6 .maisons_head{width:59%;}
 #wrapper .page_3 .maisons_head h2{font-size:4.8em;font-weight:normal;margin-bottom:0px;margin-top:0px;color:#fff;font-family:'SabonLT-Roman', "Times New Roman";text-align: center;}
 .maisons_head p{margin:0px;color:#4d4d4d;font-size:1.7em;line-height:28px;text-align: center;}
-.container.main{overflow: hidden;max-width:100%;margin:0px;}
+.container.main{overflow: hidden;max-width:100%;margin:0px;padding-top: 78px;}
 #home, #why-join-us, #career-paths {background:url("../img/parallax/body_bg.jpg") repeat center top #fff;width: 100%;}
 #why-join-us {z-index: 9;padding-bottom: 100px;min-height: 855px;}
 #career-paths {z-index: 10;padding-bottom:175px;}

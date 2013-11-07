@@ -29,7 +29,7 @@ body {
     color: #000;
     padding: 0.2em 0;
 }
-
+.clear{clear: both;}
 /* css of 12-col.css */
 
 * { -webkit-box-sizing: border-box;
@@ -151,7 +151,7 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .search_sections, .pagination, .pagination ul, .search_list{float:left;}
 /* Section Left */
 .section_left{float:left;width:605px;}
-.serach_main_lists{float:left;padding-right:30px;border-right:1px solid #D2D2D2;}
+.serach_main_lists{padding-right:30px;border-right:1px solid #D2D2D2;}
 .serach_main_lists .search_list:last-child{margin:0px;}
 .search_list{border-bottom:1px solid #939393;padding-bottom:20px; margin-bottom: 25px;}
 .search_list div{float:left;font-size:1.3em;color:#333;}
@@ -261,7 +261,7 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .section_right .common_right_section a#login, .section_right .common_right_section a#unsubscribe{display: inline-block;font-size: 1.3em;padding: 4px 10px;}
 /* Section Left */
 .section_left{float:left;width:605px;}
-.serach_main_lists{float:left;padding-right:30px;border-right:1px solid #D2D2D2;}
+.serach_main_lists{padding-right:30px;border-right:1px solid #D2D2D2;}
 .serach_main_lists .search_list:last-child{margin:0px;}
 .search_list{border-bottom:1px solid #939393;padding-bottom:20px; margin-bottom: 25px;}
 .search_list div{float:left;font-size:1.3em;color:#333;}

@@ -786,7 +786,7 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 {font-size: 1.4em;}
 .eq-ie9 .video-js{width:100% !important;height:96% !important;}
 .lt-ie8 .page_3 .maisons_lists ul.buttons li {width:auto;}
-
+.lt-ie8 .our_maison_gallery{top:-20px;height:355px;}
 .maisons_lists ul li.shading .grow {
     display: block;
     position: relative;

@@ -785,6 +785,7 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie9 .search_main_block select, .lt-ie9 .search_main_block span.customSelect, .eq-ie9 .search_main_block select, .eq-ie9 .search_main_block span.customSelect
 {font-size: 1.4em;}
 .eq-ie9 .video-js{width:100% !important;height:96% !important;}
+.lt-ie8 .page_3 .maisons_lists ul.buttons li {width:auto;}
 
 .maisons_lists ul li.shading .grow {
     display: block;

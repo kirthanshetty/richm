@@ -624,6 +624,7 @@ ul.buttons li.active a{ background: url("../img/parallax/sprite.png") left -292p
 .maison_slide_container{width: 100%;clear:both;}
 .our_maison_gallery .maison_main_content .maison_image{float:left;position: relative;padding-right:25px;height: 304px;width:430px;}
 .our_maison_gallery .maison_main_content .maison_image a{display: block;float: left;position: absolute; top:0;left: 0;}
+.our_maison_gallery .maison_main_content .maison_image a span.play{background: url("../img/maison-video.png") no-repeat scroll left top transparent;color: #FFFFFF;font-family: 'SabonLT-Roman', "Times New Roman";font-size: 2em;font-style: italic;font-weight: normal;left: 50%;margin: -45px 0 0 -32px;position: absolute;top: 50%;width:80px;height:80px;}
 .our_maison_gallery .maison_main_content .maison_image.span_6{width:52%;}
 .our_maison_gallery .maison_main_content .maison_desc{color:#787878;}
 .our_maison_gallery .slides-container{overflow: auto;}

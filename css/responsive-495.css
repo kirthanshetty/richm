@@ -25,4 +25,5 @@
   #wrapper .tab_content_full .tab_content_left .form_submission form, #wrapper .tab_content_full .tab_content_left .form_submission form .fifth_step div.submission{width:100%;}
   #wrapper .tab_content_full .tab_content_left .form_submission form .fifth_step .language_lists div {display: block;float: left;margin-bottom: 5px;}
   #wrapper .tab_content_full .tab_content_left .form_submission form .fifth_step .language_lists{width:100%;}
+  .inner_block div select{width:270px;}
 }

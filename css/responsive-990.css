@@ -28,4 +28,6 @@
    .page{margin-top:-10px;}
    .tab_content_left form .note p{width:auto;padding-right:10px;}
    .header_main h1{float:none;}
+   .inner_block div{top:0px;}
+   .inner_block div.search_buttons{float:left;}
 }

@@ -834,13 +834,16 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
   .maisons_lists ul li.shading.lightbox-open .image { background: none repeat scroll 0 0 #1F1F1F;}
 
 .page_1 .row .col.span_4:last-child {position: relative;right: -0.033%;}
+.search_main_block .inner_block .job_select{width:22%;position: relative;}
+.search_main_block .inner_block .job_select div{position: absolute;left:0px;top:0px;}
+
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;}
  .view_jobs .quick_search input[type="submit"]{left:0px;}
  .tab_content_left select, .tab_content_left span.customSelect{font-size: 1.2em;}
  .faq select, .faq span.customSelect{font-size: 1.2em;}
  .search_main_block select, .search_main_block span.customSelect{font-size: 1.2em;}
- .search_main_block .inner_block div{white-space: nowrap;}
+
   
  
   /*

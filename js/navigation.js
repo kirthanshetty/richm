@@ -43,7 +43,7 @@ var prevWidth;
 
 function fixnav() {
 
-    if ($(window).width() < 630 && (!prevWidth || prevWidth >= 630)) {
+    if ($(window).width() < 620 && (!prevWidth || prevWidth >= 620)) {
         if( navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) ||navigator.userAgent.match(/iPad/i) )
         {
             $(".collapsed .header_right.menu_list").hide();
@@ -94,7 +94,7 @@ function fixnav() {
         });
 }
 
-        if ($(window).width() >= 630 && (!prevWidth || prevWidth < 630)) {
+        if ($(window).width() >= 620 && (!prevWidth || prevWidth < 620)) {
             $(".header_right").removeClass('menu_list').show();
             $(".collapsed .header_right ul:eq(1)").addClass('second_row');
             $(".collapsed").unbind('mouseover');

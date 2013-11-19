@@ -163,6 +163,14 @@ require(['jquery'],function(){
 
 $('.header_right .first_row select, .tab_content_left select, .inner_block div select.styled, .tab_content_left select').customSelect();
 
+var custom = $('select.styled').customSelect();
+
+$('form').on('reset',function(){
+    setTimeout(function() {
+        custom.trigger('change').trigger('update');
+    }, 1);
+});
+
 // -----------------------------------------------------------------
 })
 // -----------------------------------------------------------------

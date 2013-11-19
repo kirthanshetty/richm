@@ -235,6 +235,7 @@ background: linear-gradient(to bottom, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ed
 .inner_block .save_search{display:none;}
 .inner_block div label{color:#5e5e5e;font-size:1.3em;padding-bottom:6px;float:left;}
 .inner_block div select{font-size:1.2em;color:#5E5E5E;clear:both;width:193px;padding:8px 10px;border:0px none;height:33px;float:left;}
+.faq .inner_block div select{width:100%;height:23px;}
 .inner_block div select option{border:1px solid #d2d2d2;border-top:0px;background:#f8f8f8;color:#4e4e4e;font-size:1.2em;padding:8px 10px;}
 .header_right .customSelectInner{ font-size: 1em;}
 .header_right select option{border:1px solid #d2d2d2;border-top:0px;background:#e7e7e7;color:#4e4e4e;font-size:1em;padding:2px 2px;}
@@ -254,7 +255,7 @@ background: -webkit-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #
 background: -o-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* Opera 11.10+ */
 background: -ms-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* IE10+ */
 background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* W3C */}
-.inner_block a.reset{color:#00436e;margin:0px;margin-top:15px;clear: both;margin-right:15px;font-size:1.2em;font-weight:bold;float:right;}
+.inner_block input.reset{color:#00436e;margin:0px;border:0px;background-color:transparent;margin-top:15px;clear: both;margin-right:15px;font-size:1.2em;font-weight:bold;float:right;}
 .inner_block div span.customSelect, .tab_content_left span.customSelect{ background: url("../img/parallax/select.jpg") no-repeat scroll left top transparent;width:193px; padding: 8px; clear:both;float:left;}
 .customSelectInner{font-family: 'Lato', "Times New Roman"; font-size: 13px}
 
@@ -835,7 +836,9 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 
 .page_1 .row .col.span_4:last-child {position: relative;right: -0.033%;}
 .search_main_block .inner_block .job_select{width:22%;position: relative;}
-.search_main_block .inner_block .job_select div{position: absolute;left:0px;top:0px;}
+.search_main_block .inner_block .job_select div, .faq .inner_block .faq_select div{position: absolute;left:0px;top:0px;}
+.faq .inner_block .faq_select{position: relative;}
+.faq .inner_block input.reset{clear:none;}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
  .quick_search input[type="submit"]  {left:-2px;}

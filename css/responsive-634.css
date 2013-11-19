@@ -25,9 +25,9 @@
     .inner_block div.search_buttons{margin-right: 0px;}
     .jobs_main_content {margin-top: 47px;}
     .search_main_block .inner_block div.search_buttons {margin-top: 20px;}
-    .search_main_block a.reset{float: left;margin: 0px;cursor: pointer;}
+    .search_main_block input.reset{float: left;margin: 0px;cursor: pointer;}
     .save_search input[type="button"], .save_search input[type="submit"], .section_right input[type="button"]{margin-bottom: 15px; font-size: 1.8em;font-weight: normal;padding: 4px 10px;margin-right:0px;}
-    .search_buttons a.reset{font-size: 1.3em; padding-top: 5px;}
+    .search_buttons input.reset{font-size: 1.3em; padding-top: 5px;}
     .view_faq h3{margin-top:55px;}
     .search_main_block .inner_block div{float:left;margin-right:20px;margin-bottom:20px;} 
     .search_main_block .inner_block div.search_buttons{margin-bottom: 0px;}

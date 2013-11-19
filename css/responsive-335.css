@@ -686,4 +686,5 @@
   #wrapper .tab_content_full .tab_content_left .form_submission form h3{display: block;}
   #why-join-us {padding-top: 45px;}
   .full_section .col.span_5{border:0px;}
+  .tab_content_left form div{left:0px !important;top:20px !important;width:295px !important;}
 }

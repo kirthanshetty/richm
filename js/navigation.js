@@ -21,6 +21,17 @@ _richemontCareers.Navigation = function () {
     node.attr('id', '');
     window.location.hash = hash;
     node.attr('id', hash.replace(/^#/, ''));
+
+    if(isBrowserIE7()) {
+        navigate();
+    }
+}
+
+function isBrowserIE7(){
+    if(navigator.userAgent.match(/MSIE ([0-9]+)\./)){
+        return RegExp.$1 == '7';
+    }
+    return false;
 }
 
 $('.header_main a').click(checkAndGotoHref)

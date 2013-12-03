@@ -12,4 +12,5 @@
     .container.main #work-with-us.page .gallery_join{margin-top:25px;}
     #career-paths{padding-top:35px;}
     #why-join-us{padding-top:35px;}
+    .container.main #work-with-us.page .gallery_join .two_sections{position: absolute;top:150px;bottom:auto;}
 }

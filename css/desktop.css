@@ -766,7 +766,7 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie8 .career_gallery ul li.active .chat-bubble-arrow{border:0px;}
 .lt-ie8 .career_gallery ul li {height:79px;}
 .lt-ie8 .join_us_gallery ul li{margin:0px 12px 0px 12px;}
-.lt-ie9 .page_1 .social_links, .lt-ie9 .page_2 .social_links, .lt-ie9 .page_3 .social_links, .lt-ie9 .page_4 .social_links, .lt-ie9 .page_5 .social_links, .lt-ie9 .page_6 .social_links {right:-235px;}
+.lt-ie9 .page .social_links {right:-235px;}
 /*.lt-ie8 .page_1 .social_links, .lt-ie8 .page_2 .social_links, .lt-ie8 .page_3 .social_links, .lt-ie8 .page_4 .social_links, .lt-ie8 .page_5 .social_links, .lt-ie8 .page_6 .social_links {right:0px;} */
 .lt-ie9 .social_links ul{float:right;width:17.6%;}
 .lt-ie9 .social_links ul li{float:right;}

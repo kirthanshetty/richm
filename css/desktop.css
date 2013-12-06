@@ -804,8 +804,6 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
   }
   .maisons_lists ul li.shading {position: relative;float: left;display: block;}
   .maisons_lists ul li.shading .grow .image {
-    background:url("../img/parallax/watch2.jpg") no-repeat left top;
-    background-size: cover;
     height: 114px;
     width: 190px;
     position: absolute;

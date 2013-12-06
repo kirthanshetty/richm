@@ -268,10 +268,10 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .serach_main_lists .search_list:last-child{margin:0px;}
 .search_list{border-bottom:1px solid #939393;padding-bottom:20px; margin-bottom: 25px;}
 .search_list div{float:left;font-size:1.3em;color:#333;}
-.search_list div.img_block{width:24%;}
-.search_list div.img_desc{width:45%;}
-.search_list div.img_date{width:15%;}
-.search_list div.img_details{width:16%;padding-right:0px;}
+.search_list div.img_block{width:30%;}
+.search_list div.img_desc{width:33%;}
+.search_list div.img_date{width:18%;text-align: right;}
+.search_list div.img_details{width:19%;padding-right:0px;text-align: right;}
 .search_list div h4{font-size:1em;margin:0px 0px 3px 0px;font-weight: bold;}
 .search_list div strong{float:left;}
 .search_list div span{font-weight:normal;float:left;clear:both;}

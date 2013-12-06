@@ -3,9 +3,9 @@
     .col.span_7.view_faq {float: right;width: auto;}
     .search_buttons{margin-top:0px;}
     .search_buttons input.reset{clear:none;}
-    .col.span_7.section_left{width:auto;}
+    .col.span_7.section_left{width:100%;}
     .serach_main_lists{border:0px;}
-    .span_5.section_right {margin-top: 30px;width: auto;}
+    .span_5.section_right {margin-top: 30px;width: auto;padding-right: 30px;}
     .search_main_block .inner_block div.search_buttons {margin-top: 20px;}
     .container.main #work-with-us.page .gallery_join .two_sections{position: absolute;}
      #wrapper .tab_content_full .tab_content_left .form_submission form{width:95%;}

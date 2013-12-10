@@ -300,8 +300,8 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .footer_right{float:right;margin-top:15px;}
 .footer_right ul li{float:left;margin-right:10px;}
 .footer_right ul li a{width:22px;height:22px;float: left;}
-.footer_right ul li a.twitter{background:url("../img/parallax/sprite.png") no-repeat left top;}
-.footer_right ul li a.fb{background:url("../img/parallax/sprite.png") no-repeat left -623px;}
+.footer_right ul li a.twitter{background:url("../img/parallax/sprite.png") no-repeat left -1445px;width:26px;}
+.footer_right ul li a.fb{background:url("../img/parallax/sprite.png") no-repeat -3px -1407px;width:65px;}
 .footer_right ul li a.linkedin{background:url("../img/parallax/sprite.png") no-repeat left -47px;}
 
 .serach_main_lists .col{margin-left:0px;}

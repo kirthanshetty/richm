@@ -300,8 +300,8 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .footer_right{float:right;margin-top:15px;}
 .footer_right ul li{float:left;margin-right:10px;}
 .footer_right ul li a{width:22px;height:22px;float: left;}
-.footer_right ul li a.twitter{background:url("../img/parallax/sprite.png") no-repeat left -1445px;width:26px;}
-.footer_right ul li a.fb{background:url("../img/parallax/sprite.png") no-repeat -3px -1407px;width:65px;}
+.footer_right ul li a.twitter{background:url("../img/parallax/sprite.png") no-repeat -7px -1445px;width:20px;}
+.footer_right ul li a.fb{background:url("../img/parallax/sprite.png") no-repeat -6px -1407px;width:60px;}
 .footer_right ul li a.linkedin{background:url("../img/parallax/sprite.png") no-repeat left -47px;}
 
 .serach_main_lists .col{margin-left:0px;}
@@ -545,7 +545,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman', "Times New Roman";font-size: 4.8
 .join_us_gallery ul{background: #9b9b9b;width:100%;padding: 0 44px;float: left;position: absolute;top:243px;z-index:2;height: 45px;opacity:0.8;filter:alpha(opacity=80);}
 .join_us_gallery ul li{float:left;font-family: 'SabonLT-Roman', "Times New Roman";margin:0px 16px;position: relative;padding:10px 0px;}
 .join_us_gallery ul li h3{font-size:1.8em; margin: 0; padding: 0; font-weight: normal;}
-.join_us_gallery ul li.active{background: url("../img/parallax/sprite.png") no-repeat scroll center -818px transparent;height: 60px;margin: 0 16px;padding: 10px 0px;}
+.join_us_gallery ul li.active{background: url("../img/parallax/down-arrow.png") no-repeat scroll center bottom transparent;height: 58px;margin: 0 16px;padding: 10px 0px;}
 .join_us_gallery ul li .chat-bubble-arrow{border: none;}
 .join_us_gallery ul li.active .chat-bubble-arrow{border-color: #515151 transparent transparent;border-style: solid;border-width: 10px 19px 8px;opacity:0.8;filter:alpha(opacity=80);}
 .join_us_gallery ul li a{color:#054c70;}

@@ -396,7 +396,7 @@ footer{margin-top:50px;}
 .maisons_lists ul li a.two:hover img{background: transparent;}*/
 .maisons_lists ul li a img{/*left: 20%;position: relative;top: 25%;*/ background: none repeat scroll 0 0 #00436E;height:100%;width:99%;}
 .maisons_lists ul li.join-us{background:#dadada;width:760px;height: 113px;opacity:0.7;filter:alpha(opacity=90);border:0px !important;}
-.maisons_lists ul li.join-us section{float:right;padding:30px 40px;width:100%;}
+.maisons_lists ul li.join-us section{float:right;padding:38px 40px;width:100%;}
 .maisons_lists ul li.join-us h3{font-size:2.5em;font-weight: normal;color:#4e4e4e;float:right;margin:7px 0 0;}
 .maisons_lists ul li.join-us a{height:auto;float:right;margin:10px 0px 0px 28px;font-size:1.3em;font-weight: normal;}
 .maisons_lists ul li.lightbox-open img.overlay{opacity:0.2;filter:alpha(opacity=20);}
@@ -746,7 +746,7 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie8 .section_one h4, .lt-ie8 .videos .section_one h4{width:93%;margin-bottom: 0px;}
 .lt-ie8 .videos .section_one h4{width:94.3%;}
 .lt-ie8 .maisons_lists ul li{width:19%;}
-.lt-ie8 .maisons_lists ul li.join-us{width:728px;}
+.lt-ie8 .maisons_lists ul li.join-us{}
 .lt-ie8 .join_us_gallery ul{top:288px;width:91%;}
 .lt-ie8 .maison_slide_container{width:95.8%;}
 .lt-ie8 .maison_slide_container .our_maison_gallery{padding-bottom: 15px;}
@@ -771,15 +771,17 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie9 .social_links ul{float:right;width:17.6%;}
 .lt-ie9 .social_links ul li{float:right;}
 .lt-ie8 .social_links ul{width:23% !important;}
-.lt-ie8 .social_links ul li{width:15%;}
+.lt-ie8 .social_links ul li{width:12%;}
 .lt-ie8 .social_links ul li a{padding-right: 0px;}
 .lt-ie8 .tab_content_left span.customSelect{padding-bottom: 0px;padding-top: 5px;}
 .lt-ie8 .tab_content_left span.customSelect{height: 30px !important;}
 .lt-ie8 .tab_content_full .view_jobs a{float: right;}
 .lt-ie8 .tab_content_left form p{position: relative;top:-20px;}
 .lt-ie8 .join_us_gallery ul li.active{height: 36px;}
-.lt-ie8 .maisons_lists ul li.join-us section{width: auto;}
-.lt-ie8 .career_gallery_container, .lt-ie8 .career_gallery_container .slides, .lt-ie8 .career_gallery_container .slides ul{width:1024px;overflow: hidden;}
+.lt-ie8 .maisons_lists ul li.join-us section{width:55%;}
+.lt-ie8 .maisons_lists ul li.join-us {width:19% !important;}
+.lt-ie8 .maisons_lists ul li.join-us a{width:85px;margin-top:38px;}
+/*.lt-ie8 .career_gallery_container, .lt-ie8 .career_gallery_container .slides, .lt-ie8 .career_gallery_container .slides ul{width:1024px;overflow: hidden;}*/
 .lt-ie8 .page_1 .row .col.span_4{width:33.325%;}
 .lt-ie8 .page_1 .row .col.span_4 img{position: relative;z-index: -1;right: -1px;}
 .lt-ie8 .page_6 .career_gallery{width: 90%;}
@@ -791,8 +793,13 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie8 .page_3 .maisons_lists ul.buttons li {width:auto;}
 .lt-ie8 .our_maison_gallery{top:-20px;height:355px;}
 .lt-ie9 .page .social_link_container {float:right;}
+.lt-ie8 .page .social_link_container {float:none;}
 .lt-ie9 .page .social_links {max-width: 100%;}
 .lt-ie9 .page .social_links ul{width:200px;}
+.lt-ie8 .videos .section_one figcaption{width:97%;bottom:0;}
+.lt-ie8 .our_maison_gallery .maison_main_content .maison_desc a.invite{position:relative;bottom: 25px;}
+.lt-ie8 .page_3{height:650px;}
+.lt-ie8 .career_gallery .career_gallery_container{width:1024; margin:0 auto;}
 .maisons_lists ul li.shading .grow {
     display: block;
     position: relative;

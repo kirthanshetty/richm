@@ -653,31 +653,31 @@ button.collapsed{display:none;}
 .social_links ul{margin-right:0px;}
 .page_2 .two_sections .section_one{margin: 0 0 0 20px;}
 #wrapper, header, footer, #wrapper .container.main .page{max-width: 1280px;}
-#wrapper .tab_content_full .tab_content_left .second_step, #wrapper .tab_content_full .tab_content_left .third_step, #wrapper .tab_content_full .tab_content_left .first_step, #wrapper .tab_content_full .tab_content_left .fourth_step, #wrapper .tab_content_full .tab_content_left .fifth_step{float: left;width: 100%;border: 0px;padding:0px;}
-#wrapper .tab_content_full .tab_content_left .second_step h3, #wrapper .tab_content_full .tab_content_left .third_step h3 {font-size: 1.4em;font-style: normal;font-weight: bold;color: #5e5e5e;}
+#wrapper .tab_content_full .tab_content_left .step_2, #wrapper .tab_content_full .tab_content_left .step_3, #wrapper .tab_content_full .tab_content_left .step_1, #wrapper .tab_content_full .tab_content_left .step_4, #wrapper .tab_content_full .tab_content_left .step_5{float: left;width: 100%;border: 0px;padding:0px;}
+#wrapper .tab_content_full .tab_content_left .step_2 h3, #wrapper .tab_content_full .tab_content_left .step_3 h3 {font-size: 1.4em;font-style: normal;font-weight: bold;color: #5e5e5e;}
 #wrapper .tab_content_full .tab_content_left .form_submission label, #wrapper .tab_content_full .tab_content_left .form_submission span.radio_btn {color: #666666;padding:0px;cursor: default;font-size: 1.3em;float:right;}
 #wrapper .tab_content_full .tab_content_left .form_submission span.radio_btn{float: left;padding-left: 5px;}
-#wrapper .tab_content_full .tab_content_left .first_step label{float:left;}
+#wrapper .tab_content_full .tab_content_left .step_1 label{float:left;}
 #wrapper .tab_content_full .tab_content_left .form_submission input{float: left;margin-top: 2px;}
 #wrapper .tab_content_full .tab_content_left .form_submission input[type='text']{width:193px;padding: 5px 0;}
-#wrapper .tab_content_full .tab_content_left .form_submission form .second_step div, #wrapper .tab_content_full .tab_content_left .form_submission form .third_step div, #wrapper .tab_content_full .tab_content_left .form_submission form .fifth_step div{ clear: both;width: 165px;}
-#wrapper .tab_content_full .tab_content_left .form_submission div.first_step form div{width: 100%;}
-#wrapper .tab_content_full .tab_content_left .form_submission div.first_step form div.submission, #wrapper .tab_content_full .tab_content_left .form_submission div.second_step form div.submission, #wrapper .tab_content_full .tab_content_left .form_submission div.third_step form div.submission{width: 76%;}
+#wrapper .tab_content_full .tab_content_left .form_submission form .step_2 div, #wrapper .tab_content_full .tab_content_left .form_submission form .step_3 div, #wrapper .tab_content_full .tab_content_left .form_submission form .step_5 div{ clear: both;width: 165px;}
+#wrapper .tab_content_full .tab_content_left .form_submission div.step_1 form div{width: 100%;}
+#wrapper .tab_content_full .tab_content_left .form_submission div.step_1 form div.submission, #wrapper .tab_content_full .tab_content_left .form_submission div.step_2 form div.submission, #wrapper .tab_content_full .tab_content_left .form_submission div.step_3 form div.submission{width: 76%;}
 #wrapper .tab_content_full .tab_content_left input[type='button']{margin-right: 10px;}
 #wrapper .tab_content_full .tab_content_left .form_submission form{float:left;width: 82%;}
-#wrapper .tab_content_full .tab_content_left .form_submission form .second_step div.submission, #wrapper .tab_content_full .tab_content_left .form_submission form .third_step div.submission{width: 100%;}
+#wrapper .tab_content_full .tab_content_left .form_submission form .step_2 div.submission, #wrapper .tab_content_full .tab_content_left .form_submission form .step_3 div.submission{width: 100%;}
 #wrapper .tab_content_full .tab_content_left div.submission{margin:20px 0px 0px;width: 75%;}
 #wrapper .tab_content_full .tab_content_left div.submission p{ display: block;float: right;margin: 0;width: auto;}
 #wrapper .tab_content_full .tab_content_left input.attach{ border: 1px solid #054670;margin-left:0px;margin-top:10px;color: #FFFFFF;float: left;font-size: 1.1em;font-weight: bold;}
-#wrapper .tab_content_full .tab_content_left .form_submission .fourth_step div, #wrapper .tab_content_full .tab_content_left .form_submission .fifth_step div.submission{width:80%;}
-#wrapper .tab_content_full .tab_content_left .form_submission .fourth_step label, #wrapper .tab_content_full .tab_content_left .form_submission div.first_step label{float:left;padding-top: 5px;}
+#wrapper .tab_content_full .tab_content_left .form_submission .step_4 div, #wrapper .tab_content_full .tab_content_left .form_submission .step_5 div.submission{width:80%;}
+#wrapper .tab_content_full .tab_content_left .form_submission .step_4 label, #wrapper .tab_content_full .tab_content_left .form_submission div.step_1 label{float:left;padding-top: 5px;}
 #wrapper .tab_content_full .tab_content_left span.error{font-size: 1.4em;color:#d71d1d; font-weight: bold;float: left;}
 #wrapper .tab_content_full .tab_content_left .form_submission a.next, #wrapper .tab_content_full .tab_content_left .form_submission a.prev{padding:2px 5px;margin-right: 10px;}
 #wrapper .tab_content_full .tab_content_left input[type='radio'], #wrapper .tab_content_full .tab_content_left input[type='checkbox'] {margin-top:3px;}
 
-#wrapper .tab_content_full .tab_content_left .form_submission form .third_step label{float:left;width:auto;}
-#wrapper .tab_content_full .tab_content_left .form_submission form .third_step label input{margin-right:5px;}
-#wrapper .tab_content_full .tab_content_left .form_submission .second_step label, #wrapper .tab_content_full .tab_content_left .form_submission .fifth_step label, #wrapper .tab_content_full .tab_content_left .form_submission .third_step label{float:left;padding-left:5px;width:auto;}
+#wrapper .tab_content_full .tab_content_left .form_submission form .step_3 label{float:left;width:auto;}
+#wrapper .tab_content_full .tab_content_left .form_submission form .step_3 label input{margin-right:5px;}
+#wrapper .tab_content_full .tab_content_left .form_submission .step_2 label, #wrapper .tab_content_full .tab_content_left .form_submission .step_5 label, #wrapper .tab_content_full .tab_content_left .form_submission .step_3 label{float:left;padding-left:5px;width:auto;}
 
 .job_alert.job_dialog p{font-size:1em;color:#5E5E5E;padding-bottom: 15px;float: none;clear: both;}
 .job_dialog.job_alert .section_left{border: 0px;padding-right: 0px;margin-left: 0px;}
@@ -1098,8 +1098,8 @@ div.collapsed.hover .menu_list{display:block;}*/
 #wrapper .container .job_alert p, #wrapper .container .job_alert input{margin-left:0px;}
 #wrapper .container .job_alert.erro_alert p, #wrapper .container .job_alert.erro_alert input, #wrapper .container .job_alert.job_alert_activate p, #wrapper .container .job_alert.job_alert_activate input, #wrapper .container .job_alert.job_alert_delete p, #wrapper .container .job_alert.job_alert_delete input{margin-left:30px;}
 .tab_content_left form .note p{display:none; font-size: 1.2em;line-height: 18px;color:#5e5e5e;width:75%;float:left;}
-#wrapper .tab_content_full .tab_content_left .form_submission form .fifth_step .language_lists{float:left;width:100%;}
-#wrapper .tab_content_full .tab_content_left .form_submission form .fifth_step .language_lists div{ display: inline-block;float: none;margin-bottom: 2px;}
+#wrapper .tab_content_full .tab_content_left .form_submission form .step_5 .language_lists{float:left;width:100%;}
+#wrapper .tab_content_full .tab_content_left .form_submission form .step_5 .language_lists div{ display: inline-block;float: none;margin-bottom: 2px;}
 
 /* ie.css */
 

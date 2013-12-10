@@ -22,9 +22,9 @@
   .video-js, #video_content1{top:20px;}
   .close_buton{height:40px;}
   a.video_close{top:15px;}
-  #wrapper .tab_content_full .tab_content_left .form_submission form, #wrapper .tab_content_full .tab_content_left .form_submission form .fifth_step div.submission{width:100%;}
-  #wrapper .tab_content_full .tab_content_left .form_submission form .fifth_step .language_lists div {display: block;float: left;margin-bottom: 5px;}
-  #wrapper .tab_content_full .tab_content_left .form_submission form .fifth_step .language_lists{width:100%;}
+  #wrapper .tab_content_full .tab_content_left .form_submission form, #wrapper .tab_content_full .tab_content_left .form_submission form .step_5 div.submission{width:100%;}
+  #wrapper .tab_content_full .tab_content_left .form_submission form .step_5 .language_lists div {display: block;float: left;margin-bottom: 5px;}
+  #wrapper .tab_content_full .tab_content_left .form_submission form .step_5 .language_lists{width:100%;}
   .inner_block div select{width:270px;}
   .search_list div h4{font-size:1.2em;}
   .search_list div.img_desc{clear:both;width:100%;text-align:left;}

@@ -675,7 +675,7 @@
   #wrapper .tab_content_full .tab_content_left div.submission, #why-join-us .videos .section_one a, #wrapper .tab_content_full .tab_content_left .form_submission input[type="text"]{width: 100%;}
   #career-paths .tab_content_left select, #career-paths .tab_content_left span.customSelect{top: 24px !important;}
   #work-with-us{padding-top: 0px;}
-  #wrapper .tab_content_full .tab_content_left .form_submission .fourth_step label, #wrapper .tab_content_full .tab_content_left .form_submission div.first_step label{padding-bottom: 3px;}
+  #wrapper .tab_content_full .tab_content_left .form_submission .step_4 label, #wrapper .tab_content_full .tab_content_left .form_submission div.step_1 label{padding-bottom: 3px;}
   .career_gallery_container .slides{width:1475px !important;}
   .career_gallery ul li{width:184px;}
   #our-maisons .inner_content{padding-top: 65px;}

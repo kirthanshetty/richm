@@ -230,7 +230,7 @@ background: linear-gradient(to bottom, #dcdcdc 0%, #e0e0e0 20%, #e8e8e8 40%, #ed
 .search_block{float:left;padding-top:35px;position:absolute;right:0px;width:210px;}
 .search_block h2{font-size:1.5em;color:#4e4e4e;margin:0px;font-weight:bold;padding:7px 5px 7px 14px;}
 .inner_block{border:1px solid #d2d2d2;float:left;padding:14px 22px 20px ;}
-.inner_block div{margin-right:16px;/*display:inline-block;width: auto;float:none;position: relative;top:-25px;*/}
+.inner_block div{margin-right:16px;}
 .inner_block div.search_buttons{top:6px;}
 .inner_block .save_search{display:none;}
 .inner_block div label{color:#5e5e5e;font-size:1.3em;padding-bottom:6px;float:left;}
@@ -303,12 +303,10 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .footer_right ul li a.ls{background:url("../img/parallax/sprite.png") no-repeat -7px -1445px;width:20px;}
 .footer_right ul li a.youtube{background:url("../img/parallax/sprite.png") no-repeat -6px -1407px;width:60px;}
 .footer_right ul li a.linkedin{background:url("../img/parallax/sprite.png") no-repeat left -47px;}
-
 .serach_main_lists .col{margin-left:0px;}
 .header_right .customSelect{background:url("../img/parallax/lang_select.png") no-repeat scroll 100% 30% transparent;}
 
 /* Style for Parllax single page */
-/*.page{padding-bottom: 200px }*/
 .page{position: relative;margin-bottom: 0px;}
 .search_block{display:none;float:right;margin-top: 49px;padding: 0px;width: 444px;background: none repeat scroll 0 0 #E7E7E7;}
 .search_block .textbox{padding:2px 8px;width: 332px;margin: 8px 0px 8px 8px;font-size: 0.95em;font-family: georgia;font-style: italic;}
@@ -332,7 +330,6 @@ footer .container{position:relative;}
 .page_1 .row .inner_block{padding:0px;border:0px;float:left;}
 .page_1 .row .inner_block input{margin:0px;padding:5px 10px;}
 footer{margin-top:50px;}
-.page_2{/*background:url("../img/parallax/section_bg.jpg") no-repeat left top;*/}
 .col.span_5 .our_world{background:#c2c2c2;padding:30px;font-family:'Lato', "Times New Roman";color:#00436e;margin:50px 0px 0px 35px;opacity:0.95;filter:alpha(opacity=95);/*height: 680px;*/}
 #wrapper .our_world h2{color:#00436e;font-size:4.3em;line-height: 48px;font-family:'SabonLT-Roman', "Times New Roman";padding-bottom:5px;margin:0px;}
 .our_world p.highlight, .maison_main_content .maison_desc p.highlight{font-size:1.7em;padding-bottom:18px;}
@@ -378,23 +375,17 @@ footer{margin-top:50px;}
 #why-join-us {z-index: 9;padding-bottom: 100px;min-height: 855px;}
 #career-paths {z-index: 10;padding-bottom:175px;}
 #home .inner_content, #why-join-us .inner_content, #career-paths .inner_content {/*width: 100%;*/background: #fff;}
-#our-world {/*background:url("../img/parallax/section_bg.jpg") no-repeat center top transparent;background-size:cover;*/min-height: 685px; width: 100%;}
-#work-with-us{/*background:url("../img/parallax/img14.jpg") no-repeat center top transparent;background-size:cover;*/min-height: 685px; width: 100%;z-index: 10;}
+#our-world {min-height: 685px; width: 100%;}
+#work-with-us{min-height: 685px; width: 100%;z-index: 10;}
 
 /*Our Maisons*/
 #our-maisons {width:100%;z-index: 8;}
 .maison_image img{width:404px;height:304px;}
 #our-maisons .inner_content{padding:35px;overflow: hidden;}
-/*.maisons_lists{float:left;width:100%;margin-top:35px;margin-bottom:58px;}
-.maisons_lists ul{margin: 0 auto; width: 950px;}*/
 .maisons_lists{width:950px;margin:35px auto 58px;}
-
 .maisons_lists ul li{float:left;width:20%;}
 .maisons_lists ul li a{height:114px;background:#00436e;display: block;}
-/*.maisons_lists ul li:last-child{border:0px;border-bottom:1px solid #b8b8b8;}*/
-/*.maisons_lists ul li a.two{background:url("../img/parallax/watch2.jpg") no-repeat left top;}
-.maisons_lists ul li a.two:hover img{background: transparent;}*/
-.maisons_lists ul li a img{/*left: 20%;position: relative;top: 25%;*/ background: none repeat scroll 0 0 #00436E;height:100%;width:99%;}
+.maisons_lists ul li a img{background: none repeat scroll 0 0 #00436E;height:100%;width:99%;}
 .maisons_lists ul li.join-us{background:#dadada;width:760px;height: 113px;opacity:0.7;filter:alpha(opacity=90);border:0px !important;}
 .maisons_lists ul li.join-us section{float:right;padding:38px 40px;width:100%;}
 .maisons_lists ul li.join-us h3{font-size:2.5em;font-weight: normal;color:#4e4e4e;float:right;margin:7px 0 0;}
@@ -411,126 +402,54 @@ background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d
 .our_maison_gallery ul.buttons li.active.lightbox-open a{background:url("../img/parallax/sprite.png") repeat scroll left -292px transparent !important;}
 .our_maison_gallery ul.buttons li.lightbox-open a{background: url("../img/parallax/sprite.png") repeat scroll left -269px transparent !important;}
 .maisons_lists ul li.lightbox-open a img {opacity: 0;filter:alpha(opacity=0);
-  transition: opacity 0s ease-in-out 0s;
+transition: opacity 0s ease-in-out 0s;
 -webkit-transition: opacity 0s ease-in-out 0s;
 -moz-transition: opacity 0s ease-in-out 0s;
 -o-transition: opacity 0s ease-in-out 0s;
 -ms-transition: opacity 0s ease-in-out 0s;
 -ms-transition: "progid:DXImageTransform.Microsoft. Alpha(Opacity=0)";}
 .maisons_lists ul li a img.add_blur{}
-.maisons_lists ul li a.two{/*background:url('img/parallax/maison11.png') no-repeat left top;*/}
 .maisons_lists ul li a.two:hover img.overlay{}
 .maisons_lists ul li {position:relative;height:114px;width:190px; float: left; overflow: hidden;border-right: 1px solid #B8B8B8;border-bottom:1px solid #b8b8b8;}
 .maisons_lists ul li.lightbox-open{border-right: 1px solid #363636;border-bottom: 1px solid #363636;}
 .maisons_lists ul li img {position:absolute;left:0px;top:0px;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  -ms-transition: "progid:DXImageTransform.Microsoft. Alpha(Opacity=100)";
-  transition: opacity 1s ease-in-out;}
+-webkit-transition: opacity 1s ease-in-out;
+-moz-transition: opacity 1s ease-in-out;
+-o-transition: opacity 1s ease-in-out;
+-ms-transition: "progid:DXImageTransform.Microsoft. Alpha(Opacity=100)";
+transition: opacity 1s ease-in-out;}
 .maisons_lists ul li img.top{width:100%;  z-index: 9999;}
 .maisons_lists ul li a:hover img.top,.maisons_lists ul li a:focus img.top {opacity:0;filter:alpha(opacity=0);}
-.maisons_lists ul li img.overlay{z-index: 999;width:100%;}
-/*
-.maisons_lists ul li img.overlay:hover{ filter: blur(0px);
-    -webkit-filter: blur(0px);
-    -moz-filter: blur(0px);
-    -o-filter: blur(0px);
-    -ms-filter: blur(0px);}
- */   
-.maisons_lists ul li a:hover img.add_blur,.maisons_lists ul li a:focus img.add_blur{
-  /*
-      transition: all 0.3s ease-in-out 0.5s;
-      -webkit-transition: all 0.3s ease-in-out 0.2s;
-      -moz-transition: all 0.3s ease-in-out 0.2s;
-      -o-transition: all 0.3s ease-in-out 0.2s;
-      -ms-transition: all 0.3s ease-in-out 0.2s;
-      transform:scale(1.025);
-      -webkit-transform:scale(1.025);
-      -moz-transform:scale(1.025);
-      -o-transform:scale(1.025);
-      -ms-transform:scale(1.025);
-        height: 96%;
-    margin-left: 3px;
-    margin-top: 1px;
-    width: 96%;
-    */
-    
-    height: 126px;
-    left: -3%;
-    position: absolute;
-    top: -3%;
-    width: 215px;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-    
-    }
+.maisons_lists ul li img.overlay{z-index: 999;width:100%;}   
+.maisons_lists ul li a:hover img.add_blur,.maisons_lists ul li a:focus img.add_blur{height: 126px;left: -3%;position: absolute;top: -3%;width: 215px;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;}
 .maisons_lists ul li a img{
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-    }
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;}
 
-.maisons_lists .fading a img{background: #00436E;
-  /*
--moz-transition: opacity 1s ease-in-out 0s;
--webkit-transition: opacity 1s ease-in-out 0s;
--o-transition: opacity 1s ease-in-out 0s;
--ms-transition: opacity 1s ease-in-out 0s;
-transition: opacity 1s ease-in-out 0s;
-*/
-}
+.maisons_lists .fading a img{background: #00436E;}
 .maisons_lists ul li.shading a:hover img.top{opacity: 1;filter:alpha(opacity=100);background: transparent;}
 .maisons_lists ul li.shading.lightbox-open a img.top{opacity: 0.3;filter:alpha(opacity=30);background: transparent;}
-.maisons_lists ul li.shading a:hover .grow .image {
-    width: 250px;
-    height: 150px;
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
+.maisons_lists ul li.shading a:hover .grow .image {width: 250px;height: 150px;position: absolute;top: -15px;left: -15px;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;}
 .maisons_lists .shading.fading a .grow .image {background: #00436E;-webkit-transition: all 0s ease;transition: all 0s ease;}
 .maisons_lists .shading.fading a img.top{display: block;}
 .maisons_lists .shading .image img{
-      -webkit-transition: all 0.3s ease-in-out 0s;
-      transition: all 0.3s ease-in-out 0s;
-}
-
-/*
-.grow {display: none;}
-.maisons_lists ul li a img{display:block;}
-*/
-/*
-.maisons_lists ul li a .grow{position: relative;overflow: hidden;width: 190px;height: 114px;}  
-.maisons_lists ul li a .grow .image{
-    background:url("../img/parallax/watch2.jpg") no-repeat left top;background-size: cover;
-    height: 300px;
-    width: 300px;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;}
-
-.maisons_lists ul li a .grow .image:hover{width: 250px;height: 155px;position: absolute;top:-10px;left: -10px;}
-*/
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;}
 
 .maisons_lists .fading a img.blur-img{display: none;}
-
 .page_3 .maisons_lists ul.buttons li{border:0px;}
 .align-center{text-align: center;}
 h1{color: #a3a3a3;font-family: 'SabonLT-Roman', "Times New Roman";font-size: 4.8em;font-weight: normal;margin-bottom: 0;}
@@ -618,7 +537,6 @@ ul.buttons li.active a{ background: url("../img/parallax/sprite.png") left -292p
 .page_1 .row .col a{}
 .page_1 .row .col.span_4{width:33.33%;line-height: 7px;}
 .page_1 .row .col.span_8{width:66.66%;}
-/*.our_maison_gallery{background:#fff;position: relative;float: left;margin: 0 2px;}*/
 .our_maison_gallery{background:#fff;position: relative;float: left;}
 .our_maison_gallery a.close, .our_maison_gallery a.maison_prev, .our_maison_gallery a.maison_close{ background: url("../img/parallax/sprite.png") no-repeat scroll 0 -310px transparent;float: left;height: 44px;right:10px;position: absolute;width: 32px;z-index: 9;text-indent: -9999px;top:5px;}
 .our_maison_gallery a.maison_next{     background: url("../img/parallax/sprite.png") no-repeat scroll 8px -356px transparent;right:0px;height: 60px;position:absolute;top: 42%;width: 50px;}
@@ -799,53 +717,30 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie8 .videos .section_one figcaption{width:97%;bottom:0;}
 .lt-ie8 .our_maison_gallery .maison_main_content .maison_desc a.invite{position:relative;bottom: 25px;}
 .lt-ie8 .page_3{height:650px;}
-.lt-ie8 .career_gallery .career_gallery_container{width:1024; margin:0 auto;}
+.lt-ie8 .career_gallery .career_gallery_container{width:1024; margin:0 auto;position:relative;}
 .lt-ie9 .join_us_gallery ul{border-bottom:10px solid #fff;top:248px;height:50px;}
 .lt-ie9 .join_us_gallery ul li{padding-top: 7px;}
 .lt-ie9 .join_us_gallery ul li.active{padding-top:7px;height:52px;}
 .lt-ie8 .join_us_gallery ul{border-bottom:13px solid #fff;top:288px;height:44px;}
 .lt-ie8 .join_us_gallery ul li.active{height:38px;}
-.maisons_lists ul li.shading .grow {
-    display: block;
-    position: relative;
-    overflow: hidden;
-    height: 114px;
-    width: 190px;
-    background: #00436e;
-    z-index: 9999;
-  }
-  .maisons_lists ul li.shading {position: relative;float: left;display: block;}
-  .maisons_lists ul li.shading .grow .image {
-    height: 114px;
-    width: 190px;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-  }
- 
-  .maisons_lists ul li.shading .grow .image:hover {
-    width: 250px;
-    height: 150px;
-    position: absolute;
-    top: -15px;
-    left: -15px;
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-  }
- 
-  .maisons_lists ul li.shading a img{display: none;}
-  .maisons_lists ul li.shading a img.top{display: block;}
-  .maisons_lists ul li.shading a .grow img{display: block;}
-  .maisons_lists ul li.shading.lightbox-open .image { background: none repeat scroll 0 0 #1F1F1F;}
+.maisons_lists ul li.shading .grow {display: block;position: relative;overflow: hidden;height: 114px;width: 190px;background: #00436e;z-index: 9999;}
+.maisons_lists ul li.shading {position: relative;float: left;display: block;}
+.maisons_lists ul li.shading .grow .image {height: 114px;width: 190px;position: absolute;top: 0;right: 0;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;}
+.maisons_lists ul li.shading .grow .image:hover {width: 250px;height: 150px;position: absolute;top: -15px;left: -15px;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;}
+.maisons_lists ul li.shading a img{display: none;}
+.maisons_lists ul li.shading a img.top{display: block;}
+.maisons_lists ul li.shading a .grow img{display: block;}
+.maisons_lists ul li.shading.lightbox-open .image { background: none repeat scroll 0 0 #1F1F1F;}
 
 .page_1 .row .col.span_4:last-child {position: relative;right: -0.033%;}
 .search_main_block .inner_block .job_select{width:22%;position: relative;}
@@ -854,100 +749,12 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .faq .inner_block input.reset{clear:none;}
 
 @media screen and (-webkit-min-device-pixel-ratio:0) {
- .quick_search input[type="submit"]  {left:-2px;}
- .view_jobs .quick_search input[type="submit"]{left:0px;}
- .tab_content_left select, .tab_content_left span.customSelect{font-size: 1.2em;}
- .faq select, .faq span.customSelect{font-size: 1.2em;}
- .search_main_block select, .search_main_block span.customSelect{font-size: 1.2em;}
-
-  
- 
-  /*
-.grow .image img:hover {
-  -webkit-transition: all 0s ease;
-    -moz-transition: all 0s ease;
-    -o-transition: all 0s ease;
-    -ms-transition: all 0s ease;
-    transition: all 0s ease;
-}
-*/
- /* .maisons_lists ul li{position: relative;
-    overflow: hidden;
-    height: 114px;
-    width: 190px;
+   .quick_search input[type="submit"]  {left:-2px;}
+   .view_jobs .quick_search input[type="submit"]{left:0px;}
+   .tab_content_left select, .tab_content_left span.customSelect{font-size: 1.2em;}
+   .faq select, .faq span.customSelect{font-size: 1.2em;}
+   .search_main_block select, .search_main_block span.customSelect{font-size: 1.2em;}
   }
-.maisons_lists ul li a{background: none repeat scroll 0 0 #00436E;height: 114px;
-    width: 190px;
-    position: absolute;
-    top: 0;
-    right: 0;
-
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-  }
-.maisons_lists ul li a img{
-  background: url("../img/parallax/watch2.jpg") no-repeat left top;
-  -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-}
-.maisons_lists ul li a img.add_blur {display: none;}
-.maisons_lists ul li a:hover img.add_blur{
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-    width: 250px;
-    height: 150px;
-    position: absolute;
-    top: -3px;
-    left: -3px;
-  }
-  .maisons_lists ul li a:hover img.top{display:hidden;}
-  */
-}
-/*
-.maisons_lists ul li a.listA{background: #1f1f1f;border-color: #414141;}
-.maisons_lists ul li a.listAA{background: #00436e;border-color: #b8b8b8;}
-.maisons_lists ul li a img.listI{background: transparent;opacity:0.2;}
-.maisons_lists ul li a img.listII{opacity:1;}
-.maisons_lists ul li:hover .fadeIn {
-  opacity:0;
-  filter: alpha(opacity=0);
-  -webkit-animation:fadeIn ease 1;
-  -moz-animation:fadeIn ease 1;
-  -o-animation:fadeIn ease 1;
-  animation:fadeIn ease 1;
-  -webkit-animation-fill-mode:forwards;
-  -moz-animation-fill-mode:forwards;
-  -o-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  -o-animation-duration:1s;
-  animation-duration:1s;
-  -webkit-animation-delay:0s;
-  -moz-animation-delay:0s;
-  -o-animation-delay:0s;
-  animation-delay:0s;
-
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-}
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-*/
 .mobile_search, .menu_list{display: none;}
 .menu_list{float: left;width: 100%;}
 .menu_list ul{padding:0px;margin: 0px;list-style-type: none;}
@@ -960,13 +767,10 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 
 img.section_bg{left: 0;position: absolute;top: 0;width: 100%;}
 .section_right h5 {color: #5E5E5E;font-size: 1.6em;margin: 0 0 4px;}
-/*img.section_bg.global { left: auto !important;right: 24%;width: auto !important;}*/
 .lt-ie7 img.section_bg{z-index: -1;}
 h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs h3{display: none;}
 .page_5 .section_one{float:right;margin:0px 10px;width:46%;}
 .page_5 .section_one img{width: 100%;}
-/*div.collapsed .menu_list{display:none;}
-div.collapsed.hover .menu_list{display:block;}*/
 
 /* Style for Other pages */
 /* Style for Contact page */
@@ -1068,11 +872,9 @@ div.collapsed.hover .menu_list{display:block;}*/
 .join_us_gallery .maison_prev, .join_us_gallery .maison_next{text-indent: -9999px;}
 .creativity_head .bg_img img{/*display: none;*/}
 .our_world .slides .content a{ color: #2B2B2B;font-size: 1.4em;margin-bottom: 10px;text-decoration: underline;padding-left: 4px;}
-/*.career, .global, .career_two_sections, .global_two_sections { display:none;}*/
 .section_images .section_bg, .gallery_join .span_7.col .two_sections{display:none;}
 .section_images .section_bg.active, .gallery_join .span_7.col .two_sections.active{display:block;}
 .search_main_block .inner_block .search_buttons {margin-top: 24px;}
-/*.menu_list{display:block;}*/
 
 /* Style for Single-Column page */
 #wrapper .column-content .col h2{font-size: 5em;margin: 30px 0 20px 0px;}
@@ -1088,7 +890,6 @@ div.collapsed.hover .menu_list{display:block;}*/
 .column-content ul li{background: url("../img/parallax/sprite.png") no-repeat scroll 2px -1210px transparent;padding-left: 25px;}
 .column-content li a{text-decoration: underline;font-size: 1em;margin: 0px;color:#00436e;}
 .column-content a.top{color:#00436e;font-size:1.4em;margin-top: 25px;display: block;margin-bottom: 25px;font-weight: bold;}
-/*.column-content ul li span{  background: url("../img/parallax/sprite.png") repeat scroll left -1209px transparent;float: left;margin-right: 8px;width: 12px;}*/
 .column-content ol li{list-style-type: decimal;}
 .column-content .locations-list{padding-bottom: 12px;}
 .column-tab-content{float: left;width: 100%;}
@@ -1182,41 +983,7 @@ div.collapsed.hover .menu_list{display:block;}*/
   .span_12 { width: 100%; }
 }
 
-
-/*
-@media ( max-width : 1000px ) {
-  header .container .span_7{float:left;width:auto;  margin-left: 35px;}
-  header .container .full_right_header{float:right;}
-  .inner_block .search_buttons span.reset{float:left;clear:none;margin-top:40px;}
-  .content_block .span_5{width:70.5%;}
-  .content_block .span_7{width:23.5%;}
-  .content_block .search_results .section_left, .content_block .search_results .section_right{width:100%;}
-    .content_block .search_results .section_left{margin-bottom:20px;}
-    footer .span_5{width:70.5%;}
-    footer .span_7{width:23.5%;}
-    .serach_main_lists{border-right:0px;}
-    button.collapsed{display:block;}
-    .header_right ul.second_row{display:none;}
-    .btn-navbar {background: none;border:0px;color: #FFFFFF;}
-  .btn-navbar .icon-bar {background-color: #F5F5F5;border-radius: 1px 1px 1px 1px;box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);display: block;height: 3px;width: 25px;margin-bottom: 4px;}
-  .search{float:left;top:-20px;left:25px;}
-  button.collapsed{ left: 60px;position: relative;top: 4px;}
-
-  @media ( max-width : 585px ) {
-  .serach_main_lists .search_list div{width:100%;}
-  body{background:#f00;}
-}
-@media ( max-width : 475px ) {
-  .content_block .view_faq, .content_block .view_jobs{width:100%;}
-  .content_block .view_faq h3{margin:20px 0px 0px 30px;width:auto;float:left;}
-}
-
-*/
-}
-
 /* End of 12-col.css */
-
-
 
 .clearfix:before,
 .clearfix:after {
@@ -1339,6 +1106,7 @@ body {
     font-size:62.5%;
     overflow-x:hidden; 
 }
+.lt-ie9 body{overflow-x:scroll;}
 
 a:active,
 a:hover {
@@ -1473,6 +1241,4 @@ figure{
 }
 .maisons_lists ul li.cols_1 a,.maisons_lists ul li.cols_2 a{margin: 0;float: none;text-align: center;}
 .maisons_lists ul li.cols_1 h3,.maisons_lists ul li.cols_2 h3{display: none;}
-.maisons_lists ul li.cols_2{}
 .maisons_lists ul li.cols_3 h3{font-size: 2em;}
-.maisons_lists ul li.cols_4{}

@@ -34,6 +34,9 @@ require(['jquery'],function(){
                 customSelectSpanInner = customSelectSpan.children(':first'),
                 html = currentSelected.html() || '&nbsp;';
 
+                if(html.length > 20)
+                    html = html.substr(0,20) + "...";
+
                 customSelectSpanInner.html(html);
                 
                 if (currentSelected.attr('disabled')) {

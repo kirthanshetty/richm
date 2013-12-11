@@ -803,6 +803,8 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie9 .join_us_gallery ul{border-bottom:10px solid #fff;top:248px;height:50px;}
 .lt-ie9 .join_us_gallery ul li{padding-top: 7px;}
 .lt-ie9 .join_us_gallery ul li.active{padding-top:7px;height:52px;}
+.lt-ie8 .join_us_gallery ul{border-bottom:13px solid #fff;top:288px;height:44px;}
+.lt-ie8 .join_us_gallery ul li.active{height:38px;}
 .maisons_lists ul li.shading .grow {
     display: block;
     position: relative;

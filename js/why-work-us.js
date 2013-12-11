@@ -42,9 +42,10 @@ _richemontCareers.WhyworkUs = function(container){
 
 	tabAnchors.click(function(e){
 		e.preventDefault();
-		var anchor = $(this)
-		$.get($(this).attr('href'),function(data){
-			anchor.parent().parent().parent().find('li').removeClass('active');
+		var anchor = $(this),
+			link = this.href
+		$.get(link,function(data){
+			anchor.parent().parent().parent().find('li.active').removeClass('active');
 			anchor.parent().parent().addClass('active');
 			
 			var ajaxCont = $(data),

@@ -742,7 +742,7 @@ transition: all 1s ease;}
 .maisons_lists ul li.shading a .grow img{display: block;}
 .maisons_lists ul li.shading.lightbox-open .image { background: none repeat scroll 0 0 #1F1F1F;}
 
-.page_1 .row .col.span_4:last-child {position: relative;right: -0.183%;}
+/*.page_1 .row .col.span_4:last-child {position: relative;right: -0.183%;}*/
 .search_main_block .inner_block .job_select{width:22%;position: relative;}
 .search_main_block .inner_block .job_select div, .faq .inner_block .faq_select div{position: absolute;left:0px;top:0px;}
 .faq .inner_block .faq_select{position: relative;}

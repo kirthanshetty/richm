@@ -742,7 +742,7 @@ transition: all 1s ease;}
 .maisons_lists ul li.shading a .grow img{display: block;}
 .maisons_lists ul li.shading.lightbox-open .image { background: none repeat scroll 0 0 #1F1F1F;}
 
-.page_1 .row .col.span_4:last-child {position: relative;right: -0.033%;}
+.page_1 .row .col.span_4:last-child {position: relative;right: -0.183%;}
 .search_main_block .inner_block .job_select{width:22%;position: relative;}
 .search_main_block .inner_block .job_select div, .faq .inner_block .faq_select div{position: absolute;left:0px;top:0px;}
 .faq .inner_block .faq_select{position: relative;}
@@ -913,7 +913,7 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 .tab_content_left form .note p{display:none; font-size: 1.2em;line-height: 18px;color:#5e5e5e;width:75%;float:left;}
 #wrapper .tab_content_full .tab_content_left .form_submission form .step_5 .language_lists{float:left;width:100%;}
 #wrapper .tab_content_full .tab_content_left .form_submission form .step_5 .language_lists div{ display: inline-block;float: none;margin-bottom: 2px;}
-
+.step_4 div div {top:0px !important;left:145px !important;}
 /* ie.css */
 
 /* CLEARFIX HACK */

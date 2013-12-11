@@ -914,6 +914,7 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 #wrapper .tab_content_full .tab_content_left .form_submission form .step_5 .language_lists{float:left;width:100%;}
 #wrapper .tab_content_full .tab_content_left .form_submission form .step_5 .language_lists div{ display: inline-block;float: none;margin-bottom: 2px;}
 .step_4 div div {top:0px !important;left:145px !important;}
+.lt-ie9 #wrapper, .lt-ie9 header, .lt-ie9 footer, .lt-ie9 #wrapper .container.main .page {min-width:1200px;}
 /* ie.css */
 
 /* CLEARFIX HACK */

@@ -800,6 +800,9 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie8 .our_maison_gallery .maison_main_content .maison_desc a.invite{position:relative;bottom: 25px;}
 .lt-ie8 .page_3{height:650px;}
 .lt-ie8 .career_gallery .career_gallery_container{width:1024; margin:0 auto;}
+.lt-ie9 .join_us_gallery ul{border-bottom:10px solid #fff;top:248px;height:50px;}
+.lt-ie9 .join_us_gallery ul li{padding-top: 7px;}
+.lt-ie9 .join_us_gallery ul li.active{padding-top:7px;height:52px;}
 .maisons_lists ul li.shading .grow {
     display: block;
     position: relative;

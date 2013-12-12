@@ -163,7 +163,8 @@ _richemontCareers.MaisonSlideshow = function (gallery, anchorel, animate, callba
         $(this).parent().addClass('active');
 
         var prev = maisonImages.filter(':visible'),
-            cur = $($(this).attr('href'));
+            href = $(this).attr('href').replace(/^.*#/,'#'),
+            cur = $(href);
 
         prev.fadeOut();
         cur.fadeIn();

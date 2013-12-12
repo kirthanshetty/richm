@@ -1,1 +1,1 @@
-require(["jquery"],function(){navigator.userAgent.indexOf("Safari")!=-1&&navigator.userAgent.indexOf("Chrome")==-1});
+require(["jquery"],function(){navigator.userAgent.indexOf("Safari")!=-1&&navigator.userAgent.indexOf("Chrome")==-1&&$(".page_1 .row .col.span_4:last-child").css({position:"relative",right:"-0.183%"})});

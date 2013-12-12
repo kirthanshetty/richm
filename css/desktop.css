@@ -915,6 +915,9 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 #wrapper .tab_content_full .tab_content_left .form_submission form .step_5 .language_lists div{ display: inline-block;float: none;margin-bottom: 2px;}
 .step_4 div div {top:0px !important;left:145px !important;}
 .lt-ie9 #wrapper, .lt-ie9 header, .lt-ie9 footer, .lt-ie9 #wrapper .container.main .page {min-width:1200px;}
+
+.creativity_head a.maison_prev{background: url("../img/parallax/sprite.png") no-repeat scroll 0 -486px;float: left;height: 60px;position: absolute;left: 20px;width: 50px;z-index: 999;top:90px;}
+.creativity_head a.maison_next{background: url("../img/parallax/sprite.png") no-repeat scroll 0 -552px;float: left;height: 60px;position: absolute;right: 10px;width: 50px;z-index: 999;top:90px;}
 /* ie.css */
 
 /* CLEARFIX HACK */

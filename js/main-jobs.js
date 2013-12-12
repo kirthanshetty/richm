@@ -1,6 +1,6 @@
 require.config({
     paths: {
-        jquery: 'vendor/jquery-1.9.1.min',
+        jquery: 'vendor/jquery-1.9.1.min'
     }
 });
 

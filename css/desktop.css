@@ -256,7 +256,7 @@ background: -o-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577
 background: -ms-linear-gradient(top, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* IE10+ */
 background: linear-gradient(to bottom, #255e83 0%, #245d82 20%, #215a7f 40%, #1d577b 50%, #195377 60%, #124b70 80%, #10496d 100%); /* W3C */}
 .inner_block input.reset{color:#00436e;margin:0px;border:0px;background-color:transparent;margin-top:15px;clear: both;margin-right:15px;font-size:1.2em;font-weight:bold;float:right;}
-.inner_block div span.customSelect, .tab_content_left span.customSelect{ background: url("../img/parallax/select.jpg") no-repeat scroll left top transparent;width:193px; padding: 8px; clear:both;float:left;}
+.inner_block div span.customSelect, .tab_content_left span.customSelect{ background: url("../img/parallax/select.jpg") no-repeat scroll left center;width:193px; padding: 8px; clear:both;float:left;}
 .customSelectInner{font-family: 'Lato', "Times New Roman"; font-size: 13px}
 
 .search_sections, .pagination, .pagination ul, .search_list{float:left;}
@@ -906,6 +906,9 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 
 .lt-ie8 .column-content h6{padding-top: 0px;}
 .lt-ie8 .column-content ul li{width: 100%;}
+.lt-ie8 .search_buttons input, .lt-ie8 #close, .lt-ie8 #cancel, .lt-ie8 #update, .content #submit{border:0px;}
+.lt-ie8 .job_dialog .content{position:relative;}
+.lt-ie8 .job_dialog .content form #unsubscribe{position:absolute;bottom:15px;border:0;right:0px;}
 
 #wrapper .job_alert .section_left{margin:0px;padding:0px;width:100%;}
 #wrapper .container .job_alert p, #wrapper .container .job_alert input{margin-left:0px;}

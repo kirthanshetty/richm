@@ -31,4 +31,6 @@
   .search_list div.img_date{clear:both;font-size:1.2em;margin-top:4px;width:auto;}
   .search_list div.img_details{float:right;width:auto;}
   .search_list div.img_block{width:100%;}
+  #wrapper .job_alert.job_dialog .section_left.activate{margin-left: 0;}
+  .job_alert input#email{width:100%;}
 }

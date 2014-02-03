@@ -14,4 +14,5 @@
   #wrapper .tab_content_full .tab_content_left .form_submission form div div {left: 0 !important;top: 23px !important;}
   .tab_content_left span.customSelect {background: url("../img/mobile_select.jpg") no-repeat scroll left top transparent;width: 270px;}
   .tab_content_full .tab_content_left span.customSelect{background: url("../img/single_mobile_select.jpg") no-repeat scroll left top transparent;width: 295px;}
+  #wrapper .tab_content_full .tab_content_left .form_submission input[type="text"]{width: 295px;}
 }

@@ -36,6 +36,5 @@
   .job_dialog.job_alert{margin-left: -45%;width: 90%;top:60%;}
   .job_dialog.job_alert .section_left.activate .content{overflow: auto;height:275px;}
   #wrapper .job_alert.job_dialog .section_left.delete form .emailfield, #wrapper .job_alert.job_dialog .section_left.delete form #unsubscribe{margin-right: 0;}
-  .job_dialog.job_alert .activate .content form input#submit{margin-bottom: 10px;}
-  #wrapper .job_alert.job_dialog .section_left.delete form .emailfield{width: 100%;}
+  #wrapper .job_alert.job_dialog .section_left.delete form .emailfield, #wrapper .job_alert.job_dialog .section_left.activate form .emailfield{width: 100%;}
 }

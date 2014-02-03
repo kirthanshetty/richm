@@ -15,4 +15,6 @@
   .join_us_gallery ul li{font-size:1.4em;margin:0px 15px;}
   .join_us_gallery ul li h3 {font-size: 1.3em;}
   .job_dialog.job_alert{margin-left: -30%;width: 60%;}
+  #wrapper .job_alert.job_dialog .section_left.delete form .emailfield, #wrapper .job_alert.job_dialog .section_left.activate form .emailfield, #wrapper .job_alert.job_dialog .section_left.delete form .emailfield input#email, #wrapper .job_alert.job_dialog .section_left.activate form .emailfield input#email {width: 100%;margin-right: 0;}
+  #wrapper .job_alert.job_dialog .section_left.delete form input#unsubscribe{margin-right: 0;}
 }

@@ -94,12 +94,12 @@
   header .logo_blk img{margin-left:20px;}
   .page_2 .two_sections .section_one, .page_4 .videos .section_one, .page_5 .two_sections .section_one{float: none;margin: 0 auto 30px;width: 260px;}
   #wrapper .jobalert .section_left {border:0px;width:auto;}
-  #wrapper .tab_content_full .tab_content_left input.attach{clear: both;margin-left: 144px;}
+ /* #wrapper .tab_content_full .tab_content_left input.attach{clear: both;margin-left: 144px;}*/
   .page_4 .videos .section_one{overflow: hidden;}
   .column-content span.tab_option{height:90px;}
   .terms-condition div.available_content{float: left;margin-left: 30px;margin-top: 0px;}
   .container.main #work-with-us.page .gallery_join .two_sections{width:auto;}
   .videos .section_one a{width:100%;}
   .tab_content_left form .note p{width:60%;padding-right:10px;}
-  #wrapper .tab_content_full .tab_content_left .form_submission .step_5 div.submission, #wrapper .tab_content_full .tab_content_left .form_submission form .step_5 .language_lists{width:65%;}
+  #wrapper .tab_content_full .tab_content_left .form_submission form .language_lists{width:65%;}
 }

@@ -571,31 +571,23 @@ button.collapsed{display:none;}
 .social_links ul{margin-right:0px;}
 .page_2 .two_sections .section_one{margin: 0 0 0 20px;}
 #wrapper, header, footer, #wrapper .container.main .page{max-width: 1280px;}
-#wrapper .tab_content_full .tab_content_left .step_2, #wrapper .tab_content_full .tab_content_left .step_3, #wrapper .tab_content_full .tab_content_left .step_1, #wrapper .tab_content_full .tab_content_left .step_4, #wrapper .tab_content_full .tab_content_left .step_5{float: left;width: 100%;border: 0px;padding:0px;}
-#wrapper .tab_content_full .tab_content_left .step_2 h3, #wrapper .tab_content_full .tab_content_left .step_3 h3 {font-size: 1.4em;font-style: normal;font-weight: bold;color: #5e5e5e;}
+#wrapper .tab_content_full .tab_content_left .form_submission fieldset{float: left;width: 100%;border: 0px;padding:0px;}
 #wrapper .tab_content_full .tab_content_left .form_submission label, #wrapper .tab_content_full .tab_content_left .form_submission span.radio_btn {color: #666666;padding:0px;cursor: default;font-size: 1.3em;float:right;}
 #wrapper .tab_content_full .tab_content_left .form_submission span.radio_btn{float: left;padding-left: 5px;}
-#wrapper .tab_content_full .tab_content_left .step_1 label{float:left;}
+#wrapper .tab_content_full .tab_content_left .form_submission form label{float:left;}
 #wrapper .tab_content_full .tab_content_left .form_submission input{float: left;margin-top: 2px;}
 #wrapper .tab_content_full .tab_content_left .form_submission input[type='text']{width:193px;padding: 5px 0;}
-#wrapper .tab_content_full .tab_content_left .form_submission form .step_2 div, #wrapper .tab_content_full .tab_content_left .form_submission form .step_3 div, #wrapper .tab_content_full .tab_content_left .form_submission form .step_5 div{ clear: both;width: 165px;}
-#wrapper .tab_content_full .tab_content_left .form_submission div.step_1 form div{width: 100%;}
-#wrapper .tab_content_full .tab_content_left .form_submission div.step_1 form div.submission, #wrapper .tab_content_full .tab_content_left .form_submission div.step_2 form div.submission, #wrapper .tab_content_full .tab_content_left .form_submission div.step_3 form div.submission{width: 76%;}
 #wrapper .tab_content_full .tab_content_left input[type='button']{margin-right: 10px;}
 #wrapper .tab_content_full .tab_content_left .form_submission form{float:left;width: 82%;}
-#wrapper .tab_content_full .tab_content_left .form_submission form .step_2 div.submission, #wrapper .tab_content_full .tab_content_left .form_submission form .step_3 div.submission{width: 100%;}
+#wrapper .tab_content_full .tab_content_left .form_submission form div.submission{width: 100%;}
 #wrapper .tab_content_full .tab_content_left div.submission{margin:20px 0px 0px;width: 75%;}
 #wrapper .tab_content_full .tab_content_left div.submission p{ display: block;float: right;margin: 0;width: auto;}
-#wrapper .tab_content_full .tab_content_left input.attach{ border: 1px solid #054670;margin-left:0px;margin-top:10px;color: #FFFFFF;float: left;font-size: 1.1em;font-weight: bold;}
-#wrapper .tab_content_full .tab_content_left .form_submission .step_4 div, #wrapper .tab_content_full .tab_content_left .form_submission .step_5 div.submission{width:80%;}
-#wrapper .tab_content_full .tab_content_left .form_submission .step_4 label, #wrapper .tab_content_full .tab_content_left .form_submission div.step_1 label{float:left;padding-top: 5px;}
+#wrapper .tab_content_full .tab_content_left input.attach{ margin-left:145px;margin-top:10px;clear: both;}
 #wrapper .tab_content_full .tab_content_left span.error{font-size: 1.4em;color:#d71d1d; font-weight: bold;float: left;}
 #wrapper .tab_content_full .tab_content_left .form_submission a.next, #wrapper .tab_content_full .tab_content_left .form_submission a.prev{padding:2px 5px;margin-right: 10px;}
 #wrapper .tab_content_full .tab_content_left input[type='radio'], #wrapper .tab_content_full .tab_content_left input[type='checkbox'] {margin-top:3px;}
 
-#wrapper .tab_content_full .tab_content_left .form_submission form .step_3 label{float:left;width:auto;}
-#wrapper .tab_content_full .tab_content_left .form_submission form .step_3 label input{margin-right:5px;}
-#wrapper .tab_content_full .tab_content_left .form_submission .step_2 label, #wrapper .tab_content_full .tab_content_left .form_submission .step_5 label, #wrapper .tab_content_full .tab_content_left .form_submission .step_3 label{float:left;padding-left:5px;width:auto;}
+#wrapper .tab_content_full .tab_content_left .form_submission form input{margin-right:5px;}
 
 .job_alert.job_dialog p{font-size:1em;color:#5E5E5E;padding-bottom: 15px;float: none;clear: both;}
 .job_dialog.job_alert .section_left{border: 0px;padding-right: 0px;margin-left: 0px;}
@@ -688,7 +680,6 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie8 .career_gallery ul li {height:79px;}
 .lt-ie8 .join_us_gallery ul li{margin:0px 12px 0px 12px;}
 .lt-ie9 .page .social_links {right:0px;}
-/*.lt-ie8 .page_1 .social_links, .lt-ie8 .page_2 .social_links, .lt-ie8 .page_3 .social_links, .lt-ie8 .page_4 .social_links, .lt-ie8 .page_5 .social_links, .lt-ie8 .page_6 .social_links {right:0px;} */
 .lt-ie9 .social_links ul{float:right;width:17.6%;}
 .lt-ie9 .social_links ul li{float:right;}
 .lt-ie8 .social_links ul{width:23% !important;}
@@ -702,7 +693,6 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .lt-ie8 .maisons_lists ul li.join-us section{width:55%;}
 .lt-ie8 .maisons_lists ul li.join-us {width:19% !important;}
 .lt-ie8 .maisons_lists ul li.join-us a{width:85px;margin-top:38px;}
-/*.lt-ie8 .career_gallery_container, .lt-ie8 .career_gallery_container .slides, .lt-ie8 .career_gallery_container .slides ul{width:1024px;overflow: hidden;}*/
 .lt-ie8 .page_1 .row .col.span_4{width:33.325%;}
 .lt-ie8 .page_1 .row .col.span_4 img{position: relative;z-index: -1;right: -1px;}
 .lt-ie8 .page_6 .career_gallery{width: 90%;}
@@ -745,7 +735,6 @@ transition: all 1s ease;}
 .maisons_lists ul li.shading a .grow img{display: block;}
 .maisons_lists ul li.shading.lightbox-open .image { background: none repeat scroll 0 0 #1F1F1F;}
 
-/*.page_1 .row .col.span_4:last-child {position: relative;right: -0.183%;}*/
 .search_main_block .inner_block .job_select{width:22%;position: relative;}
 .search_main_block .inner_block .job_select div, .faq .inner_block .faq_select div{position: absolute;left:0px;top:0px;}
 .faq .inner_block .faq_select{position: relative;}
@@ -917,9 +906,8 @@ h2.mobile_header, a.mobile_link, h3.mobile_submission, .save_search, .view_jobs 
 #wrapper .container .job_alert p, #wrapper .container .job_alert input{margin-left:0px;}
 #wrapper .container .job_alert.erro_alert p, #wrapper .container .job_alert.erro_alert input, #wrapper .container .job_alert.job_alert_activate p, #wrapper .container .job_alert.job_alert_activate input, #wrapper .container .job_alert.job_alert_delete p, #wrapper .container .job_alert.job_alert_delete input{margin-left:30px;}
 .tab_content_left form .note p{display:none; font-size: 1.2em;line-height: 18px;color:#5e5e5e;width:75%;float:left;}
-#wrapper .tab_content_full .tab_content_left .form_submission form .step_5 .language_lists{float:left;width:100%;}
-#wrapper .tab_content_full .tab_content_left .form_submission form .step_5 .language_lists div{ display: inline-block;float: none;margin-bottom: 2px;}
-.step_4 div div {top:0px !important;left:145px !important;}
+#wrapper .tab_content_full .tab_content_left .form_submission form div div {top:0px !important;left:145px !important;}
+#wrapper .tab_content_full .tab_content_left .form_submission form div.language_lists div{left: 0 !important;width:165px;}
 .lt-ie9 #wrapper, .lt-ie9 header, .lt-ie9 footer, .lt-ie9 #wrapper .container.main .page {min-width:1200px;}
 
 .creativity_head a.maison_prev{background: url("../img/parallax/sprite.png") no-repeat scroll 0 -486px;float: left;height: 60px;position: absolute;left: 20px;width: 50px;z-index: 999;top:50%;margin-top: -30px;}

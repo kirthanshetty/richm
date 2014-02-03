@@ -31,5 +31,5 @@
    .inner_block div{top:0px;}
    .inner_block div.search_buttons{float:left;}
    .search_main_block .inner_block .job_select{width:28%;}
-   #wrapper .job_alert.job_dialog .section_left.activate{width:100%;}
+   #wrapper .job_alert.job_dialog .section_left.activate, #wrapper .job_dialog.job_alert .section_left.delete{width:100%;}
 }

@@ -602,6 +602,8 @@ button.collapsed{display:none;}
 .job_dialog.job_alert .section_left div{width:auto;margin-right: 20px;}
 .job_dialog.job_alert .section_left{width:auto;}
 .job_dialog.job_alert .section_left div.header{width:100%;padding: 0px;margin: 0px;}
+.job_dialog.job_alert .section_left .content .radio-field {width: 100%;background-color: #e6e6e6;margin-bottom: 8px;margin-right: 0;padding: 5px;}
+.job_dialog.job_alert .section_left .content .radio-field label {line-height: 20px;}
 .job_dialog.job_alert input[type="submit"]{float: right;}
 .job_dialog .header h3{font-size:1em;color:#4E4E4E;font-weight: bold;float: left;padding-left: 10px;padding-bottom: 0px;margin: 8px 0px;text-transform: uppercase;}
 .job_dialog .header img{float: right;padding: 6px;}
@@ -630,6 +632,7 @@ background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .job_dialog.job_alert .section_left .error{float:none;overflow: hidden;}
 .job_dialog.job_alert .section_left h3.error{float: left;}
 .common_right_section{padding-bottom: 25px;}
+.job_dialog.job_alert .activate .content form input#submit{margin-right: 0;}
 
 /* CSS for IE to Fallback */
 .no-cssgradients .inner_block input[type='submit'], .no-cssgradients .tab_content_full .view_jobs a, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc input, .no-cssgradients .maisons_lists ul li.join-us a, .no-cssgradients .jobalert input[type='submit'], .no-cssgradients #wrapper .tab_content_full .tab_content_left input.attach, .no-cssgradients .inner_block a.view-job, .no-cssgradients .our_maison_gallery .maison_main_content .maison_desc a.invite, .job_alert input[type='submit']{background: url("../img/blue_bg2.jpg") repeat-x scroll left top;}

@@ -657,7 +657,7 @@
   #work-with-us .gallery_join .our_world a.prev{left:0px;}
   #work-with-us .gallery_join .our_world a.next{right:0px;}
   #wrapper .jobs_main_content .view_jobs h2{margin-left:0px;float:left;}
-  #wrapper .jobs_main_content .view_jobs h3{float:left;margin-right:0px;display: block;}
+  #wrapper .jobs_main_content .view_jobs h3{float:right;margin-right:0px;display: block;}
   #wrapper .jobs_main_content .view_jobs h3 a{background: none;border:0px;color:#00436e;margin-right: 0px;padding-right: 0px;}
   #wrapper .jobalert .section_left{margin-left: 0px;}
   #wrapper .column-content .terms-condition h2.language3, #wrapper .column-content .view_jobs h2{font-size:2.4em;}
@@ -690,4 +690,7 @@
   .career_gallery a.next{right:46px;}
   #wrapper .tab_content_full .tab_content_left span.error{margin-top:25px;}
   .search_buttons input.reset{display:block;}
+  .jobs_main_content .inner_block input[type="button"], .jobs_main_content .inner_block input[type="submit"] {display: block;float: right;font-size: 1.8em;font-weight: normal;margin-bottom: 15px;margin-right: 0;padding: 4px 10px;}
+  .jobs_main_content .inner_block input[type="submit"] {clear:both;}
+  .search_buttons input.reset{float: none;}
 }

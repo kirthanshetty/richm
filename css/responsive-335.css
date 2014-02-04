@@ -693,4 +693,5 @@
   .jobs_main_content .inner_block input[type="button"], .jobs_main_content .inner_block input[type="submit"] {display: block;float: right;font-size: 1.8em;font-weight: normal;margin-bottom: 15px;margin-right: 0;padding: 4px 10px;}
   .jobs_main_content .inner_block input[type="submit"] {clear:both;}
   .search_buttons input.reset{float: none;}
+  .tab_content_left form div.language_lists{position: static;}
 }

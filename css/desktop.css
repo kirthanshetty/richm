@@ -491,7 +491,7 @@ h1{color: #a3a3a3;font-family: 'SabonLT-Roman', "Times New Roman";font-size: 4.8
 .tab_content_left p{ font-size: 1.5em;line-height: 24px;margin-top: 0;color:#5e5e5e;margin-bottom: 25px;}
 .tab_content_left h4, .tab_content_right h4{font-size:1.45em;}
 .tab_content_left select.hasCustomSelect option {background: none repeat scroll 0 0 #F8F8F8;font-size:1.3em;float:left;height:30px;padding-top:7px;font-size: 13px;}
-.tab_content_left label{font-size: 1.4em;color:#5e5e5e;float:left;padding-top: 5px;width:145px;padding-right: 10px;}
+.tab_content_left label{font-size: 1.4em;color:#5e5e5e;float:left;padding-top: 5px;min-width:145px;padding-right: 10px;}
 .tab_content_left select, .tab_content_left span.customSelect{font-size:1.1em;float: left;clear: none;left:144px !important;top:auto !important;width: 193px !important;height:33px !important;}
 .tab_content_left label span{color:#da3939;}
 .tab_content_left form{width:61%;}

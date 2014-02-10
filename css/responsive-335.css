@@ -636,7 +636,7 @@
     margin-top:0;
   }
   
-  .page_1 .first_row,.page_1 .second_row .col.span_4,.page_1 .third_row,.page_1 .row .quick_search,.page_1 .row span,.our-world h2,.page_2 .social_links,#wrapper .our_world h2,.join_us_gallery ul,.gallery_join .our_world ul.buttons,.gallery_join .our_world a,.tab_content_right img,.tab_content_left h3,.pagination,.search_buttons input,.view_faq,.maisons_lists ul li.join-us
+  .page_1 .first_row,.page_1 .second_row .col.span_4,.page_1 .third_row,.page_1 .row .quick_search,.page_1 .row span,.our-world h2,#wrapper .our_world h2,.join_us_gallery ul,.gallery_join .our_world ul.buttons,.gallery_join .our_world a,.tab_content_right img,.tab_content_left h3,.pagination,.search_buttons input,.view_faq,.maisons_lists ul li.join-us
   {
     display:none;
   }

@@ -608,7 +608,7 @@ background: -o-linear-gradient(top, #cfcfcf 0%, #e6e6e6 100%); /* Opera 11.10+ *
 background: -ms-linear-gradient(top, #cfcfcf 0%, #e6e6e6 100%); /* IE10+ */
 background: linear-gradient(to bottom, #cfcfcf 0%, #e6e6e6 100%); /* W3C */}
 .job_dialog.job_alert .content,.job_dialog.job_alert .section_left{display: none;width: 100%;}
-.job_dialog.job_alert{background: none repeat scroll 0 0 #FFFFFF;display: block;font-family: 'Lato',"Times New Roman";left: 50%;margin: -160px 0 0 -20%;position: fixed;top: 50%;width: 40%;z-index: 999;}
+.job_dialog.job_alert{background: none repeat scroll 0 0 #FFFFFF;display: block;font-family: 'Lato',"Times New Roman";left: 50%;margin: -160px 0 0 -20%;position: fixed;top: 55%;width: 40%;z-index: 999;}
 .job_dialog.job_alert input#email, .job_dialog.job_alert span{clear: both;}
 .overlay{position: fixed;left:0px;top: 0px;background: #000;opacity: 0.4;filter:alpha(opacity=60);width:100%;height: 100%;}
 .job_dialog.job_alert .error label, .job_dialog.job_alert .error p, .job_dialog.job_alert .error input{color:#f00;}

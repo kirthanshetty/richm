@@ -14,6 +14,7 @@ $(function() {
 		});
 	});
 	$('#unsubscribe').click(function(){
+		$("body").css({'overflow':'hidden'});
 		$('.job_dialog, .job_dialog .delete').show();
 		var content = $('.job_dialog .delete .content:first').show();
 		$('.job_dialog .delete .header h3:gt(0)').hide();
@@ -31,6 +32,7 @@ $(function() {
 		$('body').append('<div class="overlay"></div>');
 	});
 	$('#job_alert').click(function(){
+		$("body").css({'overflow':'hidden'});
 		$('.job_dialog, .job_dialog .activate').show();
 		$('.job_dialog .activate .content').hide();
 		var content = $('.job_dialog .activate .content:first').show();
@@ -52,6 +54,7 @@ $(function() {
 		$('body').append('<div class="overlay"></div>');
 	});
 	$('.close_alert').click(function(){
+		$("body").css({'overflow':'auto'});
 		$('.job_dialog, .job_dialog .section_left').hide();
 		$('.overlay').remove();
 	})

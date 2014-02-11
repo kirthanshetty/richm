@@ -599,7 +599,7 @@ button.collapsed{display:none;}
 .job_dialog.job_alert input[type="submit"]{float: right;}
 .job_dialog .header h3{font-size:1em;color:#4E4E4E;font-weight: bold;float: left;padding-left: 10px;padding-bottom: 0px;margin: 8px 0px;text-transform: uppercase;}
 .job_dialog .header img{float: right;padding: 6px;}
-.job_dialog.job_alert .section_left .content{padding:10px;margin: 0px;width:100%;}
+.job_dialog.job_alert .section_left .content{padding:10px;margin: 0px;width:100%;background-color: #fff;}
 .job_dialog .header{border-bottom:1px solid #c1c1c1;width:100%;
 background: -moz-linear-gradient(top, #cfcfcf 0%,  #e6e6e6 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cfcfcf), color-stop(100%,#e6e6e6)); /* Chrome,Safari4+ */
